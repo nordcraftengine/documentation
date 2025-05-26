@@ -20,7 +20,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "4.20250519.0",
     "@types/bun": "1.2.13",
-    "@types/lodash": "4.17.16",
+    "@types/lodash": "4.17.17",
     "typescript": "5.8.3",
     "wrangler": "4.15.2"
   },
