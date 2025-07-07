@@ -73,7 +73,7 @@ For OAuth or third-party authentication providers that use redirects (like Supab
 
 Once you have stored an access token, you will need to include it in subsequent API requests to authenticate the user:
 
-![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is Headers, which reveals a single header named authorization, with value of bearer cookies.access_token, surrounded by double curly braces, which has been generated via a formula, indicated by the blue fx button next to the field. At the bottom of the dialog is the response data from the API, showing a JSON object. The image is annotated according to the list items below.|16/9](add-authorization-header.webp 'Add authorization header')
+![The edit API dialog is open. The currently selected tab is Headers, which reveals a single header named authorization, with value of bearer cookies.access_token, surrounded by double curly braces, which has been generated via a formula, indicated by the blue fx button next to the field. At the bottom of the dialog is the response data from the API, showing a JSON object. The image is annotated according to the list items below.|16/9](add-authorization-header.webp 'Add authorization header')
 
 For bearer token authentication:
 

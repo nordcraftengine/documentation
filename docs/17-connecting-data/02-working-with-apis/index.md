@@ -50,7 +50,7 @@ After creating an API, you will see the configuration panel with the following s
 
 Configure the endpoint URL to specify where your request should be sent.
 
-![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is URL, which reveals two path parts for the API URL below. At the bottom of the dialog is the response data from the API, showing a JSON object represented in collapsible sections using small arrow icons. If a section is collapsed, the arrow icon is pointing right. If a section is expanded, the arrow is pointing down. The image is annotated according to the list items below.|16/9](configure-a-request-url.webp 'Configure a request URL')
+![The edit API dialog is open. The currently selected tab is URL, which reveals two path parts for the API URL below. At the bottom of the dialog is the response data from the API, showing a JSON object represented in collapsible sections using small arrow icons. If a section is collapsed, the arrow icon is pointing right. If a section is expanded, the arrow is pointing down. The image is annotated according to the list items below.|16/9](configure-a-request-url.webp 'Configure a request URL')
 
 The **URL** and **Parameters** tabs allow you to construct the complete request URL by configuring:
 
@@ -68,7 +68,7 @@ For a detailed explanation of URL structure, read our blog post about [how URLs 
 
 [HTTP request headers](https://developer.mozilla.org/en-US/docs/Web/API/Request/headers) provide additional information about the request that determine how the back-end server processes the API call.
 
-![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is Headers, which reveals a single header named authorization, with value of bearer cookies.access_token, surrounded by double curly braces, which has been generated via a formula, indicated by the blue fx button next to the field. At the bottom of the dialog is the response data from the API, showing a JSON object. The image is annotated according to the list items below.|16/9](set-a-request-header.webp 'Set a request header')
+![The edit API dialog is open. The currently selected tab is Headers, which reveals a single header named authorization, with value of bearer cookies.access_token, surrounded by double curly braces, which has been generated via a formula, indicated by the blue fx button next to the field. At the bottom of the dialog is the response data from the API, showing a JSON object. The image is annotated according to the list items below.|16/9](set-a-request-header.webp 'Set a request header')
 
 To add a request header:
 
@@ -91,7 +91,7 @@ The documentation for your particular back-end API will provide information on w
 
 Define the data to send in the request [body](https://developer.mozilla.org/en-US/docs/Web/API/Request/body) when the method supports it, such as `POST`, `PUT`, or `PATCH`.
 
-![The edit API dialog is open. Auto fetch is disabled, the HTTP method is POST, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is Body, which reveals a single field named body, with value of property, surrounded by single curly braces, which has been generated via a formula, indicated by the blue fx button next to the field. Below, the formula editor is open, demonstrating how the body value has been generated using an Object creation node. The image is annotated according to the list items below.|16/9](set-a-request-body.webp 'Set a request body')
+![The edit API dialog is open. The currently selected tab is Body, which reveals a single field named body, with value of property, surrounded by single curly braces, which has been generated via a formula, indicated by the blue fx button next to the field. Below, the formula editor is open, demonstrating how the body value has been generated using an Object creation node. The image is annotated according to the list items below.|16/9](set-a-request-body.webp 'Set a request body')
 
 To configure the body:
 
@@ -115,7 +115,7 @@ Auto fetch is especially useful for `HTTP GET` requests where you want to displa
 
 ### Test API requests
 
-![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is URL. This image highlights the play button to the top right of the JSON response panel, which when clicked, performs the API call. The image is annotated according to the list items below.|16/9](test-an-api-request.webp 'Test an API request')
+![The edit API dialog is open. The currently selected tab is URL. This image highlights the play button to the top right of the JSON response panel, which when clicked, performs the API call. The image is annotated according to the list items below.|16/9](test-an-api-request.webp 'Test an API request')
 
 You can test your API directly in the editor:
 

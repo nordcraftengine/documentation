@@ -11,7 +11,7 @@ Packages extend your Nordcraft projects with reusable components and functionali
 Packages in Nordcraft work similar to NPM packages. They can contain pure logic, visual elements or both.
 :::
 
-![Package overview|16/9](packages.webp)
+![The packages list is open to the left of the editor, showing information about the confetti back to the right. Visible is the package name, author, launch date and description, including a demo video and an interactive on-page demo. At the top right there are options to clone, star and install the package.|16/9](packages.webp 'Package overview')
 
 ## Browsing packages
 

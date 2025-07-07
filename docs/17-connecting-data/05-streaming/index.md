@@ -65,7 +65,7 @@ Nordcraft automatically determines how to parse streamed responses based on the 
 - `text/event-stream` is parsed as server-sent events
 - `application/stream+json` or `application/x-ndjson` is parsed as JSON streaming
 
-![he edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is Advaned. This image highlights the response parsing dropdown, showing that the value for parse as is currently blank, which falls back to the default. The image is annotated according to the list items below.|16/9](parse-response.webp 'Parse response')
+![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the response parsing dropdown, showing that the value for parse as is currently blank, which falls back to the default. The image is annotated according to the list items below.|16/9](parse-response.webp 'Parse response')
 
 If your back-end service does not set the correct header, you can override the default behavior:
 

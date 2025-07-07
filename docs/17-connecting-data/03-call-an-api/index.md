@@ -16,7 +16,7 @@ There are two ways to trigger API calls:
 
 Auto fetch automatically calls your API without requiring manual triggers. This is particularly useful for data that should be loaded immediately when a component appears.
 
-![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is URL. This image highlights the auto fetch toggle to the top right of the API panel panel, which when toggled on, performs the API call without requiring manual triggers. The image is annotated according to the list items below.|16/9](use-auto-fetch.webp 'Use API auto fetch')
+![The edit API dialog is open. The currently selected tab is URL. This image highlights the auto fetch toggle to the top right of the API panel panel, which when toggled on, performs the API call without requiring manual triggers. The image is annotated according to the list items below.|16/9](use-auto-fetch.webp 'Use API auto fetch')
 
 To enable [auto fetch](/connecting-data/working-with-apis#auto-fetch-behavior):
 
@@ -53,7 +53,7 @@ This weather card displays the current temperature, and the `Update` button trig
 
 API inputs allow you to you customize parameters each time you call an API, giving you flexibility to reuse the same endpoint with different values depending on the context.
 
-![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is inputs. This image highlights the plus button to the top right of the inputs area, which when clicked, adds a new input to the API call. The image is annotated according to the list items below.|16/9](configure-api-inputs.webp 'Configure API inputs')
+![The edit API dialog is open. The currently selected tab is inputs. This image highlights the plus button to the top right of the inputs area, which when clicked, adds a new input to the API call. The image is annotated according to the list items below.|16/9](configure-api-inputs.webp 'Configure API inputs')
 
 Define inputs for your API:
 
@@ -71,7 +71,7 @@ Unlike test values which are only used during development, input values serve as
 
 Callbacks are events triggered by API responses, which let you execute specific workflows in response to updated data from an API.
 
-![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is events. On the events, section, there are three items: on success, on error and on message. Each item has a button to the right containing a workflow icon, represented by three squares connected by branches. The on error workflow icon is highlighted in orange, indicating it is active and that further actions have been defined for when the API returns an error. The image is annotated according to the list items below.|16/9](handle-api-callbacks.webp 'Handle API callbacks')
+![The edit API dialog is open. The currently selected tab is events. On the events, section, there are three items: on success, on error and on message. Each item has a button to the right containing a workflow icon, represented by three squares connected by branches. The on error workflow icon is highlighted in orange, indicating it is active and that further actions have been defined for when the API returns an error. The image is annotated according to the list items below.|16/9](handle-api-callbacks.webp 'Handle API callbacks')
 
 Available callbacks:
 

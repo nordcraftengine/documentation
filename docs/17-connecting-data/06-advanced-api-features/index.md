@@ -11,7 +11,7 @@ Nordcraft provides several advanced API features to give you fine-grained contro
 
 By default, Nordcraft treats API responses with status codes 400 and above as errors. However, some APIs communicate errors differently, such as [GraphQL APIs](https://graphql.org/learn/serving-over-http#response-format), which return errors in the response body with a 200 (Ok) status code.
 
-![Configure error definition|16/9](configure-error-definition.webp)
+![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the is error dropdown, showing that the value for is error is currently blank, which falls back to the default. There is an fx button available next to the is error value, which is configurable via a formula.|16/9](configure-error-definition.webp 'Configure error definition')
 
 The `Is error` formula allows you to customize what constitutes an error:
 
@@ -38,7 +38,7 @@ Redirect rules allow your application to automatically navigate users to differe
 - Handling language or region-specific content availability
 - Managing moved or deprecated pages
 
-![Configure a redirect rule|16/9](configure-a-redirect-rule.webp)
+![The edit API dialog is visible, with the advanced options tab selected. The redirect rules list has one configured redirect, showing a formula is active indicated by the blue fx button. The formula for this redirect rule is visible in the formula editor below, showing that if the API returns an error, and if the process is being run on the server, then the user should be redirected to the login route.|16/9](configure-a-redirect-rule.webp 'Configure a redirect rule')
 
 To configure redirect rules:
 
@@ -71,7 +71,7 @@ When testing API responses in the editor, the `debug` section in `response` will
 
 The **Server-side fetching** toggle controls whether an API request executes during server-side rendering before sending the page to the browser.
 
-![Enable server-side fetching|16/9](enable-server-side-fetching.webp)
+![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the fetching options area, showing that the value for server-side fetching is currently toggled to off.|16/9](enable-server-side-fetching.webp 'Enable server-side fetching')
 
 When enabled:
 
@@ -92,7 +92,7 @@ If an API takes longer than a few hundred milliseconds to respond, consider disa
 
 The **Proxy request** toggle determines whether API calls are routed through Nordcraft's edge network.
 
-![Enable proxying|16/9](enable-proxying.webp)
+![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the proxy request area, showing that the value for proxy request is currently toggled to off.|16/9](enable-proxying.webp 'Enable proxying')
 
 When proxying is enabled (default), your API requests pass through Nordcraft's edge network, providing several capabilities:
 
@@ -110,7 +110,7 @@ The Nordcraft proxy only processes request and response metadata such as headers
 
 By default, Nordcraft automatically determines how to parse API responses based on the `Content-Type` HTTP response header. In some cases, you may need to override this behavior.
 
-![Configure response parsing|16/9](configure-response-parsing.webp)
+![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the response parsing, showing that the value for parse as is currently set to blank, which falls back to the default.|16/9](configure-response-parsing.webp 'Configure response parsing')
 
 The **Parse as** dropdown allows you to select from several parsing options:
 
@@ -129,7 +129,7 @@ This is particularly useful when working with APIs that return incorrect or miss
 
 Debouncing limits how frequently an API can be called, which is useful when API requests are triggered by rapid user actions like typing.
 
-![Configure debounce|16/9](configure-debounce.webp)
+![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the debounce area, showing that the value for debounce is currently null, but can be configured using a formula using the fx button.|16/9](configure-debounce.webp 'Configure debouce')
 
 To set up debouncing:
 
@@ -149,7 +149,7 @@ Common use cases include:
 
 The timeout setting allows you to specify a maximum wait time for API responses.
 
-![Configure timeout|16/9](configure-timeout.webp)
+![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the timeout area, showing that the value for timeout is currently null, but can be configured using a formula using the fx button.|16/9](configure-timeout.webp 'Configure timeout')
 
 To set a timeout:
 
