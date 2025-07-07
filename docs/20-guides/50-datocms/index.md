@@ -17,7 +17,7 @@ Clone the projects below to your DatoCMS and Nordcraft accounts to follow along 
 ## What is covered
 
 - Models and Blocks in DatoCMS
-- Building GraphQL queries 
+- Building GraphQL queries
 - Creating API calls
 - Iterating over the data and displaying the content
 
@@ -136,6 +136,7 @@ Useful resources:
 
 - [Repeating elements](formulas/repeat-formula)
 - [Understanding when to use components](guides/component-creation)
+
 :::
 
 ## Creating the article page
@@ -150,7 +151,7 @@ The final query should be structured as follows:
 
 ```graphql
 {
-  allPosts(filter: {slug: {eq: "nextgen-image-formats-webp-and-avif"}}) {
+  allPosts(filter: { slug: { eq: "nextgen-image-formats-webp-and-avif" } }) {
     title
     seoTags {
       image {
