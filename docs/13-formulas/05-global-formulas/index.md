@@ -21,7 +21,7 @@ Using global formulas ensures consistency in your application and reduces duplic
 
 ## Create a global formula
 
-![Create a global formula|16/9](create-a-global-formula.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
+![The project sidebar is visible in the editor, showing a list of formulas in the formula section. Formulas are named, for example, getCssVariable, getDefaultTrue, getTradition. On the left, the getDefautTrue formula editor is visible, showing a snapshot of the formula notes that make up this formula. The formula takes an input of name value, and checks to see if it equals false. Further logic is calculated in an if formula node. If it equals false, if returns false, else it returns true. Tne image is also annotated with numbers that correspond to the list items below.|16/9](create-a-global-formula.webp 'Create a global formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
 
 To create a global formula:
 
@@ -38,7 +38,7 @@ Global formulas appear in the formula selection dropdown throughout your project
 
 Custom code formulas extend the capabilities of the standard formula editor by allowing you to write JavaScript directly. This enables you to implement functionality that isn't available through the built-in formula components.
 
-![Custom code formula|16/9](global-custom-code-formula.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/hasValue?canvas-height=800&canvas-width=800&rightpanel=attributes}
+![The custom code formula editor is visible. On the left the formula contains a description and a single input argument named value, with a type of unknown. On the right is a text editor that looks like an IDE, containing a short function named hasValue, which takes the value argument, and processes some logic.|16/9](global-custom-code-formula.webp 'Custom code formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/hasValue?canvas-height=800&canvas-width=800&rightpanel=attributes}
 
 ### Custom code structure
 

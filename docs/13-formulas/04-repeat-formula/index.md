@@ -24,7 +24,7 @@ The repeat formula:
 
 ## Using the repeat formula
 
-![Add a repeat formula|16/9](add-a-repeat-formula.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-repeat-formula?canvas-width=800&rightpanel=attributes&selection=nodes.nQgi8KJ7OPxn9l5H0mML-.repeat&canvas-height=800}
+![A repeat formula is visible in the formula editor. Blue fx buttons next to repeat and repeat key on the right attributes panel show that both the repeat and repeat key formulas are active. The visible repeat formula shows that the selected component in the HTML element tree is repeated based on data from the _CARDS variable. The _CARDS variable is an array, and as such, the demo card is repeated for every element in the _CARDS array.|16/9](add-a-repeat-formula.webp 'Add a repeat formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-repeat-formula?canvas-width=800&rightpanel=attributes&selection=nodes.nQgi8KJ7OPxn9l5H0mML-.repeat&canvas-height=800}
 
 To create dynamic content with the repeat formula:
 
