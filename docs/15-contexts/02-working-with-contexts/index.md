@@ -13,7 +13,7 @@ To create a context provider, you can expose formulas or workflows from a compon
 
 ### Expose a formula in context
 
-![Expose a formula|16/9](expose-a-formula.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/counter-with-context?canvas-width=800&rightpanel=style&selection=formulas.rQmmU7&canvas-height=800}
+![The formula editor is open, consisting of a single node that returns a count variable. To the left, underneath the formula name and the formula inputs, there is a checked checkbox with the label expose in context. The image is annotated according to the list items below.|16/9](expose-a-formula.webp 'Expose a formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/counter-with-context?canvas-width=800&rightpanel=style&selection=formulas.rQmmU7&canvas-height=800}
 
 1. In the component's [data panel](/the-editor/data-panel), navigate to the **Formulas** section and [create a new formula](/formulas/working-with-formulas#create-a-formula) or select an existing one
 2. Check the [kbd]Expose in context[kbd] checkbox in the [formula-editor](/formulas/overview#the-formula-editor)
@@ -22,7 +22,7 @@ The formula will now be available to all descendant components through context.
 
 ### Expose a workflow in context
 
-![Expose a workflow|16/9](expose-a-workflow.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/counter-with-context?canvas-width=800&canvas-height=800&selection=workflows.P_Trdl&rightpanel=style}
+![The workflow editor is open showing a switch case node, which checks to see if a counter should decrease. At the top of the workflow next to the workflow name, there is a checked checkbox with the label expose in context. The image is annotated according to the list items below.|16/9](expose-a-workflow.webp 'Expose a workflow'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/counter-with-context?canvas-width=800&canvas-height=800&selection=workflows.P_Trdl&rightpanel=style}
 
 1. In the component's [data panel](/the-editor/data-panel), navigate to the **Workflows** section and [create a new workflow](/workflows/working-with-workflows) or select an existing one
 2. Check the [kbd]Expose context[kbd] checkbox next to the workflow name in the details panel
@@ -37,7 +37,7 @@ To share a variable's value through context, create a formula that returns the v
 
 Components can only access contexts from ancestors in the component tree. The context provider must be higher in the hierarchy than the component using the context.
 
-![Use context|16/9](use-context.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/counter-with-context-display?canvas-width=800&rightpanel=style&canvas-height=800}
+![The attributes panel is visible on the right of the editor, showing a context in the contexts section named counter-root. This context is selected, and the context dialog is open. A checkbox next to the count formula is selected, giving the component access to the count formula defined higher up in the component tree.|16/9](use-context.webp 'Use context'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/counter-with-context-display?canvas-width=800&rightpanel=style&canvas-height=800}
 
 To enable a component to use context from an ancestor:
 
