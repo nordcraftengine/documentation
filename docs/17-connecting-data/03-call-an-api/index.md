@@ -16,7 +16,7 @@ There are two ways to trigger API calls:
 
 Auto fetch automatically calls your API without requiring manual triggers. This is particularly useful for data that should be loaded immediately when a component appears.
 
-![Use API auto fetch|16/9](use-auto-fetch.webp)
+![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is URL. This image highlights the auto fetch toggle to the top right of the API panel panel, which when toggled on, performs the API call without requiring manual triggers. The image is annotated according to the list items below.|16/9](use-auto-fetch.webp 'Use API auto fetch')
 
 To enable [auto fetch](/connecting-data/working-with-apis#auto-fetch-behavior):
 
@@ -28,7 +28,7 @@ To enable [auto fetch](/connecting-data/working-with-apis#auto-fetch-behavior):
 
 Workflow actions give you precise control over when APIs are called, typically in response to user interactions or other events.
 
-![Use API workflow action|16/9](use-api-workflow-action.webp)
+![The attributes panel is visible to the right of the editor, showing a single workflow in the workflow list named updateTemperature. The dialog for this workflow is open, showing that when the workflow is triggered, the weather API is called. The API call has three nodes available to execute further actions, on success, on error and on message.|16/9](use-api-workflow-action.webp 'Use API workflow action')
 
 To call an API from a [workflow](/workflows/working-with-workflows):
 
@@ -53,7 +53,7 @@ This weather card displays the current temperature, and the `Update` button trig
 
 API inputs allow you to you customize parameters each time you call an API, giving you flexibility to reuse the same endpoint with different values depending on the context.
 
-![Configure API inputs|16/9](configure-api-inputs.webp)
+![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is inputs. This image highlights the plus button to the top right of the inputs area, which when clicked, adds a new input to the API call. The image is annotated according to the list items below.|16/9](configure-api-inputs.webp 'Configure API inputs')
 
 Define inputs for your API:
 
@@ -71,7 +71,7 @@ Unlike test values which are only used during development, input values serve as
 
 Callbacks are events triggered by API responses, which let you execute specific workflows in response to updated data from an API.
 
-![Handle API callbacks|16/9](handle-api-callbacks.webp)
+![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is events. On the events, section, there are three items: on success, on error and on message. Each item has a button to the right containing a workflow icon, represented by three squares connected by branches. The on error workflow icon is highlighted in orange, indicating it is active and that further actions have been defined for when the API returns an error. The image is annotated according to the list items below.|16/9](handle-api-callbacks.webp 'Handle API callbacks')
 
 Available callbacks:
 
@@ -99,7 +99,7 @@ When the weather data is successfully updated, a confetti animation is triggered
 
 Once your API call completes, the resulting data is available for use in your application logic and UI.
 
-![Access API data|16/9](access-api-data.webp)
+![The formula editor is visible at the bottom of the editor. The formula takes data from the weather API, indicated in the first formula node by a cloud icon. The formula takes the current temperature data from the weather API, rounds the value to 1 decimal place, and concatenates the degrees celcius symbol.|16/9](access-api-data.webp 'Access API data')
 
 Access API response in the [formula editor](/formulas/overview#the-formula-editor):
 

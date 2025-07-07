@@ -45,7 +45,7 @@ For more information about JSON streaming formats, see the [NDJSON](https://gith
 
 ## Handling streamed data
 
-![Process streamed data|16/9](process-streamed-data.webp)
+![he edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is events. This image highlights the on message event in the events area, showing a button with the workflow icon that is pressed to run events each time the API receives a message. The image is annotated according to the list items below.|16/9](process-streamed-data.webp 'Process streamed data')
 
 To process streamed data in your application:
 
@@ -65,7 +65,7 @@ Nordcraft automatically determines how to parse streamed responses based on the 
 - `text/event-stream` is parsed as server-sent events
 - `application/stream+json` or `application/x-ndjson` is parsed as JSON streaming
 
-![Parse response|16/9](parse-response.webp)
+![he edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is Advaned. This image highlights the response parsing dropdown, showing that the value for parse as is currently blank, which falls back to the default. The image is annotated according to the list items below.|16/9](parse-response.webp 'Parse response')
 
 If your back-end service does not set the correct header, you can override the default behavior:
 
