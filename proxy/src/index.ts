@@ -37,7 +37,7 @@ app.get('/content/:owner/:repository/:branch/:path{.*}?', async (ctx) => {
   })
 })
 
-// URLs like: http://localhost:9000/menu/nordcraftengine/documentation/main/the-editor/canvas
+// URLs like: http://localhost:9000/menu/nordcraftengine/documentation/main
 app.get('/menu/:owner/:repository/:branch', async (ctx) => {
   const owner = ctx.req.param('owner')
   const repository = ctx.req.param('repository')

@@ -2,7 +2,7 @@ import type { FetchMenu, MenuItem } from '../types'
 import { errorResponse, fetchMenuItems, json, preferLocalData } from '../utils'
 import { loadJsonFile } from '../utils/jsonLoader'
 
-// URLs like: http://localhost:8989/content/nordcraftengine/documentation/main/the-editor/canvas
+// URLs like: http://localhost:9000/menu/nordcraftengine/documentation/main
 export const fetchMenu = async ({
   params: { owner, repository, branch },
 }: FetchMenu) => {
