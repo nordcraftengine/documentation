@@ -16,7 +16,11 @@ export const fetchContributors = async ({
   allContributors,
   path,
 }: {
-  allContributors: Array<{ email: string; username: string; avatar?: string }>
+  allContributors: Array<{
+    email: string[]
+    username: string
+    avatar?: string
+  }>
   path: string
 }) => {
   const { stdout: rawContributors } = await execPromise(
@@ -34,12 +38,13 @@ export const fetchContributors = async ({
     })
     .filter((c) => typeof c.email === 'string' && c.email.length > 0)
     .sort((a, b) => b.count - a.count)
+
   const { stdout: lastEditedAt } = await execPromise(
     // Get the last edited date of the file in ISO format
     `git log -1 --format="%ad" --date=iso ../${path}`,
   )
   const matchContributor = (email: string) => {
-    return allContributors.find((c) => c.email === email)
+    return allContributors.find((c) => c.email.includes(email))
   }
   return {
     contributors: fileContributors

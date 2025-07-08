@@ -31,11 +31,12 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 const contributorMapFile = fs.readFileSync('./contributors.json', 'utf-8')
 const contributorMap = (
   JSON.parse(contributorMapFile) as Array<{
-    email: string
+    email: string[]
     username: string
     ignored?: boolean
   }>
 ).filter((contributor) => !contributor.ignored)
+
 const getGitHubUser = async (username: string) => {
   const headers: Record<string, string> = {
     Accept: 'application/vnd.github+json',
