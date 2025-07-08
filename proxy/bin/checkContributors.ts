@@ -22,7 +22,18 @@ export default async function checkContributors() {
     email: string
     username: string
   }>
-  const contributorEmails = new Set(contributors.map((c) => c.email))
+
+  // Create a set of all emails, handling both string and array formats
+  const contributorEmails = new Set<string>()
+
+  contributors.forEach((contributor) => {
+    if (Array.isArray(contributor.email)) {
+      contributor.email.forEach((email) => contributorEmails.add(email))
+    } else {
+      contributorEmails.add(contributor.email)
+    }
+  })
+  
   const { stdout: allContributors, stderr } = await execPromise(
     'git log --format="%ae" | sort | uniq',
   )
