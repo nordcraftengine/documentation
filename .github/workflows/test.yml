@@ -67,6 +67,19 @@ jobs:
         run: |
           cd proxy
           bun run predeploy
+  test_contributors:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout root
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install bun
+        uses: oven-sh/setup-bun@v1
+      - name: Verify contributors
+        run: |
+          cd proxy
+          bun run checkContributors
   create_search_index:
     runs-on: ubuntu-latest
     steps:
