@@ -26,7 +26,7 @@ A pure function always returns the same result for the same input values and doe
 
 ## The formula editor
 
-![Formula editor|16/9](the-formula-editor.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-map-formula?canvas-width=800&canvas-height=800&selection=formulas.2q0_dN&rightpanel=style}
+![The formula editor is open and expanded to full screen, showing a formula named mapped. 6 nodes are used to build a new array from an array _MOVIES, using the lowercase formula, the Set formula, and the Map formula.|16/9](the-formula-editor.webp 'Formula editor'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-map-formula?canvas-width=800&canvas-height=800&selection=formulas.2q0_dN&rightpanel=style}
 
 The formula editor appears when editing formulas and wherever you see an [kbd]fx[kbd] button in the Nordcraft interface:
 

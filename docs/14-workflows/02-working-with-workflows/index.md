@@ -11,7 +11,7 @@ Learn how to create event-triggered and reusable workflows with parameters and s
 
 You can create a workflown on any event in Nordcraft. This can be a standard JavaScript event on an element, a custom [event on a component](/components/interface-and-lifecycle#setting-up-events) or lifecycle events like `On load` or `On attribute change`.
 
-![Create a workflow|16/9](create-workflow-on-event.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-workflows?canvas-height=800&canvas-width=800&selection=nodes.root.events.onClick&rightpanel=events}
+![The events panel is visible on the right of the editor. An onClick event has been created, and its dialog window is open. The onClick event sets the wasClicked variable to true, and then runs a workflow named increaseCounter. The workflow is identified by an icon representing three square orange nodes connected together with branches.|16/9](create-workflow-on-event.webp 'Create a workflow'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-workflows?canvas-height=800&canvas-width=800&selection=nodes.root.events.onClick&rightpanel=events}
 
 To create a workflow on an event:
 
@@ -22,7 +22,7 @@ To create a workflow on an event:
 
 If you have logic in your component that you need multiple times or if the logic tree is complex, you can create a reusable workflow from the [data panel](/the-editor/data-panel#workflows).
 
-![Create reusable workflow|16/9](create-reusable-workflow.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-workflows?canvas-width=800&canvas-height=800&selection=workflows.Zpfk7v&rightpanel=events}
+![The attributes panel is visible to the right of the editor. In the workflow list, there is one workflow named increaseCounter. This workflow is selected and the associated dialog is open. This dialog allows renaming, and shows that when the workflow is triggered, the varaible clickCount is set via a formula, given the blue fx button next to the value of set clickCount is highlighted in blue.|16/9](create-reusable-workflow.webp 'Create reusable workflow'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-workflows?canvas-width=800&canvas-height=800&selection=workflows.Zpfk7v&rightpanel=events}
 
 To create a reusable workflow:
 
@@ -38,11 +38,11 @@ Create reusable workflows to keep your logic trees managable or if you need to u
 
 When a workflow is triggered by an event, you have access to the event's data within the formulas of the workflow, enabling you to react to the data of the event.
 
-![Use event data|16/9](workflow-event-data.webp)
+![The formula editor has been opened from the set action in an onClick event. In the formula editor, event data from the click event is available to be selected, such as x and y coordinates, and whether the alt key was held down. The event list is scrollable, so there are many more data points available for this event.|16/9](workflow-event-data.webp 'Use event data')
 
 In reusable workflows, you can define parameters. These are the inputs of the workflow and you can use them in any formula in the workflow. By defining parameters, you can create workflows that can cover multiple scenarios.
 
-![Create parameters|16/9](workflow-parameters.webp)
+![The attributes panel is visible and a workflow named increaseCounter is selected from the workflow list. The dialog for the workflow is open. One parameter has been defined, with the name count and a test value of 1. The image is annotated according to the list items below.|16/9](workflow-parameters.webp 'Create parameters')
 
 To create a parameter:
 
@@ -54,7 +54,7 @@ To create a parameter:
 
 A node is an action or a piece of logic that is executed sequentially. Nodes are the visual language in Nordcraft that you use to compose the desired logic. There are several built-in nodes like `Set variable`, `Set session cookies` or `Switch`. You can also call custom [actions](/actions/overview) or reusable workflows. This way you can create nested workflows and individual pieces of logic that are composable.
 
-![Create nodes|16/9](create-workflow-node.webp)
+![The attributes panel is visible on the right of the editor, and a workflow named increaseCounter has been selected from the workflow list, meaning its dialog is open. The plus button has been clicked at the bottom of the workflow, displaying a dropdown menu of available nodes to add to the workflow. Tthere is the option to set variables defined in the component, the option to run the increaseCounter workflow, and to add a switch case. The dropdown list is scrollable so there are more options available which are not visible in the image.|16/9](create-workflow-node.webp 'Create nodes')
 
 To add a node:
 

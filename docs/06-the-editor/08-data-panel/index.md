@@ -7,9 +7,9 @@ description: Configure page settings, component attributes, variables, APIs, eve
 
 The data panel is the central hub for managing all data aspects of your pages and components in Nordcraft. It allows you to define variables, connect to APIs, create formulas, and establish workflows that power your application's functionality.
 
-![Data panel page|16/9](data-panel-page.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800}
+![The data panel is visible on the right with sections for page configuration, variables, APIs, Formulas, Workflows and Lifecycle.|16/9](data-panel-page.webp 'Data panel page'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800}
 
-![Data panel component|16/9](data-panel-component.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?canvas-width=800&canvas-height=800&rightpanel=style}
+![The data panel on the right is visible, with sections for component attributes, variables, APIs, Events, Formulas, Workflows, Context, Lifecycle and Dependents.|16/9](data-panel-component.webp 'Data panel component'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?canvas-width=800&canvas-height=800&rightpanel=style}
 
 ::: info
 The data panel is only visible when no element is selected. Press [kbd]Escape[kbd] or click on the background outside the canvas to deselect.

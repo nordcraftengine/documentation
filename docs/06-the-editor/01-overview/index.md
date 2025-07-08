@@ -7,7 +7,7 @@ description: Understand the four main sections of Nordcraft's editor interface -
 
 The Nordcraft editor is your main workspace for building Nordcraft applications and packages. It provides an interface with the tools needed to design, develop and test your projects.
 
-![Editor overview|16/9](editor-overview.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events}
+![The Nordcraft editor, showing a full HTML element tree of HTML elements and components, and a card component on the canvas. The image is annotated with numbers that relate to the lists items below.|16/9](editor-overview.webp 'Editor overview'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events}
 
 The editor workspace consists of four main areas:
 

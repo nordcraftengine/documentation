@@ -7,7 +7,7 @@ description: Use Nordcraft's bottom bar for AI assistance, history control, zoom
 
 The bottom bar provides quick access to frequently used actions and tools in the Nordcraft editor.
 
-![Bottom bar|16/9](bottom-bar.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800}
+![An annotated image focussing on the bar visible at the bottom of the canvas. Annotations correspond to the list items below.|16/9](bottom-bar.webp 'Bottom bar'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800}
 
 1. **AI assistance**: Get help with the "Ask AI" button
 2. **Undo/Redo**: Revert or restore recent changes

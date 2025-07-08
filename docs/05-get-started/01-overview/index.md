@@ -11,7 +11,7 @@ Nordcraft provides a flexible and intuitive development environment for building
 
 When launching Nordcraft, you'll land on the Nordcraft dashboard.
 
-![Dashboard|16/9](dashboard.webp)
+![The Nordcraft Dashboard, showing three areas. Start building, your recent activity, and all projects. The areas are numbered which correspond to bullet points described below.|16/9](dashboard.webp 'Dashboard')
 
 The dashboard includes three key sections:
 
@@ -47,4 +47,4 @@ Packages in Nordcraft work similar to NPM packages. They can contain pure logic,
 
 To get hands-on with features of Nordcraft, try solving the challenges available on your dashboard in the **Start building** block. These guided exercises will introduce you to key concepts of the Nordcraft Web Development Engine, and help you become familiar with the platform.
 
-![Challenges|16/9](challenges.webp)
+![The challenges area in Nordcraft, showing 0% completed, 100% tools found, Level 1. Below there is a list of challenges, the first visible one is a challenge to add weather data.|16/9](challenges.webp 'Challenges')

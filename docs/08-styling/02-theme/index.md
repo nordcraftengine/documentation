@@ -7,7 +7,7 @@ description: Create design systems with Nordcraft's theme tools for managing col
 
 The theme system in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure consistent styling throughout your application.
 
-![Theme|16/9](theme.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default?canvas-width=800&canvas-height=800&rightpanel=style}
+![The Nordcraft theme editor. On the left are the following selectable categories: colors, spacing, fonts, font sizes, font weights, z-index. On the central canvas, a color palette of neutral grey colors, blues and greens are visible, defined as names that map to hex values. A preview of each color is shown as a rounded square.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default?canvas-width=800&canvas-height=800&rightpanel=style}
 
 ## Colors
 

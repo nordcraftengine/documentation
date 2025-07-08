@@ -9,7 +9,7 @@ The styling and layout system in Nordcraft helps you write CSS visually, present
 
 ## Adding CSS with the style panel
 
-![Styling panel|16/9](styling-panel.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
+![The Styling panel is selected and visible to the right of the canvas , showing some basic styling applied including a flex gap, padding and width.|16/9](styling-panel.webp 'Styling panel'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
 
 The style panel provides an interface for applying styles without needing to write CSS directly:
 
@@ -23,7 +23,7 @@ The style panel provides an interface for applying styles without needing to wri
 
 ## Styling with the CSS editor
 
-![CSS editor|16/9](css-editor.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card-container?rightpanel=style&canvas-width=800&selection=nodes.root&canvas-height=800}
+![The CSS editor is visible in the right panel, showing pure CSS rules defined for a section element. This is pure CSS, just as you would write in code or you would view in the browser dev tools.|16/9](css-editor.webp 'CSS editor'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card-container?rightpanel=style&canvas-width=800&selection=nodes.root&canvas-height=800}
 
 If you prefer writing CSS:
 

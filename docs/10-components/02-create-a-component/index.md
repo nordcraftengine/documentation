@@ -12,7 +12,7 @@ There are two ways to create components in Nordcraft:
 
 ## Create from scratch
 
-![Create from scratch|16/9](create-from-scratch.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=style&leftpanel=Files}
+![The create component dialog is open where you can choose a name for your component. The image is annotated corresponding to the list items below, showing the context menu that appears when click the plus button at the top of the project sidebar.|16/9](create-from-scratch.webp 'Create from scratch'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=style&leftpanel=Files}
 
 To create a new component:
 
@@ -23,7 +23,7 @@ To create a new component:
 
 ## Extract existing elements
 
-![Extract as component|16/9](extract-as-component.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-height=800&canvas-width=800&selection=nodes.m6MApQ1ZZSiZ5iH6kAUWE&rightpanel=style}
+![The context menu that appears when you right-click an element in the HTML element tree is visible, showing extract as component highlighted. The create component dialog is visible at the center of the screen, allowing you to name the new component that you are extracting.|16/9](extract-as-component.webp 'Extract as component'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-height=800&canvas-width=800&selection=nodes.m6MApQ1ZZSiZ5iH6kAUWE&rightpanel=style}
 
 To convert existing elements into a component:
 

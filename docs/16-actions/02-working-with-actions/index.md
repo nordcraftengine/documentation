@@ -9,7 +9,7 @@ Learn how to define custom JavaScript actions with arguments, events, and cleanu
 
 ## Create an action
 
-![Create an action|16/9](create-an-action.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
+![The project sidebar is visible on the left of the editor, showing an action named confetti in the actions list. To the right, the confetti action is visible, showing a number of input arguments, a single defined event name, and the custom code further to the right in an IDE-like text editor. The image is annotated according to the list items below.|16/9](create-an-action.webp 'Create an action'){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
 
 To create an action:
 
@@ -31,7 +31,7 @@ The function can return a cleanup function that will be called when the componen
 
 ## Configure arguments
 
-![Configure arguments|16/9](configure-arguments.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
+![The confettig action is now being edited in a full screen view. To the right, a number of input arguments have been defined, a single event is defined, and the custom code is visible to the right in an IDE-like text editor. The image is annotated according to the list items below.|16/9](configure-arguments.webp 'Configure arguments'){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
 
 To add arguments to your action:
 
@@ -43,7 +43,7 @@ In your code, access these arguments through the `args` parameter, using the nam
 
 ## Set up events
 
-![Set up events|16/9](set-up-events.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
+![The confetti custom action is visible in the editor. The image is annotated according to the list items below, highlighting how to create events with the associated plus button, naming the event, and where to provide example output for this event.|16/9](set-up-events.webp 'Set up events'){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
 
 To create events that your action can trigger:
 

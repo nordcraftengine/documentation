@@ -85,7 +85,7 @@ Slots are added to components like any other element using the [element catalog]
 2. Add a slot element from the [element catalog](/the-editor/element-tree#adding-elements)
 3. Optional: add a name attribute (without a name, the slot is named `default`)
 
-![Add a slot element|16/9](add-a-slot-element.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=attributes&selection=nodes.Iry7BeAO7AjcLcJEL-sPT&canvas-height=800}
+![A component is being edited, a slot element is highlighted in the HTML element tree. In the right panel the name for the slot is defined as content.|16/9](add-a-slot-element.webp 'Add a slot element'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=attributes&selection=nodes.Iry7BeAO7AjcLcJEL-sPT&canvas-height=800}
 
 ### Naming
 
@@ -94,7 +94,7 @@ Slots in Nordcraft work with a naming system:
 - **Default slot**: A slot without a name attribute that receives any unassigned content
 - **Named slot**: A slot with a name attribute that receives content specifically targeted to it
 
-![Assign to a slot|16/9](assign-to-a-slot.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card?canvas-width=800&rightpanel=attributes&selection=nodes.47Ndqw5Wmw5WAwpiV13p8&canvas-height=800}
+![A component is selected, making the attributes panel visible on the right. In the slot section of the panel, a dropdown shows that this particular selected component has been assigned to the content slot, which was defined as a named slot in the parent component.|16/9](assign-to-a-slot.webp 'Assign to a slot'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card?canvas-width=800&rightpanel=attributes&selection=nodes.47Ndqw5Wmw5WAwpiV13p8&canvas-height=800}
 
 When adding content to a component with slots:
 
@@ -111,7 +111,7 @@ Slots can contain default content that appears when no content is provided. This
 - Gets replaced when matching content is provided
 - Provides visual cues during development
 
-![Placeholder content|16/9](placeholder-content.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=events&selection=nodes.Iry7BeAO7AjcLcJEL-sPT&canvas-height=800}
+![A view of a component that shows placeholder content added into a slot. The placeholder content is shown on the canvas.|16/9](placeholder-content.webp 'Placeholder content'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=events&selection=nodes.Iry7BeAO7AjcLcJEL-sPT&canvas-height=800}
 
 ## Comparing composition approaches
 

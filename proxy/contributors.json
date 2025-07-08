@@ -1,70 +1,66 @@
 [
-  { "email": "andreas@toddle.dev", "username": "cullophid" },
+  { "email": ["andreas@toddle.dev"], "username": "cullophid" },
   {
-    "email": "157343793+ArmandGit@users.noreply.github.com",
+    "email": ["157343793+ArmandGit@users.noreply.github.com"],
     "username": "armand-lrt"
   },
   {
-    "email": "157343793+armand-lrt@users.noreply.github.com",
+    "email": ["157343793+armand-lrt@users.noreply.github.com"],
     "username": "armand-lrt"
   },
-  { "email": "chrislaupama@icloud.com", "username": "chrislaupama" },
-  { "email": "christian@toddle.dev", "username": "ChrEsb" },
+  { "email": ["chrislaupama@icloud.com"], "username": "chrislaupama" },
+  { "email": ["christian@toddle.dev"], "username": "ChrEsb" },
   {
-    "email": "daniel-philip-johnson@outlook.com",
+    "email": ["daniel-philip-johnson@outlook.com"],
     "username": "danielphilipjohnson"
   },
   {
-    "email": "32451595+erik-beus@users.noreply.github.com",
+    "email": ["32451595+erik-beus@users.noreply.github.com"],
     "username": "erik-beus"
   },
-  { "email": "bager.erik@gmail.com", "username": "erik-beus" },
+  { "email": ["bager.erik@gmail.com"], "username": "erik-beus" },
   {
-    "email": "67047565+BoniFederico@users.noreply.github.com",
+    "email": ["67047565+BoniFederico@users.noreply.github.com"],
     "username": "BoniFederico"
   },
-  { "email": "franz@spark-agency.io", "username": "franz-baur" },
-  { "email": "franz@zenodev.com", "username": "franz-baur" },
-  { "email": "jacob.m.kofoed@gmail.com", "username": "jacob-kofoed" },
+  { "email": ["franz@spark-agency.io"], "username": "franz-baur" },
+  { "email": ["franz@zenodev.com"], "username": "franz-baur" },
+  { "email": ["jacob.m.kofoed@gmail.com"], "username": "jacob-kofoed" },
   {
-    "email": "114390842+kasper-svenning@users.noreply.github.com",
+    "email": ["114390842+kasper-svenning@users.noreply.github.com", "114390842+kaspertoddle@users.noreply.github.com"],
     "username": "kasper-svenning"
   },
   {
-    "email": "114390842+kaspertoddle@users.noreply.github.com",
-    "username": "kasper-svenning"
-  },
-  {
-    "email": "118650489+kuldeeparmar@users.noreply.github.com",
+    "email": ["118650489+kuldeeparmar@users.noreply.github.com"],
     "username": "kuldeeparmar"
   },
   {
-    "email": "84563442+spark-agency@users.noreply.github.com",
+    "email": ["84563442+spark-agency@users.noreply.github.com"],
     "username": "max-kayr"
   },
   {
-    "email": "92308896+Prankisster@users.noreply.github.com",
+    "email": ["92308896+Prankisster@users.noreply.github.com"],
     "username": "Prankisster"
   },
   {
-    "email": "52798353+whitep4nth3r@users.noreply.github.com",
+    "email": ["52798353+whitep4nth3r@users.noreply.github.com", "whitep4nth3r@gmail.com"],
     "username": "whitep4nth3r"
   },
   {
-    "email": "mikkel@toddle.dev",
+    "email": ["mikkel@toddle.dev"],
     "username": "mikkelnordcraft"
   },
   {
-    "email": "91744602+Xeiik@users.noreply.github.com",
+    "email": ["91744602+Xeiik@users.noreply.github.com"],
     "username": "Xeiik"
   },
   {
-    "email": "49699333+dependabot[bot]@users.noreply.github.com",
+    "email": ["49699333+dependabot[bot]@users.noreply.github.com"],
     "username": "dependabot[bot]",
     "ignored": true
   },
   {
-    "email": "vakis@toddle.dev",
+    "email": ["vakis@toddle.dev"],
     "username": "Vakisr"
   }
 ]

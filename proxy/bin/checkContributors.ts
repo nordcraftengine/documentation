@@ -22,7 +22,7 @@ export default async function checkContributors() {
     email: string
     username: string
   }>
-  const contributorEmails = new Set(contributors.map((c) => c.email))
+  const contributorEmails = new Set(contributors.flatMap((c) => c.email))
   const { stdout: allContributors, stderr } = await execPromise(
     'git log --format="%ae" | sort | uniq',
   )

@@ -44,7 +44,7 @@ There are two approaches for storing access tokens securely in Nordcraft.
 
 ### Set HTTP-only cookie directly
 
-![Set HTTP-only cookie|16/9](set-http-only-cookie.webp)
+![The edit API panel is visible. The on success callback dialog is visible, showing that on success of the API Call, the set session cookies formula is run, which sets the access token via a formula, and sets the expiration to 3600. The set session cookies also has success and error callback options. The success callback is active, as indicated by the orange workflow icon consisting of three squares connected by branches. The image is annotated according to the list items below.|16/9](set-http-only-cookie.webp 'Set HTTP-only cookie')
 
 For login flows where users enter credentials (such as a username and password) directly in your application:
 
@@ -73,7 +73,7 @@ For OAuth or third-party authentication providers that use redirects (like Supab
 
 Once you have stored an access token, you will need to include it in subsequent API requests to authenticate the user:
 
-![Add authorization header|16/9](add-authorization-header.webp)
+![The edit API dialog is open. The currently selected tab is Headers, which reveals a single header named authorization, with value of bearer cookies.access_token, surrounded by double curly braces, which has been generated via a formula, indicated by the blue fx button next to the field. At the bottom of the dialog is the response data from the API, showing a JSON object. The image is annotated according to the list items below.|16/9](add-authorization-header.webp 'Add authorization header')
 
 For bearer token authentication:
 

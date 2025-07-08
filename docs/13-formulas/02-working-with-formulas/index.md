@@ -9,7 +9,7 @@ Learn how to work with formulas to manipulate data and streamline logic in Nordc
 
 ## Create a formula
 
-![Create a formula|16/9](create-a-formula.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-map-formula?rightpanel=style&canvas-width=800&selection=formulas.2q0_dN&canvas-height=800}
+![The formula editor is opening, taking up the bottom half of the editor screen. The formula is named maps. Half of the formula is visible, showing that the array _MOVIES is formatted into a new array, using the Set and Map formulas.|16/9](create-a-formula.webp 'Create a formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-map-formula?rightpanel=style&canvas-width=800&selection=formulas.2q0_dN&canvas-height=800}
 
 To create a new formula in Nordcraft:
 

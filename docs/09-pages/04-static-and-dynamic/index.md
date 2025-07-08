@@ -23,7 +23,7 @@ Dynamic pages display content based on data received from APIs or URL parameters
 - **Path parameters**: Define variable segments in your URL path
 - **Query parameters**: Add optional parameters after the `?` in the URL
 
-![Path parameter|16/9](set-path-parameter.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&selection=route&rightpanel=style}
+![An annotated image of the page settings dialog, corresponding to the list items below. A checkbox is highlighted for list item 1, which enables dynamic path values, and the test value is highlighted for list item 2, which allows you to specify a value for the dynamic path parameter for testing purposes.|16/9](set-path-parameter.webp 'Path parameter'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&selection=route&rightpanel=style}
 
 ### Path parameters
 

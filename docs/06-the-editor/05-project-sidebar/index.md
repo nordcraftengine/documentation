@@ -7,7 +7,7 @@ description: Manage files through the project sidebar to access pages, component
 
 The project sidebar provides access to all files and resources in your Nordcraft project. Access it by clicking the folder icon at the top left side of the editor.
 
-![Project sidebar|16/9](project-sidebar.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800&leftpanel=Files}
+![The project sidebar is visible, showing three existing pages, and collapsed sections for components, services, actions, forulas, media, themes and settings.|16/9](project-sidebar.webp 'Project sidebar'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800&leftpanel=Files}
 
 ::: tip
 Open the project sidebar with [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] and close it with [kbd]Escape[kbd].

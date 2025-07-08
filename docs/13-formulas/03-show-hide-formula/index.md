@@ -32,7 +32,7 @@ The truthy concept in Nordcraft is similar to JavaScript but follows a more stre
 
 ## Add a show/hide formula
 
-![Add a show formula|16/9](show-hide-formula.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-show-hide-formula?canvas-width=800&rightpanel=attributes&selection=nodes.nQgi8KJ7OPxn9l5H0mML-.condition&canvas-height=800}
+![A show hide formula visible in the formula editor. The fx button next to show is highlighted blue on the right panelshowing the formula is active. The formula uses the isShown variable, which is a boolean, to determin whether to show or hide the selected element, which is a demo-card component.|16/9](show-hide-formula.webp 'Add a show formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-show-hide-formula?canvas-width=800&rightpanel=attributes&selection=nodes.nQgi8KJ7OPxn9l5H0mML-.condition&canvas-height=800}
 
 To conditionally show or hide an element:
 

@@ -7,7 +7,7 @@ description: Customize element styling, attributes and events to control appeara
 
 The element panel appears in the right side of the editor when an element is selected. It provides detailed controls for the appearance, attributes and interactivity of the selected element.
 
-![Element panel|16/9](element-panel.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
+![The element panel is visible, showing options to switch between the style, attributes, and events view as annotations, relating to the list items below.|16/9](element-panel.webp 'Element panel'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
 
 When you select an element in the canvas or element tree, the element panel displays configuration options for that specific element. The panel has three tabs:
 
@@ -19,7 +19,7 @@ When you select an element in the canvas or element tree, the element panel disp
 
 The style tab allows you to control the visual appearance of elements and components.
 
-![Styling|16/9](element-panel-styling.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
+![The Style tab is open showing a number of style properties available to configure on the selected HTML element. It is annotated relating to the list items below.|16/9](element-panel-styling.webp 'Styling'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
 
 1. Set [style variables](#style-variables)
 2. Define [style](#style) variants
@@ -58,7 +58,7 @@ The CSS properties section provides a user-friendly interface to set styling pro
 
 ### CSS Editor
 
-![CSS editor|16/9](element-panel-css-editor.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card-container?rightpanel=style&canvas-width=800&selection=nodes.root&canvas-height=800}
+![The CSS editor is open in the styling tab, showing CSS code in an editable IDE-like interface.|16/9](element-panel-css-editor.webp 'CSS editor'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card-container?rightpanel=style&canvas-width=800&selection=nodes.root&canvas-height=800}
 
 - The CSS editor provides a code view that replaces the CSS properties section
 - Edit styles directly using CSS syntax
@@ -71,7 +71,7 @@ This view is particularly useful for developers comfortable with writing CSS dir
 
 The attributes tab allows you to configure the element HTML tag, attributes, classes and special behaviors like conditional display and repetition for the selected element.
 
-![Attributes|16/9](element-panel-attributes.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=attributes&canvas-width=800&canvas-height=800}
+![The attributes tab is visible for the selected HTML element. The HTML element tag is editable via a dropdown, one attribute is specified on the element, and there is an empty classes list and the option to create show formula for this element.|16/9](element-panel-attributes.webp 'Attributes'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=attributes&canvas-width=800&canvas-height=800}
 
 ### Element tag
 
@@ -105,7 +105,7 @@ See the [show hide formula](/formulas/show-hide-formula) page and [repeat formul
 
 The events tab enables you to define interactive behaviors that respond to user actions on elements.
 
-![Events|16/9](element-panel-events.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=events&canvas-width=800&canvas-height=800}
+![The events tab is visible in the right sidebar, showing a number of options to add events to HTML elements, including click events, keyboard events, form, input, touch and mouse events, and more.|16/9](element-panel-events.webp 'Events'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=events&canvas-width=800&canvas-height=800}
 
 - Events are categorized into logical groups (click, keyboard, form, input, touch, etc.) for easier navigation
 - Events with assigned workflows or actions are highlighted and appear in the **Active** section at the top

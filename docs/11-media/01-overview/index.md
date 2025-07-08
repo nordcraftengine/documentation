@@ -33,7 +33,7 @@ You can access each image you upload to Nordcraft via a unique URL. The format o
 
 To generate a URL for a differently sized image, click the image in the **Media** section of the project sidebar, which opens the **Media details** view.
 
-![Media details|16/9](media-details.webp)
+![The media details dialog, showing a grid list of size options at the bottom of the dialog with a copy to clipboard icon, and a preview of the generated image above.|16/9](media-details.webp 'Media details')
 
 Click the button for the size of the image you would like to generate to copy the unique URL to the clipboard. For example, if you click [kbd]128px[kbd], the following URL will be copied to your clipboard:
 

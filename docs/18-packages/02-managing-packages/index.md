@@ -9,7 +9,7 @@ Once you have found packages that you would like to use in your Nordcraft packag
 
 ## Install a package
 
-![Install a package|16/9](install-a-package.webp)
+![The packages list is open to the left of the editor, showing information about the confetti back to the right. Visible is the package name, author, launch date and description, including a demo video and an interactive on-page demo. At the top right there are options to clone, star and install the package. The image is annotated according to the list items below.|16/9](install-a-package.webp 'Install a package')
 
 Add a package to your project by:
 
@@ -26,7 +26,7 @@ Once a package is installed, its components, actions, and formulas become availa
 
 The `Installed` tab in the packages panel shows all packages currently used in your project.
 
-![Installed packages|16/9](update-a-package.webp)
+![The package sidebar is visible at the left of the editor, and the installed tab is selected at the top of the packages list. This shows three packages currently installed for this project. Each package in the list shows the name, author, number of stars, a description and an icon. There is also the option to update or delete the package.|16/9](update-a-package.webp 'Installed packages')
 
 ### Update a package
 

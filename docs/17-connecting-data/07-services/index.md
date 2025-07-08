@@ -19,14 +19,14 @@ You can add services in Nordcraft in two ways.
 
 ### From the API creation flow
 
-![Add a service from API panel|16/9](add-a-service-from-api-panel.webp)
+![The add new API dialog is open. In the services section, the connect now button is highlighted. To the left of this, another part of the Nordcraft app has been spliced onto the image, showing three available pre-configured services available to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-api-panel.webp 'Add a service from API panel')
 
 1. When creating a new API, click the [kbd]Connect new[kbd] button
 2. Select the service you want to connect to from the available options
 
 ### From the project sidebar
 
-![Add a service from project sidebar|16/9](add-a-service-from-project-sidebar.webp)
+![The project sidebar is visible to the left of the editor, showing the plus button next to the services list. The plus button has been clicked, which shows a new dialog listing three available pre-configured services available to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-project-sidebar.webp 'Add a service from project sidebar')
 
 1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
 2. Navigate to the **Services** section and click the [kbd]+[kbd] button to add a new service
@@ -36,7 +36,7 @@ You can add services in Nordcraft in two ways.
 
 ### Supabase
 
-![Configure Supabase service|16/9](configure-supabase-service.webp)
+![The Supabase service dialog is open. The name of the service is Supabase and this is directly editable. In the setup section there below there are two input fields to paste a project URL and anon public key. These values can also be defined via formulas indicated by the fx buttons to the right of each input. Below the input fields there is a status message on current connectivity, with a check connection button that is currently disabled. At the bottom of the dialog there are two options indicated by icons to either delete the service or confirm the connection credentials.|16/9](configure-supabase-service.webp 'Configure Supabase service')
 
 To connect to Supabase:
 
@@ -53,7 +53,7 @@ To reuse API and service configuration values throughout your project, click the
 
 ### Xano
 
-![Configure Xano service|16/9](configure-xano-service.webp)
+![The Xano service dialog is open. The name of the service is Xano and this is directly editable. In the setup section there below there is one input field to paste a Xano base URL. Thus values can also be defined via a formula indicated by the fx button to the right of the input. Below the input field there is a status message on current connectivity, with a check connection button that is currently disabled. At the bottom of the dialog there are two options indicated by icons to either delete the service or confirm the connection credentials.|16/9](configure-xano-service.webp 'Configure Xano service')
 
 To connect to Xano:
 
@@ -81,7 +81,7 @@ To make your Xano API documentation public:
 
 ### Custom service (OpenAPI)
 
-![Configure custom service|16/9](configure-custom-service.webp)
+![The OpenAPI service dialog is open. The name of the service is Custom and this is directly editable. In the setup section there below there are two input fields to paste a base URL and a docs URL. These values can also be defined via formulas indicated by the fx buttons to the right of each input. Below the input fields there is a status message on current connectivity, with a check connection button that is currently disabled. At the bottom of the dialog there are two options indicated by icons to either delete the service or confirm the connection credentials.|16/9](configure-custom-service.webp 'Configure custom service')
 
 For services not natively supported by Nordcraft, you can add a custom service using **OpenAPI** specification:
 

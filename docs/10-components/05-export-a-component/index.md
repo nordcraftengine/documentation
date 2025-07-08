@@ -9,7 +9,7 @@ Components built in Nordcraft can be exported as standard web components, allowi
 
 ## Export as web component
 
-![Export a component|16/9](export-a-component.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?canvas-width=800&rightpanel=style&canvas-height=800}
+![The export as web component dialog, giving information about why you would do this, a place for you to define default attributes, and the resulting embed code.|16/9](export-a-component.webp 'Export a component'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?canvas-width=800&rightpanel=style&canvas-height=800}
 
 To export a component from Nordcraft:
 

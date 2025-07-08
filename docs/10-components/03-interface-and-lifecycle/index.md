@@ -24,7 +24,7 @@ The interface of a component defines how it communicates with other parts of you
 
 ### Defining attributes
 
-![Define an attribute|16/9](define-an-attribute.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=attributes.image-alt&canvas-height=800}
+![A component is being edited. An attribute named image-alt in the right sidebar is selected, which has opened the edit attribute dialog. Here you can define the name, test value and type of the attribute, and view the current value.|16/9](define-an-attribute.webp 'Define an attribute'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=attributes.image-alt&canvas-height=800}
 
 Attributes are the primary way to pass data into a component:
 
@@ -58,7 +58,7 @@ The test value is only used while developing your component in the editor. It ha
 
 ### Setting up events
 
-![Set up an event|16/9](set-up-an-event.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=events.0&canvas-height=800}
+![An onClick event is defined in the events list in the right panel. The event dialog is open, showing an editable name and test value of a string.|16/9](set-up-an-event.webp 'Set up an event'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=events.0&canvas-height=800}
 
 Events allow components to communicate upward to parent elements:
 
@@ -85,7 +85,7 @@ Unlike HTML element events that trigger automatically on user interactions, comp
 
 ### Common steps
 
-![Trigger an event|16/9](trigger-an-event.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&canvas-height=800&selection=nodes.root.events.click&rightpanel=events}
+![The events panel is open on the right, showing an active click event. The dialog for this event is open, showing a node tree that describes when the element is clicked, the onClick event is triggered.|16/9](trigger-an-event.webp 'Trigger an event'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&canvas-height=800&selection=nodes.root.events.click&rightpanel=events}
 
 1. Click the `+` button to add a new action
 2. In **Events**, select the `Trigger: event` action for desired component event to trigger
@@ -122,7 +122,7 @@ The initialization phase is the right time to:
 - Fetch initial data from APIs
 - Perform one-time setup operations
 
-![Add initialization logic|16/9](add-initialization-logic.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=onLoad&canvas-height=800}
+![The component data panel is visible on the right. In the lifecycle list, the on load event is selected. The dialog for this event is open, showing that when the component loads, the variable wasLoaded is set to true.|16/9](add-initialization-logic.webp 'Add initialization logic'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=onLoad&canvas-height=800}
 
 To add initialization logic:
 
@@ -143,7 +143,7 @@ This phase is useful for:
 - Triggering recalculations or updating data from API calls
 - Updating the component's appearance
 
-![Add logic on attribute change|16/9](add-logic-on-attribute-change.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=onAttributeChange&canvas-height=800}
+![The component data panel is visible on the right. In the lifecycle list, the on attribute change event is selected. The dialog for this event is open, showing that when an attribute on the component is changed, the count variable is set to a number. The number is powered by a formula, as indicated by the blue fx button next to the count value field.|16/9](add-logic-on-attribute-change.webp 'Add logic on attribute change'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=onAttributeChange&canvas-height=800}
 
 To add attribute change logic:
 

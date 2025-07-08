@@ -7,7 +7,7 @@ description: Learn about elements in Nordcraft projects, and how they are used t
 
 Elements are the basic building blocks that make up the interface of your page or component in Nordcraft. They create the structure, content, and interactive parts of your application that users see and interact with.
 
-![Elements|16/9](elements.webp){https://Nordcraft.dev/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=attributes&canvas-width=800&canvas-height=800}
+![A component is being edited, with the HTML element visible. The component consists of a number of semantic HTML elements and also includes a Nordcraft card-button components.|16/9](elements.webp 'Elements'){https://Nordcraft.dev/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=attributes&canvas-width=800&canvas-height=800}
 
 In Nordcraft, like in HTML, elements exist in a hierarchical structure. Each element (except for the root element) has a parent element, and many elements can contain children elements. This parent-child relationship creates what we call an element tree, with ancestor elements containing descendant elements.
 

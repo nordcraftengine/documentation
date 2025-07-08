@@ -38,7 +38,7 @@ Keep branches small and short-lived. A branch should contain just a single featu
 
 ### Create a new branch
 
-![Create new branch|16/9](create-new-branch.webp)
+![After pressing the create branch button, a dialog opens which is annotated. Here you can name your branch and either cancel or create the new the branch.|16/9](create-new-branch.webp 'Create new branch')
 
 1. On the [project details](/get-started/project-details) page, click the [kbd]Create branch[kbd] button
 2. Choose a descriptive name for the branch and confirm
@@ -64,7 +64,7 @@ When working in a branch, you can view all modifications made and compare them t
 - Review all modifications made in your current branch
 - Identify any conflicts that need resolving before publishing
 
-![View changes|16/9](view-changes.webp)
+![The view changes screen, showing a textarea to add an update or commit message, a publish button that is currently disabled, and a list of changes made to the project below.|16/9](view-changes.webp 'View changes')
 
 1. Enter a description for your changes
 2. Publish your branch
@@ -85,7 +85,7 @@ Your changes will be merged into the main branch and become visible to users imm
 
 ### Sync with main
 
-![Sync with main|16/9](sync-with-main.webp)
+![The view changes screen, showing that the current branch is out of sync with main. A list of changes that happened on main is followed by a large sync with main button. Below are the changes made on the current branch. At the top right there are two buttons allowing you to edit the current branch or delete it.|16/9](sync-with-main.webp 'Sync with main')
 
 Before publishing, your branch must be up to date with the latest changes in the main branch. If someone else has published changes since you created your branch, it will no longer be up-to-date, and you will need to sync with the main branch:
 
@@ -94,7 +94,7 @@ Before publishing, your branch must be up to date with the latest changes in the
 
 ### Resolve merge conflicts
 
-![Merge conflict|16/9](merge-conflicts.webp)
+![The view changes screen shows a red conflicts with main warning. You have the option to reset the conflicting file on the main branch or the current branch. Additionally you can edit or delete the branch using the buttons at the top right.|16/9](merge-conflicts.webp 'Merge conflict')
 
 Merge conflicts can occur when two branches have made changes to the same section of code. When this happens:
 

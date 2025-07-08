@@ -5,7 +5,7 @@ description: Learn how to create and manage new pages in your Nordcraft project 
 
 # Create a page
 
-![Create a page|16/9](create-a-page.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=style&leftpanel=Files}
+![The create page dialog is open, giving you the option to name your new page. The project sidebar is visible on the right, showing the context menu that appears when click the plus button at the top of the project sidebar.|16/9](create-a-page.webp 'Create a page'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=style&leftpanel=Files}
 
 To create a new page:
 

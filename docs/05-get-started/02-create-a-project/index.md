@@ -17,7 +17,7 @@ In the organization view, at the top right of the project list, you will find th
 
 ## Create an app
 
-![Create app|16/9](create-an-app.webp)
+![The create app screen showing an organization select dropdown, a project visibility setting of public or private, and a list of templates to choose from below.|16/9](create-an-app.webp 'Create app')
 
 1. **Select organization**: The organization is pre-selected based on your account settings
 2. **Choose visibility**: Decide who should be able to see your app and select **public** or **private**
@@ -29,7 +29,7 @@ After selecting the template, the Nordcraft editor will open for you to start wo
 
 ## Create a package
 
-![Create package|16/9](create-a-package.webp)
+![The create package dialog. Choose an organization, enter a name and package ID.|16/9](create-a-package.webp 'Create package')
 
 1. **Choose organization**: The organization is pre-selected based on your account settings
 2. **Select an emoji**: Choose an emoji to represent your package

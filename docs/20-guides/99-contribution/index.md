@@ -113,13 +113,13 @@ Critical warnings
 
 ## Images
 
-Include images with an image title and aspect ratio:
+Include images with descriptive alt text, an image title and aspect ratio:
 
-`![Image title|16/9](image-name.webp)`
+`![Image alt text|16/9](image-name.webp 'Image title')`
 
 For screenshots that link to the Nordcraft editor (allowing readers to see it live in the editor):
 
-`![Image title|16/9](image-name.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/...}`
+`![Image alt text|16/9](image-name.webp 'Image title'){https://editor.nordcraft.com/projects/docs_examples/branches/main/...}`
 
 Image requirements:
 
@@ -130,13 +130,15 @@ Image requirements:
   - Large version: 3200px width with "-large" suffix (e.g., `image-name-large.webp`)
 - Place all images in the same folder as the page's `index.md` file
 - If a link is included, ensure that it points to the `main` branch
+- The image title will be used to overlay a title on the image in the UI
+- The image alt text will be added to the `<img>` tag in the resulting markup
 
 ::: info
 You may see `@@@ image-static` in places. This tag is for Nordcraft brand images that do not expand into the large view. You should only add static images if you need to display images that don't serve as example images that should not be expandable, and do not have an outgoing link.
 
 Always include an aspect ratio with your static images in this form:
 
-`![Image title|2/1](static-image.webp)`
+`![Image alt text|2/1](static-image.webp 'Image title')`
 :::
 
 ## Examples

@@ -7,7 +7,7 @@ description: Understand how pages function as application entry points with uniq
 
 Pages are the foundation of any Nordcraft application, representing distinct screens that users navigate to via unique URLs.
 
-![Page|16/9](page.webp){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events}
+![A page is being edited. The HTML element tree is visible which comprises of HTML elements and Nordcraft components.|16/9](page.webp 'Page'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events}
 
 Pages in Nordcraft:
 
