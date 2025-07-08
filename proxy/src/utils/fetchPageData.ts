@@ -75,9 +75,13 @@ const getProcessedTokens = (tokens: any[]) => {
     }
 
     if (token.type === 'image' || token.type === 'image-static') {
-      const parts = token.href.split(' ')
-      processedToken.href = parts[0]
-      processedToken.title = parts[1].replaceAll("'", '')
+      const firstSpaceIndex = token.href.indexOf(' ')
+      if (firstSpaceIndex !== -1) {
+        processedToken.href = token.href.substring(0, firstSpaceIndex)
+        processedToken.title = token.href
+          .substring(firstSpaceIndex + 1)
+          .replaceAll("'", '')
+      }
     }
 
     if (token.tokens) {
