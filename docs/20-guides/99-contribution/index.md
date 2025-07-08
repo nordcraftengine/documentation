@@ -138,7 +138,7 @@ You may see `@@@ image-static` in places. This tag is for Nordcraft brand images
 
 Always include an aspect ratio with your static images in this form:
 
-`![Image alt text|2/1](static-image.webp "Image title")`
+`![Image alt text|2/1](static-image.webp 'Image title')`
 :::
 
 ## Examples
