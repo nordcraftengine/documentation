@@ -7,17 +7,17 @@ description: Learn how to create a data model in DatoCMS and integrate it with N
 
 DatoCMS is a headless Content Management System (CMS) that lets you store and manage content, and retrieve that content via a GraphQL API for use in your front-end applications. This guide outlines the process of creating a data model within DatoCMS and integrating it with Nordcraft.
 
-### Source projects
+## Source projects
 
 Clone the projects below to your DatoCMS and Nordcraft accounts to follow along with this guide:
 
--   [DatoCMS Sample Project](https://dashboard.datocms.com/clone?projectId=161783&name=Nordcraft%20Sample)
--   [Nordcraft Sample Project](https://editor.nordcraft.com/projects/datocms_starter/branches/main)
+- [DatoCMS Sample Project](https://dashboard.datocms.com/clone?projectId=161783&name=Nordcraft%20Sample)
+- [Nordcraft Sample Project](https://editor.nordcraft.com/projects/datocms_starter/branches/main)
 
-### What is covered
+## What is covered
 
 - Models and Blocks in DatoCMS
-- Building GraphQL queries 
+- Building GraphQL queries
 - Creating API calls
 - Iterating over the data and displaying the content
 
@@ -133,8 +133,10 @@ The layout consists of two repeated elements. You could also create components f
 
 ::: tip
 Useful resources:
+
 - [Repeating elements](formulas/repeat-formula)
 - [Understanding when to use components](guides/component-creation)
+
 :::
 
 ## Creating the article page
@@ -149,7 +151,7 @@ The final query should be structured as follows:
 
 ```graphql
 {
-  allPosts(filter: {slug: {eq: "nextgen-image-formats-webp-and-avif"}}) {
+  allPosts(filter: { slug: { eq: "nextgen-image-formats-webp-and-avif" } }) {
     title
     seoTags {
       image {
