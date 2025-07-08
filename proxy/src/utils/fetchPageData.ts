@@ -69,7 +69,7 @@ const getProcessedTokens = (tokens: any[]) => {
     const processedToken = { ...token } as any
 
     if (token.type === 'image' && token.text?.includes('|')) {
-      const parts = token.href.split(' ')
+      const parts = token.href.split('|')
       processedToken.text = parts[0]
       processedToken.aspectRatio = parts[1]
     }

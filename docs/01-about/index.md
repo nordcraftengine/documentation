@@ -4,7 +4,7 @@ description: Learn to build powerful web applications with Nordcraft through gui
 ---
 
 @@@ image-static
-!['Nordcraft, the Web Development Engine, overlaid in navy against a Nordic snowy background, with the Nordcraft three-logo arrow above'|2/1](nordcraft.webp 'Nordcraft')
+![Nordcraft, the Web Development Engine, overlaid in navy against a Nordic snowy background, with the Nordcraft three-logo arrow above|2/1](nordcraft.webp 'Nordcraft')
 @@@
 
 # What is Nordcraft?

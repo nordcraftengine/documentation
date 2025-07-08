@@ -115,7 +115,7 @@ Critical warnings
 
 Include images with descriptive alt text, an image title and aspect ratio:
 
-`![Image alt text|16/9](image-name.webp "Image title")`
+`![Image alt text|16/9](image-name.webp 'Image title')`
 
 For screenshots that link to the Nordcraft editor (allowing readers to see it live in the editor):
 
@@ -138,7 +138,7 @@ You may see `@@@ image-static` in places. This tag is for Nordcraft brand images
 
 Always include an aspect ratio with your static images in this form:
 
-`![Image alt text|2/1](static-image.webp "Image title")`
+`![Image alt text|2/1](static-image.webp 'Image title')`
 :::
 
 ## Examples
