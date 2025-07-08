@@ -33,7 +33,7 @@ export default async function checkContributors() {
       contributorEmails.add(contributor.email)
     }
   })
-  
+
   const { stdout: allContributors, stderr } = await execPromise(
     'git log --format="%ae" | sort | uniq',
   )
