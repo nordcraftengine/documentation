@@ -4,6 +4,7 @@
   "scripts": {
     "build": "bunx esbuild --bundle --outdir=dist --format=esm src/index.ts",
     "buildContributors": "bun bin/buildContributors.ts",
+    "checkContributors": "bun bin/checkContributors.ts",
     "buildDocs": "bun bin/buildAssets.ts && bun bin/buildSitemap.ts",
     "predeploy": "bun buildDocs && bun buildContributors && bun run build",
     "deploy": "wrangler deploy --no-bundle",
