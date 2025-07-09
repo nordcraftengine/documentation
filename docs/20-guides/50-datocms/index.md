@@ -134,8 +134,8 @@ The layout consists of two repeated elements. You could also create components f
 ::: tip
 Useful resources:
 
-- [Repeating elements](formulas/repeat-formula)
-- [Understanding when to use components](guides/component-creation)
+- [Repeating elements](/formulas/repeat-formula)
+- [Understanding when to use components](/guides/component-creation)
 
 :::
 
