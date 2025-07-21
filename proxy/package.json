@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@clickhouse/client-web": "1.11.1",
-    "cheerio": "1.0.0",
+    "cheerio": "1.1.2",
     "hono": "4.8.2",
     "lodash": "4.17.21",
     "marked": "15.0.11",
