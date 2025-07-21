@@ -23,6 +23,10 @@ You can find the [kbd]packages[kbd] button in the [left sidebar](/the-editor/ove
 
 Use the search bar to find specific packages.
 
+:::tip
+You can also browse and search the [full catalogue of native Nordcraft packages outside of the editor](https://nordcraft.com/packages).
+:::
+
 ## Package details
 
 Click on any package to view its detailed information page, which includes:
