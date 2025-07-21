@@ -1,6 +1,6 @@
 # Nordcraft Documentation
 
-This repository contains the official documentation for [Nordcraft](https://nordcraft.com), a visual web development engine for building web applications.
+This repository contains the official documentation for [Nordcraft](https://nordcraft.com), a visual web development engine for building websites and web applications.
 
 ## Documentation Website
 
