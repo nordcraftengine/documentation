@@ -21,7 +21,7 @@ Only exported elements will be available to users who install your package:
 
 - **Components**: Check [kbd]Export this component[kbd] in the package section of the [data panel](/the-editor/data-panel)
 - **Actions**: Check [kbd]Export this action[kbd] for global actions
-- **Formulas**: Check [kbd]Export this formula[kbd] for global formulas
+- **Formulas**: Check [kbd]Export this formula[kbd] for project formulas
 
 Non-exported elements remain internal to your package, which are useful for organization, documentation, or supporting exported functionality.
 
