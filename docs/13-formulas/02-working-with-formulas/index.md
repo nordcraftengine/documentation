@@ -35,7 +35,7 @@ In the formula editor, you can access various data sources within your component
 - **API data**: Results from API calls
 - **Context values**: Data exposed by parent components
 - **Component formulas**: Formulas defined in the component
-- **Global formulas**: Formulas defined at the global project level
+- **Project formulas**: Formulas defined at the global project level
 
 ## Reusable formulas
 

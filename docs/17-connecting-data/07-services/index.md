@@ -110,7 +110,7 @@ Once your services are configured, the API creation process becomes simplified b
 This approach streamlines API creation by leveraging the schema information already defined in your back-end service.
 
 ::: tip
-To reuse API and service configuration values throughout your project, click the [kbd]Make Global formula[kbd] button next to a field. This creates a [global formula](/formulas/global-formulas) that can be referenced anywhere else.
+To reuse API and service configuration values throughout your project, click the [kbd]fx[kbd] button next to a field. This creates a [project formula](/formulas/project-formulas) that can be referenced anywhere else.
 :::
 
 ## Benefits of services

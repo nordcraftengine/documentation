@@ -1,15 +1,15 @@
 ---
-title: Global formulas
+title: Project formulas
 description: Create project-wide reusable functions with standard formulas or custom JavaScript code for consistent logic across your components and pages.
 ---
 
-# Global formulas
+# Project formulas
 
-Global formulas provide a way to create reusable calculations and logic that can be accessed from any page or component in your project. Unlike component-level formulas that are only available within a specific component, global formulas can be used throughout your entire application.
+Project formulas provide a way to create reusable calculations and logic that can be accessed from any page or component in your project. Unlike component-level formulas that are only available within a specific component, project formulas can be used throughout your entire application.
 
-## When to use global formulas
+## When to use project formulas
 
-Global formulas are ideal for:
+Project formulas are ideal for:
 
 - Common calculations used across multiple components
 - Shared data transformations
@@ -17,13 +17,13 @@ Global formulas are ideal for:
 - Business logic that needs to be consistent throughout the application
 - Complex operations that might be reused
 
-Using global formulas ensures consistency in your application and reduces duplication of code.
+Using project formulas ensures consistency in your application and reduces duplication of code.
 
-## Create a global formula
+## Create a project formula
 
-![The project sidebar is visible in the editor, showing a list of formulas in the formula section. Formulas are named, for example, getCssVariable, getDefaultTrue, getTradition. On the left, the getDefautTrue formula editor is visible, showing a snapshot of the formula notes that make up this formula. The formula takes an input of name value, and checks to see if it equals false. Further logic is calculated in an if formula node. If it equals false, if returns false, else it returns true. Tne image is also annotated with numbers that correspond to the list items below.|16/9](create-a-global-formula.webp 'Create a global formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
+![The project sidebar is visible in the editor, showing a list of formulas in the formula section. Formulas are named, for example, getCssVariable, getDefaultTrue, getTradition. On the left, the getDefautTrue formula editor is visible, showing a snapshot of the formula notes that make up this formula. The formula takes an input of name value, and checks to see if it equals false. Further logic is calculated in an if formula node. If it equals false, if returns false, else it returns true. Tne image is also annotated with numbers that correspond to the list items below.|16/9](create-a-project-formula.webp 'Create a project formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
 
-To create a global formula:
+To create a project formula:
 
 1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
 2. Find the **Formulas** section, click the [kbd]+[kbd] button and name your formula
@@ -32,7 +32,7 @@ To create a global formula:
    **(A)** The formula editor, or
    **(B)** Custom JavaScript code by clicking the [kbd]Convert to custom code[kbd] button at the bottom left of the screen
 
-Global formulas appear in the formula selection dropdown throughout your project, making them easily accessible from any component or page.
+Project formulas appear in the formula selection dropdown throughout your project, making them easily accessible from any component or page.
 
 ## Custom code formulas
 
@@ -49,11 +49,11 @@ In the custom code editor, your formula must have an entry function with the sam
 
 ### Custom code considerations
 
-When using custom code in global formulas, keep these important points in mind:
+When using custom code in project formulas, keep these important points in mind:
 
 - **Pure functions**: Custom formulas should be pure functions without side effects; given the same inputs, they should always return the same outputs without modifying external state
 - **Client-side only**: Custom code formulas execute in the browser only and not during server-side rendering; this can cause layout shifts during page load and may impact your page performance scores, and as a result, SEO
-- **Synchronous execution**: Custom formulas must be synchronous; do not use `Promise`, `fetch` or other asynchronous JavaScript APIs in global formulas
+- **Synchronous execution**: Custom formulas must be synchronous; do not use `Promise`, `fetch` or other asynchronous JavaScript APIs in project formulas
 - **Shadow DOM compatibility**: When components are exported as web components, use `ctx.root` instead of `document` to access DOM elements; this ensures compatibility with Shadow DOM encapsulation
 
 ::: warning
