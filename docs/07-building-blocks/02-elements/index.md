@@ -42,6 +42,10 @@ HTML elements can be configured using attributes. These provide additional infor
 
 You can modify an element's attributes in the [attributes tab](/the-editor/element-panel#attributes-tab) of the [element panel](/the-editor/element-panel).
 
+:::tip
+For HTML element attributes that traditionally don't require a value to be specified (such as `open` for `<details>` and `<dialog>`, or `readonly` for `<textarea>`, add the relevant attribute to the element and set the value to `true`.
+:::
+
 ::: info
 For a complete list of HTML attributes, refer to the [HTML Attribute reference on MDNs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
 :::
