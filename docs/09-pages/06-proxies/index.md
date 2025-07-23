@@ -1,6 +1,6 @@
 ---
 title: Configure proxies
-description: Learn how to set up up a proxy in Nordcraft to map one URL to another.
+description: Learn how to set up up a proxy in Nordcraft to serve content from different domains, or serve utility files like sitemaps or robots.txt files.
 ---
 
 # Configure proxies

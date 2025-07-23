@@ -1,6 +1,6 @@
 ---
 title: Configure redirects
-description: Learn how to set up up a redirect in Nordcraft to redirect users from one URL to another.
+description: Learn how to set up permanent or temporary redirects in Nordcraft to redirect users from one site URL to another.
 ---
 
 # Configure redirects

@@ -1,6 +1,6 @@
 ---
 title: DatoCMS integration guide
-description: Learn how to create a data model in DatoCMS and integrate it with Nordcraft.
+description: Learn how to create a data model in DatoCMS and integrate it with Nordcraft. Use the example projects to get started quickly.
 ---
 
 # DatoCMS integration guide
@@ -11,8 +11,8 @@ DatoCMS is a headless Content Management System (CMS) that lets you store and ma
 
 Clone the projects below to your DatoCMS and Nordcraft accounts to follow along with this guide:
 
-- [DatoCMS Sample Project](https://dashboard.datocms.com/clone?projectId=161783&name=Nordcraft%20Sample)
-- [Nordcraft Sample Project](https://editor.nordcraft.com/projects/datocms_starter/branches/main)
+- [DatoCMS sample project](https://dashboard.datocms.com/clone?projectId=161783&name=Nordcraft%20Sample)
+- [Nordcraft sample project](https://editor.nordcraft.com/projects/datocms_starter/branches/main)
 
 ## What is covered
 
