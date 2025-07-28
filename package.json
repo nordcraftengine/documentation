@@ -6,12 +6,12 @@
     "prettier": "prettier --check './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'"
   },
   "devDependencies": {
-    "@eslint/js": "9.30.1",
-    "@eslint/markdown": "6.6.0",
-    "@typescript-eslint/eslint-plugin": "8.35.1",
-    "@typescript-eslint/parser": "8.35.1",
+    "@eslint/js": "9.32.0",
+    "@eslint/markdown": "7.1.0",
+    "@typescript-eslint/eslint-plugin": "8.38.0",
+    "@typescript-eslint/parser": "8.38.0",
     "eslint-plugin-inclusive-language": "2.2.1",
-    "eslint": "9.30.1",
+    "eslint": "9.32.0",
     "prettier-plugin-organize-imports": "4.1.0",
     "prettier": "3.6.2"
   },
