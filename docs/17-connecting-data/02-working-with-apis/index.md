@@ -1,21 +1,21 @@
 ---
 title: Working with APIs
-description: Set up API endpoints in Nordcraft with custom methods, URLs, headers, and payloads to send and receive external data.
+description: Connect API endpoints in Nordcraft with custom methods, URLs, headers, and payloads to send and receive external data.
 ---
 
 # Working with APIs
 
 APIs are the primary way to connect your Nordcraft application to external data sources. They enable communication between your front-end application and back-end services, allowing you to fetch, send and manipulate data.
 
-## Set up a new API
+## Connect a new API
 
-![The attributes panel is visible to the right of the editor. One API is in the API section list, named Weather API. The add new API dialog is visible, indicating the plus button next to APIs has been clicked. The add new API dialog shows options for pasting a new API URL, connecting a new service, or choosing from one of the API templates, including a REST API and file upload template. The dialog also shows the option for adding two demo APIs, the weather API and the Owen Wilson wow API. The image is annotated according to the list items below.|16/9](set-up-an-api.webp 'Add a new API')
+![The attributes panel is visible to the right of the editor. One API is in the API section list, named Weather API. The add new API dialog is visible, indicating the plus button next to APIs has been clicked. The connect new API dialog shows options for pasting a new API URL, connecting a new service, or choosing from one of the API templates, including a REST API and file upload template. The dialog also shows the option for adding two demo APIs, the weather API and the Owen Wilson wow API. The image is annotated according to the list items below.|16/9](set-up-an-api.webp 'Connect a new API')
 
 To create a new API connection in Nordcraft:
 
 1. Select the component or page where you want to add the API
 2. With no element selected, go to the **APIs** section of the [data panel](/the-editor/data-panel) and click the [kbd]+[kbd] button
-3. You will see the **Add new API** panel with several options:
+3. You will see the **Connect new API** panel with several options:
    **(A)** Enter a URL directly to create a custom API
    **(B)** Choose from connected services to access predefined endpoints (see [Services](/connecting-data/services))
    **(C)** Select from available templates to set up common APIs

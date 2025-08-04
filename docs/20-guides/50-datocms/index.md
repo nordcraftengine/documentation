@@ -105,7 +105,7 @@ Create a project formula for the DatoCMS Read-only API key and another for the U
 
 ## Creating the API call in Nordcraft
 
-On the blog page in your Nordcraft project, [add a new API](/connecting-data/working-with-apis#set-up-a-new-api) and use the project formulas set in the previous step for the read-only API key and the URL. Send the API key as a `Bearer Authorization` HTTP header.
+On the blog page in your Nordcraft project, [connect a new API](/connecting-data/working-with-apis#set-up-a-new-api) and use the project formulas set in the previous step for the read-only API key and the URL. Send the API key as a `Bearer Authorization` HTTP header.
 
 ::: info
 Currently, the Nordcraft team is developing an enhanced UI for GraphQL API calls. For now, you can fetch data from a GraphQL API by adding the query string as an object. The key is `query` and the value is the query string. Look at the Nordcraft example project's API calls in this guide for examples.
