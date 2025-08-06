@@ -25,7 +25,7 @@ The AI can perform a number of tasks to help you understand and build projects i
 
 ## What can't the AI do?
 
-Whilst the AI Assisant can provide guidance and helpful resources to help you build in Nordcraft, it cannot modify your project directly. This ensures you stay in control of every aspect of your project, so you do not experience any unintended side effects.
+While the AI Assisant can provide guidance and helpful resources to help you build in Nordcraft, it cannot modify your project directly. This ensures you stay in control of every aspect of your project, so you do not experience any unintended side effects.
 
 The AI Assistant cannot:
 
