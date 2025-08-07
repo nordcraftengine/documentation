@@ -43,6 +43,18 @@ imageUrl: tbeat.webp
 imageAltText: A rather cool-looking virtual drum machine, with a large volume knob in the top left, a BPM display, and some more circular controls on the right. Below are four columns of 32 buttons to control the drum beat.
 @@@
 
+## The Nordcraft Blog
+
+The Nordcraft blog is powered by Contentful, and showcases how to render Rich Text from Contentful using Nordcraft components.
+
+@@@ project-example
+title: Nordcraft Blog
+description: A content site powered by Contentful.
+linkUrl: https://editor.nordcraft.com/projects/nordcraft_blog/branches/main/components/Blog
+imageUrl: blog.webp
+imageAltText: A screenshot of the blog index page, showing a number of article titles, excerpts and images in a grid view.
+@@@
+
 ## A CSS-only clock
 
 This is a fully-functioning clock built with just CSS and no JavaScript, complete with support for multiple timezones.
