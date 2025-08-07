@@ -1,6 +1,6 @@
 ---
 title: App examples
-description: Explore a variety projects built in Nordcraft, including a drum machine, a CSS only clock, and the Nordcraft editor itself.
+description: Explore a variety of projects built in Nordcraft, including a drum machine, a CSS only clock, and the Nordcraft editor itself.
 ---
 
 ## App examples
