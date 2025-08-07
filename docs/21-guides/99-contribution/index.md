@@ -150,12 +150,13 @@ For project examples, use the following format:
 @@@ project-example
 title: A cool project
 description: A cool description in one sentence.
-editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main
+linkUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main
 imageUrl: image.webp
 imageAltText: Descriptive text to describe the image
 @@@
 
-Place the image in the same folder as the page's `index.md` file.
+- Place the image in the same folder as the page's `index.md` file.
+- The `linkUrl` can point to the project in the Nordcraft editor or a live site in production.
 
 ### Component examples
 
