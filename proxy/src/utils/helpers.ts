@@ -13,7 +13,7 @@ export const getNameFromFilename = (fileName: string) => {
     .replaceAll('nordcraft', 'Nordcraft')
     .replaceAll('cms', 'CMS')
     .replaceAll('api', 'API')
-    .replaceAll('ai', 'AI')
+    .replaceAll('Ai', 'AI')
 }
 
 export const getSlugFromFilename = (fileName: string) => {
