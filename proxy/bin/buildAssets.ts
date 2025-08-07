@@ -17,12 +17,12 @@ fs.cpSync('../docs', './dist/docs', {
   filter: (src) => !src.endsWith('.webp'),
 })
 // Inject formulas into the formula reference file
-const formulaReferencePath = './dist/docs/21-references/01-formulas/index.md'
+const formulaReferencePath = './dist/docs/22-references/01-formulas/index.md'
 const formulaReferenceContent = fs.readFileSync(formulaReferencePath, 'utf-8')
 const newFormulaContent = await includeFormulas(formulaReferenceContent)
 fs.writeFileSync(formulaReferencePath, newFormulaContent, 'utf-8')
 // Inject actions into the actions reference file
-const actionReferencePath = './dist/docs/21-references/02-actions/index.md'
+const actionReferencePath = './dist/docs/22-references/02-actions/index.md'
 const actionReferenceContent = fs.readFileSync(actionReferencePath, 'utf-8')
 const newActionContent = await includeActions(actionReferenceContent)
 fs.writeFileSync(actionReferencePath, newActionContent, 'utf-8')
