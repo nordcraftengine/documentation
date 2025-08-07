@@ -5,7 +5,7 @@ description: Explore a variety projects built in Nordcraft, from small toy proje
 
 ## App examples
 
-Explore a variety projects built in Nordcraft, from small toy projects such as a CSS clock to full platforms in production.
+Explore a variety projects built in Nordcraft, from small toy projects to full platforms in production.
 
 @@@ project-example
 title: Spark One
