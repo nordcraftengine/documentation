@@ -21,7 +21,7 @@ imageAltText: The Nordcraft editor showing the Nordcraft editor in itself.
 
 ## Real-time data visualization
 
-Watch Bluesky sign-ups happen in real time. Powered by the Bluesky firehose, each new sign up is visualized as a butterfly flying across the screen.
+Watch Bluesky sign-ups happen in real time. Powered by the Bluesky firehose, each new sign-up is visualized as a butterfly flying across the screen.
 
 @@@ project-example
 title: Bluesky sign-ups
