@@ -151,8 +151,11 @@ For project examples, use the following format:
 title: A cool project
 description: A cool description in one sentence.
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main
-imageUrl: https://cdn.nordcraft.com/link-to-image.png
+imageUrl: image.webp
+imageAltText: Descriptive text to describe the image
 @@@
+
+Place the image in the same folder as the page's `index.md` file.
 
 ### Component examples
 
