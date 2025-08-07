@@ -4,7 +4,7 @@ export type ProjectExampleToken = {
   type: 'project-example'
   title: string
   description: string
-  editorUrl: string
+  linkUrl: string
   imageUrl: string
   imageAltText: string
   raw: string
@@ -25,7 +25,7 @@ export const projectExampleExtension: TokenizerAndRendererExtension = {
       // Parse parameters from the content
       const titleMatch = content.match(/title:\s*([^\n]+)/)
       const descriptionMatch = content.match(/description:\s*([^\n]+)/)
-      const editorUrlMatch = content.match(/editorUrl:\s*([^\n]+)/)
+      const linkUrlMatch = content.match(/linkUrl:\s*([^\n]+)/)
       const imageUrlMatch = content.match(/imageUrl:\s*([^\n]+)/)
       const imageAltTextMatch = content.match(/imageAltText:\s*([^\n]+)/)
 
@@ -33,7 +33,7 @@ export const projectExampleExtension: TokenizerAndRendererExtension = {
         type: 'project-example',
         title: titleMatch ? titleMatch[1].trim() : '',
         description: descriptionMatch ? descriptionMatch[1].trim() : '',
-        editorUrl: editorUrlMatch ? editorUrlMatch[1].trim() : '',
+        linkUrl: linkUrlMatch ? linkUrlMatch[1].trim() : '',
         imageUrl: imageUrlMatch ? imageUrlMatch[1].trim() : '',
         imageAltText: imageAltTextMatch ? imageAltTextMatch[1].trim() : '',
         raw: fullMatch,
