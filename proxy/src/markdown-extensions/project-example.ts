@@ -29,11 +29,11 @@ export const projectExampleExtension: TokenizerAndRendererExtension = {
 
       return {
         type: 'project-example',
+        title: titleMatch ? titleMatch[1].trim() : '',
+        description: descriptionMatch ? descriptionMatch[1].trim() : '',
+        editorUrl: editorUrlMatch ? editorUrlMatch[1].trim() : '',
+        imageUrl: imageUrlMatch ? imageUrlMatch[1].trim() : '',
         raw: fullMatch,
-        title: titleMatch ? titleMatch[1].trim() : undefined,
-        description: descriptionMatch ? descriptionMatch[1].trim() : undefined,
-        editorUrl: editorUrlMatch ? editorUrlMatch[1].trim() : undefined,
-        imageUrl: imageUrlMatch ? imageUrlMatch[1].trim() : undefined,
       } as ProjectExampleToken
     }
 
