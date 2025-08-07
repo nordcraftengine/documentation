@@ -11,7 +11,7 @@ In Nordcraft you get access to your very own AI assistant that understands the c
 
 You can access the AI assistant by clicking the "Ask AI" button on the bottom bar, or by using the keyboard shortcut [kbd]Cmd/Ctrl[kbd]+[kbd]I[kbd]. The AI Assistant opens to the right of the editor, allowing you to continue to work alongside it.
 
-![The Nordcraft editor, showing the AI Assistant window open on the right, with an input field at the bottom of it that says start typing. The Ask AI button on the bottom bar is hovered over, which shows it having a lighter grey background than the gray background of the bottom bar.|16/9](ai-assistant.webp 'AI Assistant')
+![The Nordcraft editor, showing the AI Assistant window open on the right, with an input field at the bottom of it that says start typing. The Ask AI button on the bottom bar is hovered over, which shows it having a lighter grey background than the grey background of the bottom bar.|16/9](ai-assistant.webp 'AI Assistant')
 
 ## What can the AI do?
 
