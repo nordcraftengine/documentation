@@ -33,5 +33,5 @@ The AI Assistant cannot:
 - **Write code (HTML, CSS, JavaScript)**
 
 :::info
-The Nordcraft AI is currently in Beta and imposes no limits on usage. When it is moved out of Beta, your pricing plan will dictate how many times you can interact with the AI.
+The Nordcraft AI is currently in Beta and imposes no limits on usage. When it is moved out of Beta, your pricing plan will dictate how frequently you can interact with the AI.
 :::
