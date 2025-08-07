@@ -5,7 +5,7 @@ description: Explore a variety of projects built in Nordcraft, including a drum 
 
 ## App examples
 
-Explore a variety projects built in Nordcraft, from small toy projects to full platforms in production.
+Explore a variety of projects built in Nordcraft, from small toy projects to full platforms in production.
 
 ## The Nordcraft Editor
 
