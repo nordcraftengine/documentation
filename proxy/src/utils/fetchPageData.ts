@@ -7,6 +7,7 @@ import {
   imageExtension,
   ImageStaticExtension,
   kbdExtension,
+  projectExampleExtension,
   youtubeExtension,
 } from '../markdown-extensions'
 import type { FetchPageData, PageData } from '../types'
@@ -20,6 +21,7 @@ marked.use({
     imageExtension,
     ImageStaticExtension,
     youtubeExtension,
+    projectExampleExtension,
   ],
 })
 
