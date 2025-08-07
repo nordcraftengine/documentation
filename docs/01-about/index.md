@@ -49,7 +49,7 @@ imageAltText: A rather cool-looking virtual drum machine, with a large volume kn
 title: Lighthouse Wars
 description: A Google Lighthouse speed battle.
 linkUrl: https://lighthousewars.app/
-imageUrl: image.webp
+imageUrl: lighthouse_wars.webp
 imageAltText: A screenshot of the app, it looks a Street Fighter game with a stylised Japanese-style animation style, with two characters either side of the screen. At the centre of the screen in orange and yellow gradient text is the word fight.
 @@@
 
