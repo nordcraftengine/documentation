@@ -9,7 +9,7 @@ Explore a variety projects built in Nordcraft, from small toy projects to full p
 
 ## The Nordcraft Editor
 
-The Nordcraft Editor is built in Nordcraft itself. If you can build an editor within and editor, you can build anything.
+The Nordcraft Editor is built in Nordcraft itself. If you can build an editor within an editor, you can build anything.
 
 @@@ project-example
 title: Nordcraft
