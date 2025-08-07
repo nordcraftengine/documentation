@@ -143,6 +143,22 @@ Always include an aspect ratio with your static images in this form:
 
 ## Examples
 
+### Project examples
+
+For project examples, use the following format:
+
+@@@ project-example
+title: A cool project
+description: A cool description in one sentence.
+editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main
+imageUrl: image.webp
+imageAltText: Descriptive text to describe the image
+@@@
+
+Place the image in the same folder as the page's `index.md` file.
+
+### Component examples
+
 For component examples, use the following format:
 
 @@@ example
