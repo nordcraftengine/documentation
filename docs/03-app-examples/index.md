@@ -56,5 +56,5 @@ imageAltText: A white clock on a white background with a subtle shadow around it
 @@@
 
 :::tip
-Check out more examples [Built with Nordcraft on nordcraft.com](https://nordcraft.com/built-with-nordcraft).
+Check out more examples [#BuiltWithNordcraft on nordcraft.com](https://nordcraft.com/built-with-nordcraft).
 :::
