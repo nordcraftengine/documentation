@@ -19,7 +19,7 @@ If you’re using Nordcraft in a product team, you get to skip that traditional 
 
 ## What people are building with Nordcraft
 
-Explore a variety of large and small projects built entirely in Nordcraft.
+Explore a variety of large and small projects built in Nordcraft.
 
 @@@ project-example
 title: Spark One
