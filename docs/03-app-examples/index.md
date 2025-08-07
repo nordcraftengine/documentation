@@ -19,6 +19,18 @@ imageUrl: editor.webp
 imageAltText: The Nordcraft editor showing the Nordcraft editor in itself.
 @@@
 
+## Real-time data visualization
+
+Watch Bluesky sign-ups happen in real time. Powered by the Bluesky firehose, each new sign up is visualized as a butterfly flying across the screen.
+
+@@@ project-example
+title: Bluesky sign-ups
+description: Where Bluesky sign ups are butterflies.
+linkUrl: https://editor.nordcraft.com/projects/bluesky/branches/main/components/signups?mode=design&rightpanel=style&canvas-height=800&canvas-width=800
+imageUrl: bluesky_signups.webp
+imageAltText: A black silhouette of a tree is at the bottom left, with three black silhouette butterflies flying towards it. At the top left in cursive writing reads new Bluesky accounts, users joining Bluesky, powered by the Firehose API.
+@@@
+
 ## A drum machine
 
 t-beat pro is a drum machine built in Nordcraft using the WebAudio API. Choose your drum sound and BPM, and build a looping beat that goes on forever (or until you stop it).
@@ -42,3 +54,7 @@ linkUrl: https://editor.nordcraft.com/projects/clock/branches/main/components/Ho
 imageUrl: cssclock.webp
 imageAltText: A white clock on a white background with a subtle shadow around it, showing the time as 1:14. The hours and minute hands are white, the second hand is red. The label above the clock says Copenhagen, and there are links below the clock to switch the time display to New York, Copenhagen and London.
 @@@
+
+:::tip
+Check out more examples [Built with Nordcraft on nordcraft.com](https://nordcraft.com/built-with-nordcraft).
+:::
