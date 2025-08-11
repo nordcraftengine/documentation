@@ -19,11 +19,11 @@
     "watch": "tsgo --watch --noEmit"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20250614.0",
+    "@cloudflare/workers-types": "4.20250810.0",
     "@types/bun": "1.2.15",
     "@types/lodash": "4.17.17",
     "@typescript/native-preview": "7.0.0-dev.20250619.1",
-    "wrangler": "4.20.0"
+    "wrangler": "4.28.1"
   },
   "dependencies": {
     "@clickhouse/client-web": "1.11.1",
