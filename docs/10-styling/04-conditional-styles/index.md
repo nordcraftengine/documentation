@@ -23,10 +23,10 @@ height: 18rem
 Hover or tap the card to see the style change. This is achieved by setting the `:hover` pseudo-class.
 @@@
 
-In the **Style** section of the style tab panel, you can create additional style variants that apply only when specific conditions are met:
+In the **Style** section of the style panel, you can create additional style variants that apply only when specific conditions are met:
 
 - Pseudo-classes (`:hover`, `:active`, `:focus`, etc.)
-- [Classes](#class-based-styles) defined in the [attributes tab](/the-editor/element-panel#attributes-tab)
+- [Classes](#class-based-styles) defined in the [attributes panel](/the-editor/element-panel#attributes-panel)
 - Media queries for different screen sizes
 - [Starting style](https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style)
 - Pseudo-elements (`::before`, `::after`, etc.)
@@ -53,7 +53,7 @@ For more information on pseudo-elements, see the [MDN documentation on pseudo-el
 
 ## Class-based styles
 
-You can add classes to elements using the attributes tab, and then create conditional styles for those classes.
+You can add classes to elements using the attributes panel, and then create conditional styles for those classes.
 
 @@@ example
 componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-class-based-style.js
@@ -63,8 +63,8 @@ height: 18rem
 Click to select and unselect the card.
 @@@
 
-1. Add a class name in the **Classes** section of the [attributes tab](/the-editor/element-panel#attributes-tab)
-2. Create a new style variant in the [style tab](/the-editor/element-panel#style-tab) by selecting that class name
+1. Add a class name in the **Classes** section of the [attributes panel](/the-editor/element-panel#attributes-panel)
+2. Create a new style variant in the [style panel](/the-editor/element-panel#style-panel) by selecting that class name
 3. Define the styles that should apply when the class is applied
 
 Classes can be conditionally applied using formulas, variables, or attributes. If the condition evaluates to a truthy value, the class and its associated styles will be applied.
@@ -95,7 +95,7 @@ Style variables create dynamic styles based on state. Click the card to toggle i
 
 Create style variables with dynamic values by binding them to formulas, attributes, or variables:
 
-1. Define a style variable in the [Style variables](/the-editor/element-panel#style-tab) section
+1. Define a style variable in the [Style variables](/the-editor/element-panel#style-panel) section
 2. Use the [formula editor](/formulas/overview#the-formula-editor) to create conditional logic
 3. Reference the variable in your CSS properties
 
@@ -162,7 +162,7 @@ This approach allows you to customize individual component instances when needed
 To apply conditional styling to a component instance:
 
 1. Select the component in the canvas or element tree
-2. Add a style in the [style tab](/the-editor/element-panel#style-tab)
+2. Add a style in the [style panel](/the-editor/element-panel#style-panel)
 3. Choose from available pseudo-classes, media queries and pseudo-elements
 4. If the component has classes on its root element, these will appear in the **Class** selection dropdown
 
@@ -172,7 +172,7 @@ For consistent styling across multiple components, consider adding toggleable cl
 
 When styling component instances, there are some limitations:
 
-- You cannot add classes directly to components in the attributes tab
+- You cannot add classes directly to components in the attributes panel
 - Only classes that exist on the root element of the component can be styled from outside
 - Style variables cannot be added to components
 - You cannot style elements deeper in the component tree hierarchy

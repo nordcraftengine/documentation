@@ -37,7 +37,7 @@ The truthy concept in Nordcraft is similar to JavaScript but follows a more stre
 To conditionally show or hide an element:
 
 1. Select the element you want to show and hide based on conditions
-2. In the [attributes tab](/the-editor/element-panel#attributes-tab), click the [kbd]fx[kbd] button next to **Show**
+2. In the [attributes panel](/the-editor/element-panel#attributes-panel), click the [kbd]fx[kbd] button next to **Show**
 3. Enter a formula that evaluates to a `Boolean` value; the element will only be visible when the formula evaluates to `true`
 
 ## How show/hide differs from CSS display

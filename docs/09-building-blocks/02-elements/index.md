@@ -40,7 +40,7 @@ HTML elements can be configured using attributes. These provide additional infor
 - Common attributes like `id` and `class` can be applied to nearly all elements
 - Element-specific attributes like `src` for media elements or `type` for input elements define their unique properties
 
-You can modify an element's attributes in the [attributes tab](/the-editor/element-panel#attributes-tab) of the [element panel](/the-editor/element-panel).
+You can modify an element's attributes in the [attributes panel](/the-editor/element-panel#attributes-panel) of the [element panel](/the-editor/element-panel).
 
 :::tip
 For HTML element attributes that traditionally don't require a value to be specified (such as `open` for `<details>` and `<dialog>`, or `readonly` for `<textarea>`, add the relevant attribute to the element and set the value to `true`.
@@ -54,7 +54,7 @@ For a complete list of HTML attributes, refer to the [HTML Attribute reference o
 
 HTML elements can respond to user interactions through events. You can listen to all standard events on any element, and the editor allows you to add non-standard events if needed.
 
-Events are configured in the [events tab](/the-editor/element-panel#events-tab) of the [element panel](/the-editor/element-panel).
+Events are configured in the [events panel](/the-editor/element-panel#events-panel) of the [element panel](/the-editor/element-panel).
 
 ::: info
 For detailed information about all available events, see the [Events reference on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Event).

@@ -101,7 +101,7 @@ You can bind variables to various aspects of elements:
 For `input` elements, Nordcraft provides a convenient shortcut to create two-way binding with variables:
 
 1. Select an input element in the element tree
-2. In the Attributes tab, find the `Bind to variable` dropdown
+2. In the attributes panel, find the `Bind to variable` dropdown
 3. Choose an existing variable or create a new one
 
 This is a shortcut that automatically sets up:
@@ -117,7 +117,7 @@ This is a shortcut that automatically sets up:
 
 If you're using other form input types such as `radio`, `checkbox`, or `select` inputs, you will need to manually add change event handlers to set variable values instead of choosing the `Bind to variable` shortcut.
 
-Additionally, in the Attributes tab you can configure `checked` or `selected` attributes for those input field types using the Formula editor.
+Additionally, in the attributes panel you can configure `checked` or `selected` attributes for those input field types using the Formula editor.
 :::
 
 @@@ example

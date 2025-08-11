@@ -27,7 +27,7 @@ The style panel provides an interface for applying styles without needing to wri
 
 If you prefer writing CSS:
 
-- Access the [CSS editor](/the-editor/element-panel#css-editor) by clicking the [kbd]{ }[kbd] button at the bottom of the [style panel](/the-editor/element-panel#style-tab)
+- Access the [CSS editor](/the-editor/element-panel#css-editor) by clicking the [kbd]{ }[kbd] button at the bottom of the [style panel](/the-editor/element-panel#style-panel)
 - Write traditional CSS syntax for complete control over styling
 - View all defined styles and their properties in one place
 - Switch seamlessly between the style panel and CSS editor view, where your CSS will be reflected in the style panel properties
