@@ -29,7 +29,7 @@ The repeat formula:
 To create dynamic content with the repeat formula:
 
 1. Select the element you want to repeat
-2. In the [attributes tab](/the-editor/element-panel#attributes-tab), click the [kbd]fx[kbd] button next to **Repeat**
+2. In the [attributes panel](/the-editor/element-panel#attributes-panel), click the [kbd]fx[kbd] button next to **Repeat**
 3. Enter a formula that returns an `Array`; the element will be repeated for each item in the array
 4. Set a [Repeat key](#optimizing-performance-with-the-repeat-key)
 

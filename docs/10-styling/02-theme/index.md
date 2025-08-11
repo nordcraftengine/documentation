@@ -5,7 +5,9 @@ description: Create design systems with Nordcraft's theme tools for managing col
 
 # Theme
 
-The theme system in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure consistent styling throughout your application.
+The theme system in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure consistent styling throughout your application. Theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
+
+To access the theme editor, open the [project sidebar](/the-editor/project-sidebar#project-sidebar) and find the `Themes` section.
 
 ![The Nordcraft theme editor. On the left are the following selectable categories: colors, spacing, fonts, font sizes, font weights, z-index. On the central canvas, a color palette of neutral grey colors, blues and greens are visible, defined as names that map to hex values. A preview of each color is shown as a rounded square.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default?canvas-width=800&canvas-height=800&rightpanel=style}
 
@@ -32,7 +34,7 @@ Select and manage typography for your project:
 - Choose from available Google fonts
 - Add new fonts by clicking the [kbd]Add font[kbd] button
 
-Once added, these fonts become available in the font dropdown menu in the [style panel](/the-editor/element-panel#style-tab).
+Once added, these fonts become available in the font dropdown menu in the [style panel](/the-editor/element-panel#style-panel).
 
 ### Add custom fonts
 

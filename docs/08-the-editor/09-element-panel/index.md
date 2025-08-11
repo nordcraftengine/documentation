@@ -11,15 +11,15 @@ The element panel appears in the right side of the editor when an element is sel
 
 When you select an element in the canvas or element tree, the element panel displays configuration options for that specific element. The panel has three tabs:
 
-1. [Styling](#style-tab): Configure visual appearance and layout for the element and its children
-2. [Attributes](#attributes-tab): Set HTML or component attributes for advanced behaviors
-3. [Events](#events-tab): Define workflows triggered by user interactions on the element
+1. [Styling](#style-panel): Configure visual appearance and layout for the element and its children
+2. [Attributes](#attributes-panel): Set HTML or component attributes for advanced behaviors
+3. [Events](#events-panel): Define workflows triggered by user interactions on the element
 
-## Style tab
+## Style panel
 
-The style tab allows you to control the visual appearance of elements and components.
+The style panel allows you to control the visual appearance of elements and components.
 
-![The Style tab is open showing a number of style properties available to configure on the selected HTML element. It is annotated relating to the list items below.|16/9](element-panel-styling.webp 'Styling'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
+![The Style panel is open showing a number of style properties available to configure on the selected HTML element. It is annotated relating to the list items below.|16/9](element-panel-styling.webp 'Styling'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
 
 1. Set [style variables](#style-variables)
 2. Define [style](#style) variants
@@ -41,7 +41,7 @@ The style section manages different visual variants of your element.
 
 - Every element has a `Default` style applied
 - Add variants with pseudo-classes (e.g. `:hover`, `:active`, `:focus-visible`)
-- Create variants using defined classes (set in the attributes tab)
+- Create variants using defined classes (set in the attributes panel)
 - Set up responsive styles with media queries for different screen sizes
 - Combine classes, pseudo-classes and media queries for more complex style variants
 - When styling a component instance, you can select and style a component's class from the outside (see [component style overrides](/styling/conditional-styles#component-style-overrides))
@@ -58,7 +58,7 @@ The CSS properties section provides a user-friendly interface to set styling pro
 
 ### CSS Editor
 
-![The CSS editor is open in the styling tab, showing CSS code in an editable IDE-like interface.|16/9](element-panel-css-editor.webp 'CSS editor'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card-container?rightpanel=style&canvas-width=800&selection=nodes.root&canvas-height=800}
+![The CSS editor is open in the style panel, showing CSS code in an editable IDE-like interface.|16/9](element-panel-css-editor.webp 'CSS editor'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card-container?rightpanel=style&canvas-width=800&selection=nodes.root&canvas-height=800}
 
 - The CSS editor provides a code view that replaces the CSS properties section
 - Edit styles directly using CSS syntax
@@ -67,11 +67,11 @@ The CSS properties section provides a user-friendly interface to set styling pro
 
 This view is particularly useful for developers comfortable with writing CSS directly or for making multiple property changes efficiently.
 
-## Attributes tab
+## Attributes panel
 
-The attributes tab allows you to configure the element HTML tag, attributes, classes and special behaviors like conditional display and repetition for the selected element.
+The attributes panel allows you to configure the element HTML tag, attributes, classes and special behaviors like conditional display and repetition for the selected element.
 
-![The attributes tab is visible for the selected HTML element. The HTML element tag is editable via a dropdown, one attribute is specified on the element, and there is an empty classes list and the option to create show formula for this element.|16/9](element-panel-attributes.webp 'Attributes'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=attributes&canvas-width=800&canvas-height=800}
+![The attributes panel is visible for the selected HTML element. The HTML element tag is editable via a dropdown, one attribute is specified on the element, and there is an empty classes list and the option to create show formula for this element.|16/9](element-panel-attributes.webp 'Attributes'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=attributes&canvas-width=800&canvas-height=800}
 
 ### Element tag
 
@@ -89,7 +89,7 @@ The attributes tab allows you to configure the element HTML tag, attributes, cla
 
 - Add CSS classes to elements by entering a name and pressing enter
 - Bind classes to conditions to apply them dynamically via the `fx` button
-- Classes added here can be targeted in the style tab as a style variant
+- Classes added here can be targeted in the style panel as a style variant
 - Classes cannot be added directly to components
 
 ### Special behaviors
@@ -101,11 +101,11 @@ The attributes tab allows you to configure the element HTML tag, attributes, cla
 See the [show hide formula](/formulas/show-hide-formula) page and [repeat formula](/formulas/repeat-formula) page for more details.
 :::
 
-## Events tab
+## Events panel
 
-The events tab enables you to define interactive behaviors that respond to user actions on elements.
+The events panel enables you to define interactive behaviors that respond to user actions on elements.
 
-![The events tab is visible in the right sidebar, showing a number of options to add events to HTML elements, including click events, keyboard events, form, input, touch and mouse events, and more.|16/9](element-panel-events.webp 'Events'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=events&canvas-width=800&canvas-height=800}
+![The events panel is visible in the right sidebar, showing a number of options to add events to HTML elements, including click events, keyboard events, form, input, touch and mouse events, and more.|16/9](element-panel-events.webp 'Events'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=events&canvas-width=800&canvas-height=800}
 
 - Events are categorized into logical groups (click, keyboard, form, input, touch, etc.) for easier navigation
 - Events with assigned workflows or actions are highlighted and appear in the **Active** section at the top

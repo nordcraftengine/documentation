@@ -30,7 +30,7 @@ A pure function always returns the same result for the same input values and doe
 
 The formula editor appears when editing formulas and wherever you see an [kbd]fx[kbd] button in the Nordcraft interface:
 
-- In the [attributes panel](/the-editor/element-panel#attributes-tab) when binding values
+- In the [attributes panel](/the-editor/element-panel#attributes-panel) when binding values
 - In the [Show](/formulas/show-hide-formula) and [Repeat](/formulas/repeat-formula) sections
 - In the [style variables](/styling/conditional-styles#style-variables) panel
 - In the [data panel](/the-editor/data-panel) when defining formulas

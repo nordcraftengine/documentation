@@ -80,7 +80,7 @@ Unlike HTML element events that trigger automatically on user interactions, comp
 
 ### Initial steps
 
-- **From an element event**: Select the triggering element (e.g. a button), go to the [events tab](/the-editor/element-panel#events-tab) and find the appropriate HTML event (e.g. `click`)
+- **From an element event**: Select the triggering element (e.g. a button), go to the [events panel](/the-editor/element-panel#events-panel) and find the appropriate HTML event (e.g. `click`)
 - **From a workflow**: Create or edit a workflow
 
 ### Common steps

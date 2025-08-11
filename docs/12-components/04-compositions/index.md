@@ -99,7 +99,7 @@ Slots in Nordcraft work with a naming system:
 When adding content to a component with slots:
 
 1. Select the element you want to place in a slot
-2. In the [attributes tab](/the-editor/element-panel#attributes-tab), find the **Slot** section and select which slot should contain this element.
+2. In the [attributes panel](/the-editor/element-panel#attributes-panel), find the **Slot** section and select which slot should contain this element.
 
 Elements without a specified slot are placed in the `default` slot
 
