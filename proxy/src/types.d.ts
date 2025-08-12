@@ -23,6 +23,7 @@ export type FetchMenuItems = {
 export type RepositoryItem = {
   path: string
   type: 'blob' | 'tree'
+  label: string
 }
 
 export type MenuItem = MenuItemFile | MenuItemFolder
@@ -41,14 +42,6 @@ type MenuItemFolder = {
   name: string
   id: string
   children: MenuItem[]
-}
-
-export type GetMenuItemsFromRepoItems = {
-  items: RepositoryItem[]
-  parentPath: string
-  owner: string
-  repository: string
-  branch: string
 }
 
 export type GetFilePath = FetchMenuItems & {

@@ -30,7 +30,7 @@ const menuItems = getMenuItemsFromRepoItems({
   branch: 'main',
 })
 
-const sitemapItems: Array<{ url: string; lastModified: Date }> = []
+const sitemapItems: Array<{ url: string; lastModified?: Date }> = []
 const addItems = (items: MenuItem[], parts: string[]) =>
   items.forEach((item) => {
     if (item.type === 'folder') {
@@ -44,7 +44,7 @@ const addItems = (items: MenuItem[], parts: string[]) =>
 
       sitemapItems.push({
         url: [...parts, itemId].join('/'),
-        lastModified: new Date(lastModified),
+        lastModified: lastModified ? new Date(lastModified) : undefined,
       })
     }
   })
@@ -58,7 +58,7 @@ const content = `\
     .map((item, i) => {
       return `<url>
     <loc>https://docs.nordcraft.com/${item.url}</loc>
-    <lastmod>${item.lastModified.toISOString()}</lastmod>
+    ${item.lastModified ? `<lastmod>${item.lastModified.toISOString()}</lastmod>` : ''}
     <priority>${(1 - i / sitemapItems.length).toFixed(3)}</priority>
   </url>`
     })

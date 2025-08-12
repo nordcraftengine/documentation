@@ -1,10 +1,7 @@
 import { kebabCase, startCase, toLower, upperFirst } from 'lodash'
 import type { GetFilePath, PreferLocalData } from '../types'
 
-export const getFilename = (fileName: string) => {
-  const fileNameWithoutExtension = fileName.split('.')[0]
-  return fileNameWithoutExtension.replace(/^\d{2}-/, '')
-}
+export const getFilename = (fileName: string) => fileName.split('.')[0]
 
 export const getNameFromFilename = (fileName: string) => {
   const fileNameWithoutExtension = fileName.split('.')[0]

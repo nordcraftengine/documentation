@@ -1,0 +1,374 @@
+[
+  { "path": "about", "label": "About" },
+  { "path": "use-cases", "label": "Use cases" },
+  { "path": "app-examples", "label": "App examples" },
+  { "path": "core-concepts", "label": "Core concepts" },
+  { "path": "learn-nordcraft", "label": "Learn nordcraft" },
+  { "path": "ai-assistant", "label": "AI assistant" },
+  {
+    "path": "get-started",
+    "label": "Get started",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Create a project",
+        "path": "create-a-project"
+      },
+      {
+        "label": "Project details",
+        "path": "project-details"
+      },
+      {
+        "label": "Branches and publishing",
+        "path": "branches-and-publishing"
+      }
+    ]
+  },
+  {
+    "path": "the-editor",
+    "label": "The editor",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Canvas",
+        "path": "canvas"
+      },
+      {
+        "label": "Bottom bar",
+        "path": "bottom-bar"
+      },
+      {
+        "label": "Element tree",
+        "path": "element-tree"
+      },
+      {
+        "label": "Project sidebar",
+        "path": "project-sidebar"
+      },
+      {
+        "label": "Packages",
+        "path": "packages"
+      },
+      {
+        "label": "Issues panel",
+        "path": "issues-panel"
+      },
+      {
+        "label": "Data panel",
+        "path": "data-panel"
+      },
+      {
+        "label": "Element panel",
+        "path": "element-panel"
+      },
+      {
+        "label": "Shortcuts",
+        "path": "shortcuts"
+      }
+    ]
+  },
+  {
+    "path": "building-blocks",
+    "label": "Building blocks",
+    "children": [
+      {
+        "label": "Pages",
+        "path": "pages"
+      },
+      {
+        "label": "Elements",
+        "path": "elements"
+      },
+      {
+        "label": "Components",
+        "path": "components"
+      }
+    ]
+  },
+  {
+    "path": "styling",
+    "label": "Styling",
+    "children": [
+      {
+        "label": "Default styles",
+        "path": "default-styles"
+      },
+      {
+        "label": "Theme",
+        "path": "theme"
+      },
+      {
+        "label": "Styles and layout",
+        "path": "styles-and-layout"
+      },
+      {
+        "label": "Conditional styles",
+        "path": "conditional-styles"
+      },
+      {
+        "label": "Animation editor",
+        "path": "animation-editor"
+      }
+    ]
+  },
+  {
+    "path": "pages",
+    "label": "Pages",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Create a page",
+        "path": "create-a-page"
+      },
+      {
+        "label": "Page configuration",
+        "path": "page-configuration"
+      },
+      {
+        "label": "Static and dynamic",
+        "path": "static-and-dynamic"
+      },
+      {
+        "label": "Redirects",
+        "path": "redirects"
+      },
+      {
+        "label": "Proxies",
+        "path": "proxies"
+      }
+    ]
+  },
+  {
+    "path": "components",
+    "label": "Components",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Create a component",
+        "path": "create-a-component"
+      },
+      {
+        "label": "Interface and lifecycle",
+        "path": "interface-and-lifecycle"
+      },
+      {
+        "label": "Compositions",
+        "path": "compositions"
+      },
+      {
+        "label": "Export a component",
+        "path": "export-a-component"
+      }
+    ]
+  },
+  {
+    "path": "media",
+    "label": "Media",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      }
+    ]
+  },
+  {
+    "path": "variables",
+    "label": "Variables",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Working with variables",
+        "path": "working-with-variables"
+      }
+    ]
+  },
+  {
+    "path": "formulas",
+    "label": "Formulas",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Working with formulas",
+        "path": "working-with-formulas"
+      },
+      {
+        "label": "Show hide formula",
+        "path": "show-hide-formula"
+      },
+      {
+        "label": "Repeat formula",
+        "path": "repeat-formula"
+      },
+      {
+        "label": "Project formulas",
+        "path": "project-formulas"
+      }
+    ]
+  },
+  {
+    "path": "workflows",
+    "label": "Workflows",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Working with workflows",
+        "path": "working-with-workflows"
+      },
+      {
+        "label": "Recursive workflows",
+        "path": "recursive-workflows"
+      }
+    ]
+  },
+  {
+    "path": "contexts",
+    "label": "Contexts",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Working with contexts",
+        "path": "working-with-contexts"
+      }
+    ]
+  },
+  {
+    "path": "actions",
+    "label": "Actions",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Working with actions",
+        "path": "working-with-actions"
+      }
+    ]
+  },
+  {
+    "path": "connecting-data",
+    "label": "Connecting data",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Working with APIs",
+        "path": "working-with-apis"
+      },
+      {
+        "label": "Call an API",
+        "path": "call-an-api"
+      },
+      {
+        "label": "Authentication",
+        "path": "authentication"
+      },
+      {
+        "label": "Streaming",
+        "path": "streaming"
+      },
+      {
+        "label": "Advanced API features",
+        "path": "advanced-api-features"
+      },
+      {
+        "label": "Services",
+        "path": "services"
+      }
+    ]
+  },
+  {
+    "path": "packages",
+    "label": "Packages",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Managing packages",
+        "path": "managing-packages"
+      },
+      {
+        "label": "Creating and launching",
+        "path": "creating-and-launching"
+      }
+    ]
+  },
+  {
+    "path": "good-practices",
+    "label": "Good practices",
+    "children": [
+      {
+        "label": "Branching",
+        "path": "branching"
+      }
+    ]
+  },
+  {
+    "path": "guides",
+    "label": "Guides",
+    "children": [
+      {
+        "label": "Component creation",
+        "path": "component-creation"
+      },
+      {
+        "label": "Security",
+        "path": "security"
+      },
+      {
+        "label": "Feature flags",
+        "path": "feature-flags"
+      },
+      {
+        "label": "DatoCMS",
+        "path": "datocms"
+      },
+      {
+        "label": "Contribution",
+        "path": "contribution"
+      }
+    ]
+  },
+  {
+    "path": "references",
+    "label": "References",
+    "children": [
+      {
+        "label": "Formulas",
+        "path": "formulas"
+      },
+      {
+        "label": "Actions",
+        "path": "actions"
+      }
+    ]
+  }
+]
