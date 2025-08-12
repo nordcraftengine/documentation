@@ -51,7 +51,7 @@ export const getFileLabel = (path: string) => {
   const folder = structure.find((item) => item.path === parts[0])
   if (!folder) {
     // eslint-disable-next-line no-console
-    console.warn(`Folder ${parts[0]} not found in structure`)
+    console.warn(`Folder ${parts[0]} not found in structure`, 'path', path)
     throw new Error(`Folder ${parts[0]} not found in index.json`)
   }
   if (parts.length > 1 && parts[1] !== 'index.md') {

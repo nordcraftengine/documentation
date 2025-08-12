@@ -1,22 +1,4 @@
-import { kebabCase, startCase, toLower, upperFirst } from 'lodash'
 import type { GetFilePath, PreferLocalData } from '../types'
-
-export const getFilename = (fileName: string) => fileName.split('.')[0]
-
-export const getNameFromFilename = (fileName: string) => {
-  const fileNameWithoutExtension = fileName.split('.')[0]
-  const lowerCase = toLower(startCase(getFilename(fileNameWithoutExtension)))
-  return upperFirst(lowerCase)
-    .replaceAll('nordcraft', 'Nordcraft')
-    .replaceAll('cms', 'CMS')
-    .replaceAll('api', 'API')
-    .replaceAll('Ai', 'AI')
-}
-
-export const getSlugFromFilename = (fileName: string) => {
-  const fileNameWithoutExtension = fileName.split('.')[0]
-  return kebabCase(getFilename(fileNameWithoutExtension))
-}
 
 export const getFilePath = ({
   owner,

@@ -1,5 +1,5 @@
 import type { FetchMenuItems, MenuItem, RepositoryItem } from '../types'
-import { getFilePath, getLocalFilePath, getSlugFromFilename } from './helpers'
+import { getFilePath, getLocalFilePath } from './helpers'
 
 export const fetchMenuItems = async ({
   owner,
@@ -62,7 +62,6 @@ export const getMenuItemsFromRepoItems = ({
       return type === 'tree' && parentPath === _parentPath
     })
     .map(({ path, type: _type, label }) => {
-      const fileName = path.split('/')[path.split('/').length - 1]
       const hasIndexFile = items.find(
         (item) => item.path === path + '/index.md',
       )
@@ -80,7 +79,7 @@ export const getMenuItemsFromRepoItems = ({
         return {
           type,
           name: label,
-          id: getSlugFromFilename(fileName),
+          id: label.toLocaleLowerCase(),
           children,
         }
       }
@@ -88,7 +87,7 @@ export const getMenuItemsFromRepoItems = ({
       return {
         type: 'file',
         name: label,
-        id: getSlugFromFilename(fileName),
+        id: label.toLocaleLowerCase(),
         localPath: getLocalFilePath({ path: path + '/index.md' }),
         contributorsPath: getLocalFilePath({
           path: path + '/index.json',

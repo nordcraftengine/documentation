@@ -2,13 +2,8 @@ import * as fs from 'fs'
 import { chunk } from 'lodash'
 import { ImportError } from 'typesense/lib/Typesense/Errors'
 import { getTypesenseClient } from '../src/search/typesense'
-import {
-  errorResponse,
-  getNameFromFilename,
-  getSlugFromFilename,
-  json,
-  parseRawContent,
-} from '../src/utils'
+import { errorResponse, json, parseRawContent } from '../src/utils'
+import { getFileLabel } from './fileTree'
 
 interface ProcessedPage {
   sections: any[]
@@ -47,16 +42,21 @@ const createSearchIndex = async () => {
     const allPages = (files as string[])
       .filter((filePath) => filePath.endsWith('index.md'))
       .map((filePath) => {
-        const pathParts = filePath.split('/')
-        const path = pathParts
+        const pathParts = filePath
+          .split('/')
           // Remove index.md
           .slice(0, -1)
-          .map((part) => getSlugFromFilename(part.replace('/index', '')))
-          .join('/')
+        const breadcrumbs = pathParts.reduce<string[]>(
+          (acc, _, i) => [
+            ...acc,
+            getFileLabel(
+              pathParts.slice(0, i + 1).join('/'),
+            ).toLocaleLowerCase(),
+          ],
+          [],
+        )
 
-        const breadcrumbs = path
-          .split('/')
-          .map((item) => getNameFromFilename(item))
+        const path = breadcrumbs.join('/')
 
         const title = breadcrumbs[breadcrumbs.length - 1]
 
