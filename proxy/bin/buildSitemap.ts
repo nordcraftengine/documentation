@@ -2,27 +2,21 @@ import { execSync } from 'child_process'
 import { existsSync, mkdirSync, readdirSync, writeFileSync } from 'fs'
 import type { MenuItem } from '../src/types'
 import { getMenuItemsFromRepoItems } from '../src/utils'
+import { getFileLabel, sortFilesByStructure } from './fileTree'
 
 const getCommitDates = (path: string) =>
   execSync(`git log -1 --pretty="format:%ci" .${path}`).toString().trim()
 
 // Read all files
-const files = (
-  readdirSync('./dist/docs', { recursive: true }) as string[]
-).sort((a, b) => {
-  const aParts = a.split('/')
-  const bParts = b.split('/')
-
-  if (aParts.length === bParts.length) {
-    return a.localeCompare(b)
-  }
-  return aParts.length - bParts.length
-})
+const files = sortFilesByStructure(
+  readdirSync('./dist/docs', { recursive: true }) as string[],
+)
 // Create menu items structure
 const menuItems = getMenuItemsFromRepoItems({
   items: files.map((file) => ({
-    path: `docs/${file as string}`,
+    path: `docs/${file}`,
     type: 'tree',
+    label: getFileLabel(file),
   })),
   parentPath: 'docs',
   owner: 'nordcraftengine',
