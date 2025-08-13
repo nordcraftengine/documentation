@@ -7,15 +7,16 @@ description: Use Nordcraft's bottom bar for AI assistance, history control, zoom
 
 The bottom bar provides quick access to frequently used actions and tools in the Nordcraft editor.
 
-![An annotated image focussing on the bar visible at the bottom of the canvas. Annotations correspond to the list items below.|16/9](bottom-bar.webp 'Bottom bar'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800}
+![An annotated image focussing on the bar visible at the bottom of the canvas. Annotations correspond to the list items below.|16/9](bottom-bar.webp 'Bottom bar')
 
-1. **AI assistance**: Get help with the "Ask AI" button
-2. **Undo/Redo**: Revert or restore recent changes
-3. **Zoom controls**: Adjust and view the current zoom level
-4. **Test mode**: Toggle between editing and testing your application
-5. [Export as web component](/components/export-a-component): Generate a web component for use in other web projects
-6. **Preview**: Open the current page in a new browser tab to test
-7. **View changes**: See all modifications made in the current branch
+1. **Ask AI**: Get help from the Nordcraft AI Assistant
+2. **Current collaborators**: All users currently working in the same branch of the project
+3. **Undo/Redo**: Undo and redo changes in the editor
+4. **Zoom controls**: View the current zoom level (adjusted by pressing [kbd]Cmd/Ctrl[kbd] + [kbd]scroll[kbd]), and use the magnifying glass to reset the zoom level to 100%
+5. **Test mode**: Toggle between editing and testing your application
+6. [Export as web component](/components/export-a-component): Export the current component as a web component for use in other web projects
+7. **Preview**: Open the current page in a new browser tab
+8. **Insert element**: Open the element catalog to insert a new HTML element
 
 ::: info
 The [kbd]Export as web component[kbd] button is only available when editing components, not pages.
@@ -24,7 +25,3 @@ The [kbd]Export as web component[kbd] button is only available when editing comp
 ::: tip
 When testing interactive features, use preview mode for a more accurate representation of how your application will behave.
 :::
-
-## Collaboration
-
-The user avatars displayed in the bottom bar show all users currently working in the same branch, enabling real-time collaboration awareness.
