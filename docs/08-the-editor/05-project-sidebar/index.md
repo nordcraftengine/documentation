@@ -12,7 +12,7 @@ The project sidebar provides an overview of your project, including any issues d
 Use the icons at the left of the screen to access the following:
 
 1. **Files**: View all files, components, services, actions, formulas, media, themes and settings in your project
-2. **View and install pacakges**: Browse, search for, and install Nordcraft packages
+2. **View and install packages**: Browse, search for, and install Nordcraft packages
 3. **Issues**: View issues found in your project and get advice on how to fix them (an orange dot is visible when issues are detected)
 4. **Source control**: View any changes made in the current branch of your project
 
