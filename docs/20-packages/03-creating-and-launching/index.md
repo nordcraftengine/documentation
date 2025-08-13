@@ -40,12 +40,12 @@ The main page of the package serves as both documentation and a demo:
 
 ## Launching a package
 
-![The project details page for a package, showing the domain, a link to view the live demo site, an invite button and a clone button. Below are the project details including the name, organisation, screenshot and description. There is the option to edit details, or launch the package. Superimposed on this image is the launch package dialog with the following disclaimer: once a package is launched, it's visible to everyone. You cannot undo this action. The dialo includes options to cancle or launch.|16/9](launch-a-package.webp 'Launch a package')
-
 Once your package is ready to be exported, go to the project details page:
 
 1. Click the [kbd]Launch[kbd] button
 2. Confirm the launch
+
+![The project details page for a package. The launch package dialog is open with the following disclaimer: once a package is launched, it's visible to everyone. You cannot undo this action. A second disclaimer reads you can install this package withing your organization without launching. The dialog includes action buttons to cancel or launch.|16/9](launch-a-package.webp 'Launch a package')
 
 ::: info
 Launching a package makes it public and available to everyone. This action cannot be undone.

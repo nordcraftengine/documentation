@@ -5,15 +5,19 @@ description: Create new apps and packages in Nordcraft with this step-by-step gu
 
 # Create a new project in Nordcraft
 
-A project in Nordcraft can be either an [app](/get-started/overview#apps) or a [package](/get-started/overview#packages).
+In Nordcraft, you can create an [app](/get-started/overview#apps) or a [package](/get-started/overview#packages).
 
 ## Create a project from the dashboard
 
-In the dashboard view, find the **Start Building** section. Click [kbd]Create app[kbd] or [kbd]Create package[kbd] to begin the creation process for the corresponding project type.
+In the dashboard view, find the **Start Building** section. Click [kbd]Create app[kbd] or [kbd]Create package[kbd] to begin the creation process for the corresponding type of project.
+
+![The dashboard screen in Nordcraft showing at the top section there are buttons to create a package and create an app.|16/9](create-project-from-dashboard.webp 'Create project from dashboard')
 
 ## Create a project from the organization view
 
-In the organization view, at the top right of the project list, you will find the buttons to create an app or a package. Click on the relevant button to start the process.
+In the organization view, at the top right of the project list, find the buttons to create an app or a package. Click on the relevant button to start the process.
+
+![The organization screen in Nordcraft showing at the top right of the projects list there are buttons to create a package and create an app.|16/9](create-project-from-org-view.webp 'Create project from org view')
 
 ## Create an app
 
@@ -22,21 +26,21 @@ In the organization view, at the top right of the project list, you will find th
 1. **Select organization**: The organization is pre-selected based on your account settings
 2. **Choose visibility**: Decide who should be able to see your app and select **public** or **private**
 3. **Choose a template**:
-   - Built-in templates: Choose from official Nordcraft templates
-   - Community template: Pick from community-contributed templates
+   - Basic: Choose from official Nordcraft starter templates
+   - Nordcraft: Start from the Nordcraft website, blog or documentation sites
+   - Community template: Pick from community-made templates
 
-After selecting the template, the Nordcraft editor will open for you to start working.
+When you select a template, the Nordcraft editor will open for you to start working.
 
 ## Create a package
 
 ![The create package dialog. Choose an organization, enter a name and package ID.|16/9](create-a-package.webp 'Create package')
 
 1. **Choose organization**: The organization is pre-selected based on your account settings
-2. **Select an emoji**: Choose an emoji to represent your package
-3. **Enter name**: Type in the desired name for your package
-4. **Edit package ID**: The package ID is automatically generated based on the package name, but you can edit it as needed
+2. **Enter name**: Choose a name for your package
+3. **Edit package ID**: The package ID is automatically generated based on the package name, but you can edit it as needed
 
-After confirming the details, the package will be created and the Nordcraft editor will open for you to start working.
+Click `Create package` to open the Nordcraft editor and start building.
 
 For more detailed instructions on packages, see the [creating and launching packages](/packages/creating-and-launching) guide.
 
