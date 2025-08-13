@@ -17,7 +17,7 @@ In the dashboard view, find the **Start Building** section. Click [kbd]Create ap
 
 In the organization view, at the top right of the project list, find the buttons to create an app or a package. Click on the relevant button to start the process.
 
-![The organization screen in Nordcraft showing at the top right of the projects list there are buttons to create a package and create an app.|16/9](create-project-from-org-view.webp 'Create project from org view')
+![The organization screen in Nordcraft showing at the top right of the projects list there are buttons to create a package and create an app.|16/9](create-project-org-view.webp 'Create project from org view')
 
 ## Create an app
 
