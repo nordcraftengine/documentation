@@ -49,7 +49,7 @@ Add a new element in one of three ways:
 
 ![The HTML element catalog is open, showing a searchable dialog, category filters on the right and the list of search results on the left.|16/9](element-catalog.webp 'Element catalog'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800&selection=nodes.m6MApQ1ZZSiZ5iH6kAUWE&elementCatalog=true}
 
-The element catalog contains all HTML elements, including existing components defined in your project. Use the element catalog to:
+The element catalog contains all HTML elements and any components available in your project. Use the element catalog to:
 
 - Browse different HTML element types grouped by category
 - Search for specific HTML elements by tag name and aliases (for example, you can search for `link` to find the HTML `a` tag)
