@@ -5,7 +5,7 @@ description: Manage files through the project sidebar to access pages, component
 
 # Project sidebar
 
-The project sidebar provides an overview of your project, including any issues detected in your project, and project changes.
+The project sidebar provides an overview of your project, including any issues detected in your project, and changes made in the current branch you are working in.
 
 ![The project sidebar is visible, showing three existing pages, and collapsed sections for components, services, actions, formulas, media, themes and settings. The image is annotated corresponding to the list items below.|16/9](project-sidebar.webp 'Project sidebar')
 
