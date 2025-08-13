@@ -5,19 +5,26 @@ description: Manage files through the project sidebar to access pages, component
 
 # Project sidebar
 
-The project sidebar provides access to all files and resources in your Nordcraft project. Access it by clicking the folder icon at the top left side of the editor.
+The project sidebar provides an overview of your project, including any issues detected in your project, and changes made in the current branch you are working in.
 
-![The project sidebar is visible, showing three existing pages, and collapsed sections for components, services, actions, forulas, media, themes and settings.|16/9](project-sidebar.webp 'Project sidebar'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800&leftpanel=Files}
+![The project sidebar is visible, showing three existing pages, and collapsed sections for components, services, actions, formulas, media, themes and settings. The image is annotated corresponding to the list items below.|16/9](project-sidebar.webp 'Project sidebar')
+
+Use the icons at the left of the screen to access the following:
+
+1. **Files**: View all files, components, services, actions, formulas, media, themes and settings in your project
+2. **View and install packages**: Browse, search for, and install Nordcraft packages
+3. **Issues**: View issues found in your project and get advice on how to fix them (an orange dot is visible when issues are detected)
+4. **Source control**: View any changes made in the current branch of your project
 
 ::: tip
-Open the project sidebar with [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] and close it with [kbd]Escape[kbd].
+Open the project files view using the keyboard shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]. Close the file view by pressing [kbd]Escape[kbd].
 :::
 
 ## Structure
 
 ### Search
 
-Find files by typing in the search field at the top of the sidebar.
+With the files icon selected, search files by typing in the search field at the top of the sidebar.
 
 ### Recent
 
@@ -38,7 +45,7 @@ Each section can be expanded or collapsed and includes a [kbd]+[kbd] button to c
 
 ## Project settings
 
-At the bottom of the project sidebar, you can configure the following settings for your project:
+At the bottom of the files view of the project sidebar, you can configure the following settings for your project:
 
 - **Favicon**: Upload a [favicon](https://developer.mozilla.org/en-US/docs/Glossary/Favicon) for your project - available at `/favicon.ico`
 - **Robots.txt**: Target a custom [robots.txt](https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt) document (with a URL) - available at `/robots.txt`

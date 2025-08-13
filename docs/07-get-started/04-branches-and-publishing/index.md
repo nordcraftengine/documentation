@@ -51,7 +51,7 @@ You can have multiple active branches at the same time, each focusing on a diffe
 
 You can preview your branch to test changes before publishing.
 
-- Select your branch and click the [kbd]Preview[kbd] option
+- Select your branch and click the [kbd]Preview[kbd] button in the [bottom bar](/the-editor/bottom-bar)
 - This opens a preview at `branch-project.nordcraft.site`
 - You can share this preview link with others for feedback
 - All changes made on a branch are automatically synced to the preview link
@@ -60,11 +60,16 @@ You can preview your branch to test changes before publishing.
 
 When working in a branch, you can view all modifications made and compare them to the state of the main branch.
 
-- Click the [kbd]View changes[kbd] button in the [bottom bar](/the-editor/bottom-bar) of the editor or in [project details](/get-started/project-details)
-- Review all modifications made in your current branch
+- Click the `Source control` icon in the [project sidebar](/the-editor/project-sidebar)
+- Click `View changes`
+- Review all changes made in your current branch
 - Identify any conflicts that need resolving before publishing
 
 ![The view changes screen, showing a textarea to add an update or commit message, a publish button that is currently disabled, and a list of changes made to the project below.|16/9](view-changes.webp 'View changes')
+
+:::info
+Nordcraft's new and improved source control experience is coming soon. You can preview the new experience by enabling the `source-control` feature on the [feature flags](https://editor.nordcraft.com/flags) page.
+:::
 
 1. Enter a description for your changes
 2. Publish your branch
@@ -78,10 +83,10 @@ When working in a branch, you can view all modifications made and compare them t
 
 When you're ready to make your changes live:
 
-1. Enter a short description to your update (make your description _descriptive_, this will help you later in case you need to roll back)
+1. Enter a short description for your update (make your description _descriptive_, this will help you later in case you need to roll back)
 2. Click the [kbd]Publish branch[kbd] button
 
-Your changes will be merged into the main branch and become visible to users immediately.
+Your changes will be merged into the main branch and become visible to users immediately on the live site.
 
 ### Sync with main
 
