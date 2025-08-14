@@ -7,7 +7,7 @@ description: Learn how to set up up a proxy in Nordcraft to serve content from d
 
 You can use proxies to map one URL to another URL. Using a proxy hides the path of the destination on the server, so that it appears that the location does not change. A proxy in Nordcraft supports all HTTP methods (GET, POST, PUT, DELETE, etc.) and uses the same method, headers and body as the original request when forwarding the request to the destination.
 
-You may want to use proxies to serve content from domains that are no longer in use, but where the content is still relevant. You may also want to use proxies to serve utility content like sitemap.xml files, robot.txt files, and ads.txt files. A proxy could also be used to send content to a different service, but on your own origin - for instance to a GraphQL service.
+You may want to use proxies to serve content from domains that are no longer in use, but where the content is still relevant. You may also want to use proxies to serve utility content like sitemap.xml files, robot.txt files, and ads.txt files. A proxy could also be used to send content to a different service, but on your own origin, for instance to a GraphQL service.
 
 Proxies are listed in the [project sidebar](/the-editor/project-sidebar) in the **Pages** section.
 
