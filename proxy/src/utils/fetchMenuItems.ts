@@ -79,7 +79,7 @@ export const getMenuItemsFromRepoItems = ({
         return {
           type,
           name: label,
-          id: label.toLocaleLowerCase(),
+          id: label.toLocaleLowerCase().replaceAll(' ', '-'),
           children,
         }
       }
@@ -87,7 +87,7 @@ export const getMenuItemsFromRepoItems = ({
       return {
         type: 'file',
         name: label,
-        id: label.toLocaleLowerCase(),
+        id: label.toLocaleLowerCase().replaceAll(' ', '-'),
         localPath: getLocalFilePath({ path: path + '/index.md' }),
         contributorsPath: getLocalFilePath({
           path: path + '/index.json',

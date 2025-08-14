@@ -7,7 +7,7 @@
   "name": "docs-proxy",
   "account_id": "f6203e7ed21fb722943385aaa3daa65a",
   "main": "dist/index.js",
-  "compatibility_date": "2025-08-13",
+  "compatibility_date": "2025-08-03",
   "observability": {
     "enabled": true,
   },
