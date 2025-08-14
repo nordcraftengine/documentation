@@ -58,7 +58,11 @@ Define the URL you wish to proxy. Type or paste a complete URL including path, q
 
 ## Testing
 
-In order to verify that your proxy works as intended, click the "Preview page in new tab", or navigate to the URL that you have set up in the source section. If the proxy is configured correctly, you should see the desired location. If the proxy is not for a `GET` request, you might need to use a tool like Hoppscotch or Postman to test your new proxy.
+In order to verify that your proxy works as intended, click the "Preview page in new tab", or navigate to the URL that you have set up in the source section. If the proxy is configured correctly, you should see the desired location.
+
+:::tip
+If the proxy uses an HTTP method that is not a `GET` request, you may need to use a tool like Hoppscotch or Postman to test your new proxy.
+:::
 
 ::: info
 Proxies are only available on paid plans.
