@@ -65,6 +65,6 @@ Images cannot be upscaled to be larger than the original file uploaded. For exam
 
 To delete an image, right click the image in the **Media** section of the project sidebar and select delete.
 
-:::warning
+:::danger
 If you delete your project, all images will also be deleted, even if you previously cloned the project.
 :::

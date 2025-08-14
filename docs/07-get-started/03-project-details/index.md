@@ -26,8 +26,12 @@ The project settings section allows you to manage your project configuration.
 6. **Set a logo**: Upload a custom project logo
 7. **Edit details**: Modify the project ID, name and description
 
-::: warning
-Publishing packages is permanement. You cannot delete a **package** after it has been launched.
+:::danger
+If you delete your project, all images will also be deleted, even if you previously cloned the project.
+:::
+
+:::warning
+Publishing a package is permanent. You cannot unpublish a **package** after it has been launched.
 :::
 
 ## Branches
