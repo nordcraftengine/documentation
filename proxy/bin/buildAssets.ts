@@ -1,5 +1,6 @@
 import * as fs from 'fs'
 import { getMenuItemsFromRepoItems } from '../src/utils'
+import { getFileLabel, sortFilesByStructure } from './fileTree'
 import { includeActions } from './libReferences/actions/actions'
 import { includeFormulas } from './libReferences/formulas/formulas'
 
@@ -14,35 +15,29 @@ fs.mkdirSync('./dist/docs')
 // Copy over all markdown files + folders
 fs.cpSync('../docs', './dist/docs', {
   recursive: true,
-  filter: (src) => !src.endsWith('.webp'),
+  filter: (src) => !src.endsWith('.webp') && !src.endsWith('.json'),
 })
 // Inject formulas into the formula reference file
-const formulaReferencePath = './dist/docs/23-references/01-formulas/index.md'
+const formulaReferencePath = './dist/docs/references/formulas/index.md'
 const formulaReferenceContent = fs.readFileSync(formulaReferencePath, 'utf-8')
 const newFormulaContent = await includeFormulas(formulaReferenceContent)
 fs.writeFileSync(formulaReferencePath, newFormulaContent, 'utf-8')
 // Inject actions into the actions reference file
-const actionReferencePath = './dist/docs/23-references/02-actions/index.md'
+const actionReferencePath = './dist/docs/references/actions/index.md'
 const actionReferenceContent = fs.readFileSync(actionReferencePath, 'utf-8')
 const newActionContent = await includeActions(actionReferenceContent)
 fs.writeFileSync(actionReferencePath, newActionContent, 'utf-8')
-// Read all files
-const files = (
-  fs.readdirSync('./dist/docs', { recursive: true }) as string[]
-).sort((a, b) => {
-  const aParts = a.split('/')
-  const bParts = b.split('/')
 
-  if (aParts.length === bParts.length) {
-    return a.localeCompare(b)
-  }
-  return aParts.length - bParts.length
-})
+// Read all files and sort them according to the structure from docs/index.json
+const files = sortFilesByStructure(
+  fs.readdirSync('./dist/docs', { recursive: true }) as string[],
+)
 // Create menu items structure
 const menuItems = getMenuItemsFromRepoItems({
   items: files.map((file) => ({
-    path: `docs/${file as string}`,
+    path: `docs/${file}`,
     type: 'tree',
+    label: getFileLabel(file),
   })),
   parentPath: 'docs',
   owner: 'nordcraftengine',
