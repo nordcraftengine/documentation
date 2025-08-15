@@ -56,7 +56,7 @@ const createSearchIndex = async () => {
           [],
         )
 
-        const path = breadcrumbs.join('/')
+        const path = breadcrumbs.join('/').replaceAll(' ', '-')
 
         const title = breadcrumbs[breadcrumbs.length - 1]
 
