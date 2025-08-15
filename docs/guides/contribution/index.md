@@ -16,19 +16,21 @@ The Nordcraft documentation is organized into sections and individual pages:
 
 Each section and page corresponds to a folder in the [GitHub repository](https://github.com/nordcraftengine/documentation):
 
-- Sections and pages are numbered (01, 02, 03...) to determine their order in the side menu
 - The content of each page is stored in an `index.md` markdown file
 - All related images are placed in the same folder as the page's `index.md` file
+
+The structure of the menu items and pages is defined in the [docs/index.json](../../index.json) file. When a new page or section is created, it must be added to this file to appear in the documentation menu.
 
 ## Creating a new page
 
 ### File setup
 
 1. Identify which section your page belongs to
-2. Create a new folder with the appropriate number (to maintain order) and name
-   - For example: `05-the-editor` for the main section
-   - Or `05-the-editor/03-bottom-bar` for a page within a section
+2. Create a new folder with an appropriate name
+   - For example: `the-editor` for the main section
+   - Or `the-editor/bottom-bar` for a page within a section
 3. Create an `index.md` file within this folder
+4. Add the folder and page to the [docs/index.json](../../index.json) file
 
 ## Required structure
 

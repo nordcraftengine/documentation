@@ -2,7 +2,7 @@
 
 We're thrilled that you're interested in contributing to Nordcraft's documentation!
 
-For complete contribution guidelines, please refer to our [Contribution Guide](/docs/20-guides/99-contribution/index.md).
+For complete contribution guidelines, please refer to our [Contribution Guide](/docs/guides/contribution/index.md).
 
 This guide contains all the information you need about:
 
