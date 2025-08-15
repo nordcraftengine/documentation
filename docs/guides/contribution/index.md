@@ -27,7 +27,7 @@ The structure of the menu items and pages is defined in the [docs/index.json](..
 
 1. Identify which section your page belongs to
 2. Create a new folder with an appropriate name
-   - For example: `the-editor` for the main section
+   - For example: `the-editor` for a parent section
    - Or `the-editor/bottom-bar` for a child page within a parent section
 3. Create an `index.md` file within this folder
 4. Add the folder and page to the [docs/index.json](../../index.json) file
