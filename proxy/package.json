@@ -23,7 +23,7 @@
     "@types/bun": "1.2.15",
     "@types/lodash": "4.17.17",
     "@typescript/native-preview": "7.0.0-dev.20250619.1",
-    "wrangler": "4.29.0"
+    "wrangler": "4.30.0"
   },
   "dependencies": {
     "@clickhouse/client-web": "1.11.1",
