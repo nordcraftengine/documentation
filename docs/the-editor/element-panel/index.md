@@ -41,7 +41,7 @@ The style panel allows you to control the visual appearance of elements and comp
 The style section manages different visual variants of your element.
 
 - Every element has a `Default` style applied
-- Add variants with e.g. pseudo-classes (e.g. `:hover`, `:active`, `:focus-visible`)
+- Add variants with e.g. pseudo-classes (e.g. `:hover`, `:active`, `:focus-visible`) and pseudo-elements (e.g. ::before, ::after, ::selection)
 - Create variants using CSS classes you defined in the attributes panel
 - Set up responsive styles with media queries for different screen sizes
 - Combine classes, pseudo-classes and media queries for more complex style variants
