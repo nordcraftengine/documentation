@@ -30,9 +30,8 @@ Attributes are the primary way to pass data into a component:
 
 1. Open the component and view the [data panel](/the-editor/data-panel) with no element selected
 2. In the **Attributes** section, click the [kbd]+[kbd] button
-3. Configure the attribute:
-   - **Name**: A unique name that must consist of lowercase letters, numbers, hyphens (`-`) and underscores (`_`) only
-   - **Test value**: The value used in the editor; this test value also determines the attribute type (e.g. `Number`, `String`, `Array`, etc.)
+3. **Name**: Give the attribute a unique name that can consist of lowercase letters, numbers, hyphens (`-`) and underscores (`_`) only
+4. **Test value**: Add a test value to be used in the editor while you work; this test value also determines the attribute type (e.g. `Number`, `String`, `Array`, etc.) which will be identified by the editor
 
 Attributes allow you to create configurable components that can:
 
@@ -58,15 +57,14 @@ The test value is only used while developing your component in the editor. It ha
 
 ### Setting up events
 
-![An onClick event is defined in the events list in the right panel. The event dialog is open, showing an editable name and test value of a string.|16/9](set-up-an-event.webp 'Set up an event'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=events.0&canvas-height=800}
+![An onClick event is defined in the events list in the right panel. The event dialog is open, showing a test value of an object representing a JavaScript event.|16/9](set-up-an-event.webp 'Set up an event'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=events.0&canvas-height=800}
 
 Events allow components to communicate upward to parent elements:
 
 1. Open the component and view the [data panel](/the-editor/data-panel) with no element selected
 2. In the **Events** section, click the [kbd]+[kbd] button
-3. Configure the event:
-   - **Name**: A descriptive name for the event
-   - **Test value**: Example data that defines the event's output structure, allowing you to develop event handling in parent components without actual event triggers.
+3. **Name**: Give the event a descriptive name
+4. **Test value**: Add example data that defines the event's output structure, allowing you to develop event handling in parent components without actual event triggers.
 
 Events enable child components to send messages and data up to their parent components.
 
