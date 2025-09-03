@@ -1,13 +1,5 @@
 import * as fs from 'fs'
-
-interface MenuItemStructure {
-  path: string
-  label: string
-}
-
-export type MenuItemsStructure = Array<
-  MenuItemStructure & { children?: Array<MenuItemStructure> }
->
+import type { MenuItemsStructure } from '../src/types'
 
 // Structure that holds the order of all menu items/content
 const structure = JSON.parse(

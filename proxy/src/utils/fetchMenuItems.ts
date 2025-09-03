@@ -1,4 +1,9 @@
-import type { FetchMenuItems, MenuItem, RepositoryItem } from '../types'
+import type {
+  FetchMenuItems,
+  MenuItem,
+  MenuItemsStructure,
+  RepositoryItem,
+} from '../types'
 import { getFilePath, getLocalFilePath } from './helpers'
 
 export const fetchMenuItems = async ({
@@ -13,23 +18,24 @@ export const fetchMenuItems = async ({
 
   // eslint-disable-next-line no-useless-catch
   try {
-    const url = `https://api.github.com/repos/${owner}/${repository}/git/trees/${branch}?recursive=1`
+    // Fetch the menu structure file from the repository
+    const url = `https://raw.githubusercontent.com/${owner}/${repository}/refs/heads/${branch}/docs/index.json`
     const response = await fetch(url, { headers })
 
     if (!response.ok) {
       throw new Error(
-        `Could not fetch repo content. Status: ${response.status}`,
+        `Could not fetch repo content. Status: ${response.status}, URL: ${url}`,
       )
     }
 
-    const repositoryData = (await response.json()) as { tree: RepositoryItem[] }
-
-    const relevantItems = repositoryData.tree.filter((item) => {
-      return item.path.startsWith('docs/') // The call will give us all items in the repo. We only need the ones in docs/
-    })
+    const repositoryData = (await response.json()) as MenuItemsStructure
 
     return getMenuItemsFromRepoItems({
-      items: relevantItems,
+      items: repositoryData.map((item) => ({
+        path: item.path,
+        type: 'tree',
+        label: item.label,
+      })),
       parentPath: 'docs',
       owner,
       repository,
