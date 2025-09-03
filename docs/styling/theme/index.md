@@ -5,11 +5,11 @@ description: Create design systems with Nordcraft's theme tools for managing col
 
 # Theme
 
-The theme system in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure consistent styling throughout your application. Theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
+The theme system in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure consistent styling throughout your application. All theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
 
 To access the theme editor, open the [project sidebar](/the-editor/project-sidebar#project-sidebar) and find the `Themes` section.
 
-![The Nordcraft theme editor. On the left are the following selectable categories: colors, spacing, fonts, font sizes, font weights, z-index. On the central canvas, a color palette of neutral grey colors, blues and greens are visible, defined as names that map to hex values. A preview of each color is shown as a rounded square.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default?canvas-width=800&canvas-height=800&rightpanel=style}
+![The Nordcraft theme editor. On the left are the following selectable categories: colors, spacing, fonts, font sizes, font weights, z-index. On the central canvas, a list of font size theme variables are displayed in their corresponding size. On the right, a panel is open where you can edit the name and value of the theme variable, and delete it using a button at the bottom of the panel.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default?canvas-width=800&canvas-height=800&rightpanel=style}
 
 ## Colors
 
@@ -79,3 +79,7 @@ All theme variables are available throughout your project:
 - Use variables in formulas to create dynamic styling based on your theme
 
 This approach ensures that changes to the theme automatically propagate throughout your application, maintaining design consistency with minimal effort.
+
+:::tip
+Using Nordcraft's theme system to define your design tokens in combination with creating reusable [components](/components/overview) enables you to build out a robust design system for your project. With this approach, there is one source of truth for your design system. When a designer makes an update, the work doesn't need to be done twice.
+:::
