@@ -1,49 +1,35 @@
 import { execSync } from 'child_process'
-import { existsSync, mkdirSync, readdirSync, writeFileSync } from 'fs'
-import type { MenuItem } from '../src/types'
-import { getMenuItemsFromRepoItems } from '../src/utils'
-import { getFileLabel, sortFilesByStructure } from './fileTree'
+import { existsSync, mkdirSync, writeFileSync } from 'fs'
+import type { MenuItemsStructure } from '../src/types'
+import { getStructure } from './fileTree'
 
 const getCommitDates = (path: string) =>
   execSync(`git log -1 --pretty="format:%ci" .${path}`).toString().trim()
 
-// Read all files
-const files = sortFilesByStructure(
-  readdirSync('./dist/docs', { recursive: true }) as string[],
-)
-// Create menu items structure
-const menuItems = getMenuItemsFromRepoItems({
-  items: files.map((file) => ({
-    path: `docs/${file}`,
-    type: 'tree',
-    label: getFileLabel(file),
-  })),
-  parentPath: 'docs',
-  owner: 'nordcraftengine',
-  repository: 'documentation',
-  branch: 'main',
-})
-
 const sitemapItems: Array<{ url: string; lastModified?: Date }> = []
-const addItems = (items: MenuItem[], parts: string[]) =>
+const addItems = (items: MenuItemsStructure) =>
   items.forEach((item) => {
-    if (item.type === 'folder') {
-      addItems(item.children, [...parts, item.id])
-    } else {
-      const lastModified = getCommitDates(item.localPath)
+    if ((item.children?.length ?? 0) > 0) {
+      item.children?.forEach((child) => {
+        const childPath = `${item.path}/${child.path}`
+        const lastModified = getCommitDates(`./docs/${childPath}/index.md`)
 
-      // We use the docs.nordcraft.com/ as the canonical URL for '/about'
-      // So the sitemap should also reflect that
-      const itemId = item.id === 'about' ? '' : item.id
+        sitemapItems.push({
+          url: childPath,
+          lastModified: lastModified ? new Date(lastModified) : undefined,
+        })
+      })
+    } else {
+      const lastModified = getCommitDates(`./docs/${item.path}/index.md`)
 
       sitemapItems.push({
-        url: [...parts, itemId].join('/'),
+        url: item.path,
         lastModified: lastModified ? new Date(lastModified) : undefined,
       })
     }
   })
 
-addItems(menuItems, [])
+addItems(getStructure())
 
 const content = `\
 <?xml version="1.0" encoding="UTF-8"?>

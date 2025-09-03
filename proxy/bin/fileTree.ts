@@ -6,6 +6,8 @@ const structure = JSON.parse(
   fs.readFileSync('../docs/index.json', 'utf-8'),
 ) as MenuItemsStructure
 
+export const getStructure = () => structure
+
 export const sortFilesByStructure = (files: string[]) =>
   files.sort((a, b) => {
     const aParts = a.split('/')

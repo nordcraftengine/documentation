@@ -32,7 +32,7 @@ export const fetchPageData = async ({
   const response = await fetch(path)
 
   if (!response.ok) {
-    throw new Error('Could not fetch page data')
+    throw new Error(`Could not fetch page data from path: ${path}`)
   }
 
   const text = await response.text()

@@ -1,9 +1,4 @@
-import type {
-  FetchMenuItems,
-  MenuItem,
-  MenuItemsStructure,
-  RepositoryItem,
-} from '../types'
+import type { FetchMenuItems, MenuItem, MenuItemsStructure } from '../types'
 import { getFilePath, getLocalFilePath } from './helpers'
 
 export const fetchMenuItems = async ({
@@ -29,13 +24,8 @@ export const fetchMenuItems = async ({
     }
 
     const repositoryData = (await response.json()) as MenuItemsStructure
-
     return getMenuItemsFromRepoItems({
-      items: repositoryData.map((item) => ({
-        path: item.path,
-        type: 'tree',
-        label: item.label,
-      })),
+      items: repositoryData,
       parentPath: 'docs',
       owner,
       repository,
@@ -53,57 +43,54 @@ export const getMenuItemsFromRepoItems = ({
   repository,
   branch,
 }: {
-  items: RepositoryItem[]
+  items: MenuItemsStructure
   parentPath: string
   owner: string
   repository: string
   branch: string
 }): MenuItem[] => {
-  return items
-    .filter(({ path, type }) => {
-      const pathParts = path.split('/')
-      pathParts.pop()
-      const parentPath = pathParts.join('/')
-
-      return type === 'tree' && parentPath === _parentPath
-    })
-    .map(({ path, type: _type, label }) => {
-      const hasIndexFile = items.find(
-        (item) => item.path === path + '/index.md',
-      )
-      const type = hasIndexFile ? 'file' : 'folder'
-
-      if (type === 'folder') {
-        const children: MenuItem[] = getMenuItemsFromRepoItems({
-          items,
-          parentPath: path,
-          owner,
-          repository,
-          branch,
-        })
-
+  return items.map(({ path, label, children }) => {
+    if (children && children.length > 0) {
+      const childItems: MenuItem[] = children.map((child) => {
+        const childPath = `${path}/${child.path}`
         return {
-          type,
-          name: label,
-          id: label.toLocaleLowerCase().replaceAll(' ', '-'),
-          children,
+          type: 'file',
+          name: child.label,
+          id: child.label.toLocaleLowerCase().replaceAll(' ', '-'),
+          localPath: getLocalFilePath({ path: `docs/${childPath}/index.md` }),
+          contributorsPath: getLocalFilePath({
+            path: `contributors/${childPath}/index.json`,
+          }).replace('/docs/', '/contributors/'),
+          path: getFilePath({
+            owner,
+            repository,
+            branch,
+            path: `docs/${childPath}/index.md`,
+          }),
         }
+      })
+      return {
+        type: 'folder',
+        name: label,
+        id: label.toLocaleLowerCase().replaceAll(' ', '-'),
+        children: childItems,
       }
-
+    } else {
       return {
         type: 'file',
         name: label,
         id: label.toLocaleLowerCase().replaceAll(' ', '-'),
-        localPath: getLocalFilePath({ path: path + '/index.md' }),
+        localPath: getLocalFilePath({ path: `docs/${path}/index.md` }),
         contributorsPath: getLocalFilePath({
-          path: path + '/index.json',
+          path: `contributors/${path}/index.json`,
         }).replace('/docs/', '/contributors/'),
         path: getFilePath({
           owner,
           repository,
           branch,
-          path: path + '/index.md',
+          path: `docs/${path}/index.md`,
         }),
       }
-    })
+    }
+  })
 }
