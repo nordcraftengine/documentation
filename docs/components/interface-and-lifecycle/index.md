@@ -31,7 +31,7 @@ Attributes are the primary way to pass data into a component:
 1. Open the component and view the [data panel](/the-editor/data-panel) with no element selected
 2. In the **Attributes** section, click the [kbd]+[kbd] button
 3. **Name**: Give the attribute a unique name that can consist of lowercase letters, numbers, hyphens (`-`) and underscores (`_`) only
-4. **Test value**: Give the attribute a test value to be used in the editor while you work; this test value also determines the attribute type (e.g. `Number`, `String`, `Array`, etc.)
+4. **Test value**: Add a test value to be used in the editor while you work; this test value also determines the attribute type (e.g. `Number`, `String`, `Array`, etc.) which will be identified by the editor
 
 Attributes allow you to create configurable components that can:
 
