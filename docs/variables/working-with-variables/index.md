@@ -9,14 +9,14 @@ Variables enable you to manage state throughout your application, allowing you t
 
 ## Creating variables
 
-![A component is being edited. The data panel is visible on the right. A variable named isCardSelected is selected, which has opened the edit variable dialog, where you can edit the name and initial value of the variable. You can also view the current value of the variable in the app.|16/9](create-a-variable.webp 'Create a variable'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-variable-updating?canvas-width=800&rightpanel=style&selection=variables.isCardSelected&canvas-height=800}
+![A component is being edited. The data panel is visible on the right. A variable named isCardSelected is selected, which has opened the edit variable dialog, where you can edit initial value of the variable. You can also view the current value of the variable in the app at the bottom of the dialog.|16/9](create-a-variable.webp 'Create a variable'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-variable-updating?canvas-width=800&rightpanel=style&selection=variables.isCardSelected&canvas-height=800}
 
 To create a variable:
 
 1. Open the [data panel](/the-editor/data-panel) with no element selected
 2. In the **Variables** section, click the [kbd]+[kbd] button
-3. Enter a name for your variable
-4. Set an [initial value](#initial-value) (can be a static value or formula)
+3. Enter a name for your variable in the right panel
+4. Set an [initial value](#initial-value) in the dialog (can be a static value or formula)
 
 ### Initial value
 
