@@ -57,7 +57,7 @@ The test value is only used while developing your component in the editor. It ha
 
 ### Setting up events
 
-![An onClick event is defined in the events list in the right panel. The event dialog is open, showing an test value of an object representing a JavaScript event.|16/9](set-up-an-event.webp 'Set up an event'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=events.0&canvas-height=800}
+![An onClick event is defined in the events list in the right panel. The event dialog is open, showing a test value of an object representing a JavaScript event.|16/9](set-up-an-event.webp 'Set up an event'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=events.0&canvas-height=800}
 
 Events allow components to communicate upward to parent elements:
 
