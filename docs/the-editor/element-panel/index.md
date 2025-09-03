@@ -62,7 +62,7 @@ The CSS properties section provides an interface to set styling properties. All 
 ![The CSS editor is open in the style panel, showing CSS code in an editable IDE-like interface.|16/9](element-panel-css-editor.webp 'CSS editor'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card-container?rightpanel=style&canvas-width=800&selection=nodes.root&canvas-height=800}
 
 - The CSS editor provides a code view to view and edit styles directly using CSS syntax
-- All styles you defined using the style panel are displayed, including style variants
+- All styles you define using the style panel are displayed, including style variants
 - Changes made here are automatically applied to the standard view
 
 This view is particularly useful for developers comfortable with writing CSS directly or for making multiple property changes efficiently.
