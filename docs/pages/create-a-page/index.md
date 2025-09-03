@@ -14,6 +14,6 @@ To create a new page:
    **(B)** Click the [kbd]+[kbd] button next to the branch name at the top of the [project sidebar](/the-editor/project-sidebar) and choose `New page`
 3. Enter a name for your page and click [kbd]Create page[kbd]
 
-:::info
+:::tip
 When you name a page, a URL path is automatically generated for you based on the name. You can edit this in the `Path` field of the create page dialog. You can further [configure page paths and parameters](/pages/page-configuration#page-configuration) after creation in the page section of the data panel.
 :::
