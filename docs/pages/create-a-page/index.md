@@ -9,11 +9,11 @@ description: Learn how to create and manage new pages in your Nordcraft project 
 
 To create a new page:
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd]+[kbd]K[kbd]
+1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
 2. **(A)** Find the "Pages" section and click the [kbd]+[kbd] button next to it or
    **(B)** Click the [kbd]+[kbd] button next to the branch name at the top of the [project sidebar](/the-editor/project-sidebar) and choose `New page`
 3. Enter a name for your page and click [kbd]Create page[kbd]
 
 :::info
-When you name a page, a URL path is automatically generated for you based on the name. This is editable in the path field of the create page dialog. You can [configure page paths and parameters](/pages/page-configuration#page-configuration) after creation in the page section of the data panel.
+When you name a page, a URL path is automatically generated for you based on the name. You can edit this in the `Path` field of the create page dialog. You can further [configure page paths and parameters](/pages/page-configuration#page-configuration) after creation in the page section of the data panel.
 :::
