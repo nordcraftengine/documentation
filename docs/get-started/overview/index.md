@@ -5,7 +5,7 @@ description: Learn the fundamentals of Nordcraft's dashboard, project types, and
 
 # Get started with Nordcraft
 
-Nordcraft provides a flexible and intuitive development environment for building web applications and websites.
+Nordcraft provides a flexible visual development environment for building web applications and websites.
 
 ## Dashboard
 
@@ -17,7 +17,7 @@ The dashboard includes three key sections:
 
 1. **Start building**: Quick action to start a [new project](/get-started/create-a-project) or solve challenges to explore Nordcraft features
 2. **Recent activity**: Quick access to your recently edited projects
-3. **All projects**: View and manage projects in your currently selected organization
+3. **All projects**: View, search, and manage projects in your currently selected organization
 
 ## Projects in Nordcraft
 
