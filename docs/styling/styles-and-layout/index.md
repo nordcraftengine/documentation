@@ -23,6 +23,8 @@ The style panel provides an interface for applying styles without needing to wri
 
 ## Styling with the CSS editor
 
+The CSS editor is particularly useful for viewing all style variants and their associated properties at a glance.
+
 ![The CSS editor is visible in the right panel, showing pure CSS rules defined for a section element. This is pure CSS, just as you would write in code or you would view in the browser dev tools.|16/9](css-editor.webp 'CSS editor'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card-container?rightpanel=style&canvas-width=800&selection=nodes.root&canvas-height=800}
 
 If you prefer writing CSS:
@@ -33,17 +35,17 @@ If you prefer writing CSS:
 - Switch seamlessly between the style panel and CSS editor view, where your CSS will be reflected in the style panel properties
 
 ::: tip
-The CSS editor is particularly useful for viewing all style variants and their associated properties at a glance.
+The CSS editor supports multiline CSS values for CSS properties such as `grid-template-areas`. To add a new line to a value, press [kbd]Shift[kbd]+[kbd]Enter[kbd].
 :::
 
-## Copy styles
+## Copy and paste styles
 
 You can transfer styling between elements:
 
 1. Select the element with the styles you want to copy
-2. Click the [kbd]Copy styles[kbd] button at the bottom of the style panel
+2. Click the [kbd]Copy properties[kbd] button at the bottom of the style panel
 3. Select the target element where you want to apply these styles
-4. Paste the styles
+4. Click the [kbd]Paste properties[kbd] button at the bottom of the style panel
 
 ## Layout in Nordcraft
 
