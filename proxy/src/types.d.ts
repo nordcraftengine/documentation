@@ -118,3 +118,12 @@ export type PreferLocalData = {
   repository: string
   branch: string
 }
+
+interface MenuItemStructure {
+  path: string
+  label: string
+}
+
+export type MenuItemsStructure = Array<
+  MenuItemStructure & { children?: Array<MenuItemStructure> }
+>

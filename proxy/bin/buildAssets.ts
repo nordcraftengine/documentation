@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import { getMenuItemsFromRepoItems } from '../src/utils'
-import { getFileLabel, sortFilesByStructure } from './fileTree'
+import { getStructure } from './fileTree'
 import { includeActions } from './libReferences/actions/actions'
 import { includeFormulas } from './libReferences/formulas/formulas'
 
@@ -28,17 +28,10 @@ const actionReferenceContent = fs.readFileSync(actionReferencePath, 'utf-8')
 const newActionContent = await includeActions(actionReferenceContent)
 fs.writeFileSync(actionReferencePath, newActionContent, 'utf-8')
 
-// Read all files and sort them according to the structure from docs/index.json
-const files = sortFilesByStructure(
-  fs.readdirSync('./dist/docs', { recursive: true }) as string[],
-)
+const structure = getStructure()
 // Create menu items structure
 const menuItems = getMenuItemsFromRepoItems({
-  items: files.map((file) => ({
-    path: `docs/${file}`,
-    type: 'tree',
-    label: getFileLabel(file),
-  })),
+  items: structure,
   parentPath: 'docs',
   owner: 'nordcraftengine',
   repository: 'documentation',
