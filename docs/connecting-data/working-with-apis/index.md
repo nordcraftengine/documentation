@@ -31,10 +31,10 @@ Read our blog post on [REST APIs](https://blog.nordcraft.com/rest-apis-explained
 
 ![The edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is URL, which reveals two path parts for the API URL below. At the bottom of the dialog is the response data from the API, showing a JSON object represented in collapsible sections using small arrow icons. If a section is collapsed, the arrow icon is pointing right. If a section is expanded, the arrow is pointing down. The image is annotated according to the list items below.|16/9](configure-api-requests.webp 'Configure API requests')
 
-After creating an API, you will see the configuration panel with the following sections:
+After connecting an API, you will see the configuration panel with the following sections:
 
 1. **Method**: Select the appropriate [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods) (`GET`, `POST`, `PUT`, `DELETE`, etc.)
-2. **Name**: Give your API a descriptive name
+2. **Name**: Give the API a descriptive name
 3. **Configuration tabs**:
    - **Inputs**: Default values used when fetching data that can be overwritten when called from workflows
    - **URL**: Configure the base URL and path

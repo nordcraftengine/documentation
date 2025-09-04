@@ -21,18 +21,25 @@ Using project formulas ensures consistency in your application and reduces dupli
 
 ## Create a project formula
 
+Project formulas appear in the formula selection dropdown throughout your project, making them easily accessible from any component or page.
+
 ![The project sidebar is visible in the editor, showing a list of formulas in the formula section. Formulas are named, for example, getCssVariable, getDefaultTrue, getTradition. On the left, the getDefautTrue formula editor is visible, showing a snapshot of the formula notes that make up this formula. The formula takes an input of name value, and checks to see if it equals false. Further logic is calculated in an if formula node. If it equals false, if returns false, else it returns true. Tne image is also annotated with numbers that correspond to the list items below.|16/9](create-a-project-formula.webp 'Create a project formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
 
 To create a project formula:
 
 1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
-2. Find the **Formulas** section, click the [kbd]+[kbd] button and name your formula
-3. Optionally add arguments as input parameters
-4. Define your formula logic using either
+2. Find the **Formulas** section, click the [kbd]+[kbd] button and enter a name for your formula in the dialog
+3. Add arguments as input parameters with test values (optional)
+4. Add a description to your formula (optional)
+5. Define your formula logic using either
    **(A)** The formula editor, or
-   **(B)** Custom JavaScript code by clicking the [kbd]Convert to custom code[kbd] button at the bottom left of the screen
+   **(B)** Click the [kbd]Convert to code formula[kbd] button at the bottom left of the screen to view the JavaScript code editor
 
-Project formulas appear in the formula selection dropdown throughout your project, making them easily accessible from any component or page.
+::: info
+Clicking `Convert to code formula` will **not** convert existing formula nodes to JavaScript code. Instead, it will switch the formula editor view to the raw code view.
+
+Decide whether you want to use the formula editor or the custom code view **before** you start working in order to prevent losing any changes unexpectedly.
+:::
 
 ## Custom code formulas
 
