@@ -51,7 +51,7 @@ At the bottom of the files view of the project sidebar, you can configure the fo
 - **Robots.txt**: Target a custom [robots.txt](https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt) document (with a URL) - available at `/robots.txt`
 - **Sitemap.xml**: Target a custom [sitemap.xml](https://en.wikipedia.org/wiki/Sitemaps) document (with a URL) - available at `/sitemap.xml`
 - **App Manifest**: Target a custom [manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) JSON file (with a URL) - available at `/manifest.json`
-- **Service Worker**: Target a custom [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) file (with a URL) - available at `/serviceWorker.js`
+- **Service Worker**: Target a javascript file url for a script that registers a [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers). The script will be available on `/serviceWorker.js`. To serve the actual service worker, you need to create a [proxy](/pages/proxies) to the URL where the service worker script is hosted. The service worker registration script could also be used to include a custom script on all pages of your project. See a reference implementation of using a service worker in [this project](https://editor.nordcraft.com/projects/service_worker_example/branches/main/routes/my-service-worker?canvas-width=800&canvas-height=800&rightpanel=style)
 
 ::: info
 Project settings are only available on paid plans.
