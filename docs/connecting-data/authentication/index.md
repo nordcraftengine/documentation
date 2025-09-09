@@ -49,11 +49,18 @@ There are two approaches for storing access tokens securely in Nordcraft.
 For login flows where users enter credentials (such as a username and password) directly in your application:
 
 1. Create a workflow to call your authentication endpoint
-2. Add the **Set Session Cookies** action to the `On success` callback event to set an HTTP-only cookie
-3. Set the returned access token and expiration time in their respective inputs
+2. Add the **Set HttpOnly Cookie** action to the `On success` callback event to set an HttpOnly cookie and store the token securely
+3. Configure the following options in the action
+   - **Name**: for example `access_token`
+   - **Value**: the token value returned from the authentication API
+   - **Expires in** (optional): time in seconds until the cookie expires; this should be null for JWTs to use the JWT's expiration. If not provided, the cookie will be a session cookie. If set to 0, the cookie will be deleted.
+   - **SameSite** (optional): specify whether cookies are sent with cross-site requests (where the domain and/or protocol do not match the current site); possible values are `Strict`, `Lax` and `None`. If no value is provided, this value will be set to `Lax`.
+   - **Path** (optional): indicates a URL path that must exist in the requested URL in order to send the Cookie header; if no value is provided, this value will be set to `/`.
+   - **Include Subdomains** (optional): set whether to include subdomains when setting the cookie; if set to true, the cookie will be available on both e.g. `your-site.com` and `hello.your-site.com`.
+4. Add further configuration on success or error of the **Set HttpOnly Cookie** action.
 
-::: warning
-If you want to execute actions after the cookies were set (e.g. redirect to your main application), make sure that those actions are executed `On success` of the `Set Sessions Cookie` action to make sure the cookies were set correctly.
+::: tip
+Ensure you configure follow-up actions (such as redirects) to happen after cookies are set using the `Error` and `Success` callbacks in the **Set HttpOnly Cookie** action.
 :::
 
 ::: tip
