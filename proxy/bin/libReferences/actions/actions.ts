@@ -7,6 +7,8 @@ interface JsonAction {
     name: string
     description?: string
     arguments: Array<ActionArgument>
+    deprecated?: boolean
+    supercededBy?: string
   }
 }
 
@@ -35,9 +37,14 @@ ${content.trim()}
 
 ${actionsJson
   .map((action) => {
+    let description = action.action.deprecated ? '**Deprecated**' : ''
+    if (action.action.supercededBy) {
+      description += ` Use [${action.action.supercededBy}](/references/actions#${action.action.supercededBy}) instead.`
+    }
+    description += action.action.description ?? ''
     let actionContent = actionTemplate
       .replace('{{ name }}', action.action.name)
-      .replace('{{ description }}', action.action.description ?? '')
+      .replace('{{ description }}', description.trim())
     if (action.action.arguments.length > 0) {
       actionContent += '\n' + argumentsTemplate + '\n'
       actionContent += action.action.arguments
