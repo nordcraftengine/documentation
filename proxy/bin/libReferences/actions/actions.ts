@@ -42,8 +42,12 @@ ${actionsJson
       description += `Use [${action.action.supercededBy}](/references/actions#${encodeURIComponent(action.action.supercededBy)}) instead. `
     }
     description += action.action.description ?? ''
+    const deprecation = action.action.deprecated ? '~~' : ''
     let actionContent = actionTemplate
-      .replace('{{ name }}', `~~${action.action.name}~~`)
+      .replace(
+        '{{ name }}',
+        `${deprecation}${action.action.name}${deprecation}`,
+      )
       .replace('{{ description }}', description.trim())
     if (action.action.arguments.length > 0) {
       actionContent += '\n' + argumentsTemplate + '\n'
