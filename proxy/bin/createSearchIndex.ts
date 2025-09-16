@@ -125,6 +125,19 @@ const createSearchIndex = async () => {
   }
 }
 
+const firstTextToken: (data: { tokens: any[] }) => string = ({ tokens }) =>
+  tokens.reduce((acc, token) => {
+    if (typeof acc === 'string') {
+      return acc
+    } else if (token.type === 'text') {
+      return token.text
+    } else if (token.tokens) {
+      return firstTextToken({ tokens: token.tokens })
+    } else {
+      return acc
+    }
+  }, undefined)
+
 const getSearchItemsFromPages = (pages: ProcessedPage[]) => {
   const items: SearchItem[] = []
 
@@ -144,7 +157,7 @@ const getSearchItemsFromPages = (pages: ProcessedPage[]) => {
         items.push({
           type: 'section',
           id: 'section_' + path + '#' + id,
-          title,
+          title: firstTextToken(title),
           breadcrumbs,
           path: path + '#' + id,
           priority: 1,
