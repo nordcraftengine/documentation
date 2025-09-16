@@ -43,7 +43,12 @@ ${actionsJson
     }
     description += action.action.description ?? ''
     let actionContent = actionTemplate
-      .replace('{{ name }}', action.action.name)
+      .replace(
+        '{{ name }}',
+        action.action.deprecated
+          ? `~~${action.action.name}~~`
+          : action.action.name,
+      )
       .replace('{{ description }}', description.trim())
     if (action.action.arguments.length > 0) {
       actionContent += '\n' + argumentsTemplate + '\n'

@@ -112,7 +112,13 @@ const getTokensAsSections = (
 
       processedTokens.push({
         type: 'section',
-        title: currentToken.text,
+        title: {
+          type: currentToken.type,
+          tokens: currentToken.tokens ?? [],
+          raw: currentToken.raw,
+          text: currentToken.text,
+          depth: currentToken.depth,
+        },
         id,
         depth: currentToken.depth,
         tokens:
