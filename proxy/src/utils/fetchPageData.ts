@@ -112,7 +112,13 @@ const getTokensAsSections = (
 
       processedTokens.push({
         type: 'section',
-        title: currentToken.text,
+        title: {
+          type: currentToken.type,
+          tokens: currentToken.tokens ?? [],
+          raw: currentToken.raw,
+          text: currentToken.text,
+          depth: currentToken.depth,
+        },
         id,
         depth: currentToken.depth,
         tokens:
@@ -150,6 +156,6 @@ const getNextHeadingSliceIndex = (tokens: Token[], start: number) => {
   )
 }
 
-const getSectionId = (name: string, previousId?: string) => {
+export const getSectionId = (name: string, previousId?: string) => {
   return previousId ? previousId + '-' + kebabCase(name) : kebabCase(name)
 }
