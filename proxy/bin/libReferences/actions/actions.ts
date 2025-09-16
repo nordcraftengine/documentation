@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs'
 import * as prettier from 'prettier'
+import { getSectionId } from '../../../src/utils'
 
 interface JsonAction {
   id: string
@@ -39,7 +40,7 @@ ${actionsJson
   .map((action) => {
     let description = action.action.deprecated ? '**Deprecated** ' : ''
     if (action.action.supercededBy) {
-      description += `Use [${action.action.supercededBy}](/references/actions#${encodeURIComponent(action.action.supercededBy.replaceAll(' ', '-'))}) instead. `
+      description += `Use [${action.action.supercededBy}](/references/actions#${encodeURIComponent(getSectionId(action.action.supercededBy))}) instead. `
     }
     description += action.action.description ?? ''
     let actionContent = actionTemplate

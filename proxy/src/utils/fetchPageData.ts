@@ -156,6 +156,6 @@ const getNextHeadingSliceIndex = (tokens: Token[], start: number) => {
   )
 }
 
-const getSectionId = (name: string, previousId?: string) => {
+export const getSectionId = (name: string, previousId?: string) => {
   return previousId ? previousId + '-' + kebabCase(name) : kebabCase(name)
 }
