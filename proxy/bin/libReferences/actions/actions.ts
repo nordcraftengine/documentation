@@ -39,7 +39,7 @@ ${actionsJson
   .map((action) => {
     let description = action.action.deprecated ? '**Deprecated** ' : ''
     if (action.action.supercededBy) {
-      description += `Use [${action.action.supercededBy}](/references/actions#${encodeURIComponent(action.action.supercededBy)}) instead. `
+      description += `Use [${action.action.supercededBy}](/references/actions#${encodeURIComponent(action.action.supercededBy.replaceAll(' ', '-'))}) instead. `
     }
     description += action.action.description ?? ''
     let actionContent = actionTemplate
