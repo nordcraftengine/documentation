@@ -119,7 +119,7 @@ The **Parse as** dropdown allows you to select from several parsing options:
 - **JSON**: Parses the response as a JSON object
 - **Event stream**: Parses as server-sent events (SSE)
 - **JSON stream**: Parses as a stream of JSON objects (see the [NDJSON](https://github.com/ndjson/ndjson-spec) specification)
-- **Image**: Handles the response as an image
+- **Blob**: Handles the response as a blob (read more about blobs on the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/API/Blob))
 
 This is particularly useful when working with APIs that return incorrect or missing `Content-Type` headers.
 
