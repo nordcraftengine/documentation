@@ -24,3 +24,19 @@ export const preferLocalData = ({
     branch === 'main'
   )
 }
+
+/**
+ * Replace all non-letters/numbers with dashes and convert to lowercase
+ */
+export const kebabCase = (str: string) =>
+  str.replaceAll(/[^a-zA-Z0-9]+/g, '-').toLowerCase()
+
+export const chunk = <T>(array: T[], size: number): T[][] => {
+  const chunkedArr: T[][] = []
+  let index = 0
+  while (index < array.length) {
+    chunkedArr.push(array.slice(index, index + size))
+    index += size
+  }
+  return chunkedArr
+}
