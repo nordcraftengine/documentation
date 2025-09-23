@@ -54,7 +54,6 @@ export const getMenuItemsFromRepoItems = ({
       const childItems: MenuItem[] = children.map((child) => {
         const childPath = `${path}/${child.path}`
         if (child.label.includes('64')) {
-          console.log('childLabel', child.label)
           throw new Error('Debugging 64')
         }
         return {
@@ -81,7 +80,6 @@ export const getMenuItemsFromRepoItems = ({
       }
     } else {
       if (label.includes('64')) {
-        console.log('label', label)
         throw new Error('Debugging 64')
       }
       return {
