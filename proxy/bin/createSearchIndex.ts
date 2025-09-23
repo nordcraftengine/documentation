@@ -1,8 +1,7 @@
 import * as fs from 'fs'
-import { chunk } from 'lodash'
 import { ImportError } from 'typesense/lib/Typesense/Errors'
 import { getTypesenseClient } from '../src/search/typesense'
-import { errorResponse, json, parseRawContent } from '../src/utils'
+import { chunk, errorResponse, json, parseRawContent } from '../src/utils'
 import { getFileLabel } from './fileTree'
 
 interface ProcessedPage {

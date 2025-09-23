@@ -1,5 +1,5 @@
 import * as fs from 'fs'
-import { chunk } from 'lodash'
+import { chunk } from '../src/utils'
 import { fetchContributors } from './fetchContributors'
 
 interface CommitAuthor {

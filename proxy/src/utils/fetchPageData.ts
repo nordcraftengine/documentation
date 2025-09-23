@@ -1,4 +1,3 @@
-import { kebabCase } from 'lodash'
 import type { Token } from 'marked'
 import { marked } from 'marked'
 import {
@@ -12,6 +11,7 @@ import {
 } from '../markdown-extensions'
 import type { FetchPageData, PageData } from '../types'
 import { getFrontMatter } from './frontMatter'
+import { kebabCase } from './helpers'
 
 marked.use({
   extensions: [
