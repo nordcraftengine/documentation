@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20250922.0",
-    "@types/bun": "1.2.15",
+    "@types/bun": "1.2.22",
     "@typescript/native-preview": "7.0.0-dev.20250619.1",
     "wrangler": "4.38.0"
   },
