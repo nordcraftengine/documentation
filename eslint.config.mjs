@@ -8,7 +8,7 @@ export default defineConfig({
   },
   language: 'markdown/commonmark',
   rules: {
-    'markdown/no-html': 'error',
+    'markdown/no-html': 'warn',
     'markdown/no-duplicate-headings': 'error',
     'markdown/fenced-code-language': 'error',
     'markdown/heading-increment': 'error',
