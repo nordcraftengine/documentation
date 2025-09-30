@@ -124,18 +124,20 @@ const createSearchIndex = async () => {
   }
 }
 
-const firstTextToken: (data: { tokens: any[] }) => string = ({ tokens }) =>
-  tokens.reduce((acc, token) => {
-    if (typeof acc === 'string') {
-      return acc
-    } else if (token.type === 'text') {
-      return token.text
-    } else if (token.tokens) {
-      return firstTextToken({ tokens: token.tokens })
-    } else {
-      return acc
-    }
-  }, undefined)
+const firstTextToken: (data: { tokens?: any[] }) => string = (data) =>
+  data?.tokens
+    ? data.tokens.reduce((acc, token) => {
+        if (typeof acc === 'string') {
+          return acc
+        } else if (token.type === 'text') {
+          return token.text
+        } else if (token.tokens) {
+          return firstTextToken({ tokens: token.tokens })
+        } else {
+          return acc
+        }
+      }, undefined)
+    : undefined
 
 const getSearchItemsFromPages = (pages: ProcessedPage[]) => {
   const items: SearchItem[] = []
@@ -160,7 +162,7 @@ const getSearchItemsFromPages = (pages: ProcessedPage[]) => {
           breadcrumbs,
           path: path + '#' + id,
           priority: 1,
-          content: getContentFromTokens(tokens),
+          content,
         })
       }
     })
@@ -194,7 +196,10 @@ const getContentFromTokens = (tokens?: MdToken[]) => {
   ]
 
   ;(tokens ?? []).forEach((token) => {
-    if (token.type === 'text' && (token.tokens ?? []).length === 0) {
+    if (
+      token.type === 'text' ||
+      (typeof token.text === 'string' && (token.tokens ?? []).length === 0)
+    ) {
       content += token.text
     } else if (allowedTokens.includes(token.type)) {
       if (token.type === 'link') {
