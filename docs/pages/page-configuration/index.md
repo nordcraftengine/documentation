@@ -59,6 +59,7 @@ In the URL panel under **Additional head elements**, you can:
 2. Provide content or reference external resources
 3. Set additional attributes for the resource
 4. Add multiple resources by clicking [kbd]Add element to <head>[kbd]
+5. Drag and drop to reorder elements if needed
 
 ::: warning
 Be cautious when adding external scripts. Only add scripts from trusted sources as they will have full access to your page data.
