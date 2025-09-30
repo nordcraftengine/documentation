@@ -114,6 +114,7 @@ const createSearchIndex = async () => {
         // eslint-disable-next-line no-console
         console.error(err.importResults)
       }
+      process.exit(1)
     }
 
     return json({ indexedItems: searchItems.length })
@@ -196,12 +197,14 @@ const getContentFromTokens = (tokens?: MdToken[]) => {
   ]
 
   ;(tokens ?? []).forEach((token) => {
-    if (
+    if (!allowedTokens.includes(token.type)) {
+      return
+    } else if (
       token.type === 'text' ||
       (typeof token.text === 'string' && (token.tokens ?? []).length === 0)
     ) {
       content += token.text
-    } else if (allowedTokens.includes(token.type)) {
+    } else {
       if (token.type === 'link') {
         // To avoid md encoded links in the search index, we only include the name of the link
         content += token.text
