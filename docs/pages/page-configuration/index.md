@@ -42,7 +42,6 @@ Each page in your application should have unique metadata to improve user experi
 - **Title**: Appears in browser tabs and search results
 - **Language**: Specifies the language of your page content for accessibility purposes
 - **Description**: Appears in search engine results and social media shares
-- **Add meta**: Add additional specialized metadata as needed
 
 You can bind any metadata value to formulas by clicking the formula button next to each field.
 
@@ -50,16 +49,16 @@ You can bind any metadata value to formulas by clicking the formula button next 
 Custom `og:*` meta tags which power Open Graph social sharing information are available on paid Nordcraft plans only.
 :::
 
-## Head assets
+## Head elements
 
 Sometimes you need to add external resources to your page, such as third-party scripts or custom fonts.
 
-In the URL panel under **Head assets**, you can:
+In the URL panel under **Additional head elements**, you can:
 
-1. Choose the resource type from the dropdown (script, link or style)
+1. Choose the resource type from the dropdown (script, meta, link, style or noscript)
 2. Provide content or reference external resources
 3. Set additional attributes for the resource
-4. Add multiple resources by clicking [kbd]Add external resource[kbd]
+4. Add multiple resources by clicking [kbd]Add element to <head>[kbd]
 
 ::: warning
 Be cautious when adding external scripts. Only add scripts from trusted sources as they will have full access to your page data.
