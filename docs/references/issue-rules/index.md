@@ -17,34 +17,15 @@ To see how issue rules are implemented, visit the [Nordcraft GitHub repository](
 
 ## Actions
 
-### Project actions with no references
-
-Supports auto-fixing: Yes
-
-Project actions that are not referenced anywhere in your project can lead to confusion and bloated projects. Nordcraft flags these unused actions to help you keep your project clean and efficient.
-
-### Unknown project action references
-
-Supports auto-fixing: No
-
-Finds references to project actions that do not exist. This helps you identify and correct broken references in your project.
-
-### No console
-
-Supports auto-fixing: No
-
-Detects usage of the [Log to console](references/actions##log-to-console) action in workflows. While useful for debugging, leaving console logs in production code can lead to performance issues and cluttered output.
+| Rule                                   |    Auto fixes     | Severity | Description                                                                                                                                                                                                             |
+| -------------------------------------- | :---------------: | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project actions with no references** | Delete the action | Warning  | Project actions that are not referenced anywhere in your project can lead to confusion and bloated projects. This rule flags unused project actions to help keep project clean and efficient.                           |
+| **Unknown project action references**  |        No         | Warning  | Finds references to project actions that do not exist. This helps identify and correct broken references in projects.                                                                                                   |
+| **No console**                         |        No         | Info     | Detects usage of the [Log to console](references/actions##log-to-console) action in workflows. While useful for debugging, leaving console logs in production code can lead to performance issues and cluttered output. |
 
 ## Formulas
 
-### Project formulas with no references
-
-Supports auto-fixing: Yes
-
-Project formulas that are not referenced anywhere in your project can lead to confusion and bloated projects. Nordcraft flags these unused formulas to help you keep your project clean and efficient.
-
-### Unknown project formula references
-
-Supports auto-fixing: No
-
-Finds references to project formulas that do not exist. This helps you identify and correct broken references in your project.
+| Rule                                    |     Auto fixes     | Severity | Description                                                                                                                                                                                            |
+| --------------------------------------- | :----------------: | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Project formulas with no references** | Delete the formula | Warning  | Project formulas that are not referenced anywhere in your project can lead to confusion and bloated projects. Nordcraft flags these unused formulas to help you keep your project clean and efficient. |
+| **Unknown project formula references**  |         No         | Error    | Finds references to project formulas that do not exist. This helps you identify and correct broken references in your project.                                                                         |
