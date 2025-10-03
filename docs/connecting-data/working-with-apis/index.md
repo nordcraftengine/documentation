@@ -7,9 +7,11 @@ description: Connect API endpoints in Nordcraft with custom methods, URLs, heade
 
 APIs are the primary way to connect your Nordcraft application to external data sources. They enable communication between your front-end application and back-end services, allowing you to fetch, send and manipulate data.
 
+Nordcraft supports any API and has a dedicated GraphQL explorer for working with GraphQL APIs.
+
 ## Connect a new API
 
-![The attributes panel is visible to the right of the editor. One API is in the API section list, named Weather API. The add new API dialog is visible, indicating the plus button next to APIs has been clicked. The connect new API dialog shows options for pasting a new API URL, connecting a new service, or choosing from one of the API templates, including a REST API and file upload template. The dialog also shows the option for adding two demo APIs, the weather API and the Owen Wilson wow API. The image is annotated according to the list items below.|16/9](set-up-an-api.webp 'Connect a new API')
+![The attributes panel is visible to the right of the editor. One API is in the API section list, named Weather API. The add new API dialog is visible, indicating the plus button next to APIs has been clicked. The connect new API dialog shows options for pasting a new API URL, connecting a new service, or choosing from one of the API templates, including a REST API, GraphQL and file upload template. The dialog also shows the option for adding two demo APIs, the weather API and the Owen Wilson wow API. The image is annotated according to the list items below.|16/9](set-up-an-api.webp 'Connect a new API')
 
 To create a new API connection in Nordcraft:
 
@@ -125,6 +127,37 @@ You can test your API directly in the editor:
 4. Check the returned data to ensure the API provides the correct information
 
 The response section will display the data returned from the API, including properly formatted JSON if that is the response format.
+
+## GraphQL explorer
+
+Nordcraft provides a GraphQL explorer for you to build GraphQL queries for GraphQL APIs. After connecting a GraphQL API, click on the `Add field` button to start building your query.
+
+![The edit API dialog is open for a GraphQL API connection. A button named Add Field is highlighted with a white border to the right of the API connection details.|16/9](graphql-add-field.webp 'Add a field to a GraphQL query')
+
+After you've added your first field, you'll see the GraphQL explorer open on the left of the API dialog so you can further refine your query. Click the [kbd]+[kbd] buttons to add fields to your query, and click the checkmarks next to the fields to remove them from your query. Watch the API response update in real time when the [auto fetch](/connecting-data/call-an-api#using-auto-fetch) toggle is on.
+
+![The GraphQL explorer is showing a query constructed on the blogPostCollection entity, with the fields category, date and slug selected under items. The API response panel on the right is showing the data fetched by the query.|16/9](graphql-built-query.webp 'Add a field to a GraphQL query')
+
+### Add a GraphQL query variable
+
+The GraphQL explorer supports GraphQL query variables, allowing you to build your queries with dynamic data.
+
+![The GraphQL explorer is annotated to match the list items below. It shows a small dialog on an author field with an ID pasted into the input. Below there is a button to create variable, which is highlighted with a white border.|16/9](graphql-create-variable.webp 'Add a variable to a GraphQL query')
+
+To add a GraphQL query variable:
+
+1. Click on the cog wheel icon next to a field that supports a GraphQL variable
+2. Add a variable value in two ways:
+   **(A)** Paste in a hard-coded value
+   **(B)** Click `Create variable` for more options and flexibility
+
+When you create a GraphQL query variable, you can view and edit the variable in the variables tab of the GraphQL explorer. You can also use a formula to power the variable value using the formula editor.
+
+![The formula editor is open, showing that the value of the author ID variable is being powered by a project formula defined at the project level.|16/9](graphql-variable-formula-editor.webp 'Configure a GraphQL variable')
+
+:::tip
+When you add a GraphQL query variable using `Create variable`, give it a descriptive name such as `author_id`.
+:::
 
 ## Next steps
 
