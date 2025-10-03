@@ -134,7 +134,7 @@ Nordcraft provides a GraphQL explorer for you to build GraphQL queries. After co
 
 ![The edit API dialog is open for a GraphQL API connection. A button named Add Field is highlighted with a white border to the right of the API connection details.|16/9](graphql-add-field.webp 'Add a field to a GraphQL query')
 
-After you've added your first field, you'll see the GraphQL explorer open on the left of the API dialog so you can further refine your query. Click the [kbd]+[kbd] buttons to add fields to your query, and click the checkmarks next to the fields to remove them from your query. Watch the API response update in real time when the [auto-fetch](/connecting-data/call-an-api#using-auto-fetch) toggle is on.
+After you've added your first field, you'll see the GraphQL explorer open on the left of the API dialog so you can further refine your query. Click the [kbd]+[kbd] buttons to add fields to your query, and click the checkmarks next to the fields to remove them from your query. Watch the API response update in real time when the [auto fetch](/connecting-data/call-an-api#using-auto-fetch) toggle is on.
 
 ![The GraphQL explorer is showing a query constructed on the blogPostCollection entity, with the fields category, date and slug selected under items. The API response panel on the right is showing the data fetched by the query.|16/9](graphql-built-query.webp 'Add a field to a GraphQL query')
 
