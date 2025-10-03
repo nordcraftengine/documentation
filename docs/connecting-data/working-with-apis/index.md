@@ -153,7 +153,7 @@ To add a GraphQL query variable:
 
 When you create a GraphQL query variable, you can view and edit the variable in the variables tab of the GraphQL explorer. You can also use a formula to power the variable value using the formula editor.
 
-![The formula editor is open, showing that the value of the author ID variable is being powered by a project formula defined at the project level.|16/9](graphql-variable-formula-editor.webp 'Add a variable to a GraphQL query')
+![The formula editor is open, showing that the value of the author ID variable is being powered by a project formula defined at the project level.|16/9](graphql-variable-formula-editor.webp 'Configure a GraphQL variable')
 
 :::tip
 When you add a GraphQL query variable using `Create variable`, give it a descriptive name such as `author_id`.
