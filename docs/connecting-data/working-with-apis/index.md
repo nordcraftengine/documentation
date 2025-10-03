@@ -130,7 +130,7 @@ The response section will display the data returned from the API, including prop
 
 ## GraphQL explorer
 
-Nordcraft provides a GraphQL explorer for you to build GraphQL queries. After connecting a GraphQL API, click on the `Add field` button to start building your query.
+Nordcraft provides a GraphQL explorer for you to build GraphQL queries for GraphQL APIs. After connecting a GraphQL API, click on the `Add field` button to start building your query.
 
 ![The edit API dialog is open for a GraphQL API connection. A button named Add Field is highlighted with a white border to the right of the API connection details.|16/9](graphql-add-field.webp 'Add a field to a GraphQL query')
 
