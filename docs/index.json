@@ -368,6 +368,10 @@
       {
         "label": "Actions",
         "path": "actions"
+      },
+      {
+        "label": "Issue rules",
+        "path": "issue-rules"
       }
     ]
   }
