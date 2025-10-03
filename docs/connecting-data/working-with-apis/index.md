@@ -146,7 +146,7 @@ The GraphQL explorer supports GraphQL query variables, allowing you to build you
 
 To add a GraphQL query variable:
 
-1. Click on the cog wheel icon next to a field that supports a GraphQL variable.
+1. Click on the cog wheel icon next to a field that supports a GraphQL variable
 2. Add a variable value in two ways:
    **(A)** Paste in a hard-coded value
    **(B)** Click `Create variable` for more options and flexibility
