@@ -9,7 +9,10 @@ Services in Nordcraft simplify working with APIs by automatically retrieving end
 
 Nordcraft supports connections to a variety of back-end services:
 
+- **Contentful**: Content management system (GraphQL)
+- **DatoCMS**: Content management system (GraphQL)
 - **Supabase**: Open-source Postgres database with authentication and real-time capabilities
+- **Umbraco**: Content management system (GraphQL)
 - **Xano**: No-code database and API builder
 - **OpenAPI**: Any service using the [OpenAPI Specification](https://swagger.io/resources/open-api) (v2 and v3)
 
