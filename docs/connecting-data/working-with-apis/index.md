@@ -140,9 +140,11 @@ After you've added your first field, you'll see the GraphQL explorer open on the
 
 ### Add a GraphQL query variable
 
-The GraphQL explorer supports GraphQL query variables, allowing you to build your queries with dynamic data. To add a GraphQL query variable:
+The GraphQL explorer supports GraphQL query variables, allowing you to build your queries with dynamic data.
 
 ![The GraphQL explorer is annotated to match the list items below. It shows a small dialog on an author field with an ID pasted into the input. Below there is a button to create variable, which is highlighted with a white border.|16/9](graphql-create-variable.webp 'Add a variable to a GraphQL query')
+
+To add a GraphQL query variable:
 
 1. Click on the cog wheel icon next to a field that supports a GraphQL variable.
 2. Add a variable value in two ways:
