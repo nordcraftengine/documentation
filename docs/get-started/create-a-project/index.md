@@ -5,42 +5,51 @@ description: Create new apps and packages in Nordcraft with this step-by-step gu
 
 # Create a new project in Nordcraft
 
-In Nordcraft, you can create an [app](/get-started/overview#apps) or a [package](/get-started/overview#packages).
+In Nordcraft, you can create an [app](/get-started/overview#apps) or a [package](/get-started/overview#packages). An app is a standalone website or web app, while packages are used to bundle up smaller bits of reusable functionality to use in Nordcraft apps.
 
 ## Create a project from the dashboard
 
-In the dashboard view, find the **Start Building** section. Click [kbd]Create app[kbd] or [kbd]Create package[kbd] to begin the creation process for the corresponding type of project.
+In the dashboard view, find the **Start Building** section. Click [kbd]Create project[kbd]. On the next screen you'll choose whether to create an app or a package.
 
-![The dashboard screen in Nordcraft showing at the top section there are buttons to create a package and create an app.|16/9](create-project-from-dashboard.webp 'Create project from dashboard')
+![The dashboard screen in Nordcraft showing at the top section there is a big blue cutton which says create project.|16/9](create-project-from-dashboard.webp 'Create project from dashboard')
 
 ## Create a project from the organization view
 
-In the organization view, at the top right of the project list, find the buttons to create an app or a package. Click on the relevant button to start the process.
+In the organization view, at the top right of the project list, find the button to create a project.
 
-![The organization screen in Nordcraft showing at the top right of the projects list there are buttons to create a package and create an app.|16/9](create-project-org-view.webp 'Create project from org view')
+![The organization screen in Nordcraft showing at the top right of the projects list there is a button to create a new project.|16/9](create-project-org-view.webp 'Create project from org view')
 
 ## Create an app
 
-![The create app screen showing an organization select dropdown, a project visibility setting of public or private, and a list of templates to choose from below.|16/9](create-an-app.webp 'Create app')
+First, pick a template to start from. Choose a basic blank template, a Nordcraft template, or a template built by the community.
 
-1. **Select organization**: The organization is pre-selected based on your account settings
-2. **Choose visibility**: Decide who should be able to see your app and select **public** or **private**
-3. **Choose a template**:
-   - Basic: Choose from official Nordcraft starter templates
-   - Nordcraft: Start from the Nordcraft website, blog or documentation sites
-   - Community template: Pick from community-made templates
+![The create project screen showing a grid of templates to choose from.|16/9](create-an-app.webp 'Create app')
 
-When you select a template, the Nordcraft editor will open for you to start working.
+Click on the template you wish to use and you'll see a dialog to configure the new project details.
+
+![The create app dialog. Choose an organization, enter a name and project ID, and choose visibility.|16/9](configure-app.webp 'Configure app')
+
+1. **Select organization**: Pre-selected based on your account settings
+2. **Project info**:
+   - Add a project name
+   - The project ID is auto generated, you may wish to edit it before creating the project
+3. **Choose visibility**: Decide who should be able to see your app; select **public** or **private**
+
+Click `Create project` and the Nordcraft editor will open for you to start working.
 
 ## Create a package
 
-![The create package dialog. Choose an organization, enter a name and package ID.|16/9](create-a-package.webp 'Create package')
+To create a package, click the `Create package` button at the top right of the template selection screen. This will open a dialog for you to configure your package details.
 
-1. **Choose organization**: The organization is pre-selected based on your account settings
-2. **Enter name**: Choose a name for your package
-3. **Edit package ID**: The package ID is automatically generated based on the package name, but you can edit it as needed
+![The create package dialog. Choose an organization, enter a name and project ID, and choose visibility.|16/9](configure-package.webp 'Configure package')
 
-Click `Create package` to open the Nordcraft editor and start building.
+1. **Select organization**: Pre-selected based on your account settings
+2. **Project info**:
+   - Add a project name
+   - The project ID is auto generated, you may wish to edit it before creating the project
+3. **Choose visibility**: Decide who should be able to see your package; select **public** or **private**
+
+Click `Create package` and the Nordcraft editor will open for you to start working.
 
 For more detailed instructions on packages, see the [creating and launching packages](/packages/creating-and-launching) guide.
 
