@@ -124,4 +124,18 @@ To see how issue rules are implemented, visit the [Nordcraft GitHub repository](
 
 ## Routing
 
+| Rule                                   | Severity | Auto fixes | Description                                                                                     |
+| -------------------------------------- | -------- | :--------: | ----------------------------------------------------------------------------------------------- |
+| **Duplicate routes**                   | Warning  |     No     | Flags pages that have duplicate route declarations (where the path parameters match).           |
+| **Duplicate url parameter**            | Warning  |     No     | Flags if a query parameter and a path parameter have the same name.                             |
+| **Unknown set url parameter (legacy)** | Warning  |     No     | Finds actions that try to set a url parameter (path or query) that does not exist.              |
+| **Unknown set url parameters**         | Warning  |     No     | Finds actions that try to set one or multiple url parameters (path or query) that do not exist. |
+| **Unknown url parameter**              | Error    |     No     | Finds references to url parameters that do not exist.                                           |
+
 ## Miscellaneous
+
+| Rule                          | Severity |       Auto fixes       | Description                                                                                                           |
+| ----------------------------- | -------- | :--------------------: | --------------------------------------------------------------------------------------------------------------------- |
+| **Node with no references**   | Warning  | Delete the orphan node | Finds nodes/elements that are not included by any other node/element. This can happen during copy/paste.              |
+| **Require browser extension** | Info     |           No           | Highlights if the Nordcraft browser extension is not installed, but the project is setting/adding cookies in actions. |
+| **Unknown cookie**            | Info     |           No           | Flags cookies referenced by the `Get Http-Only Cookie` formula that are not found by the Nordcraft browser extension. |
