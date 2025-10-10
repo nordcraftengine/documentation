@@ -58,12 +58,12 @@ To see how issue rules are implemented, visit the [Nordcraft GitHub repository](
 
 ## Events
 
-| Rule                          | Severity |                                            Auto fixes                                            | Description                                                                                                                  |
-| ----------------------------- | -------- | :----------------------------------------------------------------------------------------------: | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Duplicate event trigger**   | Warning  |                                                No                                                | Flags duplicate event triggers on an element or component node. This usually happens in legacy projects.                     |
-| **Events with no references** | Warning  |                                         Delete the event                                         | Finds events in a component that are never triggered. These events can be removed to keep the component clean and efficient. |
-| **Unknown event**             | Error    |        Flags events declared on component nodes that don't exist in the target component.        |
-| **Unknown event trigger**     | Error    | Finds event triggers in components that don't match any of the declared events in the component. |
+| Rule                          | Severity |    Auto fixes    | Description                                                                                                                  |
+| ----------------------------- | -------- | :--------------: | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Duplicate event trigger**   | Warning  |        No        | Flags duplicate event triggers on an element or component node. This usually happens in legacy projects.                     |
+| **Events with no references** | Warning  | Delete the event | Finds events in a component that are never triggered. These events can be removed to keep the component clean and efficient. |
+| **Unknown event**             | Error    |        No        | Flags events declared on component nodes that don't exist in the target component.                                           |
+| **Unknown event trigger**     | Error    |        No        | Finds event triggers in components that don't match any of the declared events in the component.                             |
 
 ## APIs
 
