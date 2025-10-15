@@ -99,7 +99,8 @@ Learn about:
 - [Context](/contexts/overview#contexts)
 - [Custom actions](/actions/overview#actions)
 
+<!-- prettier-ignore -->
 @@@ youtube
-videoId: \_R3qAbfkj_M
+videoId: _R3qAbfkj_M
 title: Build a multi-language website
 @@@
