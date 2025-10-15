@@ -87,3 +87,19 @@ Learn about:
 videoId: 5gWonN_51A4
 title: Build a multi-step form
 @@@
+
+## Lesson 5: Build a multi-language website
+
+In this lesson, you'll build a landing page with localized content from a CMS that supports multiple languages.
+
+Learn about:
+
+- [Adding services](/connecting-data/services)
+- [GraphQL Explorer and GraphQL APIs](/connecting-data/working-with-apis#graphql-explorer)
+- [Context](/contexts/overview#contexts)
+- [Custom actions](/actions/overview#actions)
+
+@@@ youtube
+videoId: \_R3qAbfkj_M
+title: Build a multi-language website
+@@@
