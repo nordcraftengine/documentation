@@ -34,6 +34,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install bun
         uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: 1.2.23
       - name: Install worker dependencies
         run: bun install --frozen-lockfile
       - name: Build search index
