@@ -100,6 +100,6 @@ Learn about:
 - [Custom actions](/actions/overview#actions)
 
 @@@ youtube
-videoId: _R3qAbfkj_M
+videoId: \_R3qAbfkj_M
 title: Build a multi-language website
 @@@
