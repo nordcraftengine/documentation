@@ -33,12 +33,12 @@ To see how issue rules are implemented, visit the [Nordcraft GitHub repository](
 
 ## Actions
 
-| Rule                                   | Severity |     Auto fixes     | Description                                                                                                                                                                                                             |
-| -------------------------------------- | -------- | :----------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Project actions with no references** | Warning  | Delete the action  | Project actions that are not referenced anywhere in your project can lead to confusion and bloated projects. This rule flags unused project actions to help keep project clean and efficient.                           |
-| **Unknown project action references**  | Warning  |         No         | Finds references to project actions that do not exist. This helps identify and correct broken references in projects.                                                                                                   |
-| **Legacy action**                      | Warning  | Replace the action | Finds known legacy actions that should no longer be used.                                                                                                                                                               |
-| **No console**                         | Info     |         No         | Detects usage of the [Log to console](references/actions##log-to-console) action in workflows. While useful for debugging, leaving console logs in production code can lead to performance issues and cluttered output. |
+| Rule                                   | Severity |     Auto fixes     | Description                                                                                                                                                                                                              |
+| -------------------------------------- | -------- | :----------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Project actions with no references** | Warning  | Delete the action  | Project actions that are not referenced anywhere in your project can lead to confusion and bloated projects. This rule flags unused project actions to help keep project clean and efficient.                            |
+| **Unknown project action references**  | Warning  |         No         | Finds references to project actions that do not exist. This helps identify and correct broken references in projects.                                                                                                    |
+| **Legacy action**                      | Warning  | Replace the action | Finds known legacy actions that should no longer be used.                                                                                                                                                                |
+| **No console**                         | Info     |         No         | Detects usage of the [Log to console](/references/actions##log-to-console) action in workflows. While useful for debugging, leaving console logs in production code can lead to performance issues and cluttered output. |
 
 ## Variables
 
