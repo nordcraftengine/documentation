@@ -1,14 +1,14 @@
 ---
-title: Domains
+title: Custom domains
 description: Understand how to use domains in Nordcraft to organize and manage different areas of your application effectively.
 ---
 
-# Domains
+# Custom domains
 
 Domains allow you to serve your Nordcraft application from different paths. Each project will be created with 2 default domains. These domains are permanent and cannot be deleted:
 
-- `{project-name}.toddle.site` - default production domain
-- `main-{project-name}.toddle.site` - each branch has a unique domain in the format `{branch-name}-{project-name}.toddle.site`. This is a publicly accessibly URL that you can use to view work in progress in a browser, and share it with people for sign off and approval of new features and functionality.
+- `{project-name}.toddle.site`: default production domain
+- `main-{project-name}.toddle.site`: each branch has a unique domain in the format `{branch-name}-{project-name}.toddle.site`. This is a publicly accessibly URL that you can use to view work in progress in a browser, and share it with people for sign off and approval of new features and functionality.
 
 To see the list of domains registered on your project, go to the Project Overview page and click on the **Edit domain** button to the left of the Project URL.
 
@@ -29,7 +29,7 @@ Don't worry if you don't see your domain changes move to the **Active** status s
 
 You can add new domains on the Domain Management page.
 
-![The Domain Management page is shown with 3 domains. 2 active and 1 pending. The pending domain is expanded to show the step to be taken to activate the domain. At the bottom of the page is the form where new domains can be added|16/9](create-domain.webp 'Setup a new domain')
+![The Domain Management page is shown with 3 domains. 2 active and 1 pending. The pending domain is expanded to show the step to be taken to activate the domain. At the bottom of the page is the form where new domains can be added|16/9](create-domain.webp 'Add a new domain')
 
 1. Add the domain name and click **Add domain**
 2. You will see the domain added to the list of domains with a status of **Pending**
@@ -48,7 +48,7 @@ For example, if you add the wildcard domain `*.example.com`, your Nordcraft appl
 
 To add a wildcard domain, follow the same steps as adding a non-wildcard domain, but use the wildcard format (e.g. `*.example.com`) when entering the domain name.
 
-![The Domain Management page is shown with 3 domains. 2 active and 1 pending. The pending domain is expanded to show the step to be taken to activate the domain. At the bottom of the page is the form where new domains can be added|16/9](create-wildcard-domain.webp 'Setup a new wildcard domain')
+![The Domain Management page is shown with 3 domains. 2 active and 1 pending. The pending domain is expanded to show the step to be taken to activate the domain. At the bottom of the page is the form where new domains can be added|16/9](create-wildcard-domain.webp 'Add a wildcard domain')
 
 1. Enter the domain name and click **Add domain**; make sure to prepend the domain with `*.` to indicate it is a wildcard domain
 2. You will see the domain added to the list of domains with a status of **Pending**
@@ -58,5 +58,5 @@ To add a wildcard domain, follow the same steps as adding a non-wildcard domain,
 6. Finally, add the provided **TXT** record to your DNS provider to verify domain ownership
 
 ::: info
-Wildcard domains are only available on Scaleup plans. Projects in organizations on lower plans will not be able to add wildcard domains.
+Wildcard domains are only available on Scaleup plans.
 :::
