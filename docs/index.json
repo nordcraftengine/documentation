@@ -4,8 +4,7 @@
   { "path": "app-examples", "label": "App examples" },
   { "path": "core-concepts", "label": "Core concepts" },
   { "path": "learn-nordcraft", "label": "Learn Nordcraft" },
-  { "path": "domains", "label": "Domains" },
-  { "path": "ai-assistant", "label": "AI assistant" },
+  { "path": "ai-assistant", "label": "AI Assistant" },
   {
     "path": "get-started",
     "label": "Get started",
@@ -304,6 +303,7 @@
       }
     ]
   },
+  { "path": "custom-domains", "label": "Custom domains" },
   {
     "path": "packages",
     "label": "Packages",
