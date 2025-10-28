@@ -153,7 +153,7 @@ For project examples, use the following format:
 title: A cool project
 description: A cool description in one sentence.
 linkUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main
-imageUrl: image.webp
+imageUrl: cssclock.webp
 imageAltText: Descriptive text to describe the image
 @@@
 
