@@ -27,14 +27,16 @@ Don't worry if you don't see your domain changes move to the **Active** status s
 
 ## Add a domain
 
-You can add new domains on the Domain Management page.
+You can add new domains on the Domain Management page. Enter the domain name and click **Add domain**.
 
-![The Domain Management page is shown with 3 domains. 2 active and 1 pending. The pending domain is expanded to show the steps to be taken to activate the domain. At the bottom of the page is the form where new domains can be added.|16/9](create-domain.webp 'Add a new domain')
+![The Domain Management page is shown with 3 active domains. The add domain input field has been filled with test-domain.com. The add domain button is next to the input field.|16/9](add-domain.webp 'Add domain')
 
-1. Enter the domain name and click **Add domain**
-2. You will see the domain added to the list of domains with a status of **Pending**
-3. Under the domain you will see instructions on how to configure your DNS settings to point the domain to your Nordcraft project
-4. You can chose to add either an **A** or **CNAME** record depending on your DNS provider's capabilities; the record name and value you need to set in your DNS provider is provided for you by Nordcraft
+After adding a new domain, you'll see the domain added to the list of domains with a status of **Pending**.
+
+![The new domain has been added with a status of pending. The configuration instructions are provided with some relevant information about CNAME and A records. The A record tab is highlighted, showing the A record name and value to be added to the DNS provider.|16/9](create-domain.webp 'Configure domain')
+
+- Under the domain you will see instructions on how to configure your DNS settings to point the domain to your Nordcraft project
+- You can chose to add either an **A** or **CNAME** record depending on your DNS provider's capabilities; the record name and value you need to set in your DNS provider is provided for you by Nordcraft
 
 ::: info
 Custom domains are only available on paid plans. Projects in organizations on the free plan will be served on `{project-name}.toddle.site`.
@@ -48,14 +50,12 @@ For example, if you add the wildcard domain `*.example.com`, your Nordcraft appl
 
 To add a wildcard domain, follow the same steps as adding a non-wildcard domain, but use the wildcard format (e.g. `*.example.com`) when entering the domain name.
 
-![The Domain Management page is shown with 3 domains. 2 active and 1 pending. The pending domain is expanded to show the step to be taken to activate the domain. At the bottom of the page is the form where new domains can be added|16/9](create-wildcard-domain.webp 'Add a wildcard domain')
+![The Domain Management page is shown with a new wildcard domain added that has a status of pending. The configuration instructions are provided with some relevant information about CNAME and A records. The CNAME record tab is highlighted, and the A record tab is disabled. Below there are CNAME records and the TXT record provided to add to your DNS provider.|16/9](create-wildcard-domain.webp 'Add a wildcard domain')
 
-1. Enter the domain name and click **Add domain**; make sure to prepend the domain with `*.` to indicate it is a wildcard domain
-2. You will see the domain added to the list of domains with a status of **Pending**
-3. Under the domain you will see instructions on how to configure your DNS settings to point the domain to your Nordcraft project
-4. You must add a wildcard domains using a **CNAME** record
-5. In addition to the **CNAME** record for the wildcard domain, add an additional **CNAME** record that allows Nordcraft to automatically issue and renew SSL certificates for your wildcard domain
-6. Finally, add the provided **TXT** record to your DNS provider to verify domain ownership
+- Under the domain you will see instructions on how to configure your DNS settings to point the domain to your Nordcraft project
+- You must add a wildcard domains using a **CNAME** record
+- In addition to the **CNAME** record for the wildcard domain, add an additional **CNAME** record that allows Nordcraft to automatically issue and renew SSL certificates for your wildcard domain
+- Finally, add the provided **TXT** record to your DNS provider to verify domain ownership
 
 ::: info
 Wildcard domains are only available on Scaleup plans.
