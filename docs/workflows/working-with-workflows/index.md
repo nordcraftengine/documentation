@@ -50,7 +50,7 @@ To create a parameter:
 2. Choose a name for the parameter
 3. Assign an optional test value; this value is only available in the editor and will not affect your application in production
 
-In reusable workflows, you can also define callback events. When adding a callback event to your reusable workflow, you may call this event from within the workflow. This allows you to create workflows that can return data or signal various change in state.
+In reusable workflows, you can also define callback events. When adding a callback event to your reusable workflow, you can call this event from within the workflow. This allows you to create workflows that can return data or signal various change in state.
 
 Similar to parameters, to create a callback event:
 
