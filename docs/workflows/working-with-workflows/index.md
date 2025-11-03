@@ -52,6 +52,8 @@ To create a parameter:
 
 In reusable workflows, you can also define callback events. When adding a callback event to your reusable workflow, you can call this event from within the workflow. This allows you to create workflows that can return data or signal various change in state.
 
+![The attributes panel is visible and a workflow named increaseCounter is selected from the workflow list. The dialog for the workflow is open. One callback event has been defined, with the name "Count changed" and a test value of 2.|16/9](workflow-callback-events.webp 'Create a workflow callback event'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-workflow-callbacks?canvas-height=800&canvas-width=1128.1&mode=design&selection=workflows.Zpfk7v.actions.0.default.actions.2.events.tick&rightpanel=events}
+
 Similar to parameters, to create a callback event:
 
 1. Click the [kbd]+[kbd] button in the callback events section
