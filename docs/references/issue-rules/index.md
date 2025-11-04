@@ -12,7 +12,7 @@ To learn more about where issue rules are shown in the editor, check out the [is
 :::
 
 ::: tip
-To see how issue rules are implemented, visit the [Nordcraft GitHub repository](https://github.com/nordcraftengine/nordcraft/tree/main/packages/search/src/rules).
+To see how issue rules are implemented, visit the [Nordcraft GitHub repository](https://github.com/nordcraftengine/nordcraft/tree/main/packages/search/src/rules/issues).
 :::
 
 ## Components
