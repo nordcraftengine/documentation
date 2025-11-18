@@ -106,7 +106,8 @@ const getTokensAsSections = (
     const currentToken = tokens[index]
     let nextTokenIndex = index + 1
 
-    if (currentToken && currentToken.type === 'heading') {
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+    if (currentToken?.type === 'heading') {
       const id = getSectionId(currentToken.text, previousId)
       const nextHeadingIndex = getNextHeadingSliceIndex(tokens, index + 1)
 

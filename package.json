@@ -1,7 +1,7 @@
 {
   "name": "documentation",
   "scripts": {
-    "lint": "eslint --quiet .",
+    "lint": "eslint --quiet --report-unused-disable-directives .",
     "prettier:write": "prettier --write  './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'",
     "prettier": "prettier --check './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'"
   },
