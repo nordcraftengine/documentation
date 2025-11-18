@@ -1,17 +1,17 @@
 {
   "name": "documentation",
   "scripts": {
-    "lint": "eslint --quiet .",
+    "lint": "eslint --quiet --report-unused-disable-directives .",
     "prettier:write": "prettier --write  './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'",
     "prettier": "prettier --check './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'"
   },
   "devDependencies": {
-    "@eslint/js": "9.37.0",
-    "@eslint/markdown": "7.3.0",
-    "@typescript-eslint/eslint-plugin": "8.45.0",
-    "@typescript-eslint/parser": "8.45.0",
+    "@eslint/js": "9.39.1",
+    "@eslint/markdown": "7.5.1",
+    "@typescript-eslint/eslint-plugin": "8.46.3",
+    "@typescript-eslint/parser": "8.46.3",
     "eslint-plugin-inclusive-language": "2.2.1",
-    "eslint": "9.37.0",
+    "eslint": "9.39.1",
     "prettier-plugin-organize-imports": "4.3.0",
     "prettier": "3.6.2"
   },

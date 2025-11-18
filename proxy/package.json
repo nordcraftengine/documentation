@@ -14,7 +14,7 @@
     "createSearchIndex": "bun bin/createSearchIndex.ts",
     "precreateSearchIndexDryrun": "bun buildDocs",
     "createSearchIndexDryrun": "bun bin/createSearchIndex.ts --dryrun",
-    "lint": "eslint --quiet .",
+    "lint": "eslint --quiet --report-unused-disable-directives .",
     "typecheck": "tsgo --noEmit",
     "watch": "tsgo --watch --noEmit"
   },
