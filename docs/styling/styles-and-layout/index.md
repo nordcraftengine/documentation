@@ -7,6 +7,12 @@ description: Apply styles through Nordcraft's visual interface or CSS editor, us
 
 The styling and layout system in Nordcraft helps you write CSS visually, presenting the most commonly used CSS properties in the style panel. This approach lets you style elements visually without writing code while preserving traditional CSS flexibility. For more precise control, the CSS editor is also available.
 
+:::tip
+Using visual editors for writing CSS is not only a great way to specify colors, gradients and animations. They are also a great way for developers to discover new CSS features. When new features are paired with an intuitive interface it becomes much easier to adopt these features as part of your developer toolbox.
+
+[Read about how modern CSS has become too powerful on the Nordcraft blog.](https://blog.nordcraft.com/css-has-become-too-powerful)
+:::
+
 ## Adding CSS with the style panel
 
 ![The Styling panel is selected and visible to the right of the canvas , showing some basic styling applied including a flex gap, padding and width.|16/9](styling-panel.webp 'Styling panel'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
