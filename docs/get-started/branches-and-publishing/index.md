@@ -41,7 +41,7 @@ Keep branches small and short-lived. A branch should contain just a single featu
 ![After pressing the create branch button, a dialog opens which is annotated. Here you can name your branch and either cancel or create the new the branch.|16/9](create-new-branch.webp 'Create new branch')
 
 1. On the [project details](/get-started/project-details) page, click the [kbd]Create branch[kbd] button
-2. Choose a descriptive name for the branch and confirm
+2. Choose a descriptive name for the branch and confirm. The branch name must start with a letter and can only contain lowercase letters, numbers, and hyphens (`-`).
 
 When the branch is created, you are automatically taken to the editor to start working on that new branch.
 
