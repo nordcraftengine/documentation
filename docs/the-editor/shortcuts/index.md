@@ -11,11 +11,11 @@ Keyboard shortcuts in Nordcraft help you work faster and more efficiently by pro
 
 These shortcuts work anywhere in the editor:
 
-- [kbd]T[kbd]: Toggle test mode
-- [kbd]I[kbd]: Open the [element catalog](/the-editor/element-tree#element-catalog)
-- [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]: Open the files view in the [project sidebar](/the-editor/project-sidebar)
-- [kbd]Escape[kbd]: Deselect the current element or close panels
-- [kbd]Cmd/Ctrl[kbd] + [kbd]scroll[kbd]: Adjust the zoom level of the editor canvas
+- [kbd]T[kbd] - Toggle test mode
+- [kbd]I[kbd] - Open the [element catalog](/the-editor/element-tree#element-catalog)
+- [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]- Open the files view in the [project sidebar](/the-editor/project-sidebar)
+- [kbd]Escape[kbd] - Deselect the current element or close panels
+- [kbd]Cmd/Ctrl[kbd] + [kbd]scroll[kbd] - Adjust the zoom level of the editor canvas
 
 ## Element panel shortcuts
 
