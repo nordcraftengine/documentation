@@ -4,29 +4,29 @@ description: Learn to build powerful web applications with Nordcraft through gui
 ---
 
 @@@ image-static
-![Nordcraft, the Web Development Engine, overlaid in navy against a Nordic snowy background, with the Nordcraft three-logo arrow above|2/1](nordcraft.webp 'Nordcraft')
+![Nordcraft, the Web Development Engine, overlaid in navy blue against a Nordic snowy background, with the Nordcraft three-logo arrow above|2/1](nordcraft.webp 'Nordcraft')
 @@@
 
 # What is Nordcraft?
 
-Nordcraft is an open-source **Web Development Engine** that combines visual design tools, a front-end framework built on web standards, and full programming capabilities in a single platform.
+Nordcraft combines a modern web framework with a visual editor, Git-style version control, AI assistant, and a lightweight runtime. We call it a Web Development Engine.
 
 ## Who is Nordcraft for?
 
-Nordcraft is for **web designers** who want to deliver great experiences to their users.
+Nordcraft is for **web designers and web developers** who want to craft exceptional experiences on the web.
 
-If you’re using Nordcraft in a product team, you get to skip that traditional handover process from design to development. Using Nordcraft as a web designer, you can build web applications as you design the UI, while the engineers in your team can focus on building out the business logic and the back end.
+Nordcraft is a front-end framework that lets you skip the the traditional handover process from design to development that gets in the way of creativity and progress. When building in Nordcraft, you're building with real data, not placeholder data, so you can make sure your UI is built with every requirement and edge case in mind. In Nordcraft, you're building websites and web applications _as you design the UI_, while the engineers in your team can focus on building out the business logic and the back end.
 
 ## Unifying design and development
 
-Nordcraft combines a visual editor for user interface design with a powerful technical foundation built on modern web standards, accelerating development of your websites and web applications without sacrificing quality or control.
+Nordcraft combines a visual editor for user interface design with a powerful technical foundation built on modern web standards.
 
 Key features include:
 
-- Visual editing of UI components familiar to designers working in Figma
+- Visual editing of UI components familiar to the Figma interface
 - Component-based architecture similar to React, Vue, and Svelte front-end frameworks
 - Visual development environment for implementing interactive behavior and application logic
-- Branch-based environment for parallel feature development and team collaboration
+- Branch-based development environment for parallel feature development and team collaboration
 
 ## Technical foundation
 
@@ -48,10 +48,10 @@ Nordcraft provides everything you need to build and deploy modern, performant we
 
 - [Full API integration for connecting to any back-end service](/connecting-data/overview#api-layer)
 - [Package system for sharing and reusing functionality](/packages/overview)
-- Pre-built templates for rapid application development and design systems
 - [Asset management for handling media](/media/overview)
 - [SEO and meta tag configuration tools](/pages/page-configuration#metadata)
 - [Live branch preview environments](/get-started/branches-and-publishing#preview-a-branch)
+- Pre-built templates to get you started quickly
 - Deploy directly to Nordcraft's infrastructure or self-host your applications
 
 The Nordcraft Web Development Engine gives you the freedom to fully customize and extend the system to meet your specific needs without limitations.
