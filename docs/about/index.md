@@ -15,7 +15,7 @@ Nordcraft combines a modern web framework with a visual editor, Git-style versio
 
 Nordcraft is for **web designers and web developers** who want to craft exceptional experiences on the web.
 
-Nordcraft is a front-end framework that lets you skip the the traditional handover process from design to development that gets in the way of creativity and progress. When building in Nordcraft, you're building with real data, not placeholder data, so you can make sure your UI is built with every requirement and edge case in mind. In Nordcraft, you're building websites and web applications _as you design the UI_, while the engineers in your team can focus on building out the business logic and the back end.
+Nordcraft is a front-end framework that lets you skip the the traditional handover process from design to development that gets in the way of creativity and progress. When building in Nordcraft, you're building with real data, not placeholder data, so you can make sure your UI is built with every requirement and edge case in mind. In Nordcraft, design and development happen together. When building in Nordcraft, you can build full websites and web applications _as you design the UI_, while the engineers in your team can focus on building out the business logic and the back end.
 
 ## Unifying design and development
 
