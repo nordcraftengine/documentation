@@ -23,7 +23,7 @@ Nordcraft combines a visual editor for user interface design with a powerful tec
 
 Key features include:
 
-- Visual editing of UI components familiar to the Figma interface
+- Visual editing of UI components: see your change in real time on the Nordcraft canvas, no more switching back and forth between browser tabs
 - Component-based architecture similar to React, Vue, and Svelte front-end frameworks
 - Visual development environment for implementing interactive behavior and application logic
 - Branch-based development environment for parallel feature development and team collaboration
