@@ -32,7 +32,7 @@ Click on the template you wish to use and you'll see a dialog to configure the n
 1. **Select organization**: Pre-selected based on your account settings
 2. **Project info**:
    - Add a project name
-   - The project ID is auto generated, you may wish to edit it before creating the project
+   - The project ID is auto generated, you may wish to edit it before creating the project. It must only contain lowercase letters and numbers.
 3. **Choose visibility**: Decide who should be able to see your app; select **public** or **private**
 
 Click `Create project` and the Nordcraft editor will open for you to start working.
@@ -46,7 +46,7 @@ To create a package, click the `Create package` button at the top right of the t
 1. **Select organization**: Pre-selected based on your account settings
 2. **Project info**:
    - Add a project name
-   - The project ID is auto generated, you may wish to edit it before creating the project
+   - The project ID is auto generated, you may wish to edit it before creating the project. It must only contain lowercase letters and numbers.
 3. **Choose visibility**: Decide who should be able to see your package; select **public** or **private**
 
 Click `Create package` and the Nordcraft editor will open for you to start working.
