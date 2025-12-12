@@ -14,7 +14,7 @@ Use the icons at the left of the screen to access the following:
 1. **Files**: View all files, components, services, actions, formulas, media, themes and settings in your project
 2. **View and install packages**: Browse, search for, and install Nordcraft packages
 3. **Issues**: View issues found in your project and get advice on how to fix them (an orange dot is visible when issues are detected)
-4. **Source control**: View any changes made in the current branch of your project
+4. **Version control**: View any changes made in the current branch of your project
 
 ::: tip
 Open the project files view using the keyboard shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]. Close the file view by pressing [kbd]Escape[kbd].
