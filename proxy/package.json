@@ -25,7 +25,7 @@
     "wrangler": "4.38.0"
   },
   "dependencies": {
-    "@clickhouse/client-web": "1.11.1",
+    "@clickhouse/client-web": "1.15.0",
     "cheerio": "1.0.0",
     "hono": "4.8.2",
     "marked": "15.0.11",
