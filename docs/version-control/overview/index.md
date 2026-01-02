@@ -39,11 +39,11 @@ Deleted changes cannot be shown in the current branch since they no longer exist
 
 All files that have been changed in the main branch since the last synchronization (or creation of your active branch), are shown in the `Main` section. Like in your active branch, the changes shown here are the difference between your active main branch and the ancestor branch. Edited changes can be expanded to show the changes within, and when you select a deleted or edited change the actual value is shown in the editor.
 
-When there are changes in the `Main` section, it means that your active branch is `Out of sync`. In order to be able to publish the changes on your active branch it will be necessary to synchronise the changes on with the changes on your active main. If there are no changes overlapping changes between the two branches, synchronising will be as simple as clicking the `Sync with main` button. That will merge the changes on main into the changes on your active branch and enable publishing. 
+When there are changes in the `Main` section, it means that your active branch is `Out of sync`. In order to be able to publish the changes on your active branch it will be necessary to synchronise the changes on with the changes on your active main. If there are no changes overlapping changes between the two branches, synchronising will be as simple as clicking the `Sync with main` button. That will merge the changes on main into the changes on your active branch and enable publishing.
 
 ## Conflict management
 
-Overlapping changes between your active branch and main are called conflicts. Overlapping changes cannot be synchronised automatically, since there are two possible outcomes in that conflict. In order to resolve a conflict, you will need to accept one of the two changes. Conflicting changes on your active branch can be accepted by right clicking an item in the `Active` section and selecting `Accept current`. Conflicting changes on main can be accepted by right clicking an item in the `Main section and selecting `Accept incoming`. 
+Overlapping changes between your active branch and main are called conflicts. Overlapping changes cannot be synchronised automatically, since there are two possible outcomes in that conflict. In order to resolve a conflict, you will need to accept one of the two changes. Conflicting changes on your active branch can be accepted by right clicking an item in the `Active` section and selecting `Accept current`. Conflicting changes on main can be accepted by right clicking an item in the `Main section and selecting `Accept incoming`.
 
 ### Publish changes
 
