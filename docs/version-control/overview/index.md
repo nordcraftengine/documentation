@@ -32,7 +32,7 @@ Each change is marked with an icon and name representing the change, as well as 
 - `D`: something has been deleted. It exists in the ancestor branch, but not in the current branch.
 - `E`: something has been edited. It exists in both branches, but in different states.
 
-If something has been edited, you can dive deeper into the changes by expanding the item. This will reveal a list of all of the changes made to that item (#2 in the image). As long as there are edited items in a list, it can be expanded to show those changes. Additionally, whenever you click to select a created or edited change in the `Active` section, the value will be shown in the editor. For example, if you made changes to a formula, clicking on the affected item will open the formula editor.
+If something has been edited, you can dive deeper into the changes by expanding the item. This will reveal a list of all of the changes made to that item (#2 in the image). As long as there are edited items in a list, it can be expanded to show those changes. Additionally, whenever you click to select a created or edited change in the `Active` section, the value will be shown in the editor (#3 in the image). For example, if you made changes to a formula, clicking on the affected item will open the formula editor.
 Deleted changes cannot be shown in the current branch since they no longer exist, but may be explored on the main branch via the context menu.
 
 ## Main branch
