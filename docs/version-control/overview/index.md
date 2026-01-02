@@ -1,48 +1,50 @@
 ---
 title: Version control
-description: Manage and create branches, and manage changes in the current branch and syncronisation with the main branch.
+description: Manage and create branches, and manage changes in your active branch and synchronize your active changes with the main branch.
 ---
 
 # Version control
 
-Version control lets you view and manage changes in your current branch. In case of conflicts between your current branch and the main branch, you can resolve them here.
+Version control lets you view and manage changes in your active branch. In case of any conflicts between your active branch and the main branch, you can resolve them here.
 
-![The editor with version control open, showing changes in the current branch and main.|16/9](version-control.webp 'Version control')
+![The editor with version control open, showing changes in your active branch and main.|16/9](version-control.webp 'Version control')
 
 ## Active branch
-Switch branches from existing branches in the project, and view and manage changes on the current branch.
+
+Switch branches from existing branches in the project, and view and manage changes in your active branch.
 
 ### Create and switch branches
-Create a new branch by clicking the "+" button in the top right corner of the header. This will open a dialog to name and create the branch.
-You can switch between existing branches using the input in the "Active" section.
 
-### Manage changes in your current branch
-The changes in your current branch are shown in the "Active" section.
+Create a new branch by clicking the [kbd]+[kbd] button in the top right corner of the header. This will open a dialog to name and create the branch.
+You can switch between existing branches using the input in the `Active` section.
 
-![Changes are shown as items with an icon and a name, and letter to the right describing the type of change. The image is annotated corresponding to the section below.|16/9](version-control-changes.webp 'Version control changes')
+### View changes in your active branch
 
-All files that have changes in the current branch are listed in the "Active" section. Changes are calculated by comparing the current branch to the state of main at the point of branch creation. Since the main branch may also change through other branches being published, so the original main and current main may not be the same at the when the changes are calculated. The original state of main at the point of branch creation will be referred to as the "ancestor branch".
+The changes in your active branch are shown in the `Active` section.
 
-Each change is marked with an icon and name representing the change, as well as a letter decribing the type of change (#1 in the image):
+![Changes are shown as items with an icon and a name, and letter to the right describing the type of change. The image is annotated corresponding to the sections below.|16/9](version-control-changes.webp 'Version control changes')
 
-- The letter C means that something is created. I does not exist in the ancestor branch
-- The letter D means that something is deleted. It exists in the ancestor branch, but not in the current branch
-- The letter E means that something is edited. It exists in both branches, but with different values.
+All files that have been modified in your active branch are listed in the `Active` section. Changes are calculated by comparing your active branch to the state of the main branch at the point of branch creation. Since the main branch may also change when other branches are published, the original main and current main may not be the same at the when the changes are calculated. The original state of main at the point of branch creation will be referred to as the `ancestor branch`.
 
-If something is edited, you can dive deeper into the changes by expanding the item. That will reveal a list of all of the changes within that change (#2 in the image). As long as there are edited items in a list, it can be expanded to show those changes. Furthermore, whenever you select a created or edited change in the "Active" section, the actual value will be shown in the editor. Deleted changes cannot be shown in the current branch since they no longer exist, but may be explored on main via the context menu.
+Each change is marked with an icon and name representing the change, as well as a letter describing the type of change (#1 in the image):
+
+- `C`: something has been created. The page, element, component, formula, or workflow etc. does not exist in the ancestor branch.
+- `D`: something has been deleted. It exists in the ancestor branch, but not in the current branch.
+- `E`: something has been edited. It exists in both branches, but in different states.
+
+If something has been edited, you can dive deeper into the changes by expanding the item. This will reveal a list of all of the changes made to that item (#2 in the image). As long as there are edited items in a list, it can be expanded to show those changes. Additionally, whenever you click to select a created or edited change in the `Active` section, the value will be shown in the editor. For example, if you made changes to a formula, clicking on the affected item will open the formula editor.
+Deleted changes cannot be shown in the current branch since they no longer exist, but may be explored on the main branch via the context menu.
 
 ## Main branch
-All files that have new changes in the main branch since the last synchronisation (or creation of the current branch), are shown in the "Main" section. Like in the current branch, the changes shown here are the difference between the current main branch and the ancestor branch. Edited changes can be expanded to show the changes within, and when you select a deleted or edited change the actual value is shown in the editor.
 
-### View incoming changes in your main branch
+All files that have been changed in the main branch since the last synchronization (or creation of your active branch), are shown in the `Main` section. Like in your active branch, the changes shown here are the difference between your active main branch and the ancestor branch. Edited changes can be expanded to show the changes within, and when you select a deleted or edited change the actual value is shown in the editor.
+
+When there are changes in the `Main` section, it means that your active branch is `Out of sync`. In order to be able to publish the changes on your active branch it will be necessary to synchronise the changes on with the changes on your active main. If there are no changes overlapping changes between the two branches, synchronising will be as simple as clicking the `Sync with main` button. That will merge the changes on main into the changes on your active branch and enable publishing. 
 
 ## Conflict management
 
-### Accepting changes
+Overlapping changes between your active branch and main are called conflicts. Overlapping changes cannot be synchronised automatically, since there are two possible outcomes in that conflict. In order to resolve a conflict, you will need to accept one of the two changes. Conflicting changes on your active branch can be accepted by right clicking an item in the `Active` section and selecting `Accept current`. Conflicting changes on main can be accepted by right clicking an item in the `Main section and selecting `Accept incoming`. 
 
-## Publishing
-Add a description of the change on the current branch and publish it!
+### Publish changes
 
-### Add a description
-
-### Publish change
+As long as your active branch is synchronized with the main branch, you can publish the active branch changes. When you publish changes, your changes will be merged into the main branch and become visible to users immediately on the live site. You can explore the commits to the main branch along with their descriptions, on the project page.
