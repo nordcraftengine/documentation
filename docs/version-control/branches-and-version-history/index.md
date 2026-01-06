@@ -3,7 +3,7 @@ title: Branches and version history
 description: Learn how to use branches in Nordcraft to develop features safely.
 ---
 
-# Branches and publishing in Nordcraft
+# Branches and version history
 
 Branches in Nordcraft allow you to develop new features or fix issues without affecting the live version of your project. They provide a safe environment to make and test changes before making them available to users.
 
