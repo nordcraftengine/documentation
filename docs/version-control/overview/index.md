@@ -5,7 +5,7 @@ description: Learn how to use branches in Nordcraft to develop features safely.
 
 # Overview
 
-Version control in Nordcraft is our way of managing changes to files, so that teams can collaborate on the same project with as little interference as possible, while keeping the code stable at the same time. Every change to the production site as well as its author is recorded, and every pending change will be informed about the changes, so that potential change conflicts can be managed. In case of a mistake, version control provides tools for reverting single files or entire changes.
+Version control in Nordcraft is our way of managing changes to files, so that teams can collaborate on the same project with as little interference as possible, while keeping the code stable at the same time. Every change to the production site as well as its author is recorded, and all work in progress will be informed about the changes, so that potential change conflicts can be managed. In case of a mistake, version control provides tools for reverting single files or entire changes.
 
 ## Branches
 
