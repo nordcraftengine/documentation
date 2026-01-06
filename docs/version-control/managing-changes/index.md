@@ -5,9 +5,10 @@ description: Manage and create branches, manage changes in your active branch, a
 
 # Managing changes
 
-Version control lets you view and manage changes in your active branch. In case of any conflicts between your active branch and the main branch, you can resolve them here.
+The version control panel lets you view and manage changes in your active branch. In case of any conflicts between your active branch and the main branch, you can resolve them here.
+To access the version control panel, find the version control icon in the left sidebar.
 
-![The editor with version control open, showing changes in your active branch and main.|16/9](version-control.webp 'Version control')
+![Open the version control panel using the version control icon in the left sidebar.|16/9](version-control-icon.webp 'Version control')
 
 ## Active branch
 
