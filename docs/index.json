@@ -299,6 +299,24 @@
       }
     ]
   },
+  {
+    "path": "version-control",
+    "label": "Version control",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Branches and version history",
+        "path": "branches-and-version-history"
+      },
+      {
+        "label": "Resolving conflicts",
+        "path": "resolving-conflicts"
+      }
+    ]
+  },
   { "path": "custom-domains", "label": "Custom domains" },
   {
     "path": "packages",
@@ -369,24 +387,6 @@
       {
         "label": "Issue rules",
         "path": "issue-rules"
-      }
-    ]
-  },
-  {
-    "path": "version-control",
-    "label": "Version control",
-    "children": [
-      {
-        "label": "Overview",
-        "path": "overview"
-      },
-      {
-        "label": "Branches and version history",
-        "path": "branches-and-version-history"
-      },
-      {
-        "label": "Resolving conflicts",
-        "path": "resolving-conflicts"
       }
     ]
   }
