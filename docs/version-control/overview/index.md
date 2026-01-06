@@ -1,15 +1,15 @@
 ---
-title: Overview
-description: Learn how to use branches in Nordcraft to develop features safely.
+title: Version control
+description: description: Learn about Nordcraft's Git-like approach to version control, branching, and change management.
 ---
 
-# Overview
+# Version control
 
-Version control in Nordcraft is our way of managing changes to files, so that teams can collaborate on the same project with as little interference as possible, while keeping the code stable at the same time. Every change to the production site as well as its author is recorded, and all work in progress will be informed about the changes, so that potential change conflicts can be managed. In case of a mistake, version control provides tools for reverting single files or entire changes.
+Version control in software development enables teams to collaborate on parallel feature development and bug fixes without affecting the live site in production. Version control also records the history of any changes made, and allows you to revert to previous versions of files or versions of your project should you need to.
 
 ## Branches
 
-Branches in Nordcraft allow you to develop new features or fix issues without affecting the live version of your project. They provide a safe environment to make and test changes before making them available to users.
+Branches in Nordcraft allow you to develop new features or fix issues without affecting the live version of your projects, providing a safe environment to make and test changes before making them available to users.
 
 ### Understanding branches
 
@@ -19,7 +19,7 @@ Branches work like branches on a tree:
 
 - Your `main` branch is the trunk that users see
 - New branches grow from this trunk
-- When a branch is complete, it can be merged back into the trunk
+- When a branch is complete, it can be merged back into the trunk via a `commit`
 - When a branch is merged, it becomes becomes part of the trunk
 
 ::: dev

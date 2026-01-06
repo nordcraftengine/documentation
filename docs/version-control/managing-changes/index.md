@@ -21,7 +21,7 @@ Create a new branch by clicking the [kbd]+[kbd] button in the top right corner o
 
 The changes in your active branch are shown in the `Active` section.
 
-![Changes are shown as items with an icon and a name, and letter to the right describing the type of change. The image is annotated corresponding to the sections below.|16/9](version-control-changes.webp 'Version control changes')
+![Changes are shown as items with an icon and a name, and letter to the right describing the type of change. The image is annotated corresponding to the sections below.|16/9](version-control-changes.webp 'View changes')
 
 All files that have been modified in your active branch are listed in the `Active` section. Changes are calculated by comparing your active branch to the state of the main branch at the point of branch creation. Since the main branch may also change when other branches are published, the original main branch and current main branch may not be the same at the when the changes are calculated. The original state of the main branch at the point of a branch creation will be referred to as the `ancestor branch`.
 
