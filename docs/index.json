@@ -375,5 +375,23 @@
         "path": "issue-rules"
       }
     ]
+  },
+  {
+    "path": "version-control",
+    "label": "Version control",
+    "children": [
+      {
+        "label": "overview",
+        "path": "Overview"
+      },
+      {
+        "label": "branches-and-version-history",
+        "path": "Branches and version history"
+      },
+      {
+        "path": "resolving-conflicts",
+        "label": "Resolving conflicts"
+      }
+    ]
   }
 ]
