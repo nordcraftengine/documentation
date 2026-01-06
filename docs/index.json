@@ -381,16 +381,16 @@
     "label": "Version control",
     "children": [
       {
-        "label": "overview",
-        "path": "Overview"
+        "label": "Overview",
+        "path": "overview"
       },
       {
-        "label": "branches-and-version-history",
-        "path": "Branches and version history"
+        "label": "Branches and version history",
+        "path": "branches-and-version-history"
       },
       {
-        "path": "resolving-conflicts",
-        "label": "Resolving conflicts"
+        "label": "Resolving conflicts",
+        "path": "resolving-conflicts"
       }
     ]
   }
