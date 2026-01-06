@@ -308,8 +308,8 @@
         "path": "overview"
       },
       {
-        "label": "Branches and version history",
-        "path": "branches-and-version-history"
+        "label": "Managing changes",
+        "path": "managing-changes"
       },
       {
         "label": "Resolving conflicts",

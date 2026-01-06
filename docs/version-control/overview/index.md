@@ -1,52 +1,102 @@
 ---
-title: Version control
-description: Manage and create branches, manage changes in your active branch, and synchronize your active changes with the main branch.
+title: Overview
+description: Learn how to use branches in Nordcraft to develop features safely.
 ---
 
-# Version control
+# Overview
 
-Version control lets you view and manage changes in your active branch. In case of any conflicts between your active branch and the main branch, you can resolve them here.
+Version control in Nordcraft is our way of managing changes to files, so that teams can collaborate on the same project with as little interference as possible, while keeping the code stable at the same time. Every change to the production site as well as its author is recorded, and every pending change will be informed about the changes, so that potential change conflicts can be managed. In case of a mistake, version control provides tools for reverting single files or entire changes.
 
-![The editor with version control open, showing changes in your active branch and main.|16/9](version-control.webp 'Version control')
+## Branches
 
-## Active branch
+Branches in Nordcraft allow you to develop new features or fix issues without affecting the live version of your project. They provide a safe environment to make and test changes before making them available to users.
 
-Switch branches from existing branches in the project, and view and manage changes in your active branch.
+### Understanding branches
 
-### Create and switch branches
+When you create a new project, Nordcraft automatically creates a branch called `start` for you. The `main` branch represents what your users see in production. You cannot edit the main branch directly, but you can view it in the editor.
 
-Create a new branch by clicking the [kbd]+[kbd] button in the top right corner of the header of the version control panel. This will open a dialog to name and create the branch. You can switch between existing branches using the input in the `Active` section of the version control panel.
+Branches work like branches on a tree:
 
-### View changes in your active branch
+- Your `main` branch is the trunk that users see
+- New branches grow from this trunk
+- When a branch is complete, it can be merged back into the trunk
+- When a branch is merged, it becomes becomes part of the trunk
 
-The changes in your active branch are shown in the `Active` section.
+::: dev
+If you are familiar with [Git version control](https://git-scm.com/), Nordcraft branches work in the same way.
+:::
 
-![Changes are shown as items with an icon and a name, and letter to the right describing the type of change. The image is annotated corresponding to the sections below.|16/9](version-control-changes.webp 'Version control changes')
+### Advantages of branches
 
-All files that have been modified in your active branch are listed in the `Active` section. Changes are calculated by comparing your active branch to the state of the main branch at the point of branch creation. Since the main branch may also change when other branches are published, the original main branch and current main branch may not be the same at the when the changes are calculated. The original state of the main branch at the point of a branch creation will be referred to as the `ancestor branch`.
+Using separate branches for individual features or fixes provides several benefits:
 
-Each change is marked with an icon and name representing the change, as well as a letter describing the type of change (#1 in the image):
+- **Isolated development**: Work on specific features without impacting other work in progress
+- **Easier collaboration**: Reduce coordination overhead when multiple people work on the same project in parallel
+- **Stability of live version**: The main branch remains stable in production with completed and tested features only
+- **Simplified testing**: Test changes independently before publishing
+- **Reduced risk of conflicts**: Minimize conflicts that may arise from simultaneous edits to the same project
 
-- `C`: something has been created. The page, element, component, formula, or workflow etc. does not exist in the ancestor branch.
-- `D`: something has been deleted. It exists in the ancestor branch, but not in the current branch.
-- `E`: something has been edited. It exists in both branches, but in different states.
+::: tip
+Keep branches small and short-lived. A branch should contain just a single feature like `add-color-picker` or `fix-dialog-styling-issue`.
+:::
 
-If something has been edited, you can dive deeper into the changes by expanding the item. This will reveal a list of all of the changes made to that item (#2 in the image). As long as there are edited items in a list, it can be expanded to show those changes. Additionally, whenever you click to select a created or edited change in the `Active` section, the value will be shown in the editor (#3 in the image). For example, if you made changes to a formula, clicking on the affected item will open the formula editor.
-Deleted changes cannot be shown in the current branch since they no longer exist, but may be explored on the main branch via the context menu.
+## Working with branches
 
-## Main branch
+![The project page has information about branches and version history.|16/9](version-control-project-page-large.webp 'Project page')
 
-All files that have been changed in the main branch since the last synchronization (or creation of your active branch), are shown in the `Main` section. Like in your active branch, the changes shown here are the difference between your active main branch and the ancestor branch. Edited changes can be expanded to show the changes within, and when you select a deleted or edited change the actual value is shown in the editor.
+On the [project details](/get-started/project-details) page you can view a list of currently active branches. You can choose to edit, preview or delete branches from the list. You can also see the full version history of the project, containing all commits to the main branch along with their descriptions.
 
-When there are changes in the `Main` section, it means that your active branch is `Out of sync`. In order to be able to publish the changes on your active branch, you must synchronize the changes the active main branch. If there are no overlapping changes between the two branches, synchronizing will be as simple as clicking the `Sync with main` button. This will merge the changes on the main branch into the changes on your active branch, and enable publishing.
+### Create a new branch
 
-## Conflict management
+1. Click the [kbd]Create branch[kbd] button
+2. Choose a descriptive name for the branch and confirm
 
-Overlapping changes between your active branch and main are called conflicts. Overlapping changes cannot be synchronised automatically, since there are two possible outcomes in that conflict. In order to resolve a conflict, you will need to accept one of the two changes.
+When the branch is created, you are automatically taken to the editor to start working on that new branch.
 
-- Conflicting changes on your active branch can be accepted by right clicking an item in the `Active` section and selecting `Accept current`.
-- Conflicting changes on main can be accepted by right clicking an item in the `Main` section and selecting `Accept incoming`.
+::: tip
+You can have multiple active branches at the same time, each focusing on a different feature or fix.
+:::
 
-### Publish changes
+### Edit a branch
 
-As long as your active branch is synchronized with the main branch, you can publish the active branch changes. When you publish changes, your changes will be merged into the main branch and become visible to users immediately on the live site. You can explore the commits to the main branch along with their descriptions, on the project page.
+You can edit all branches in your project except for the main branch. Click the [kbd]Edit[kbd] button next to a branch to open the editor to start working in that branch.
+
+### Preview a branch
+
+You can preview your branch to test changes before publishing.
+
+- Select `Preview` in the branch menu
+- This opens a preview at `branch-project.nordcraft.site`
+- You can share this preview link with others for feedback
+- All changes made on a branch are automatically synced to the preview link
+
+### Delete branch
+
+You can delete a branch by selecting `Delete` in the branch menu. This will remove the branch along with all of the changes made on it.
+
+::: warning
+Deleting a branch cannot be undone, so make sure that you do not need the branch anymore.
+:::
+
+## Version history
+
+The version history of your project is shown as a list of commits to the main branch. Every time you publish a branch, an entry will be made in this list. Each entry shows when the changes were merged into the main branch, who merged the changes, as well as the description for that change. Since the branches are deleted when published, it is not possible to explore the changes after a merge, so make sure that you provide a good description when publishing a branch.
+
+## Roll back changes
+
+If you discover issues on your live project after publishing, you may need to revert to a previous version of your project. This is known as a rollback.
+
+1. Go to the [version history](/get-started/project-details#version-history) section in [project details](/get-started/project-details)
+2. Find the version you know worked correctly
+3. Select the `Rollback` option in the manu next to that version
+4. Confirm the rollback
+
+This will restore your live application to the selected version immediately, overwriting the current version.
+
+::: warning
+Rolling back is a significant action that affects your live application. Make sure you have selected the correct version before confirming.
+:::
+
+::: tip
+To save the current changes, create a new branch before rolling back. That way you will not lose the changes you did after the commit you rolled back.
+:::
