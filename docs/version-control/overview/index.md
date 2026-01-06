@@ -42,8 +42,9 @@ When there are changes in the `Main` section, it means that your active branch i
 
 ## Conflict management
 
-Overlapping changes between your active branch and main are called conflicts. Overlapping changes cannot be synchronised automatically, since there are two possible outcomes in that conflict. In order to resolve a conflict, you will need to accept one of the two changes. 
-- Conflicting changes on your active branch can be accepted by right clicking an item in the `Active` section and selecting `Accept current`. 
+Overlapping changes between your active branch and main are called conflicts. Overlapping changes cannot be synchronised automatically, since there are two possible outcomes in that conflict. In order to resolve a conflict, you will need to accept one of the two changes.
+
+- Conflicting changes on your active branch can be accepted by right clicking an item in the `Active` section and selecting `Accept current`.
 - Conflicting changes on main can be accepted by right clicking an item in the `Main` section and selecting `Accept incoming`.
 
 ### Publish changes
