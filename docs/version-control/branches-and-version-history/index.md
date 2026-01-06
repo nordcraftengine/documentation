@@ -18,7 +18,9 @@ Branches work like branches on a tree:
 - When a branch is complete, it can be merged back into the trunk
 - When a branch is merged, it becomes becomes part of the trunk
 
+::: dev
 If you are familiar with [Git version control](https://git-scm.com/), Nordcraft branches work in the same way.
+:::
 
 ## Advantages of branches
 
@@ -26,9 +28,9 @@ Using separate branches for individual features or fixes provides several benefi
 
 - **Isolated development**: Work on specific features without impacting other work in progress
 - **Easier collaboration**: Reduce coordination overhead when multiple people work on the same project in parallel
-- **Stability of live version**: The main branch remains stable with completed and tested features only
+- **Stability of live version**: The main branch remains stable in production with completed and tested features only
 - **Simplified testing**: Test changes independently before publishing
-- **Reduced risk of conflicts**: Minimize conflicts from simultaneous edits to the same project
+- **Reduced risk of conflicts**: Minimize conflicts that may arise from simultaneous edits to the same project
 
 ::: tip
 Keep branches small and short-lived. A branch should contain just a single feature like `add-color-picker` or `fix-dialog-styling-issue`.
@@ -38,7 +40,7 @@ Keep branches small and short-lived. A branch should contain just a single featu
 
 ![The project page has information about branches and version history.|16/9](version-control-project-page-large.webp 'Project page')
 
-On the [project details](/get-started/project-details) page you can view a list of current active branches. You can choose to edit, preview or delete branches from the list. You can also see the version history of the project, containing all commits to the main branch along with their descriptions.
+On the [project details](/get-started/project-details) page you can view a list of currently active branches. You can choose to edit, preview or delete branches from the list. You can also see the full version history of the project, containing all commits to the main branch along with their descriptions.
 
 ### Create a new branch
 
@@ -47,11 +49,13 @@ On the [project details](/get-started/project-details) page you can view a list 
 
 When the branch is created, you are automatically taken to the editor to start working on that new branch.
 
+::: tip
 You can have multiple active branches at the same time, each focusing on a different feature or fix.
+:::
 
 ### Edit a branch
 
-You can edit all branches in your project except for the main branch. When you click the [kbd]Edit[kbd] button, the editor will open the selected branch and you can start working.
+You can edit all branches in your project except for the main branch. Click the [kbd]Edit[kbd] button next to a branch to open the editor to start working in that branch.
 
 ### Preview a branch
 
@@ -64,7 +68,7 @@ You can preview your branch to test changes before publishing.
 
 ### Delete branch
 
-You can delete your branch by selecting `Delete` in the branch menu. This will remove the branch along with all of the changes made on it.
+You can delete a branch by selecting `Delete` in the branch menu. This will remove the branch along with all of the changes made on it.
 
 ::: warning
 Deleting a branch cannot be undone, so make sure that you do not need the branch anymore.
@@ -72,7 +76,7 @@ Deleting a branch cannot be undone, so make sure that you do not need the branch
 
 ## Version history
 
-The version history of your project is shown as a list of commits to main. Every time you publish a branch, an entry will be made in this list. Each entry show when the given changes was made, who made it, as well as the description for that change. Since the branches are deleted when published, it is not possible to explore the change, so be sure that you give a good description when publishing a branch.
+The version history of your project is shown as a list of commits to the main branch. Every time you publish a branch, an entry will be made in this list. Each entry shows when the changes were merged into the main branch, who merged the changes, as well as the description for that change. Since the branches are deleted when published, it is not possible to explore the changes after a merge, so make sure that you provide a good description when publishing a branch.
 
 ## Roll back changes
 
@@ -83,7 +87,7 @@ If you discover issues on your live project after publishing, you may need to re
 3. Select the `Rollback` option in the manu next to that version
 4. Confirm the rollback
 
-This will restore your live application to the selected version state immediately, overwriting the current version.
+This will restore your live application to the selected version immediately, overwriting the current version.
 
 ::: warning
 Rolling back is a significant action that affects your live application. Make sure you have selected the correct version before confirming.
