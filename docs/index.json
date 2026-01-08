@@ -20,10 +20,6 @@
       {
         "label": "Project details",
         "path": "project-details"
-      },
-      {
-        "label": "Branches and publishing",
-        "path": "branches-and-publishing"
       }
     ]
   },
@@ -300,6 +296,24 @@
       {
         "label": "Services",
         "path": "services"
+      }
+    ]
+  },
+  {
+    "path": "version-control",
+    "label": "Version control",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
+      },
+      {
+        "label": "Managing changes",
+        "path": "managing-changes"
+      },
+      {
+        "label": "Resolving conflicts",
+        "path": "resolving-conflicts"
       }
     ]
   },
