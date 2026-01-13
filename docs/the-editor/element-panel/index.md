@@ -21,20 +21,22 @@ The style panel allows you to control the visual appearance of elements and comp
 
 ![The Style panel is open showing a number of style properties available to configure on the selected HTML element. It is annotated relating to the list items below.|16/9](element-panel-styling.webp 'Styling'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=style&canvas-width=800&canvas-height=800}
 
-1. Set [style variables](#style-variables) (these are CSS custom properties)
+1. Add or override [CSS variables](#css-variables)
 2. Define [style](#style) variants (e.g. styles for hover, active and disabled states in addition to the default state)
 3. Search for CSS properties; if they exist on the style panel you will be taken to that area in the style panel
 4. Set [CSS properties](#css-properties) for the selected style variant
 5. Use the [CSS editor](#css-editor) to configure styles using standard CSS code
 
-### Style variables
+### CSS variables
 
-[Style variables](/styling/conditional-styles#style-variables) provide a way to store and reuse style values throughout your styles.
+[CSS variables](/styling/conditional-styles#css-variables) provide a way to store and reuse style values throughout your styles.
 
-- Create and manage CSS style variables that can be referenced in your styles
-- Set up CSS style variables in the formula editor to create dynamic, conditional styles
+- Create and manage CSS variables that can be referenced in your styles
+- Override theme variables at the element level for specific use cases or set a local-only variable
+- Set up CSS variables in the formula editor to create dynamic, conditional styles
 - Define the type, name and set a unit if needed (e.g. `px`)
-- These style variables are available for use in CSS properties
+- These CSS variables are available for use in CSS properties
+- Animate or transition CSS variables for smooth visual effects. CSS variables must be defined in your theme with the correct syntax type to be animated correctly.
 
 ### Style
 
