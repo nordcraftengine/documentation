@@ -101,8 +101,6 @@ Create CSS variables with dynamic values by binding them to formulas, attributes
 
 This approach is particularly useful for complex conditional styling that depends on application state or dynamic data.
 
-
-
 ## Cascade and precedence
 
 @@@ example

@@ -16,6 +16,7 @@ To access the theme editor, open the [project sidebar](/the-editor/project-sideb
 Theme variables are used to declare CSS variables at a global level for your project. These variables can then be referenced throughout your application to ensure consistent styling.
 
 When creating a new theme variable, you define:
+
 - **Name**: A unique identifier for the variable. Use kebab-case (e.g., `primary-color`, `button-height`). Splitting words with a double hyphen (e.g., `button--height`) will group the variable in the theme editor for better organization.
 - **Syntax type**: The type of value the variable holds (e.g., color, length-percentage, font-family, number). See the sections below for details on each syntax type.
 - **Initial value**: The initial value assigned to the variable if no theme value override is applied. This value will also be used if you at any point decide to reset the variable to its default state using the CSS `initial` keyword.
@@ -28,7 +29,7 @@ When using a CSS variable in transition or animations, unchecking `Inherits` can
 
 Picking the correct syntax type for theme variables is important as it determines how the variable can be used in your project. Below are the available syntax types and their use cases:
 
-### Syntax: Any(*)
+### Syntax: Any(\*)
 
 The `Any(*)` syntax type allows you to create theme variables that can hold any CSS value. This is useful for properties that may require different types of values depending on the context or complex CSS values that are not yet supported as specific syntax types.
 
@@ -45,6 +46,7 @@ Angle variables are useful for defining rotation values in transformations or gr
 Color variables can be used for backgrounds, gradients, borders, shadows, text colors, and more throughout your application. Editing a color variable will provide a color picker.
 
 Nordcraft does not enforce any color naming conventions, but deciding on a color scheme helps establish a consistent visual identity. Consider creating variables for:
+
 - Primary colors (e.g., `primary`, `secondary`, `accent`)
 - Neutral colors (e.g., `background`, `surface`, `text-primary`, `text-secondary`)
 - Status colors (e.g., `success`, `error`, `warning`, `info`)
@@ -104,6 +106,7 @@ To create and manage multiple themes:
 You can preview themes in the editor by right-clicking on the theme name in the theme editor and selecting `Emulate theme`. You can also mark a theme as the default theme for your project using the same context menu or set it as the default Dark or Light theme.
 
 ### Default theme
+
 The default theme is applied to your project unless a different theme is explicitly selected. You can change the default theme at any time in the theme editor, but you can only have one default theme per project.
 
 All other themes will fall back to the default theme for any variables not explicitly defined in that theme.
