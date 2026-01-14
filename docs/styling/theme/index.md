@@ -100,7 +100,7 @@ Each theme variable you add can have different values across multiple themes. Th
 To create and manage multiple themes:
 
 1. Open the theme editor from the [project sidebar](/the-editor/project-sidebar#project-sidebar)
-2. Click the `+` button next to your themes row or duplicate an existing theme using the context menu of an existing theme
+2. Click the `+` button next to your themes row or duplicate an existing theme using the right-click context menu of an existing theme
 3. Define different values for your theme variables in each theme
 
 You can preview themes in the editor by right-clicking on the theme name in the theme editor and selecting `Emulate theme`. You can also mark a theme as the default theme for your project using the same context menu or set it as the default Dark or Light theme.
