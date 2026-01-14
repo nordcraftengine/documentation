@@ -33,7 +33,7 @@ Picking the correct syntax type for theme variables is important as it determine
 
 The `Any(*)` syntax type allows you to create theme variables that can hold any CSS value. This is useful for properties that may require different types of values depending on the context or complex CSS values that are not yet supported as specific syntax types.
 
-Note that when using `Any(*)` variables, the variable will show up in all style property dropdowns, which may lead to confusion if the variable is not compatible with the selected property.
+Note that when using `Any(*)` variables, the variable will show up in all style property dropdown menus in the [style panel](/the-editor/element-panel#style-panel), which may lead to confusion if the variable is not compatible with the selected property.
 
 Using `Any(*)` will also require you to manually type the value, as the variable will not provide type-specific input controls (e.g., color picker, spacing units).
 
