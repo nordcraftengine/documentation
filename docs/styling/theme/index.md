@@ -61,7 +61,7 @@ Spacing variables help maintain consistent layout measurements throughout your a
 
 ### Syntax: Percentage
 
-Percentage variables is a subset of length-percentage variables where only percentage values are allowed. These are useful for defining relative sizes, such as widths or heights based on parent elements.
+Percentage variables are a subset of length-percentage variables where only percentage values are allowed. These are useful for defining relative sizes, such as widths or heights based on parent elements.
 
 ### Syntax: Number
 
