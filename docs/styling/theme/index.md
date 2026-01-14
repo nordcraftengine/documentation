@@ -45,12 +45,14 @@ Angle variables are useful for defining rotation values in transformations or gr
 
 Color variables can be used for backgrounds, gradients, borders, shadows, text colors, and more throughout your application. Editing a color variable will provide a color picker.
 
+:::tip
 Nordcraft does not enforce any color naming conventions, but deciding on a color scheme helps establish a consistent visual identity. Consider creating variables for:
 
 - Primary colors (e.g., `primary`, `secondary`, `accent`)
 - Neutral colors (e.g., `background`, `surface`, `text-primary`, `text-secondary`)
 - Status colors (e.g., `success`, `error`, `warning`, `info`)
 - Shades and tints (e.g., `gray-100`, `gray-200`, `gray-300`)
+  :::
 
 ### Syntax: Length-percentage
 
@@ -127,7 +129,7 @@ By default, the `Set theme` action will reactively (immediately) update the them
 
 ### Dynamic themes
 
-Nordcraft themes are static by default, meaning that theme variables cannot be set using formulas or dynamic values. However, you can create dynamic themes (loading from an API etc.) by creating a custom theme-provider component that overrides all your theme variables using dynamic values. This is an advanced use case and requires knowledge of building components in Nordcraft.
+Nordcraft themes are static by default, meaning that theme variables cannot be set using formulas or dynamic values. However, you can create dynamic themes (loading from an API etc.) by creating a custom theme-provider component that overrides your theme variables using dynamic values. This is an advanced use case and requires knowledge of building [components](/components/overview).
 
 ## Using theme variables
 

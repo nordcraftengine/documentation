@@ -36,7 +36,7 @@ The style panel allows you to control the visual appearance of elements and comp
 - Set up CSS variables in the formula editor to create dynamic, conditional styles
 - Define the type, name and set a unit if needed (e.g. `px`)
 - These CSS variables are available for use in CSS properties in the style panel
-- Animate or transition CSS variables for smooth visual effects. CSS variables must be defined in your theme with the correct syntax type to be animated correctly.
+- Animate or transition CSS variables for smooth visual effects. CSS variables must be defined in your theme with the correct [syntax type](/styling/theme#theme-variables) to be animated correctly.
 
 ### Style
 
