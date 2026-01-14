@@ -115,7 +115,7 @@ All other themes will fall back to the default theme for any variables not expli
 
 You can mark one theme as the default Dark theme and one as the default Light theme. This allows you to set up automatic theme switching based on user preferences or system settings.
 
-When a user has a preference for dark mode enabled in their operating system or browser, the default Dark theme will be applied. Conversely, if they prefer light mode, the default Light theme will be used.
+When a user has a preference for dark mode enabled in their operating system or browser, the default Dark theme will be applied. Conversely, if they prefer light mode, the default Light theme will be used. This happens automatically and requires no extra configuration.
 
 ### Setting a theme programmatically
 
