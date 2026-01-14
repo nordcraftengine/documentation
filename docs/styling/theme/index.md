@@ -24,7 +24,7 @@ When creating a new theme variable, you define:
 - **Inherits**: Specifies if the variable should inherit value. Default is true. Unchecking this option will cause the initial value to always be used or any override value set at the element level.
 
 :::tip
-When using a CSS variable in transition or animations, unchecking `Inherits` can have a positive effect on performance as the browser can simplify the number of style checks. Effectively making it as performant as setting CSS variables on the style attribute.
+When using a CSS variable in transition or animations, unchecking `Inherits` can have a positive effect on performance as the browser can simplify the number of style checks. This effectively makes it as performant as setting CSS variables on the style attribute of HTML elements.
 :::
 
 Picking the correct syntax type for theme variables is important as it determines how the variable can be used in your project. Below are the available syntax types and their use cases:
