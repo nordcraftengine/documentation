@@ -29,7 +29,7 @@ The style panel allows you to control the visual appearance of elements and comp
 
 ### CSS variables
 
-[CSS variables](/styling/conditional-styles#css-variables) provide a way to store and reuse style values throughout your styles.
+[CSS variables](/styling/conditional-styles#css-variables) provide a way to store and reuse style values throughout your project in the style panel.
 
 - Create and manage CSS variables that can be referenced in your styles
 - Override theme variables at the element level for specific use cases or set a local-only variable
