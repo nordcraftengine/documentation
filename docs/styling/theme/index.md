@@ -31,7 +31,7 @@ When using a CSS variable in transition or animations, unchecking `Inherits` can
 
 Picking the correct syntax type for theme variables is important as it determines how the variable can be used in your project. Below are the available syntax types and their use cases:
 
-### Syntax: Any(\*)
+### Syntax: Any
 
 The `Any(*)` syntax type allows you to create theme variables that can hold any CSS value. This is useful for properties that may require different types of values depending on the context or complex CSS values that are not yet supported as specific syntax types.
 
