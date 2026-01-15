@@ -17,13 +17,13 @@ Theme variables are used to declare CSS variables at a global level for your pro
 
 When creating a new theme variable, you define:
 
-| Property      | Description                                                                                          | Default |
-| ------------- | ---------------------------------------------------------------------------------------------------- | ------- |
-| Name          | A unique identifier for the variable. Use kebab-case (e.g., `primary-color`, `button-height`). Splitting words with a double hyphen (e.g., `button--height`) will group the variable in the theme editor for better organization. | N/A     |
+| Property      | Description                                                                                                                                                                                                                                                                                                 | Default |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Name          | A unique identifier for the variable. Use kebab-case (e.g., `primary-color`, `button-height`). Splitting words with a double hyphen (e.g., `button--height`) will group the variable in the theme editor for better organization.                                                                           | N/A     |
 | Syntax type   | The type of value the variable holds (e.g., color, length-percentage, font-family, number, etc.). See the sections below for details on each syntax type or view the underlying [syntax property definitions](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property/syntax) on MDN. | N/A     |
-| Initial value | The initial value assigned to the variable if no theme value override is applied. This value will also be used if you decide to reset the variable to its default state using the CSS `initial` keyword. | N/A     |
-| Description   | A brief explanation of the variable's purpose. This is optional and only in the editor for reference. | N/A     |
-| Inherits      | Specifies if the variable should inherit value. Default is true. Unchecking this option will cause the initial value to always be used or any override value set at the element level. | true    |
+| Initial value | The initial value assigned to the variable if no theme value override is applied. This value will also be used if you decide to reset the variable to its default state using the CSS `initial` keyword.                                                                                                    | N/A     |
+| Description   | A brief explanation of the variable's purpose. This is optional and only in the editor for reference.                                                                                                                                                                                                       | N/A     |
+| Inherits      | Specifies if the variable should inherit value. Default is true. Unchecking this option will cause the initial value to always be used or any override value set at the element level.                                                                                                                      | true    |
 
 :::tip
 When using a CSS variable in transition or animations, unchecking `Inherits` can have a positive effect on performance as the browser can simplify the number of style checks. This effectively makes it as performant as setting CSS variables on the style attribute of HTML elements.
