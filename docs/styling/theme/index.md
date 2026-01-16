@@ -87,7 +87,7 @@ Select and manage typography for your project:
 - Choose and install fonts from available Google fonts
 - Change font families based on the active theme
 
-Once added, these fonts become available in the font dropdown menu in the [style panel](/the-editor/element-panel#style-panel).
+Defined font-family variables are available in the font dropdown menu in the [style panel](/the-editor/element-panel#style-panel).
 
 #### Custom fonts
 
