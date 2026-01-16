@@ -97,7 +97,7 @@ When the weather data is successfully updated, a confetti animation is triggered
 
 ## Cancelling API calls
 
-You can cancel ongoing API calls using the **Cancel API call** workflow action. This is useful in scenarios where you have long running API requests that your application or the user might want to cancel. API requests that are streamed from AI services can also be cancelled to stop receiving further data.
+You can cancel ongoing API calls using the **Cancel API call** workflow action. This is useful in scenarios where you have long running API requests that your application or the user might want to cancel.
 
 ## Accessing API data
 
