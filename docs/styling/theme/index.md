@@ -5,7 +5,7 @@ description: Create design systems with Nordcraft's theme tools for managing col
 
 # Theme
 
-The theme system in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure consistent styling throughout your application. All theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
+Themes in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure styles are consistent across your project. All theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
 
 To access the theme editor, open the [project sidebar](/the-editor/project-sidebar#project-sidebar) and find the `Themes` section. You can also open the theme dialog from the [bottom-bar](/the-editor/bottom-bar#bottom-bar) when editing a component. Here you can edit your theme with a live view of your changes in context.
 
