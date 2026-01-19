@@ -135,7 +135,7 @@ This allows you to create components or sections of your application that use a 
 
 ### Dynamic themes
 
-Nordcraft themes are static by default, meaning that theme variables cannot be set using formulas or dynamic values. However, you can create dynamic themes (loading from an API etc.) by creating a custom theme-provider component that overrides your theme variables using dynamic values. This is an advanced use case and requires knowledge of building [components](/components/overview).
+Nordcraft themes are static by default, meaning that theme variables cannot be set using formulas or dynamic values. However, you can create dynamic themes using data from an API, for example, by creating a custom theme-provider component that overrides your theme variables using those dynamic values. This is an advanced use case and requires knowledge of building [components](/components/overview).
 
 ## Using theme variables
 
