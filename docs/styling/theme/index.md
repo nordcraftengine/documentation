@@ -127,11 +127,11 @@ You can set themes programmatically using the [Set theme](/references/actions#se
 
 ### Overriding themes on elements
 
+By default, the `Set theme` action will reactively (immediately) update the theme when triggered and store the selected theme in a cookie (this ensures SSR compatibility). You can override the default behavior in any page's [page configuration](/pages/page-configuration) under the `Themes` section to read the theme from local storage, variable or an API for example.
+
 Themes are set at the page level, but you can also set themes on individual elements. To do this, add the special `data-nc-theme` attribute to an element using the [attributes panel](/the-editor/element-panel#attributes-panel), specifying the theme name you wish to use as the value of that attribute.
 
 This allows you to create components or sections of your application that use a different theme than the rest of the page. The element and all its children will use the specified theme.
-
-By default, the `Set theme` action will reactively (immediately) update the theme when triggered and store the selected theme in a cookie (this ensures SSR compatibility). You can override the default behavior in any page's [page configuration](/pages/page-configuration) under the `Themes` section to read the theme from local storage, variable or an API for example.
 
 ### Dynamic themes
 
