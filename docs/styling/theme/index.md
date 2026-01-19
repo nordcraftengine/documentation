@@ -29,7 +29,7 @@ When creating a new theme variable, you define:
 When using a CSS variable in transition or animations, unchecking `Inherits` can have a positive effect on performance as the browser can simplify the number of style checks. This effectively makes it as performant as setting CSS variables on the style attribute of HTML elements.
 :::
 
-Picking the correct syntax type for theme variables is important as it determines how the variable can be used in your project. Below are the available syntax types and their use cases:
+Picking the correct syntax type for theme variables is important as it determines how the variable can be used in your project. Below are the available syntax types and their use cases.
 
 ### Syntax: Any
 
