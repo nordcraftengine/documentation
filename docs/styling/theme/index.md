@@ -37,7 +37,9 @@ The `Any(*)` syntax type allows you to create theme variables that can hold any 
 
 Note that when using `Any(*)` variables, the variable will show up in all style property dropdown menus in the [style panel](/the-editor/element-panel#style-panel), which could be confusing if the variable is not compatible with the selected property.
 
-Using `Any(*)` will also require you to manually type the value, as the variable will not provide type-specific input controls (e.g., color picker, spacing units).
+::: warning
+Using `Any(*)` will require you to manually input the variable name in the style panel instead of being able to choose from a list of variable names in a dropdown list. This is because the variable is not able to provide type-specific input controls (e.g., color picker, spacing units).
+:::
 
 ### Syntax: Angle
 
