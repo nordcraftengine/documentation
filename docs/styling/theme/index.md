@@ -52,15 +52,15 @@ Color variables can be used for backgrounds, gradients, borders, shadows, text c
 :::tip
 Nordcraft does not enforce any color naming conventions, but deciding on a color scheme helps establish a consistent visual identity. Consider creating variables for:
 
-**Primary colors** (e.g., `primary`, `secondary`, `accent`)
-**Neutral colors** (e.g., `background`, `surface`, `text-primary`, `text-secondary`)
-**Status colors** (e.g., `success`, `error`, `warning`, `info`)
-**Shades and tints** (e.g., `gray-100`, `gray-200`, `gray-300`)
+- **Primary colors** (e.g., `primary`, `secondary`, `accent`)
+- **Neutral colors** (e.g., `background`, `surface`, `text-primary`, `text-secondary`)
+- **Status colors** (e.g., `success`, `error`, `warning`, `info`)
+- **Shades and tints** (e.g., `gray-100`, `gray-200`, `gray-300`)
 :::
 
 ### Syntax: Length-percentage
 
-Spacing variables help maintain consistent layout measurements throughout your application:
+Using variables for layout and spacing properties such as gap, margins and padding helps you create consistently-presented page and component layouts across your project. You can also use this syntax type to define font-size variables for consistent typography scaling.
 
 - Create dimension-related variables such as margin and padding
 - Define font-size variables for consistent typography scaling
@@ -79,7 +79,7 @@ Time variables are used for defining durations in animations and transitions. By
 
 ### Syntax: Integer
 
-Integers are mostly used for handling z-index throughout your interface, but can also be used for font-weight management.
+Integers are mostly used for handling z-index throughout your interface, but can also be used for font-weight management. A well-structured z-index system prevents unintended overlapping issues in complex interfaces.
 A well-structured z-index system prevents unintended overlapping issues in complex interfaces.
 
 ### Syntax: Font-family
@@ -93,7 +93,7 @@ Defined font-family variables are available in the font dropdown menu in the [st
 
 #### Custom fonts
 
-For fonts not available natively in Nordcraft, add them in your [page configuration](/pages/page-configuration). Navigate to the [head assets](/pages/page-configuration#head-assets) section to set up custom fonts.
+For fonts not available natively in Nordcraft, you can add them in your [page configuration](/pages/page-configuration). Navigate to the [head assets](/pages/page-configuration#head-assets) section to set up custom fonts.
 
 ::: info
 Fonts added via page configuration will only be available on the specific page where you add them. To use custom fonts across your entire project, add them to each page that requires them.
@@ -101,12 +101,12 @@ Fonts added via page configuration will only be available on the specific page w
 
 ## Multiple themes
 
-Each theme variable you add can have different values across multiple themes. This allows you to create light and dark themes or different color schemes for various contexts.
+For each theme variable you add, you can define different values for that variable across multiple themes. This allows you to create light and dark themes, different color schemes for various contexts, or any type of theme switching you like.
 
 To create and manage multiple themes:
 
 1. Open the theme editor from the [project sidebar](/the-editor/project-sidebar#project-sidebar)
-2. Click the `+` button next to your themes row or duplicate an existing theme using the right-click context menu of an existing theme
+2. Click the `+` button next to your themes row to add a new theme, or duplicate an existing theme using the right-click context menu of an existing theme
 3. Define different values for your theme variables in each theme
 
 You can preview themes in the editor by right-clicking on the theme name in the theme editor and selecting `Emulate theme`. You can also mark a theme as the default theme for your project using the same context menu or set it as the default Dark or Light theme.
