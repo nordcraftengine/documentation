@@ -1,9 +1,9 @@
 ---
-title: Theme
+title: Themes
 description: Create design systems with Nordcraft's theme tools for managing colors, spacing, typography, fonts, and more across your project.
 ---
 
-# Theme
+# Themes
 
 Themes in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure styles are consistent across your project. All theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
 
@@ -19,7 +19,7 @@ When creating a new theme variable, you define:
 
 | Property      | Description                                                                                                                                                                                                                                                                                                 | Default |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Name          | A unique identifier for the variable. Use kebab-case (e.g., `primary-color`, `button-height`). Splitting words with a double hyphen (e.g., `button--height`) will create a category for the variable in the theme editor to help with variable organisation.                                                                           | N/A     |
+| Name          | A unique identifier for the variable. Use kebab-case (e.g., `primary-color`, `button-height`). Splitting words with a double hyphen (e.g., `button--height`) will create a category for the variable in the theme editor to help with variable organization.                                                | N/A     |
 | Syntax type   | The type of value the variable holds (e.g., color, length-percentage, font-family, number, etc.). See the sections below for details on each syntax type or view the underlying [syntax property definitions](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property/syntax) on MDN. | N/A     |
 | Initial value | The initial value assigned to the variable if no theme value override is applied. This value will also be used if you decide to reset the variable to its default state using the CSS `initial` keyword.                                                                                                    | N/A     |
 | Description   | A brief explanation of the variable's purpose. This is optional and only in the editor for reference.                                                                                                                                                                                                       | N/A     |

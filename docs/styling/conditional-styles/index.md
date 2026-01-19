@@ -167,7 +167,7 @@ To apply conditional styling to a component instance:
 4. If the component has classes on its root element, these will appear in the **Class** selection dropdown
 5. If the component has CSS variables defined on its root element, these will appear in the **CSS variables** section to override.
 
-For consistent styling across multiple components, consider adding toggleable classes or creating component variants rather than styling individual instances, providing more maintainable solutions.
+For consistent styling across multiple components, consider adding conditional classes or creating component variants rather than styling individual instances, providing more maintainable solutions.
 
 ### Component styling limitations
 

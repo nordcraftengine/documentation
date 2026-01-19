@@ -104,6 +104,7 @@ To see how issue rules are implemented, visit the [Nordcraft GitHub repository](
 | **[Invalid style syntax](https://github.com/nordcraftengine/nordcraft/blob/main/packages/search/src/rules/issues/style/invalidStyleSyntaxRule.ts)**                  | Error    | Delete the CSS property | Finds invalid CSS properties/syntax on elements and components.        |
 | **[Unknown classname](https://github.com/nordcraftengine/nordcraft/blob/main/packages/search/src/rules/issues/style/unknownClassnameRule.ts)**                       | Error    |           No            | Flags style variants that reference unknown classnames on an element.  |
 | **[CSS variables with no reference](https://github.com/nordcraftengine/nordcraft/blob/main/packages/search/src/rules/issues/style/noReferenceGlobalCSSVariable.ts)** | Error    |           No            | Finds all global CSS variables that are never referenced in a project. |
+| **[Unknown CSS variable](https://github.com/nordcraftengine/nordcraft/blob/main/packages/search/src/rules/issues/style/unknownCSSVariable.ts)**                      | Error    |           No            | Finds references to unknown CSS variables used in style properties.    |
 
 ## Slots
 
