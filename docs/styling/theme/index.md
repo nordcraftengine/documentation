@@ -13,7 +13,7 @@ To access the theme editor, open the [project sidebar](/the-editor/project-sideb
 
 ## Theme variables
 
-Theme variables are used to declare CSS variables at a global level for your project. These variables can then be referenced throughout your application to ensure consistent styling.
+Use theme variables to declare [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties) at a global level for your project. You can then use these variables in your project for styling.
 
 When creating a new theme variable, you define:
 
