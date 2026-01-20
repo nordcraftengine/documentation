@@ -60,10 +60,7 @@ Nordcraft does not enforce any color naming conventions, but deciding on a color
 
 ### Syntax: Length-percentage
 
-Using variables for layout and spacing properties such as gap, margins and padding helps you create consistently-presented page and component layouts across your project. You can also use this syntax type to define font-size variables for consistent typography scaling.
-
-- Create dimension-related variables such as margin and padding
-- Define font-size variables for consistent typography scaling
+Using variables for layout and spacing properties such as gap, margins and padding helps you create consistently-presented page and component layouts across your project. You can use this syntax type to define font-size variables for consistent typography scaling, or for defining sizes, paddings, margins, and other dimensional properties.
 
 ### Syntax: Percentage
 
