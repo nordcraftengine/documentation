@@ -9,7 +9,7 @@ Themes in Nordcraft provides a centralized way to manage design tokens across yo
 
 To access the theme editor, open the [project sidebar](/the-editor/project-sidebar#project-sidebar) and find the `Themes` section. You can also open the theme dialog from the [bottom bar](/the-editor/bottom-bar#bottom-bar) when editing a component. Here you can edit your theme with a live view of your changes in context.
 
-![The Nordcraft theme editor. On the left is the CSS variable grouping. On the central canvas, a table of theme variables are displayed with their type inputs.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default?canvas-width=800&canvas-height=800&rightpanel=style}
+![The Nordcraft theme editor. On the left is the CSS variable grouping. On the central canvas, a table of theme variables are displayed with their type inputs.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default}
 
 ## Theme variables
 
@@ -102,22 +102,24 @@ For each theme variable you add, you can define different values for that variab
 To create and manage multiple themes:
 
 1. Open the theme editor from the [project sidebar](/the-editor/project-sidebar#project-sidebar)
-2. Click the `+` button next to your themes row to add a new theme, or duplicate an existing theme using the right-click context menu of an existing theme
+2. Click the `+` button next to your themes row to add a new theme, or duplicate an existing theme using the context menu of an existing theme
 3. Define different values for your theme variables in each theme
 
-You can preview themes in the editor by right-clicking on the theme name in the theme editor and selecting `Emulate theme`. You can also mark a theme as the default theme for your project using the same context menu or set it as the default Dark or Light theme.
+You can preview themes in the editor by using the context menu in the theme editor and selecting `Emulate theme`. You can also mark a theme as the default theme for your project using the same context menu or set it as the default Dark or Light theme.
+
+![The Nordcraft theme editor showing. The context menu for a theme is open, showing options to emulate, set as default, set as default dark or light theme, move left and right, duplicate or delete the theme. The first option of Emulating theme is highlighted.|16/9](emulate-theme.webp 'Multiple themes'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default}
 
 ### Default theme
 
-The default theme is applied to your project unless a different theme is explicitly selected. You can change the default theme at any time in the theme editor, but you can only have one default theme per project.
+The default theme is applied to your project unless a different theme is explicitly selected. You can change the default theme at any time in the theme editor by opening the context-menu of a theme (see screenshot above) and checking "Default theme", but you can only have one default theme per project.
 
-All other themes will fall back to the default theme for any variables not explicitly defined in that theme.
+All other themes will fall back to the default theme for any variables not explicitly defined in that theme. If a variable is not defined in either the selected theme or the default theme, the variable's initial value will be used instead.
 
 ### Dark and Light themes
 
-You can mark one theme as the default Dark theme and one as the default Light theme. This allows you to set up automatic theme switching based on user preferences or system settings.
+You can optionally mark one theme as the default Dark theme and one as the default Light theme. This allows you to set up automatic theme switching based on user preferences or system settings.
 
-Nordcraft automatically detects whether a user has a preference for dark or light mode based on their operating system or browser preferences, and selects the either the dark or light theme on page load based on those preferences. This happens automatically and requires no extra configuration.
+Nordcraft automatically detects whether a user has a preference for dark or light mode based on their operating system or browser preferences, and selects the either the dark or light theme on page load based on those preferences. This happens automatically and requires no extra configuration. If no dark or light theme is set, the default theme will be used.
 
 ### Setting a theme programmatically
 
