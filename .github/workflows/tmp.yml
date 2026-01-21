@@ -1,12 +1,8 @@
 name: 'Tmp'
 
-on:
-  push
+on: push
 
 jobs:
   tmp_release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create release
-        uses: nordcraftengine/documentation/.github/workflows/create_release.yml@full-docs
-      secrets: inherit
+    uses: nordcraftengine/documentation/.github/workflows/create_release.yml@full-docs
+    secrets: inherit
