@@ -158,7 +158,9 @@ const getNextHeadingSliceIndex = (tokens: Token[], start: number) => {
 }
 
 export const getSectionId = (name: string, previousId?: string) => {
-  const rawId = previousId ? previousId + '-' + kebabCase(name) : kebabCase(name)
+  const rawId = previousId
+    ? previousId + '-' + kebabCase(name)
+    : kebabCase(name)
   // Remove leading/trailing non-alphanumeric characters
   return rawId.replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, '')
 }
