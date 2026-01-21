@@ -38,6 +38,6 @@ jobs:
       - name: Set release tag
         run: echo "RELEASE_TAG=${GITHUB_SHA}" >> $GITHUB_ENV
       - name: Upload
-        run: gh release upload $RELEASE_TAG ./dist/full-docs.json
+        run: gh release upload $RELEASE_TAG ./proxy/dist/full-docs.json
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
