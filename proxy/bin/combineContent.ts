@@ -40,6 +40,13 @@ interface MarkdownContent {
   tokens?: MarkdownContent[]
   items?: MarkdownContent[]
   id?: string
+  title?: {
+    tokens?: MarkdownContent[]
+    raw: string
+    text: string
+    type: string
+    depth: number
+  }
 }
 
 enum ContentType {
@@ -58,6 +65,7 @@ enum ContentType {
 
 interface ContentEntry {
   type: ContentType
+  title?: string
   text?: string
   anchor?: string
   tokens?: ContentEntry[]
@@ -159,6 +167,7 @@ function mapMarkdownToContentEntry(
     const mapped: ContentEntry = {
       type: item.type as ContentType,
       text: item.text,
+      title: item.title?.text,
       tokens: tokens.length > 0 ? tokens : undefined,
       anchor: item.id ? `#${item.id}` : undefined,
     }
