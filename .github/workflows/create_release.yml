@@ -7,7 +7,7 @@ jobs:
   create_release:
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Set release tag
         run: echo "RELEASE_TAG=${GITHUB_SHA}" >> $GITHUB_ENV
@@ -40,4 +40,4 @@ jobs:
       - name: Upload
         run: gh release upload $RELEASE_TAG ./dist/full-docs.json
     env:
-      GITHUB_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
