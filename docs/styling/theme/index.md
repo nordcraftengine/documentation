@@ -52,11 +52,11 @@ Color variables can be used for backgrounds, gradients, borders, shadows, text c
 :::tip
 Nordcraft does not enforce any color naming conventions, but deciding on a color scheme helps establish a consistent visual identity. Consider creating variables for:
 
-- **Primary colors** (e.g., `primary`, `secondary`, `accent`)
-- **Neutral colors** (e.g., `background`, `surface`, `text-primary`, `text-secondary`)
-- **Status colors** (e.g., `success`, `error`, `warning`, `info`)
-- **Shades and tints** (e.g., `gray-100`, `gray-200`, `gray-300`)
-  :::
+**Primary colors** (e.g., `primary`, `secondary`, `accent`)
+**Neutral colors** (e.g., `background`, `surface`, `text-primary`, `text-secondary`)
+**Status colors** (e.g., `success`, `error`, `warning`, `info`)
+**Shades and tints** (e.g., `gray-100`, `gray-200`, `gray-300`)
+:::
 
 ### Syntax: Length-percentage
 
