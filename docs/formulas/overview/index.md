@@ -32,7 +32,7 @@ The formula editor appears when editing formulas and wherever you see an [kbd]fx
 
 - In the [attributes panel](/the-editor/element-panel#attributes-panel) when binding values
 - In the [Show](/formulas/show-hide-formula) and [Repeat](/formulas/repeat-formula) sections
-- In the [style variables](/styling/conditional-styles#style-variables) panel
+- In the [CSS variables](/styling/conditional-styles#css-variables) panel
 - In the [data panel](/the-editor/data-panel) when defining formulas
 
 In the formula editor, you can:

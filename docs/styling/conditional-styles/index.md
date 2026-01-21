@@ -1,6 +1,6 @@
 ---
 title: Conditional styles
-description: Implement responsive and state-dependent styling with pseudo classes, CSS classes and style variables for dynamic user interfaces.
+description: Implement responsive and state-dependent styling with pseudo classes, CSS classes and CSS variables for dynamic user interfaces.
 ---
 
 # Conditional styles
@@ -11,7 +11,7 @@ There are several methods to apply conditional styles in Nordcraft:
 
 - [Style variants](#style-variants) via pseudo-classes, pseudo-elements, and media-queries
 - Style variants via [classes](#class-based-styles)
-- [Style variables](#style-variables)
+- [CSS variables](#style-variables)
 
 ## Style variants
 
@@ -83,19 +83,19 @@ Classes in Nordcraft are scoped to the element where they're defined:
 
 This approach maintains clean separation and prevents unintended style conflicts in your application.
 
-## Style variables
+## CSS variables
 
 @@@ example
 componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-style-variables.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-style-variables?rightpanel=style&canvas-width=800&selection=nodes.RXXxhmSNTU21VntB7mKuh.style-variables.0.formula&canvas-height=800
 height: 18rem
 
-Style variables create dynamic styles based on state. Click the card to toggle its selected state, which dynamically changes the border, background, and text colors.
+CSS variables create dynamic styles based on state. Click the card to toggle its selected state, which dynamically changes the border, background, and text colors.
 @@@
 
-Create style variables with dynamic values by binding them to formulas, attributes, or variables:
+Create CSS variables with dynamic values by binding them to formulas, attributes, or variables:
 
-1. Define a style variable in the [Style variables](/the-editor/element-panel#style-panel) section
+1. Define or override CSS variable in the [CSS variables](/the-editor/element-panel#style-panel) section
 2. Use the [formula editor](/formulas/overview#the-formula-editor) to create conditional logic
 3. Reference the variable in your CSS properties
 
@@ -165,8 +165,9 @@ To apply conditional styling to a component instance:
 2. Add a style in the [style panel](/the-editor/element-panel#style-panel)
 3. Choose from available pseudo-classes, media queries and pseudo-elements
 4. If the component has classes on its root element, these will appear in the **Class** selection dropdown
+5. If the component has CSS variables defined on its root element, these will appear in the **CSS variables** section to override.
 
-For consistent styling across multiple components, consider adding toggleable classes or creating component variants rather than styling individual instances, providing more maintainable solutions.
+For consistent styling across multiple components, consider adding conditional classes or creating component variants rather than styling individual instances, providing more maintainable solutions.
 
 ### Component styling limitations
 
@@ -174,5 +175,4 @@ When styling component instances, there are some limitations:
 
 - You cannot add classes directly to components in the attributes panel
 - Only classes that exist on the root element of the component can be styled from outside
-- Style variables cannot be added to components
 - You cannot style elements deeper in the component tree hierarchy
