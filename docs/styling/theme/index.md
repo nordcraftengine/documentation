@@ -5,7 +5,7 @@ description: Create design systems with Nordcraft's theme tools for managing col
 
 # Themes
 
-Themes in Nordcraft provides a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure styles are consistent across your project. All theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
+Themes in Nordcraft provide a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure styles are consistent across your project. All theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
 
 To access the theme editor, open the [project sidebar](/the-editor/project-sidebar#project-sidebar) and find the `Themes` section. You can also open the theme dialog from the [bottom bar](/the-editor/bottom-bar#bottom-bar) when editing a component. Here you can edit your theme with a live view of your changes in context.
 
@@ -23,7 +23,7 @@ When creating a new theme variable, you define:
 | Syntax type   | The type of value the variable holds (e.g., color, length-percentage, font-family, number, etc.). See the sections below for details on each syntax type or view the underlying [syntax property definitions](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property/syntax) on MDN. | N/A     |
 | Initial value | The initial value assigned to the variable if no theme value override is applied. This value will also be used if you decide to reset the variable to its default state using the CSS `initial` keyword.                                                                                                    | N/A     |
 | Description   | A brief explanation of the variable's purpose. This is optional and only in the editor for reference.                                                                                                                                                                                                       | N/A     |
-| Inherits      | Specifies if the variable should inherit value. Default is true. Unchecking this option will cause the initial value to always be used or any override value set at the element level.                                                                                                                      | true    |
+| Inherits      | Specifies if the variable should inherit value. Unchecking this option will cause the initial value to always be used or any override value set at the element level.                                                                                                                      | true    |
 
 :::tip
 When using a CSS variable in transition or animations, unchecking `Inherits` can have a positive effect on performance as the browser can simplify the number of style checks. This effectively makes it as performant as setting CSS variables on the style attribute of HTML elements.
@@ -92,7 +92,7 @@ Defined font-family variables are available in the font dropdown menu in the [st
 For fonts not available natively in Nordcraft, you can add them in your [page configuration](/pages/page-configuration). Navigate to the [head assets](/pages/page-configuration#head-assets) section to set up custom fonts.
 
 ::: info
-Fonts added via page configuration will only be available on the specific page where you add them. To use custom fonts across your entire project, add them to each page that requires them.
+Fonts added via page configuration will only be available on the specific pages to which you add them. To use custom fonts across your entire project, add them to each page that requires them.
 :::
 
 ## Multiple themes
@@ -129,7 +129,7 @@ You can set themes programmatically using the [Set theme](/references/actions#se
 
 By default, the `Set theme` action will reactively (immediately) update the theme when triggered and store the selected theme in a cookie (this ensures SSR compatibility). You can override the default behavior in any page's [page configuration](/pages/page-configuration) under the `Themes` section to read the theme from local storage, variable or an API for example.
 
-Themes are set at the page level, but you can also set themes on individual elements. To do this, add the special `data-nc-theme` attribute to an element using the [attributes panel](/the-editor/element-panel#attributes-panel), specifying the theme name you wish to use as the value of that attribute.
+Themes are set at the page level, but you can also set themes on individual elements. To do this, add the special `data-nc-theme` attribute to an element using the [attributes panel](/the-editor/element-panel#attributes-panel), specifying the theme name you wish to use as the value of that attribute. Theme names are case-sensitive and must match exactly.
 
 This allows you to create components or sections of your application that use a different theme than the rest of the page. The element and all its children will use the specified theme.
 
