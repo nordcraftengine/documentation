@@ -45,3 +45,7 @@ jobs:
         env:
           TYPESENSE_ADMIN_TOKEN: ${{ secrets.TYPESENSE_ADMIN_TOKEN }}
           TYPESENSE_HOST: ${{ secrets.TYPESENSE_HOST }}
+  create_release:
+    uses: nordcraftengine/documentation/.github/workflows/create_release.yml@main
+    needs: deploy
+    secrets: inherit
