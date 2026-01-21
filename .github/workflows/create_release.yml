@@ -10,7 +10,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Set release tag
-        run: echo "RELEASE_TAG=${GITHUB_SHA}" >> $GITHUB_ENV
+        run: echo "RELEASE_TAG=${GITHUB_SHA::7}" >> $GITHUB_ENV
       - name: Create release
         run: |
           gh api \
@@ -36,7 +36,7 @@ jobs:
           cd proxy
           bun run combineDocs
       - name: Set release tag
-        run: echo "RELEASE_TAG=${GITHUB_SHA}" >> $GITHUB_ENV
+        run: echo "RELEASE_TAG=${GITHUB_SHA::7}" >> $GITHUB_ENV
       - name: Upload
         run: gh release upload $RELEASE_TAG ./proxy/dist/full-docs.json
     env:
