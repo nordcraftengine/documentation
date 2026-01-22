@@ -16,15 +16,15 @@ Switch branches from existing branches in the project, and view and manage chang
 
 ### Create and switch branches
 
-Create a new branch by clicking the [kbd]+[kbd] button in the top right corner of the header of the version control panel. This will open a dialog to name and create the branch. You can switch between existing branches using the input in the `Active` section of the version control panel.
+Create a new branch by clicking the [kbd]+[kbd] button in the top right corner of the header of the version control panel. This will open a dialog to name and create the branch. You can switch between existing branches using the input in the `Changes` tab of the version control panel.
 
 ### View changes in your active branch
 
-The changes in your active branch are shown in the `Active` section.
+The changes in your active branch are shown in the `Changes` tab.
 
 ![Changes are shown as items with an icon and a name, and letter to the right describing the type of change. The image is annotated corresponding to the sections below.|16/9](version-control-changes.webp 'View changes')
 
-All files that have been modified in your active branch are listed in the `Active` section. Changes are calculated by comparing your active branch to the state of the main branch at the point of branch creation. Since the main branch may also change when other branches are published, the original main branch and current main branch may not be the same at the when the changes are calculated. The original state of the main branch at the point of a branch creation will be referred to as the `ancestor branch`.
+All files that have been modified in your active branch are listed in the `Changes` tab. Changes are calculated by comparing your active branch to the state of the main branch at the point of branch creation. Since the main branch may also change when other branches are published, the original main branch and current main branch may not be the same at the when the changes are calculated. The original state of the main branch at the point of a branch creation will be referred to as the `ancestor branch`.
 
 Each change is marked with an icon and name representing the change, as well as a letter describing the type of change (#1 in the image):
 
@@ -32,7 +32,7 @@ Each change is marked with an icon and name representing the change, as well as 
 - `D`: something has been deleted. It exists in the ancestor branch, but not in the current branch.
 - `E`: something has been edited. It exists in both branches, but in different states.
 
-If something has been edited, you can dive deeper into the changes by expanding the item. This will reveal a list of all of the changes made to that item (#2 in the image). As long as there are edited items in a list, it can be expanded to show those changes. Additionally, whenever you click to select a created or edited change in the `Active` section, the value will be shown in the editor (#3 in the image). For example, if you made changes to a formula, clicking on the affected item will open the formula editor.
+If something has been edited, you can dive deeper into the changes by expanding the item. This will reveal a list of all of the changes made to that item (#2 in the image). As long as there are edited items in a list, it can be expanded to show those changes. Additionally, whenever you click to select a created or edited change in the `Changes` tab, the value will be shown in the editor (#3 in the image). For example, if you made changes to a formula, clicking on the affected item will open the formula editor.
 Deleted changes cannot be shown in the current branch since they no longer exist, but may be explored on the main branch via the context menu.
 
 ## Main branch
@@ -45,7 +45,7 @@ When there are changes in the `Main` section, it means that your active branch i
 
 Overlapping changes between your active branch and main are called conflicts. Overlapping changes cannot be synchronised automatically, since there are two possible outcomes in that conflict. In order to resolve a conflict, you will need to accept one of the two changes.
 
-- Conflicting changes on your active branch can be accepted by right clicking an item in the `Active` section and selecting `Accept current`.
+- Conflicting changes on your active branch can be accepted by right clicking an item in the `Changes` tab and selecting `Accept current`.
 - Conflicting changes on main can be accepted by right clicking an item in the `Main` section and selecting `Accept incoming`.
 
 ### Publish changes
