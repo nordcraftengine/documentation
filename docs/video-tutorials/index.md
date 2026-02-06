@@ -9,7 +9,7 @@ Learn how to build for The Web in Nordcraft. Choose from a range of courses depe
 
 All courses are presented by Salma Alam-Naylor, Nordcraft's Head of Developer Education, who is a qualified teacher with over 20 years experience of building for The Web.
 
-## Learn the Basics: beginner
+## Learn the Basics
 
 @@@ image-static
 ![A bright blue sky with a single bird flying in the distance over a shadowed rocky cliff face.|683/384](beginner.webp 'Beginner')
@@ -19,7 +19,7 @@ Learn HTML, CSS, and Nordcraft's approach to JavaScript-based interactivity so y
 
 [Watch beginner course](https://nordcraft.com/learn/fundamentals)
 
-## Build Projects: intermediate
+## Build Projects
 
 @@@ image-static
 ![A hazy orange sky over a shadowed dark brown sand dune.|683/384](intermediate.webp 'Intermediate')
@@ -29,7 +29,7 @@ Know the basics of HTML and CSS? Level-up your web development skills by buildin
 
 [Watch intermediate course](https://nordcraft.com/learn/build-projects)
 
-## Speed Run: experienced
+## Speed Run
 
 @@@ image-static
 ![A polar blue sky over a bright white glacier.|683/384](experienced.webp 'Experienced')
