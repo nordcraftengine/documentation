@@ -11,17 +11,29 @@ All courses are presented by Salma Alam-Naylor, Nordcraft's Head of Developer Ed
 
 ## Learn the Basics: beginner
 
+@@@ image-static
+`![A bright blue sky with a single bird flying in the distance over a shadowed rocky cliff face.|683/384](beginner.webp 'Beginner')`
+@@@
+
 Learn HTML, CSS, and Nordcraft's approach to JavaScript-based interactivity so you can bring your ideas to life on The Web.
 
 [Watch beginner course](https://nordcraft.com/learn/fundamentals)
 
 ## Build Projects: intermediate
 
+@@@ image-static
+`![A hazy orange sky over a shadowed dark brown sand dune.|683/384](intermediate.webp 'Intermediate')`
+@@@
+
 Know the basics of HTML and CSS? Level-up your web development skills by building real-world projects in Nordcraft.
 
 [Watch intermediate course](https://nordcraft.com/learn/build-projects)
 
 ## Speed Run: experienced
+
+@@@ image-static
+`![A polar blue sky over a bright white glacier.|683/384](intermediate.webp 'Experienced')`
+@@@
 
 Familiar with other frameworks? Get up to speed on how HTML, CSS and JavaScript concepts translate to the Nordcraft editor.
 
