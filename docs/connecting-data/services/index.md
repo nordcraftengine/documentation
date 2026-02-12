@@ -131,4 +131,4 @@ When you create a new API via a service connection, Nordcraft automatically pre-
 
 Currently, is not possible to edit the URL path of an API linked to a service to point to a different service endpoint. However, to save you creating a brand new API, you can choose to detach the API from the service, which allows you to edit any part of the API connection. Click on the three dot menu to the top right of the API panel and click `Detach service`.
 
-![The API panel is open. A DatoCMS service is connected. The three dot menu at the top right of the API panel has been clicked, revealing a menu with one option to click: detach service.|16/9](configure-custom-service.webp 'Detach service')
+![The API panel is open. A DatoCMS service is connected. The three dot menu at the top right of the API panel has been clicked, revealing a menu with one option to click: detach service.|16/9](detach-service.webp 'Detach service')
