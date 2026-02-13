@@ -107,7 +107,7 @@ Once your services are configured, the API creation process becomes simplified b
 
 1. When creating a new API, you will see your connected services
 2. Choose the endpoint from the available options of your selected service
-3. Nordcraft automatically pre-fills all request details (`path`, `headers`, `parameters`, `body`)
+3. Nordcraft automatically pre-fills all request details: `path`, `headers`, `parameters`, `body`
 4. Adjust specific values as needed for your implementation
 
 This approach streamlines API creation by leveraging the schema information already defined in your back-end service.
@@ -125,6 +125,10 @@ Connecting to services offers several advantages:
 - **Discovery**: Easily browse available endpoints without referring to external documentation
 - **Maintainability**: When your back-end service changes, you can update the connection in one place to be applied across all related APIs
 
-::: info
-Services help bridge the gap between front-end and back-end development, making it easier to maintain a clean separation of concerns while ensuring proper integration.
-:::
+## Editing service endpoints
+
+When you create a new API via a service connection, Nordcraft automatically pre-fills the necessary information for that new API, including the URL path. When you create an API via a service connection, you may encounter a situation where you need to change the URL path of an API.
+
+Currently, is not possible to edit the URL path of an API linked to a service to point to a different service endpoint. However, to save you creating a brand new API, you can choose to detach the API from the service, which allows you to edit any part of the API connection. Click on the three dot menu to the top right of the API panel and click `Detach service`.
+
+![The API panel is open. A DatoCMS service is connected. The three dot menu at the top right of the API panel has been clicked, revealing a menu with one option to click: detach service.|16/9](detach-service.webp 'Detach service')
