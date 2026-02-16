@@ -17,46 +17,56 @@ You can access the AI Assistant by clicking the "Ask AI" button on the bottom ba
 
 The AI can perform a number of tasks to help you understand and build projects in Nordcraft. You can choose between 2 modes:
 
-### Ask
+### Ask mode
 
 When in Ask mode the AI can perform the following tasks:
 
 - **Answer Nordcraft questions**: it can explain features, concepts, and best practices when building in Nordcraft
 - **Search documentation**: it can find specific information from Nordcraft's official documentation
-- **Analyze your project structure**: it can examine your current components, pages, workflows and other elements, and give you information on their functionality and advice about next steps
+- **Analyze your project structure**: it can examine your current components, pages, workflows and other elements, and give you information on their functionality and advise about next steps
 - **Provide implementation tips**: it can explain approaches and direct you to the right tools for building features
 
-Using the Ask mode is free of charge
+:::info
+Using Ask mode is free of charge.
+:::
 
-### Build
+### Build mode
 
-When in Build mode the AI can, in addition to the capabilities of the Ask mode, also help you build your project. This includes building pages, components, workflows, formulas, etc.
+When in Build mode the AI can also help you build your project. This includes building and updating pages, components, workflows, formulas, and styling.
 
 #### Using build mode
 
-Once the AI starts building something you will enter a _"Preview mode"_. While in this mode you will see all the edited files in a box just above the input field in the AI menu. You will also be able to see what the AI has built in the editor before applying the changes to your project by navigating the files using the top bar and accepting or rejecting the files one by one. You can also accept or reject all files at once by using the buttons in the box above the input field in the AI panel.
+When you ask the AI for changes in build mode, you will enter `Preview mode`.
 
-Using the Build mode costs credits. The amount of credits spent depends on the model you chose and the complexity of the task. You can select between the following models:
+![The Ai panel in build mode, showing the user has entered the following prompt: Build me a landing page for a design agency focussing on simplicity, creativity, and curiosity. The colour palette should be monochrome, with bold display fonts. The overall feel should be calm and professional. This image is annotated relating to the list items below.|16/9](ai-assistant.webp 'AI Build mode')
 
-- **Gemini 3 Flash** (recommended): this is the cheapest model to use. It's a good model all round that gives good results. Flash focuses on completing the task while keeping the credits spent to a minimum
-- **Gemini 3 Pro**: this model is more expensive than the Flash model. This is due to it using more credits on analyzing a task. This model can be helpful when Flash has problems finding that annoying bug
-- **Claude Opus 4.6**: this model is significantly more expensive than the other 2. This model is great at both logic and design and can help you out with creating beautiful components.
+1. See a list of created or edited files above the input field in the AI panel.
+2. Navigate through the changes proposed by the AI using the top bar.
+3. Choose to accept or reject the proposed changes currently visible.
 
-While in build mode you can also attach an image to your request. The AI will then use this image when analyzing your request.
+Build mode uses a credit system. You get a number of free credits each day, and if you need more credits, you can purchase them directly from inside the Nordcraft editor.
 
-:::warning
-The AI cannot currently insert the image in the editor. It will only use it for analyzing your request.
+The amount of credits used depends on the model you chose and the complexity of the task. You can select between the following models:
+
+| Model           | Cost   | Best use case                                                                           |
+| --------------- | ------ | --------------------------------------------------------------------------------------- |
+| Gemini 3 Flash  | 💰     | Most build tasks.                                                                       |
+| Gemini 3 Pro    | 💰💰   | Task analysis. Use this moden when Flash has problems finding and fixing annoying bugs. |
+| Claude Opus 4.6 | 💰💰💰 | UI design and well-styled components                                                    |
+
+:::tip
+In Build mode you can also attach an image to your request, such as a screenshot of a design. The AI will use this image when analyzing your request but cannot insert it directly into the design.
 :::
 
-## What can't the AI do?
+## What the AI can't do
 
-While the AI Assistant in Build mode can suggest changes and generate code for your project, it cannot apply those changes directly. You must review and manually accept or reject each suggestion, ensuring you maintain full control over your project and avoid any unintended modifications.
+While the AI Assistant in Build mode can propose changes for your project, it cannot apply those changes directly. You must review and manually accept or reject each suggestion, ensuring you maintain full control over your project.
 
-Additionally, the AI currently cannot:
+Additionally, the AI cannot currently:
 
-- **Create or read services**
-- **Upload or read media files**
+- **Create or read services created in Nordcraft**
+- **Upload or read media files in Nordcraft**
 
 :::info
-The Nordcraft AI is currently in Beta. New features will be added and current features are subject to changes.
+The Nordcraft AI is currently in Beta. New features will be added and current features are subject to change.
 :::
