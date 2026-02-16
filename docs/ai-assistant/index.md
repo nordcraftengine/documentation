@@ -17,6 +17,8 @@ You can access the AI Assistant by clicking the "Ask AI" button on the bottom ba
 
 The AI can perform a number of tasks to help you understand and build projects in Nordcraft. You can choose between 2 modes:
 
+![The AI assistant mode window, showing two modes available: ask and build.|16/9](ai-mode-select.webp 'Choose your AI mode')
+
 ### Ask mode
 
 When in Ask mode the AI can perform the following tasks:
@@ -38,7 +40,7 @@ When in Build mode the AI can also help you build your project. This includes bu
 
 When you ask the AI for changes in build mode, you will enter `Preview mode`.
 
-![The Ai panel in build mode, showing the user has entered the following prompt: Build me a landing page for a design agency focussing on simplicity, creativity, and curiosity. The colour palette should be monochrome, with bold display fonts. The overall feel should be calm and professional. This image is annotated relating to the list items below.|16/9](ai-assistant.webp 'AI Build mode')
+![The AI panel in build mode, showing the user has entered the following prompt: Build me a landing page for a design agency focussing on simplicity, creativity, and curiosity. The colour palette should be monochrome, with bold display fonts. The overall feel should be calm and professional. This image is annotated relating to the list items below.|16/9](ai-build-mode.webp 'AI Build mode')
 
 1. See a list of created or edited files above the input field in the AI panel.
 2. Navigate through the changes proposed by the AI using the top bar.
