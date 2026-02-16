@@ -51,7 +51,7 @@ To connect to Supabase:
 You can find these credentials in your Supabase project settings. Once the Supabase service is added, Nordcraft will validate the connection to ensure it can access the API documentation.
 
 :::tip
-To get up and running quickly with Supabase, including auth, realtime, and file uploads, install the [Supabase Connect](https://supabase_connect.toddle.site/) package in your project, or create a new app using the [Nordbase](https://nordbase.toddle.site) template, which is a pre-configured template that demonstrates all functionality of the Supabase Connect package.
+To get up and running quickly with Supabase, including auth, realtime, and file uploads, install the [Supabase Connect](https://supabase_connect.nordcraft.site/) package in your project, or create a new app using the [Nordbase](https://nordbase.nordcraft.site) template, which is a pre-configured template that demonstrates all functionality of the Supabase Connect package.
 :::
 
 ![The create a new app screen in Nordcraft, highlighting the Nordbase template, which is third in the basic list at the top of the template lists.|16/9](nordbase-template.webp 'Nordbase template')

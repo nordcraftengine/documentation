@@ -13,7 +13,7 @@ The primary composition patterns in Nordcraft include:
 - [Slots](#slots): Creating placeholders that can be filled with external content
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-component-compositions.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-component-compositions.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-component-compositions?canvas-width=800&rightpanel=style&canvas-height=800
 height: 26rem
 

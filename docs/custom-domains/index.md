@@ -7,8 +7,8 @@ description: Learn how to add custom domains to your Nordcraft project to serve 
 
 You can add custom domains in Nordcraft to allow you to serve your Nordcraft project from different domains, or URLs. Each project will be created with two default domains; these domains are permanent and cannot be deleted:
 
-- `{project-name}.toddle.site`: default production domain
-- `main-{project-name}.toddle.site`: each branch has a unique domain in the format `{branch-name}-{project-name}.toddle.site`. This is a publicly accessibly URL that you can use to view work in progress in a browser, and share it with people for sign off and approval of new features and functionality.
+- `{project-name}.nordcraft.site`: default production domain
+- `start-{project-name}.nordcraft.site`: each branch has a unique domain in the format `{branch-name}-{project-name}.nordcraft.site`. This is a publicly accessibly URL that you can use to view work in progress in a browser, and share it with people for sign off and approval of new features and functionality.
 
 To see the list of domains registered on your project, go to the Project Overview page and click on the **Edit domain** button to the left of the Project URL.
 
@@ -39,7 +39,7 @@ After adding a new domain, you'll see the domain added to the list of domains wi
 - You can chose to add either an **A** or **CNAME** record depending on your DNS provider's capabilities; the record name and value you need to set in your DNS provider is provided for you by Nordcraft
 
 ::: info
-Custom domains are only available on paid plans. Projects in organizations on the free plan will be served on `{project-name}.toddle.site`.
+Custom domains are only available on paid plans. Projects in organizations on the free plan will be served on `{project-name}.nordcraft.site`.
 :::
 
 ## Wildcard domains

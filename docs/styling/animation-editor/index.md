@@ -58,7 +58,7 @@ Transforms are one of the most powerful tools in CSS animations, allowing you to
 :::
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-duck.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-duck.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-duck?canvas-width=800&canvas-height=290.5&rightpanel=style
 height: 18rem
 
@@ -66,7 +66,7 @@ To make this duck move naturally, each section is animated separately, and the l
 @@@
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-like-button.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-like-button.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-like-button?canvas-width=800&rightpanel=style&canvas-height=290
 height: 23rem
 

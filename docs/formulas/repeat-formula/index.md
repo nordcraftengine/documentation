@@ -8,7 +8,7 @@ description: Generate dynamic lists, grids and repeating elements from array dat
 The repeat formula allows you to create multiple instances of an element based on a set of data. This enables dynamic lists, grids and other repeating UI structures.
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-repeat-formula.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-repeat-formula.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-repeat-formula?canvas-width=800&rightpanel=attributes&selection=nodes.nQgi8KJ7OPxn9l5H0mML-.repeat&canvas-height=800
 height: 19rem
 
@@ -51,7 +51,7 @@ These repeat item variables allow you to customize each instance based on its da
 If you want to repeat an element a specific number of times without dynamic data, you can use the `Range` formula. This is useful for pagination, grid layouts or any situation where you need a specific number of repeated elements.
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-repeat-range-formula.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-repeat-range-formula.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-repeat-range-formula?canvas-width=800&rightpanel=attributes&selection=nodes.nQgi8KJ7OPxn9l5H0mML-.repeat&canvas-height=800
 height: 19rem
 

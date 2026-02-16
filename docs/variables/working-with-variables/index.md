@@ -61,7 +61,7 @@ You can update variables using workflows or events:
 3. Specify the new value (static value or via a formula)
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-variable-updating.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-variable-updating.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-variable-updating?rightpanel=events&canvas-width=800&selection=nodes.RXXxhmSNTU21VntB7mKuh.events.click.actions.0.data&canvas-height=800
 height: 18rem
 
@@ -81,7 +81,7 @@ To bind a variable:
 5. Add any additional logic if needed (transformations, conditions, etc.)
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-variable-updating.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-variable-updating.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-variable-updating?canvas-width=800&rightpanel=attributes&selection=nodes.RXXxhmSNTU21VntB7mKuh.classes.selected.formula&canvas-height=800
 height: 18rem
 
@@ -121,7 +121,7 @@ Additionally, in the attributes panel you can configure `checked` or `selected` 
 :::
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-variable-input-binding.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-variable-input-binding.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-variable-input-binding?canvas-width=800&mode=design&selection=nodes.Aw-ypNWnj8VwAKTg5h6vf&rightpanel=attributes&canvas-height=800
 height: 5rem
 

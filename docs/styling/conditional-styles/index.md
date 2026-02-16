@@ -16,7 +16,7 @@ There are several methods to apply conditional styles in Nordcraft:
 ## Style variants
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-style-variants.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-style-variants.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-style-variants?canvas-width=800&rightpanel=style&selection=nodes.RXXxhmSNTU21VntB7mKuh&canvas-height=800
 height: 18rem
 
@@ -56,7 +56,7 @@ For more information on pseudo-elements, see the [MDN documentation on pseudo-el
 You can add classes to elements using the attributes panel, and then create conditional styles for those classes.
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-class-based-style.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-class-based-style.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-class-based-style?mode=design&selection=nodes.RXXxhmSNTU21VntB7mKuh&canvas-width=800&rightpanel=attributes&canvas-height=800
 height: 18rem
 
@@ -86,7 +86,7 @@ This approach maintains clean separation and prevents unintended style conflicts
 ## CSS variables
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-style-variables.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-style-variables.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-style-variables?rightpanel=style&canvas-width=800&selection=nodes.RXXxhmSNTU21VntB7mKuh.style-variables.0.formula&canvas-height=800
 height: 18rem
 
@@ -104,7 +104,7 @@ This approach is particularly useful for complex conditional styling that depend
 ## Cascade and precedence
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-style-cascade.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-style-cascade.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-style-cascade?rightpanel=style&canvas-width=800&selection=nodes.725KDMmepSbJecZCQqInN&canvas-height=800
 height: 19rem
 
@@ -139,7 +139,7 @@ When adding a new style variant, you can set media query conditions:
 Components can be styled from the outside, allowing for customization of specific instances without affecting others.
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-component-styling.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-component-styling.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-component-styling?rightpanel=style&canvas-width=800&selection=nodes.mkJ0CrlLDvzUaWYSW_B8Q&canvas-height=800
 height: 23rem
 
