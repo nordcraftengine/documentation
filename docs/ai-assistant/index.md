@@ -53,7 +53,7 @@ The amount of credits used depends on the model you chose and the complexity of 
 | Model           | Cost   | Best use case                                                                           |
 | --------------- | ------ | --------------------------------------------------------------------------------------- |
 | Gemini 3 Flash  | 💰     | Most build tasks.                                                                       |
-| Gemini 3 Pro    | 💰💰   | Task analysis. Use this moden when Flash has problems finding and fixing annoying bugs. |
+| Gemini 3 Pro    | 💰💰   | Task analysis. Use this mode when Flash has problems finding and fixing annoying bugs. |
 | Claude Opus 4.6 | 💰💰💰 | UI design and well-styled components                                                    |
 
 :::tip
