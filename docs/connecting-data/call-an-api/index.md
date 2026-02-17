@@ -42,7 +42,7 @@ To call an API from a [workflow](/workflows/working-with-workflows):
 The following example demonstrates how to implement a weather card that combines both API calling methods. The example uses auto fetch to load weather data when the component mounts, and provides an update button that manually triggers the API through a workflow action.
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-call-an-api.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-call-an-api.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-call-an-api?rightpanel=style&canvas-width=800&selection=apis.Weather%2520API&canvas-height=800
 height: 21rem
 
@@ -88,7 +88,7 @@ Callback events on the API are executed just before the action-specific events.
 The following example demonstrates how to configure and react to an API callback event.
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-handle-api-callback.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-handle-api-callback.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-handle-api-callback?canvas-width=800&rightpanel=events&selection=workflows.AMb8F4.actions.0.onSuccess&canvas-height=800
 height: 21rem
 

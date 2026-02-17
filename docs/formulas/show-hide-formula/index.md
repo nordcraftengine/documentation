@@ -8,7 +8,7 @@ description: Control element visibility with conditional formulas that add or re
 The show/hide formula allows you to conditionally render elements based on specific conditions. This enables you to create dynamic interfaces that respond to user interactions, application state and other factors.
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-show-hide-formula.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-show-hide-formula.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-show-hide-formula?canvas-width=800&rightpanel=attributes&selection=nodes.nQgi8KJ7OPxn9l5H0mML-.condition&canvas-height=800
 height: 21rem
 

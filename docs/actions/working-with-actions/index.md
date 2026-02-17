@@ -76,7 +76,7 @@ Custom actions can be used just like built-in workflow actions. When [creating a
 Here is an example of a custom action in Norcraft. It demonstrates how the [canvas-confetti](https://github.com/catdad/canvas-confetti) library can be integrated to create a celebratory effect when triggered.
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-action.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-action.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-action?canvas-width=800&rightpanel=events&selection=nodes.RVOI8hoh4CAD8XqcLfA4o.events.onClick&canvas-height=800
 height: 4rem
 

@@ -165,7 +165,7 @@ imageAltText: Descriptive text to describe the image
 For component examples, use the following format:
 
 @@@ example
-componentUrl: https://docs_examples.toddle.site/.toddle/custom-element/example-class-based-style.js
+componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-class-based-style.js
 editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-class-based-style?mode=design&selection=nodes.RXXxhmSNTU21VntB7mKuh&canvas-width=800&rightpanel=attributes&canvas-height=800
 height: 18rem
 
