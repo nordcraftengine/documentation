@@ -314,7 +314,12 @@
       {
         "label": "Resolving conflicts",
         "path": "resolving-conflicts"
+      },
+      {
+        "label": "Branch history",
+        "path": "branch-history"
       }
+      
     ]
   },
   { "path": "custom-domains", "label": "Custom domains" },
