@@ -1,6 +1,6 @@
 ---
 title: Video tutorials
-description: Learn how to build for The Web ih Nordcraft. Build along in real-time with our Head of Developer Education, Salma Alam-Naylor.
+description: Learn how to build for The Web in Nordcraft. Build along in real-time with our Head of Developer Education, Salma Alam-Naylor.
 ---
 
 # Video tutorials
