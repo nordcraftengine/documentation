@@ -29,7 +29,7 @@ To create a project formula:
 
 1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
 2. Find the **Formulas** section, click the [kbd]+[kbd] button and enter a name for your formula in the dialog
-3. Add arguments as input parameters with test values (optional)
+3. Add input parameters with test values (optional)
 4. Add a description to your formula (optional)
 5. Define your formula logic using either
    **(A)** The formula editor, or
