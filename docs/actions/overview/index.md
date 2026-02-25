@@ -33,13 +33,13 @@ Actions in Nordcraft are essentially JavaScript modules with a specific entry po
 
 ## Key characteristics of actions
 
-### Arguments
+### Inputs
 
-Actions accept arguments that serve as inputs to the JavaScript function:
+Actions accept inputs to the JavaScript function:
 
-- Arguments are passed to the action when it is called from a workflow
+- Inputs are passed to the action when it is called from a workflow
 - Each argument has a name and type
-- Arguments provide flexibility to reuse the same action with different inputs
+- Inputs provide flexibility to reuse the same action with different inputs
 
 ### Events
 
