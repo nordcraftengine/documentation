@@ -21,10 +21,10 @@ In Nordcraft, both developers and designers can collaborate . When building in N
 
 - Real-time UI design: see your designs come to life in real time on the Nordcraft canvas, no more switching back and forth between browser tabs
 - Full control over HTML and CSS, including an intuitive [visual CSS keyframe animation editor](/styling/animation-editor)
-- [Component-based architecture](/components/overview): similar to modern JavaScript frameworks
-- [Git-like branch-based development environment](/core-concepts#branches-and-version-control): with always-on [live preview URLs](/get-started/branches-and-publishing#preview-a-branch)
-- Bring your own back end: build with real data via [API connections](/connecting-data/overview#api-layer), so you can make sure your UI is built with every requirement and edge case in mind
-- [Full server-side rendering capabilities](/core-concepts#server-and-client-rendering): so your websites load fast
+- A [component-based architecture](/components/overview) similar to modern JavaScript frameworks
+- [Git-like branch-based development environment](/core-concepts#branches-and-version-control) with always-on [live preview URLs](/get-started/branches-and-publishing#preview-a-branch)
+- Bring your own back end. Build with real data via [API connections](/connecting-data/overview#api-layer), so you can make sure your UI is built with every requirement and edge case in mind
+- [Full server-side rendering capabilities](/core-concepts#server-and-client-rendering) so your websites load fast
 - [Packages for sharing and reusing widgets and functionality](/packages/overview)
 - [Asset management for uploading, storing and resizing media](/media/overview)
 - [SEO and meta tag configuration tools](/pages/page-configuration#metadata)
