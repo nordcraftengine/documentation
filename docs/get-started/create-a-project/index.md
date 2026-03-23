@@ -17,17 +17,17 @@ In the dashboard view, click the [kbd]Create project[kbd] button at the top righ
 
 In the organization view, at the top right of the project list, find the button to create a project.
 
-![The organization screen in Nordcraft showing at the top right of the projects list there is a button to create a new project.|16/9](create-project-org-view.webp 'Create project from org view')
+![The organization screen in Nordcraft showing at the top right of the projects list there is a button to create a new project.|1600/1067](create-project-org-view.webp 'Create project from org view')
 
 ## Create a website
 
 First, pick a template to start from. Choose a basic blank template, a Nordcraft template, or a template built by the community.
 
-![The create project screen showing a grid of templates to choose from.|16/9](create-an-app.webp 'Create app')
+![The create project screen showing a grid of templates to choose from.|1600/1067](create-an-app.webp 'Create website')
 
 Click on the template you wish to use and you'll see a dialog to configure the new project details.
 
-![The create website dialog. Choose an organization, enter a name and project ID, and choose visibility.|16/9](configure-app.webp 'Configure app')
+![The create website dialog. Choose an organization, enter a name and project ID, and choose visibility.|1600/1067](configure-app.webp 'Configure website')
 
 1. **Select organization**: Pre-selected based on your account settings
 2. **Project info**:
@@ -41,7 +41,7 @@ Click `Create project` and the Nordcraft editor will open for you to start worki
 
 To create a package, click the `Create package` button at the top right of the template selection screen. This will open a dialog for you to configure your package details.
 
-![The create package dialog. Choose an organization, enter a name and project ID, and choose visibility.|16/9](configure-package.webp 'Configure package')
+![The create package dialog. Choose an organization, enter a name and project ID, and choose visibility.|1600/1067](configure-package.webp 'Configure package')
 
 1. **Select organization**: Pre-selected based on your account settings
 2. **Project info**:
