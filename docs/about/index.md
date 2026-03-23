@@ -4,7 +4,7 @@ description: Learn to build beautiful websites with Nordcraft through guides and
 ---
 
 @@@ image-static
-![Nordcraft, the AI-powered website builder for creatives, overlaid in navy blue against a Nordic snowy background, with the Nordcraft three-logo arrow above|2/1](nordcraft.webp 'Nordcraft')
+![Nordcraft, the AI-powered website builder for creatives, overlaid in navy blue against a Nordic snowy background, with the Nordcraft three-logo arrow above|16/9](nordcraft.webp 'Nordcraft')
 @@@
 
 # What is Nordcraft?
