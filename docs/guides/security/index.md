@@ -60,7 +60,7 @@ Even seemingly benign configurations like debug flags or API base URLs can help 
 
 ### 2. Handle authentication in a back-end application
 
-If your Nordcraft websute has users, logins, or restricted features:
+If your Nordcraft website has users, logins, or restricted features:
 
 - Handle sign-ins through your back end
 - Use secure cookies or access tokens (preferably HTTP-only)
