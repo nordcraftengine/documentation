@@ -9,72 +9,71 @@ Nordcraft is a website builder combined with a powerful AI agent. When building 
 
 Nordcraft is built around several fundamental concepts. Understanding these core concepts will help you work more effectively with Nordcraft before you begin your first project.
 
-## Visual development with code foundation
+## Visual development built on web standards
 
-Nordcraft combines visual development with a solid code foundation. This hybrid approach means:
+Nordcraft is a visual website builder built on modern web standards of HTML, CSS and JavaScript.
 
-- You can build visually while the system generates clean, optimized code
-- Visual changes are reflected immediately in the interface
-- Complex interactions can be implemented using visual development through [workflows](/workflows/overview)
-- Custom code can be added when needed for specialized functionality
+- If you already know HTML and CSS, you know how to build websites in Nordcraft
+- Design and build visually on a responsive canvas that updates in real-time
+- Add custom code when needed for specialized functionality
 
-This approach bridges the gap between visual design tools and coding environments, eliminating traditional handoffs between designers and developers, and removing the time-consuming setup processes of traditional development environments.
+Nordcraft's website builder bridges the gap between visual design tools and coding environments, eliminating traditional handoffs between designers and developers, and removing the time-consuming setup processes of traditional development environments.
 
 Explore [the editor](/the-editor/overview) to see how this works in practice.
 
 ## Component-based architecture
 
-Nordcraft is built and optimized around using a [component-based architecture](/components/overview) in your projects:
+Nordcraft is built using a [component-based architecture](/components/overview):
 
 - **Components** are reusable, self-contained pieces of interface and functionality
 - Each component has its own structure, [styling](/styling/styles-and-layout) and behavior
 - Components can be [composed together](/components/compositions) to create more complex interfaces
 - Components maintain encapsulation of their internal state and logic
 
-This component-based approach promotes reusability, maintainability and collaboration among team members. Learn how to [create your own components](/components/create-a-component) to build a modular project.
+A component-based approach promotes reusability, maintainability and collaboration among team members. Learn how to [create your own components](/components/create-a-component) to build a modular project.
 
 ## Projects: websites and packages
 
-Nordcraft organizes work into [two main project types](/get-started/create-a-project):
+In Nordcraft you can create [two types of project](/get-started/create-a-project):
 
-- **Websites** are complete websites with pages and functionality
-- **Packages** are collections of reusable components and functions
+- **Websites**: complete websites with pages and functionality
+- **Packages**: collections of reusable components and functions
 
-[Packages](/packages/overview) can be published and shared across projects, making them ideal for common functionality. Learn more about [creating and launching packages](/packages/creating-and-launching) to share your work.
+You can create and publish [Packages](/packages/overview) to share across projects, making them ideal for common functionality across different websites. Learn more about [creating and launching packages](/packages/creating-and-launching) to share your work.
 
 ## Branches and version control
 
-Nordcraft includes built-in version control through its [branching system](/get-started/branches-and-publishing):
+Nordcraft includes a built-in Git-like [version control](/get-started/branches-and-publishing):
 
 - The `main` branch represents the live version of your project
-- Create new branches for developing features or fixes
-- [Preview changes](/get-started/branches-and-publishing#preview-a-branch) before publishing
-- Branches are [published to main](/get-started/branches-and-publishing#publish-changes) when work is complete
+- Create new branches for developing new features or fixes
+- [Preview changes](/get-started/branches-and-publishing#preview-a-branch) on a live URL before publishing
+- [Publish branches to main](/get-started/branches-and-publishing#publish-changes) when work is complete
 
-This git-like workflow enables collaboration and maintains stability in your projects. For best practices, check out our guide on [effective branching](/good-practices/branching) strategies.
+This workflow enables flexible collaboration and helps maintain the stability of your live websites. For best practices, check out our guide on [effective branching](/good-practices/branching) strategies.
 
 ## Pages and navigation
 
-[Pages](/pages/overview) form the foundation of websites in Nordcraft:
+[Pages](/pages/overview) are the foundation of websites in Nordcraft:
 
 - Each page has a unique [URL path](/pages/page-configuration#url-structure)
-- Pages can accept [parameters](/pages/static-and-dynamic#dynamic-pages) for dynamic content
-- Pages contain [components](/building-blocks/components) and [elements](/building-blocks/elements)
-- [SEO metadata](/pages/page-configuration#metadata) is configured at the page level
+- Use page [parameters](/pages/static-and-dynamic#dynamic-pages) to power dynamic content
+- Your pages can contain [components](/building-blocks/components) and [elements](/building-blocks/elements)
+- Configure [SEO metadata](/pages/page-configuration#metadata) including Open Graph image metadata for each page
 
-The page structure creates the overall navigation framework for your website. Learn how to [create pages](/pages/create-a-page) and set up their configuration.
+Learn how to [create pages](/pages/create-a-page) and set up their configuration.
 
 ## Data flow and reactivity
 
 Nordcraft uses a reactive data model built on signals:
 
-- [Variables](/variables/overview) store state within components and pages
-- [Formulas](/formulas/overview) transform data through pure functions
-- [Workflows](/workflows/overview) implement interactive behavior
-- [Contexts](/contexts/overview) share data between components
-- When data changes, the interface updates automatically
+- Store state within components and pages using [variables](/variables/overview) 
+- Transform data using [formulas](/formulas/overview)
+- Use [workflows](/workflows/overview) to build interactivity
+- Use [contexts](/contexts/overview) to share data between components
+- Each time any data changes, Nordcraft updates your website's user interface automatically
 
-This reactive approach ensures your interface stays in sync with underlying data. Learn about [working with variables](/variables/working-with-variables) and [creating formulas](/formulas/working-with-formulas) to implement dynamic behavior.
+Learn about [working with variables](/variables/working-with-variables) and [creating formulas](/formulas/working-with-formulas) to implement dynamic behavior.
 
 ## Server and client rendering
 
@@ -84,23 +83,19 @@ Nordcraft supports both server-side rendering (SSR) and client-side rendering (C
 - CSR enables rich interactivity after the initial page load
 - Nordcraft intelligently handles the transition between these modes
 
-This hybrid rendering approach provides the best of both worlds for performance and user experience.
-
 When [working with APIs](/connecting-data/working-with-apis), you can [configure which requests are processed during SSR](/connecting-data/advanced-api-features#server-side-rendering-ssr) or whether they are processed on the client after the initial page has loaded.
 
 ## API integration
 
-External data is connected through the [API integration system](/connecting-data/overview):
+You can connect any external data source by connecting an [API](/connecting-data/overview):
 
 - [Configure endpoints](/connecting-data/working-with-apis) to connect to any back end
 - Handle [authentication](/connecting-data/authentication) securely
-- Transform and use [response data](/connecting-data/call-an-api#accessing-api-data) in your interface
-- Set up real-time data with [streaming connections](/connecting-data/streaming)
+- Transform and use [response data](/connecting-data/call-an-api#accessing-api-data) anywhere on your websites
+- Set up real-time data transfer with [streaming connections](/connecting-data/streaming)
 
-The API interface in Nordcraft forms the bridge between your front end and any back-end services. You can also connect to specialized back-end providers through [services](/connecting-data/services).
+APIs in Nordcraft are the bridge between your front end and any back-end services. You can also connect to specialized back-end providers through [services](/connecting-data/services).
 
-::: tip
-These core concepts appear throughout the Nordcraft documentation. As you work with the platform, you will develop a deeper understanding of how these concepts interact to create a powerful web development environment.
-:::
-
+:::tip
 Ready to start building? Head to the [Get started](/get-started/overview) section to learn how to create your first project.
+:::
