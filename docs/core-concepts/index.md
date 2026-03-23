@@ -5,7 +5,9 @@ description: Explore Nordcraft’s core principles: component architecture, reac
 
 # Nordcaft core concepts
 
-Nordcraft is built around several fundamental concepts that form the foundation of the Web Development Engine. Understanding these core concepts will help you work more effectively with Nordcraft before you begin your first project.
+Nordcraft is a website builder combined with a powerful AI agent. When building with Nordcraft, you get complete creative control to craft user experiences, and the speed of AI to generate the rest.
+
+Nordcraft is built around several fundamental concepts. Understanding these core concepts will help you work more effectively with Nordcraft before you begin your first project.
 
 ## Visual development with code foundation
 
@@ -80,7 +82,7 @@ Nordcraft supports both server-side rendering (SSR) and client-side rendering (C
 
 - SSR improves initial page load speed and is essential for search engine optimization (SEO)
 - CSR enables rich interactivity after the initial page load
-- The Nordcraft Web Development Engine intelligently handles the transition between these modes
+- Nordcraft intelligently handles the transition between these modes
 
 This hybrid rendering approach provides the best of both worlds for performance and user experience.
 

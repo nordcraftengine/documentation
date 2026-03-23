@@ -1,6 +1,6 @@
 # Nordcraft Documentation
 
-This repository contains the official documentation for [Nordcraft](https://nordcraft.com), a visual web development engine for building websites and web applications.
+This repository contains the official documentation for [Nordcraft](https://nordcraft.com).
 
 ## Documentation Website
 
@@ -57,6 +57,6 @@ If you find issues or have suggestions for the documentation:
 
 The Nordcraft documentation is licensed under [Apache License](LICENSE).
 
-## The Nordcraft Engine
+## Nordcraft is open source
 
-The Nordcraft Web Development Engine is open source. [View the nordcraft repository on GitHub](https://github.com/nordcraftengine/nordcraft) and contribute via [open issues](https://github.com/nordcraftengine/nordcraft/issues).
+[View the nordcraft repository on GitHub](https://github.com/nordcraftengine/nordcraft) and contribute via [open issues](https://github.com/nordcraftengine/nordcraft/issues).

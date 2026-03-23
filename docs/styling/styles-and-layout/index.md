@@ -8,7 +8,7 @@ description: Apply styles through Nordcraft's visual interface or CSS editor, us
 The styling and layout system in Nordcraft helps you write CSS visually, presenting the most commonly used CSS properties in the style panel. This approach lets you style elements visually without writing code while preserving traditional CSS flexibility. For more precise control, the CSS editor is also available.
 
 :::tip
-Using visual editors for writing CSS is not only a great way to specify colors, gradients and animations. They are also a great way for developers to discover new CSS features. When new features are paired with an intuitive interface it becomes much easier to adopt these features as part of your developer toolbox.
+Using a visual website builder to write CSS is not only a great way to specify colors, gradients and animations. It is also a great way for you to discover new CSS features. At Nordcraft, we make sure all new CSS features are paired with an intuitive interface, helping you adopt new capabilities of the web platform.
 
 [Read about how modern CSS has become too powerful on the Nordcraft blog.](https://blog.nordcraft.com/css-has-become-too-powerful)
 :::

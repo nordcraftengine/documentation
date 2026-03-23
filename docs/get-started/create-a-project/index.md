@@ -1,17 +1,17 @@
 ---
 title: Create a new project in Nordcraft
-description: Create new apps and packages in Nordcraft with this step-by-step guide covering organization settings, visibility options and template selection.
+description: Create new websites and packages in Nordcraft with this step-by-step guide covering organization settings, visibility options and template selection.
 ---
 
 # Create a new project in Nordcraft
 
-In Nordcraft, you can create an [app](/get-started/overview#apps) or a [package](/get-started/overview#packages). An app is a standalone website or web app, while packages are used to bundle up smaller bits of reusable functionality to use in Nordcraft apps.
+In Nordcraft, you can create a [website](/get-started/overview#apps) or a [package](/get-started/overview#packages). A website is a standalone website, while packages are used to bundle up smaller bits of reusable functionality to use in Nordcraft projects.
 
 ## Create a project from the dashboard
 
-In the dashboard view, find the **Start Building** section. Click [kbd]Create project[kbd]. On the next screen you'll choose whether to create an app or a package.
+In the dashboard view, click the [kbd]Create project[kbd] button at the top right.
 
-![The dashboard screen in Nordcraft showing at the top section there is a big blue cutton which says create project.|16/9](create-project-from-dashboard.webp 'Create project from dashboard')
+![The dashboard screen in Nordcraft showing at the top right section there is a big blue button which says create project.|16/9](create-project-from-dashboard.webp 'Create project from dashboard')
 
 ## Create a project from the organization view
 
@@ -19,7 +19,7 @@ In the organization view, at the top right of the project list, find the button 
 
 ![The organization screen in Nordcraft showing at the top right of the projects list there is a button to create a new project.|16/9](create-project-org-view.webp 'Create project from org view')
 
-## Create an app
+## Create a website
 
 First, pick a template to start from. Choose a basic blank template, a Nordcraft template, or a template built by the community.
 
@@ -27,7 +27,7 @@ First, pick a template to start from. Choose a basic blank template, a Nordcraft
 
 Click on the template you wish to use and you'll see a dialog to configure the new project details.
 
-![The create app dialog. Choose an organization, enter a name and project ID, and choose visibility.|16/9](configure-app.webp 'Configure app')
+![The create website dialog. Choose an organization, enter a name and project ID, and choose visibility.|16/9](configure-app.webp 'Configure app')
 
 1. **Select organization**: Pre-selected based on your account settings
 2. **Project info**:
