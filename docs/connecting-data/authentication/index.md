@@ -5,7 +5,7 @@ description: Implement secure authentication with HTTP-only cookies, token handl
 
 # Authentication
 
-Authentication enables users to verify their identity, allowing you to control access to specific data and features in your websites.
+Authentication enables users to verify their identity, allowing you to control access to specific data and features on your websites.
 
 A typical authentication flow consists of these steps:
 
