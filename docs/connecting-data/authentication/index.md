@@ -46,7 +46,7 @@ There are two approaches for storing access tokens securely in Nordcraft.
 
 ![The edit API panel is visible. The on success callback dialog is visible, showing that on success of the API Call, the set session cookies formula is run, which sets the access token via a formula, and sets the expiration to 3600. The set session cookies also has success and error callback options. The success callback is active, as indicated by the orange workflow icon consisting of three squares connected by branches. The image is annotated according to the list items below.|16/9](set-http-only-cookie.webp 'Set HTTP-only cookie')
 
-For login flows where users enter credentials (such as a username and password) directly in your website:
+For login flows where users enter credentials (such as a username and password) directly on your website:
 
 1. Create a workflow to call your authentication endpoint
 2. Add the **Set HttpOnly Cookie** action to the `On success` callback event to set an HttpOnly cookie and store the token securely
