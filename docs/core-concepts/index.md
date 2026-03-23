@@ -19,18 +19,18 @@ Nordcraft is a visual website builder built on modern web standards of HTML, CSS
 
 Nordcraft's website builder bridges the gap between visual design tools and coding environments, eliminating traditional handoffs between designers and developers, and removing the time-consuming setup processes of traditional development environments.
 
-Explore [the editor](/the-editor/overview) to see how this works in practice.
+Explore [the Nordcraft editor](/the-editor/overview) to see how this works in practice.
 
 ## Component-based architecture
 
-Nordcraft is built using a [component-based architecture](/components/overview):
+In Nordcraft you can take advantage of a [component-based architecture](/components/overview):
 
 - **Components** are reusable, self-contained pieces of interface and functionality
 - Each component has its own structure, [styling](/styling/styles-and-layout) and behavior
 - Components can be [composed together](/components/compositions) to create more complex interfaces
 - Components maintain encapsulation of their internal state and logic
 
-A component-based approach promotes reusability, maintainability and collaboration among team members. Learn how to [create your own components](/components/create-a-component) to build a modular project.
+A component-based approach promotes reusability, project maintainability and team collaboration. Learn how to [create your own components](/components/create-a-component) to build a tidy, modular project.
 
 ## Projects: websites and packages
 
@@ -39,16 +39,16 @@ In Nordcraft you can create [two types of project](/get-started/create-a-project
 - **Websites**: complete websites with pages and functionality
 - **Packages**: collections of reusable components and functions
 
-You can create and publish [Packages](/packages/overview) to share across projects, making them ideal for common functionality across different websites. Learn more about [creating and launching packages](/packages/creating-and-launching) to share your work.
+You can create and publish [packages](/packages/overview) to share across projects, making them ideal for common functionality across different websites. Learn more about [creating and launching packages](/packages/creating-and-launching) to share your work.
 
 ## Branches and version control
 
-Nordcraft includes a built-in Git-like [version control](/get-started/branches-and-publishing):
+Nordcraft includes a Git-like [version control system](/get-started/branches-and-publishing):
 
 - The `main` branch represents the live version of your project
 - Create new branches for developing new features or fixes
 - [Preview changes](/get-started/branches-and-publishing#preview-a-branch) on a live URL before publishing
-- [Publish branches to main](/get-started/branches-and-publishing#publish-changes) when work is complete
+- [Publish branches to the main branch](/get-started/branches-and-publishing#publish-changes) when work is complete
 
 This workflow enables flexible collaboration and helps maintain the stability of your live websites. For best practices, check out our guide on [effective branching](/good-practices/branching) strategies.
 
@@ -69,7 +69,7 @@ Nordcraft uses a reactive data model built on signals:
 
 - Store state within components and pages using [variables](/variables/overview) 
 - Transform data using [formulas](/formulas/overview)
-- Use [workflows](/workflows/overview) to build interactivity
+- Use [events and workflows](/workflows/overview) to build interactivity
 - Use [contexts](/contexts/overview) to share data between components
 - Each time any data changes, Nordcraft updates your website's user interface automatically
 
@@ -93,8 +93,7 @@ You can connect any external data source by connecting an [API](/connecting-data
 - Handle [authentication](/connecting-data/authentication) securely
 - Transform and use [response data](/connecting-data/call-an-api#accessing-api-data) anywhere on your websites
 - Set up real-time data transfer with [streaming connections](/connecting-data/streaming)
-
-APIs in Nordcraft are the bridge between your front end and any back-end services. You can also connect to specialized back-end providers through [services](/connecting-data/services).
+- Connect to specialized back-end providers through [services](/connecting-data/services)
 
 :::tip
 Ready to start building? Head to the [Get started](/get-started/overview) section to learn how to create your first project.
