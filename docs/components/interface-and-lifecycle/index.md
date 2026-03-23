@@ -103,7 +103,7 @@ For detailed information on how to use contexts, see the [Contexts](/contexts/ov
 
 ## Component lifecycle
 
-Components go through several phases during their existence in your website.
+Components go through several phases during their existence on your website.
 
 ### Initialization
 
