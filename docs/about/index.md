@@ -9,7 +9,7 @@ description: Learn to build beautiful websites with Nordcraft through guides and
 
 # What is Nordcraft?
 
-Nordcraft is a website builder combined with a powerful AI agent giving you complete creative control to craft exceptional user experiences, and the speed of AI to generate the rest.
+Nordcraft is a website builder combined with a powerful AI agent that gives you complete creative control to craft exceptional user experiences, and the speed of AI to generate the rest.
 
 ## Who is Nordcraft for?
 
