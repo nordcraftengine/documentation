@@ -17,7 +17,7 @@ In the dashboard view, click the [kbd]Create project[kbd] button at the top righ
 
 In the organization view, at the top right of the project list, find the button to create a project.
 
-![The organization screen in Nordcraft showing at the top right of the projects list there is a button to create a new project.|1600/1067](create-project-org-view.webp 'Create project from org view')
+![The organization screen in Nordcraft showing at the top right of the projects list there is a button to create a new project.|16/9](create-project-org-view.webp 'Create project from org view')
 
 ## Create a website
 
