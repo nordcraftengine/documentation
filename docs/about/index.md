@@ -15,7 +15,7 @@ Nordcraft is a website builder combined with a powerful AI agent that gives you 
 
 Nordcraft is for creative **web designers and web developers** who want to craft exceptional experiences on the web.
 
-In Nordcraft, both developers and designers can collaborate . When building in Nordcraft, you get to skip the traditional handover process from design to development that often gets in the way of creativity and progress by working in **one tool**.
+In Nordcraft, both developers and designers can collaborate. When building in Nordcraft, you get to skip the traditional handover process from design to development that often gets in the way of creativity and progress by working in **one tool**.
 
 ## Key features of Nordcraft
 
