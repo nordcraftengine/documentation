@@ -76,4 +76,4 @@ Consider using a context provider component with slots to wrap other components.
 
 ## Global state with contexts
 
-Context from a root-level component or page effectively creates global state, as all components in your website must be children. This can be useful for project-wide data, but should be used carefully to avoid creating an unwieldy global state that may become difficult to manage.
+Context from a root-level component or page effectively creates global state, as all components on your website must be children. This can be useful for project-wide data, but should be used carefully to avoid creating an unwieldy global state that may become difficult to manage.
