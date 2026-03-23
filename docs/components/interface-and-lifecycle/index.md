@@ -5,11 +5,11 @@ description: Define component interfaces with attributes and events, and control
 
 # Interface and lifecycle
 
-Components in Nordcraft need clearly defined interfaces to interact with the rest of your application, and they follow a specific lifecycle as they are created, updated and removed from the page. Understanding component interfaces and lifecycle helps you create components that integrate seamlessly with the rest of your application and behave predictably as your application state changes.
+Components in Nordcraft need clearly defined interfaces to interact with the rest of your website, and they follow a specific lifecycle as they are created, updated and removed from the page. Understanding component interfaces and lifecycle helps you create components that integrate seamlessly with the rest of your project and behave predictably as your website state changes.
 
 ## Component interface
 
-The interface of a component defines how it communicates with other parts of your application. There are three communication channels
+The interface of a component defines how it communicates with other parts of your website. There are three communication channels
 
 - [Attributes](#defining-attributes): Data flow into the component (input)
 - [Events](#setting-up-events): Data flow out to parent components (output)
@@ -38,7 +38,7 @@ Attributes allow you to create configurable components that can:
 - Alter their behavior based on the data they are passed
 - Display different content or styling
 - Access data fetched by parent components
-- Be reused throughout your application with different configurations
+- Be reused throughout your project with different configurations
 
 For example, a **tooltip** component might use attributes to control:
 
@@ -69,7 +69,7 @@ Events allow components to communicate upward to parent elements:
 Events enable child components to send messages and data up to their parent components.
 
 ::: info
-The test data is only used while developing your component. It helps when setting up workflows in parent components that will handle this event, but has no impact on your application at runtime.
+The test data is only used while developing your component. It helps when setting up workflows in parent components that will handle this event, but has no impact on your live website in preview or production.
 :::
 
 ### Triggering events
@@ -103,7 +103,7 @@ For detailed information on how to use contexts, see the [Contexts](/contexts/ov
 
 ## Component lifecycle
 
-Components go through several phases during their existence in your application.
+Components go through several phases during their existence in your website.
 
 ### Initialization
 
@@ -162,5 +162,5 @@ Components maintain their own internal state using [variables](/variables/overvi
 - Reset when the component is removed and added again
 
 ::: info
-When a component is unmounted, all its resources, including event listeners, workflows, and variable values, are automatically cleaned up. This helps prevent memory leaks in your application.
+When a component is unmounted, all its resources, including event listeners, workflows, and variable values, are automatically cleaned up. This helps prevent memory leaks in your website which may make it run more slowly or cause browser crashes.
 :::

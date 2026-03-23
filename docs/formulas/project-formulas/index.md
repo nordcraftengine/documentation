@@ -5,7 +5,7 @@ description: Create project-wide reusable functions with standard formulas or cu
 
 # Project formulas
 
-Project formulas provide a way to create reusable calculations and logic that can be accessed from any page or component in your project. Unlike component-level formulas that are only available within a specific component, project formulas can be used throughout your entire application.
+Project formulas provide a way to create reusable calculations and logic that can be accessed from any page or component in your project. Unlike component-level formulas that are only available within a specific component, project formulas can be used throughout your entire project.
 
 ## When to use project formulas
 
@@ -14,10 +14,10 @@ Project formulas are ideal for:
 - Common calculations used across multiple components
 - Shared data transformations
 - Utility functions like date formatting or number parsing
-- Business logic that needs to be consistent throughout the application
+- Business logic that needs to be consistent throughout the project
 - Complex operations that might be reused
 
-Using project formulas ensures consistency in your application and reduces duplication of code.
+Using project formulas ensures consistency in your project and reduces duplication of code.
 
 ## Create a project formula
 

@@ -1,11 +1,11 @@
 ---
 title: Canvas
-description: Learn to navigate, select elements, and resize the canvas workspace to build and test responsive layouts for your Nordcraft application.
+description: Learn to navigate, select elements, and resize the canvas workspace to build and test responsive layouts for your Nordcraft website.
 ---
 
 # Canvas
 
-The canvas is the central workspace in the Nordcraft editor where you visually build and interact with your application.
+The canvas is the central workspace in the Nordcraft editor where you visually build and interact with your website.
 
 ![The Nordcraft canvas viewed in test mode, with no left or right panels visible, showing a card component with an image, headline, subtitle and button.|16/9](canvas.webp 'Canvas'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=events&canvas-width=1077.6&canvas-height=800&mode=test}
 
@@ -27,12 +27,12 @@ You can drag and drop elements around the canvas to reorder or move an element t
 ## Navigation and viewing
 
 - **Panning**: Navigate the canvas by scrolling or by holding [kbd]Space[kbd] while dragging
-- **Resizing**: Use the three handles on the canvas borders to test your application at different screen sizes
+- **Resizing**: Use the three handles on the canvas borders to test your website at different screen sizes
 
 ### Keyboard shortcuts for resizing
 
 The Nordcraft editor provides several keyboard shortcuts to help you work faster. Head over to the [shortcuts](/the-editor/shortcuts#canvas-resizing-shortcuts) page to learn about resizing shortcuts.
 
 ::: info
-All links in the canvas open in a new tab to maintain editor synchronization. To test links as they'll work in your final application, use the preview functionality.
+All links in the canvas open in a new tab to maintain editor synchronization. To test links as they'll work in your final website, use the preview functionality.
 :::

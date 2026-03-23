@@ -10,7 +10,7 @@ The issues panel helps you identify and resolve problems within your Nordcraft p
 ![The issues panel is expanded, showing a warning for an unused component which says component is never used by any page or component, consider removing it.|16/9](issues-panel.webp 'Issues panel'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800&leftpanel=Problems}
 
 ::: info
-The issues panel is like a code linter for traditionally coded applications, reporting on accessibility, SEO and other issues.
+The issues panel is like a code linter for traditionally-coded projects, reporting on accessibility, SEO and other issues.
 :::
 
 ## Accessing the issues panel
@@ -58,7 +58,7 @@ Narrow down the displayed issues using filters for:
 - Issue type: Focus on specific categories, e.g. `No References` or `SEO`
 
 ::: info
-The issue detection system is being continuously improved to identify more issues to help you build stable, performant and accessible applications.
+The issue detection system is being continuously improved to identify more issues to help you build stable, performant and accessible websites.
 :::
 
 ## Resolving issues

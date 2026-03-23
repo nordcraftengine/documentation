@@ -62,5 +62,5 @@ You can use keyboard shortcuts to quickly resize the visible canvas to a variety
 - [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]Z[kbd] - Redo last action
 
 ::: tip
-Learning keyboard shortcuts can significantly improve your workflow efficiency when building applications in Nordcraft.
+Learning keyboard shortcuts can significantly improve your workflow efficiency when building websites in Nordcraft.
 :::

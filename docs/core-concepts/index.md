@@ -31,13 +31,13 @@ Nordcraft is built and optimized around using a [component-based architecture](/
 - Components can be [composed together](/components/compositions) to create more complex interfaces
 - Components maintain encapsulation of their internal state and logic
 
-This component-based approach promotes reusability, maintainability and collaboration among team members. Learn how to [create your own components](/components/create-a-component) to build a modular application.
+This component-based approach promotes reusability, maintainability and collaboration among team members. Learn how to [create your own components](/components/create-a-component) to build a modular project.
 
-## Projects: apps and packages
+## Projects: websites and packages
 
 Nordcraft organizes work into [two main project types](/get-started/create-a-project):
 
-- **Apps** are complete applications with pages and functionality
+- **Websites** are complete websites with pages and functionality
 - **Packages** are collections of reusable components and functions
 
 [Packages](/packages/overview) can be published and shared across projects, making them ideal for common functionality. Learn more about [creating and launching packages](/packages/creating-and-launching) to share your work.
@@ -55,14 +55,14 @@ This git-like workflow enables collaboration and maintains stability in your pro
 
 ## Pages and navigation
 
-[Pages](/pages/overview) form the foundation of applications in Nordcraft:
+[Pages](/pages/overview) form the foundation of websites in Nordcraft:
 
 - Each page has a unique [URL path](/pages/page-configuration#url-structure)
 - Pages can accept [parameters](/pages/static-and-dynamic#dynamic-pages) for dynamic content
 - Pages contain [components](/building-blocks/components) and [elements](/building-blocks/elements)
 - [SEO metadata](/pages/page-configuration#metadata) is configured at the page level
 
-The page structure creates the overall navigation framework for your application. Learn how to [create pages](/pages/create-a-page) and set up their configuration.
+The page structure creates the overall navigation framework for your website. Learn how to [create pages](/pages/create-a-page) and set up their configuration.
 
 ## Data flow and reactivity
 

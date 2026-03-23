@@ -1,11 +1,11 @@
 ---
 title: Show/Hide formula
-description: Control element visibility with conditional formulas that add or remove elements from the DOM based on application state or user interactions.
+description: Control element visibility with conditional formulas that add or remove elements from the DOM based on website state or user interactions.
 ---
 
 # Show/hide formula
 
-The show/hide formula allows you to conditionally render elements based on specific conditions. This enables you to create dynamic interfaces that respond to user interactions, application state and other factors.
+The show/hide formula allows you to conditionally render elements based on specific conditions. This enables you to create dynamic interfaces that respond to user interactions, state and other factors.
 
 @@@ example
 componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-show-hide-formula.js

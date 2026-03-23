@@ -1,19 +1,19 @@
 ---
-title: How to keep your apps secure
-description: Learn how to keep your Nordcraft front-end app secure by being mindful of exposing secret API credentials and other sensitive data.
+title: How to keep your websites secure
+description: Learn how to keep your Nordcraft websites secure by being mindful of exposing secret API credentials and other sensitive data.
 ---
 
-# How to keep your Nordcraft app secure
+# How to keep your Nordcraft website secure
 
-Nordcraft is a front-end visual framework. As with any front-end application, all logic, configuration, and data, is visible to the user. Any information such as API keys, that should remain hidden from the user, should be stored in the back end and should not be included in your Nordcraft application.
+Nordcraft is a front-end website builder. As with any front-end website, all logic, configuration, and data, is visible to the user. Any information such as API keys, that should remain hidden from the user, should be stored in the back end and should not be included in your Nordcraft project.
 
 This guide covers the key things you should know to keep your Nordcraft projects safe and secure, especially when working with APIs or any sensitive information.
 
 ## What does front-end framework mean?
 
-Your Nordcraft applications run in the browser. There’s no back end, no secret layer, and nothing hidden from users. In front-end applications:
+Your Nordcraft websites run in the browser. There’s no back end, no secret layer, and nothing hidden from users. In front-end websites:
 
-- Users can **investigate/access most things that make up your app**, including UI logic, network requests, and any data that powers your project, regardless of whether or not that data is shown on the page.
+- Users can **investigate/access most things that make up your website**, including UI logic, network requests, and any data that powers your project, regardless of whether or not that data is shown on the page.
 - As a result of this, you are unable to hide API keys or other sensitive credentials from your users in your Nordcraft apps.
 
 :::info
@@ -22,7 +22,7 @@ For protected pages, users cannot access UI logic, network requests etc. unless 
 
 ## Do not store sensitive data in your Nordcraft projects
 
-Because everything in your Nordcraft apps are visible to users in a browser, you should not store secrets or sensitive information in your Nordcraft projects.
+Because everything in your Nordcraft websites are visible to users in a browser, you should not store secrets or sensitive information in your Nordcraft projects.
 
 Secrets or sensitive information can include, but are not limited to, the following:
 
@@ -34,7 +34,7 @@ Secrets or sensitive information can include, but are not limited to, the follow
 If you believe you have added any sensitive data or API credentials to your Nordcraft projects, remove them as soon as you can, generate new credentials, and delete the old ones.
 
 :::info
-Some API services provide **read-only** API keys to allow you to fetch data in a browser without compromising security. These types of keys are suitable to use in your Nordcraft applications. Always consult the relevant API service documentation to make sure you're using the correct read-only keys in your projects.
+Some API services provide **read-only** API keys to allow you to fetch data in a browser without compromising security. These types of keys are suitable to use in your Nordcraft projects. Always consult the relevant API service documentation to make sure you're using the correct read-only keys in your projects.
 :::
 
 ## Use a back end to handle sensitive data and processes
@@ -46,30 +46,30 @@ Back-end applications can more securely:
 - Store and manage API keys
 - Configure user authentication and permissions
 - Handle rate-limit usage and protect against abuse
-- Proxy API requests, so that front-end applications do not have access to sensitive data such as API keys
+- Proxy API requests, so that front-end websites do not have access to sensitive data such as API keys
 
 ## Security considerations
 
-No matter the type of application you are building in Nordcraft, here are some security best practices to keep in mind:
+No matter the type of website you are building in Nordcraft, here are some security best practices to keep in mind:
 
 ### 1. Be mindful of what you include in the front end
 
-Anything you include in your front-end applications can be accessed in a browser. When adding any new functionality to your projects, check whether any exposed data or credentials might compromise the security of your projects.
+Anything you include in your front-end websites can be accessed in a browser. When adding any new functionality to your projects, check whether any exposed data or credentials might compromise the security of your projects.
 
 Even seemingly benign configurations like debug flags or API base URLs can help attackers understand your project setup, which may make it vulnerable to attack.
 
 ### 2. Handle authentication in a back-end application
 
-If your Nordcraft application has users, logins, or restricted features:
+If your Nordcraft websute has users, logins, or restricted features:
 
-- Handle sign-ins through your backend
+- Handle sign-ins through your back end
 - Use secure cookies or access tokens (preferably HTTP-only)
 - Make sure every sensitive route checks permissions before you grant access
 
 ### 3. Be mindful of API usage
 
-If your Nordcraft application communicates with APIs:
+If your Nordcraft website communicates with APIs:
 
-- Ensure your backend is rate-limiting requests
+- Ensure your back end is rate-limiting requests
 - Avoid exposing third-party APIs in the browser
-- Monitor logs for abuse if your app starts to grow
+- Monitor logs for abuse if your project starts to grow

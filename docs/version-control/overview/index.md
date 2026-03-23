@@ -91,10 +91,10 @@ If you discover issues on your live project after publishing, you may need to re
 3. Select the `Rollback` option in the manu next to that version
 4. Confirm the rollback
 
-This will restore your live application to the selected version immediately, overwriting the current version.
+This will restore your live website to the selected version immediately, overwriting the current version.
 
 ::: warning
-Rolling back is a significant action that affects your live application. Make sure you have selected the correct version before confirming.
+Rolling back is a significant action that affects your live website. Make sure you have selected the correct version before confirming.
 :::
 
 ::: tip

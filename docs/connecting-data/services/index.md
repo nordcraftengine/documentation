@@ -22,7 +22,7 @@ You can add services in Nordcraft in two ways.
 
 ### From the API creation flow
 
-![The add new API dialog is open. In the services section, the connect now button is highlighted. To the left of this, another part of the Nordcraft app has been spliced onto the image, showing three available pre-configured services available to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-api-panel.webp 'Add a service from API panel')
+![The add new API dialog is open. In the services section, the connect now button is highlighted. To the left of this, another part of the Nordcraft editor has been spliced onto the image, showing three available pre-configured services available to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-api-panel.webp 'Add a service from API panel')
 
 1. When creating a new API, click the [kbd]Connect new[kbd] button
 2. Select the service you want to connect to from the available options
@@ -51,10 +51,10 @@ To connect to Supabase:
 You can find these credentials in your Supabase project settings. Once the Supabase service is added, Nordcraft will validate the connection to ensure it can access the API documentation.
 
 :::tip
-To get up and running quickly with Supabase, including auth, realtime, and file uploads, install the [Supabase Connect](https://supabase_connect.nordcraft.site/) package in your project, or create a new app using the [Nordbase](https://nordbase.nordcraft.site) template, which is a pre-configured template that demonstrates all functionality of the Supabase Connect package.
+To get up and running quickly with Supabase, including auth, realtime, and file uploads, install the [Supabase Connect](https://supabase_connect.nordcraft.site/) package in your project, or create a new website using the [Nordbase](https://nordbase.nordcraft.site) template, which is a pre-configured template that demonstrates all functionality of the Supabase Connect package.
 :::
 
-![The create a new app screen in Nordcraft, highlighting the Nordbase template, which is third in the basic list at the top of the template lists.|16/9](nordbase-template.webp 'Nordbase template')
+![The create a new project screen in Nordcraft, highlighting the Nordbase template, which is third in the basic list at the top of the template lists.|16/9](nordbase-template.webp 'Nordbase template')
 
 ### Xano
 

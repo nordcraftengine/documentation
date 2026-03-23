@@ -61,6 +61,6 @@ When creating a project you can choose between two visibility options:
 - **Private**: Your project is only visible within your organization, with customizable access and roles for different users
 
 ::: info
-Private apps require a paid plan.
+Private websites require a paid plan.
 It is currently not possible to create private packages.
 :::

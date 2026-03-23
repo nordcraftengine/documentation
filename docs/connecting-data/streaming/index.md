@@ -47,7 +47,7 @@ For more information about JSON streaming formats, see the [NDJSON](https://gith
 
 ![he edit API dialog is open. Auto fetch is enabled, the HTTP method is GET, the name of the API is Weather API. A tabbed area contains configuration for inputs, URL, parameters, headers, events and advanced. The currently selected tab is events. This image highlights the on message event in the events area, showing a button with the workflow icon that is pressed to run events each time the API receives a message. The image is annotated according to the list items below.|16/9](process-streamed-data.webp 'Process streamed data')
 
-To process streamed data in your application:
+To process streamed data in your website:
 
 1. Navigate to the **Events** tab in your API configuration
 2. Add an `On message` event handler that processes each incoming message
@@ -78,7 +78,7 @@ This forces Nordcraft to parse the response using your specified format regardle
 
 ## Implementation example
 
-A common application for streaming is with AI-powered chatbots:
+A common use-case for streaming is with AI-powered chatbots:
 
 1. User types a question →
 2. API request →

@@ -47,7 +47,7 @@ Angle variables are useful for defining rotation values in transformations or gr
 
 ### Syntax: Color
 
-Color variables can be used for backgrounds, gradients, borders, shadows, text colors, and more throughout your application. Editing a color variable will provide a color picker.
+Color variables can be used for backgrounds, gradients, borders, shadows, text colors, and more throughout your project. Editing a color variable will provide a color picker.
 
 :::tip
 Nordcraft does not enforce any color naming conventions, but deciding on a color scheme helps establish a consistent visual identity. Consider creating variables for:
@@ -72,7 +72,7 @@ Numbers are useful for defining values that require decimal precision, such as o
 
 ### Syntax: Time
 
-Time variables are used for defining durations in animations and transitions. By standardizing time values, you can ensure consistent timing across various interactive elements in your application.
+Time variables are used for defining durations in animations and transitions. By standardizing time values, you can ensure consistent timing across various interactive elements in your projects.
 
 ### Syntax: Integer
 
@@ -131,7 +131,7 @@ By default, the `Set theme` action will reactively (immediately) update the them
 
 Themes are set at the page level, but you can also set themes on individual elements. To do this, add the special `data-nc-theme` attribute to an element using the [attributes panel](/the-editor/element-panel#attributes-panel), specifying the theme name you wish to use as the value of that attribute. Theme names are case-sensitive and must match exactly.
 
-This allows you to create components or sections of your application that use a different theme than the rest of the page. The element and all its children will use the specified theme.
+This allows you to create components or sections of your website that use a different theme than the rest of the page. The element and all its children will use the specified theme.
 
 ### Dynamic themes
 
@@ -145,7 +145,7 @@ All theme variables are available throughout your project:
 - Select from dropdowns in the relevant property fields (e.g., color picker, spacing inputs)
 - Override theme variables in components using static values or dynamic formulas
 
-This approach ensures that changes to the theme automatically propagate throughout your application, maintaining design consistency with minimal effort.
+This approach ensures that changes to the theme automatically propagate throughout your project, maintaining design consistency with minimal effort.
 
 :::tip
 Using Nordcraft's theme system to define your design tokens in combination with creating reusable [components](/components/overview) enables you to build out a robust design system for your project. With this approach, there is one source of truth for your design system. When a designer makes an update, the work doesn't need to be done twice.

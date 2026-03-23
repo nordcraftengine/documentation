@@ -5,7 +5,7 @@ description: Navigate the project details page to manage settings, domains, bran
 
 # Project details
 
-The project details page provides information about your app or package. Here you can manage settings and branches, track changes, and invite collaborators.
+The project details page provides information about your website or package. Here you can manage settings and branches, track changes, and invite collaborators.
 
 ## Settings
 
@@ -18,8 +18,8 @@ The project settings section allows you to manage your project configuration.
 3. **Invite members**: Add members from your organization to collaborate on the project
 4. **Clone project**: Create a duplicate of the project in any of your organizations
 5. **Additional actions**:
-   - for **apps**:
-     - Change your app to **public**, where anyone can view it, or **private** with restricted access
+   - for **websites**:
+     - Change your website to **public**, where anyone can view it, or **private** with restricted access
      - Delete your app
    - for **packages**:
      - Delete your package (only possible before launch)

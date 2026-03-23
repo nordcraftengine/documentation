@@ -5,18 +5,18 @@ description: Explore how pages work in Nordcraft, providing unique URLs, metadat
 
 # Pages in Nordcraft
 
-Pages are the foundation of applications in Nordcraft, representing distinct screens with unique URLs that users navigate to.
+Pages are the foundation of websites in Nordcraft, representing distinct screens with unique URLs that users navigate to.
 
-Pages in Nordcraft are specialized components that serve as the top-level containers for different areas of your application. They function as containers for all the content and functionality available at a specific URL. You can think of each page as being a separate document. If you're familar with other web frameworks or you have experience using HTML, pages in Nordcraft work in the same way.
+Pages in Nordcraft are specialized components that serve as the top-level containers for different areas of your website. They function as containers for all the content and functionality available at a specific URL. You can think of each page as being a separate document. If you're familar with other web frameworks or you have experience using HTML, pages in Nordcraft work in the same way.
 
 ## Page features
 
 - Each page has a unique URL path
-- Pages are top-level components in your application structure, not nested within other elements
+- Pages are top-level components in your website's structure, not nested within other elements
 - Pages do not have attributes or events
 - To configure your pages, use the dedicated **Page** section in the [data panel](/the-editor/data-panel)
 
-Pages handle a variety of functions central to web applications:
+Pages handle a variety of functions central to websites:
 
 - Rendering content and UI elements
 - Processing URL parameters and query strings
@@ -52,7 +52,7 @@ A page in Nordcraft can have any of the following:
 
 ## Custom 404 page
 
-If a user navigates to a URL that doesn't match any page in your application, Nordcraft shows a default 404 (page not found) page.
+If a user navigates to a URL that doesn't match any page in your project, Nordcraft shows a default 404 (page not found) page.
 
 To create a custom 404 page:
 

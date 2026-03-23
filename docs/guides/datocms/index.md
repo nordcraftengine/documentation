@@ -5,7 +5,7 @@ description: Learn how to create a data model in DatoCMS and integrate it with N
 
 # DatoCMS integration guide
 
-DatoCMS is a headless Content Management System (CMS) that lets you store and manage content, and retrieve that content via a GraphQL API for use in your front-end applications. This guide outlines the process of creating a data model within DatoCMS and integrating it with Nordcraft.
+DatoCMS is a headless Content Management System (CMS) that lets you store and manage content, and retrieve that content via a GraphQL API for use in your websites. This guide outlines the process of creating a data model within DatoCMS and integrating it with Nordcraft.
 
 ## Source projects
 
@@ -90,7 +90,7 @@ To test this in a Nordcraft project, you need to find your DatoCMS API credentia
 From the DatoCMS dashboard, navigate to "Project Settings" in the top-right corner. Within this modal, select the "API Tokens" tab and then access the "Read-Only API Token". This token will be used for secure data retrieval in Nordcraft.
 
 ::: info
-This read-only API token is safe to use in your Nordcraft project and will not compromise the security of your application. For more information on secure apps, check out the [Security Guide](/guides/security).
+This read-only API token is safe to use in your Nordcraft project and will not compromise the security of your website. For more information on secure apps, check out the [Security Guide](/guides/security).
 :::
 
 Open your Nordcraft project in a separate browser tab or window. It is recommended you set your DatoCMS credentials through project formulas in Nordcraft, which allows you to update these values centrally, should they change in the future.
@@ -206,7 +206,7 @@ The initial “children” array is the target for repeating the **dato-block** 
 This structure is typical for headless CMS systems, with minor variations across platforms. The purpose of this nesting is to separate and format inline elements such as bold text or links, as shown in the paragraph example.
 
 ::: info
-Some CMS platforms return regular HTML, but JSON is seen more often. JSON is much easier to work with on the front end, as it allows you to fully customise the HTML structure of your application. Consider this when choosing your CMS.
+Some CMS platforms return regular HTML, but JSON is seen more often. JSON is much easier to work with on the front end, as it allows you to fully customise the HTML structure of your website. Consider this when choosing your CMS.
 :::
 
 In the example above, the content includes regular text, bold text, another segment of regular text, and italics. These inline elements form the complete paragraph, and it is these nested children elements that the component iterates over (2). This is the "nested" problem that we are solving, a chain of arrays (elements) with their own child arrays (inline elements).
@@ -268,4 +268,4 @@ Therefore, a filter formula can be used to assign the corresponding asset to the
 
 No additional repeating or recursive components are required for this configuration. The block and link data are simply passed, and the **dato-block** component manages their sorting as needed.
 
-You can now continue to build your application using the cloned project in this guide, or start a new project to fetch data from your DatoCMS account.
+You can now continue to build your project using the cloned project in this guide, or start a new project to fetch data from your DatoCMS account.

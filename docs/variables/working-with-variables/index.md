@@ -1,15 +1,15 @@
 ---
 title: Working with variables
-description: Create, initialize, update and bind variables to elements to build dynamic interfaces that respond to user interactions and application state.
+description: Create, initialize, update and bind variables to elements to build dynamic interfaces that respond to user interactions and state.
 ---
 
 # Working with variables
 
-Variables enable you to manage state throughout your application, allowing you to create dynamic and interactive components.
+Variables enable you to manage state throughout your website, allowing you to create dynamic and interactive components.
 
 ## Creating variables
 
-![A component is being edited. The data panel is visible on the right. A variable named isCardSelected is selected, which has opened the edit variable dialog, where you can edit the initial value of the variable. You can also view the current value of the variable in the app at the bottom of the dialog.|16/9](create-a-variable.webp 'Create a variable'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-variable-updating?canvas-width=800&rightpanel=style&selection=variables.isCardSelected&canvas-height=800}
+![A component is being edited. The data panel is visible on the right. A variable named isCardSelected is selected, which has opened the edit variable dialog, where you can edit the initial value of the variable. You can also view the current value of the variable in the editor at the bottom of the dialog.|16/9](create-a-variable.webp 'Create a variable'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/example-variable-updating?canvas-width=800&rightpanel=style&selection=variables.isCardSelected&canvas-height=800}
 
 To create a variable:
 

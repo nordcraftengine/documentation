@@ -1,11 +1,11 @@
 ---
 title: Authentication
-description: Implement secure authentication with HTTP-only cookies, token handling, and request authorization for protected resources in Nordcraft applications.
+description: Implement secure authentication with HTTP-only cookies, token handling, and request authorization for protected resources in Nordcraft.
 ---
 
 # Authentication
 
-Authentication enables users to verify their identity, allowing you to control access to specific data and features in your application.
+Authentication enables users to verify their identity, allowing you to control access to specific data and features in your websites.
 
 A typical authentication flow consists of these steps:
 
@@ -18,7 +18,7 @@ A typical authentication flow consists of these steps:
 This approach lets you implement secure authentication while keeping sensitive verification logic on your back end.
 
 ::: info
-The "server" is the back-end application, the "client" is the front-end application in Nordcraft.
+The "server" is the back-end application, the "client" is the front-end website in Nordcraft.
 :::
 
 In Nordcraft, authentication is handled through API connections, allowing you to:
@@ -46,7 +46,7 @@ There are two approaches for storing access tokens securely in Nordcraft.
 
 ![The edit API panel is visible. The on success callback dialog is visible, showing that on success of the API Call, the set session cookies formula is run, which sets the access token via a formula, and sets the expiration to 3600. The set session cookies also has success and error callback options. The success callback is active, as indicated by the orange workflow icon consisting of three squares connected by branches. The image is annotated according to the list items below.|16/9](set-http-only-cookie.webp 'Set HTTP-only cookie')
 
-For login flows where users enter credentials (such as a username and password) directly in your application:
+For login flows where users enter credentials (such as a username and password) directly in your website:
 
 1. Create a workflow to call your authentication endpoint
 2. Add the **Set HttpOnly Cookie** action to the `On success` callback event to set an HttpOnly cookie and store the token securely
@@ -72,7 +72,7 @@ Learn more about using [HTTP cookies on the MDN documentation](https://developer
 For OAuth or third-party authentication providers that use redirects (like Supabase, Auth0 or Firebase):
 
 1. Redirect users to the authentication provider to authenticate
-2. Configure the provider to redirect back to your application at `/.toddle?access_token=<Your access token>`
+2. Configure the provider to redirect back to your website at `/.toddle?access_token=<Your access token>`
 3. Nordcraft automatically stores this token in a secure HTTP-only cookie
 4. Optionally redirect users to a specific page after authentication using the query parameter `redirect_to=<URL>`
 
@@ -112,7 +112,7 @@ Follow these steps to develop authenticated features:
    - There is no need to log in separately for the editor environment
 
 ::: info
-The browser extension is only required for development in the Nordcraft editor. Users of your published application will not need to install anything.
+The browser extension is only required for development in the Nordcraft editor. Users of your published website will not need to install anything.
 :::
 
 ## Security guidelines

@@ -33,7 +33,7 @@ The `Installed` tab in the packages panel shows all packages currently used in y
 When an installed package has updates available, a green update icon appears next to it. Click this icon to install the latest version.
 
 ::: tip
-Always create a new branch before updating packages. This allows you to test your application with the updated package and resolve any issues before publishing.
+Always create a new branch before updating packages. This allows you to test your project with the updated package and resolve any issues before publishing.
 :::
 
 ### Uninstall a package

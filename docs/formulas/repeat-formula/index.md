@@ -68,7 +68,7 @@ Using the index as a key prevents Nordcraft from making optimizations. Use a uni
 
 ### How the repeat key improves performance
 
-The repeat key formula improves performance of your application in several ways:
+The repeat key formula improves performance of your project in several ways:
 
 - Enables Nordcraft to track specific items across renders
 - Allows reuse of DOM elements instead of recreating them

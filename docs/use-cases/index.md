@@ -5,18 +5,18 @@ description: Build scalable web apps, e-commerce sites, and content-rich website
 
 # What can you build with Nordcraft?
 
-Using Nordcraft, you can build any website that you can create with HTML, CSS and JavaScript. From complex interactive applications to content-focused websites, Nordcraft provides the tools you need to create beautiful, scalable and maintainable applications.
+Using Nordcraft, you can build any website that you can create with HTML, CSS and JavaScript. From complex interactive websites to content-focused websites, Nordcraft provides the tools you need to create beautiful, scalable and maintainable projects.
 
 ::: info
-Nordcraft is for designers **and** developers, making it an ideal platform for product agency teams who offer a variety of different types of client work, including web applications, e-commerce solutions, content-driven sites and corporate websites.
+Nordcraft is for designers **and** developers, making it an ideal platform for product agency teams who offer a variety of different types of client work, including websites, e-commerce solutions, content-driven sites and corporate websites.
 :::
 
-## Web applications
+## Websites
 
-Nordcraft's component architecture and API integration capabilities make it ideal for developing sophisticated interactive web applications:
+Nordcraft's component architecture and API integration capabilities make it ideal for developing sophisticated interactive websites:
 
 - **SaaS products**: Build complete Software as a Service solutions with subscription models
-- **Business tools**: Develop specialized applications for inventory, CRM or HR systems
+- **Business tools**: Develop specialized experiences for inventory, CRM or HR systems
 - **Customer portals**: Create personalized user dashboards protected with authentication
 - **Admin panels**: Build interfaces for content management and data administration
 - **Data visualization**: Create interactive charts, graphs, and visual data presentations

@@ -5,13 +5,13 @@ description: Understand the four main sections of Nordcraft's editor interface -
 
 # The Nordcraft editor
 
-The Nordcraft editor is your main workspace for building Nordcraft applications and packages. It provides an interface with the tools needed to design, develop and test your projects.
+The Nordcraft editor is your main workspace for building Nordcraft websites and packages. It provides an interface with the tools needed to design, develop and test your projects.
 
 ![The Nordcraft editor, showing a full HTML element tree of HTML elements and components, and a card component on the canvas. The image is annotated with numbers that relate to the lists items below.|16/9](editor-overview.webp 'Editor overview'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events}
 
 The editor workspace consists of four main areas:
 
-1. [Canvas](/the-editor/canvas): The central workspace where you visually build and interact with your application
+1. [Canvas](/the-editor/canvas): The central workspace where you visually build and interact with your website
 2. [Bottom bar](/the-editor/bottom-bar): Undo/redo changes, switch between viewports, preview your project and get AI assistance
 3. **Left panel**: Context-sensitive panel that displays
    - [Element tree](/the-editor/element-tree): A hierarchical view of the element structure of your page or component

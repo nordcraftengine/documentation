@@ -37,7 +37,7 @@ If you are not familiar with URL structure, check out the [blog post about URLs]
 
 ## Metadata
 
-Each page in your application should have unique metadata to improve user experience and search engine visibility:
+Each page in your website should have unique metadata to improve user experience and search engine visibility:
 
 - **Title**: Appears in browser tabs and search results
 - **Language**: Specifies the language of your page content for accessibility purposes
