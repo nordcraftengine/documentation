@@ -48,7 +48,7 @@ To create a parameter:
 
 1. Click the [kbd]+[kbd] button
 2. Choose a name for the parameter
-3. Assign an optional test value; this value is only available in the editor and will not affect your application in production
+3. Assign an optional test value; this value is only available in the editor and will not affect your website in production
 
 ## Nodes
 

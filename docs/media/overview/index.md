@@ -5,7 +5,7 @@ description: Learn how to upload images for use in your Nordcraft project, and h
 
 # Media management
 
-You can upload images to your Nordcraft projects for use in your applications. Uploaded images are served from Nordcraft's Content Delivery Network (CDN).
+You can upload images to your Nordcraft projects for use on your websites. Uploaded images are served from Nordcraft's Content Delivery Network (CDN).
 
 ## Upload images
 

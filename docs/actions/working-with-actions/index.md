@@ -63,7 +63,7 @@ When developing actions, keep these important considerations in mind:
 - **DOM access**: Use `ctx.root` instead of `document` for DOM operations to ensure compatibility with Shadow DOM when components are exported as web components
 - **Asynchronous code**: Actions can be [asynchronous](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) using the `async/await` syntax or [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - **Cleanup**: Return a function from your action to automatically clean up resources when the component that triggered the action is unmounted (e.g. [remove event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener))
-- **Error handling**: Actions should handle errors gracefully to avoid breaking your application
+- **Error handling**: Actions should handle errors gracefully to avoid breaking your website
 
 ::: warning
 When you set up ongoing processes like intervals or event listeners in your actions, always return a cleanup function to avoid memory leaks.

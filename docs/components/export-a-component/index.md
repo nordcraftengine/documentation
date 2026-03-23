@@ -33,7 +33,7 @@ Web Components enable custom, reusable HTML elements. See the [MDN Web Component
 :::
 
 ::: warning
-Proxied API requests will not work for embedded web components. They will only work for applications hosted by Nordcraft. [Learn more about proxied API requests](/connecting-data/advanced-api-features#proxy-request) in Nordcraft.
+Proxied API requests will not work for embedded web components. They will only work for websites hosted by Nordcraft. [Learn more about proxied API requests](/connecting-data/advanced-api-features#proxy-request) in Nordcraft.
 :::
 
 ## Component naming requirements

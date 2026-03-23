@@ -1,6 +1,6 @@
 ---
 title: Workflows overview
-description: Learn about workflows in Nordcraft as event-driven sequences that execute operations with side effects in your application.
+description: Learn about workflows in Nordcraft as event-driven sequences that execute operations with side effects in your project.
 ---
 
 # Workflows overview

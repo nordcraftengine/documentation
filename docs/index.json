@@ -1,10 +1,10 @@
 [
   { "path": "about", "label": "About" },
-  { "path": "use-cases", "label": "Use cases" },
-  { "path": "app-examples", "label": "App examples" },
-  { "path": "core-concepts", "label": "Core concepts" },
   { "path": "video-tutorials", "label": "Video tutorials" },
   { "path": "ai-assistant", "label": "AI Assistant" },
+  { "path": "core-concepts", "label": "Core concepts" },
+  { "path": "use-cases", "label": "Use cases" },
+  { "path": "app-examples", "label": "Website examples" },
   {
     "path": "get-started",
     "label": "Get started",

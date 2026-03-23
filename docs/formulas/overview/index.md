@@ -5,7 +5,7 @@ description: Understand Nordcraft's formula editor to create data transformation
 
 # Formulas
 
-The formula editor is where you construct business logic for your application in Nordcraft. It provides a powerful way to transform data, perform calculations, and implement conditional logic throughout your application.
+The formula editor is where you construct business logic for your website in Nordcraft. It provides a powerful way to transform data, perform calculations, and implement conditional logic throughout your project.
 
 Formulas in Nordcraft are expressions that:
 

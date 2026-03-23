@@ -5,7 +5,7 @@ description: Use Nordcraft’s built-in formulas to transform data, calculate va
 
 # Formulas reference
 
-Browse the built-in formulas in Nordcraft, which you can use to transform data, perform calculations, and implement conditional logic throughout your application.
+Browse the built-in formulas in Nordcraft, which you can use to transform data, perform calculations, and implement conditional logic throughout your project.
 
 ::: tip
 To learn more about formulas, check out the [formulas overview](/formulas/overview).

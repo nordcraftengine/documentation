@@ -45,7 +45,7 @@ Nesting is the most basic form of component composition, where you add component
 Benefits of nesting include:
 
 - Breaking complex interfaces into manageable pieces
-- Reusing functionality at different levels of your application
+- Reusing functionality at different levels of your project
 - Creating clear relationships between UI elements
 
 ### Nesting considerations
@@ -57,7 +57,7 @@ When nesting components, consider the following:
 - **Styling**: Parent components can [style the root element](/styling/conditional-styles#component-style-overrides) of nested components
 
 ::: tip
-As your application grows, you'll naturally develop deeper component hierarchies. While there's no strict limit to nesting depth, it's good practice to maintain clear boundaries of responsibility between components to ensure maintainability.
+As your project grows, you'll naturally develop deeper component hierarchies. While there's no strict limit to nesting depth, it's good practice to maintain clear boundaries of responsibility between components to ensure maintainability.
 :::
 
 ## Slots

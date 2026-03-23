@@ -1,6 +1,6 @@
 ---
 title: Animation editor
-description: Bring joy and delight to your apps by using the Nordcraft animation editor to generate CSS animations in an intuitive visual interface.
+description: Bring joy and delight to your websites by using the Nordcraft animation editor to generate CSS animations in an intuitive visual interface.
 ---
 
 # Animation editor

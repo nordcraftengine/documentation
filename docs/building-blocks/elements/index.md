@@ -5,7 +5,7 @@ description: Learn about elements in Nordcraft projects, and how they are used t
 
 # Elements
 
-Elements are the basic building blocks that make up the interface of your page or component in Nordcraft. They create the structure, content, and interactive parts of your application that users see and interact with.
+Elements are the basic building blocks that make up the interface of your page or component in Nordcraft. They create the structure, content, and interactive parts of your website that users see and interact with.
 
 ![A component is being edited, with the HTML element visible. The component consists of a number of semantic HTML elements and also includes a Nordcraft card-button components.|16/9](elements.webp 'Elements'){https://Nordcraft.dev/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=attributes&canvas-width=800&canvas-height=800}
 
@@ -30,7 +30,7 @@ HTML elements are identified by their names or `tags`, each with specific meanin
 - Tags such as `<h1>`, `<header>`, and `<li>` have semantic meaning that communicates the purpose of the content
 
 ::: info
-Nordcraft deliberately uses standard HTML elements to ensure your application renders consistently across browsers, remains SEO-friendly and maintains accessibility standards. For comprehensive information about HTML elements, visit the [HTML Elements reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+Nordcraft deliberately uses standard HTML elements to ensure your website renders consistently across browsers, remains SEO-friendly and maintains accessibility standards. For comprehensive information about HTML elements, visit the [HTML Elements reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 :::
 
 ### HTML element attributes

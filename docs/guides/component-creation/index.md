@@ -5,11 +5,11 @@ description: Determine when and how to create components by identifying reusable
 
 # Component creation guide
 
-Creating well-designed components is key to building efficient, maintainable applications in Nordcraft. This guide helps you determine _when_ to create components.
+Creating well-designed components is key to building efficient, maintainable projects in Nordcraft. This guide helps you determine _when_ to create components.
 
 ## When to create components
 
-Knowing when to turn parts of your application into components is an important skill. Here are key situations where creating a component makes sense:
+Knowing when to turn parts of your website into components is an important skill. Here are key situations where creating a component makes sense:
 
 ### Identifying reusable patterns
 
@@ -28,7 +28,7 @@ Components help eliminate duplication in your codebase. Benefits include:
 
 - Changes only need to be made in one place
 - Bugs fixed in the component are fixed everywhere it is used
-- Consistent user experience throughout your application
+- Consistent user experience throughout your website
 
 ### Encapsulating complex functionality
 
@@ -43,15 +43,15 @@ Components excel at encapsulating complex logic and UI into manageable, self-con
 Creating well-structured components involves finding the right level of granularity:
 
 - **Focus on purpose**: Each component should serve a clear, specific function
-- **Consistency matters**: Even simple elements like buttons benefit from being components when they appear throughout your application
+- **Consistency matters**: Even simple elements like buttons benefit from being components when they appear throughout your website
 - **Watch for complexity signs**: Components with more than 15-20 elements or many attributes may benefit from being divided
 - **Consider separation of concerns**: If a component handles multiple distinct tasks or visual areas, it might work better as separate components
 - **Prioritize maintainability**: Components should be easy to understand and modify without affecting unrelated functionality
 
-The ideal component size depends on your specific application needs, but aiming for focused, **single-responsibility** components generally leads to more maintainable code.
+The ideal component size depends on your specific project needs, but aiming for focused, **single-responsibility** components generally leads to more maintainable code.
 
 ::: tip
-Follow the **single-responsibility principle**: each component should do one thing well, making it easier to understand, test, and reuse across your application.
+Follow the **single-responsibility principle**: each component should do one thing well, making it easier to understand, test, and reuse across your project.
 :::
 
 ## Component creation workflow
@@ -63,6 +63,6 @@ When creating components, follow these steps for optimal results:
 3. **Style the component**: Apply CSS styling
 4. **Add internal logic**: Set up variables, workflows, and event handlers
 5. **Test with different attribute values**: Ensure the component works correctly with various inputs
-6. **Test in context**: Place your component in its intended parent element or application to verify it works as expected in real usage scenarios
+6. **Test in context**: Place your component in its intended parent element or project to verify it works as expected in real usage scenarios
 
-Creating well-designed components takes practice, but pays dividends in maintainability and development speed as your application grows.
+Creating well-designed components takes practice, but pays dividends in maintainability and development speed as your project grows.

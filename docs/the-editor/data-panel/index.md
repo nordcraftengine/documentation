@@ -5,7 +5,7 @@ description: Configure page settings, component attributes, variables, APIs, eve
 
 # Data panel
 
-The data panel is the central hub for managing all data aspects of your pages and components in Nordcraft. It allows you to define variables, connect to APIs, create formulas, and establish workflows that power your application's functionality.
+The data panel is the central hub for managing all data aspects of your pages and components in Nordcraft. It allows you to define variables, connect to APIs, create formulas, and establish workflows that power your website's functionality.
 
 ![The data panel is visible on the right with sections for page configuration, variables, APIs, Formulas, Workflows and Lifecycle.|16/9](data-panel-page.webp 'Data panel page'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800}
 
@@ -37,7 +37,7 @@ Store and manage state within your page or component. Variables can be initializ
 
 ### APIs
 
-Connect your application to external services and data sources by defining endpoints, configuring request parameters and HTTP methods, and handling responses.
+Connect your website to external services and data sources by defining endpoints, configuring request parameters and HTTP methods, and handling responses.
 
 ### Events
 
@@ -68,10 +68,10 @@ View all components that rely on the current component to track usage throughout
 
 ## Using the data panel
 
-The data panel is fundamental to creating dynamic applications in toddle:
+The data panel is fundamental to creating dynamic experiences in Nordcraft:
 
 - Define your data model using variables and APIs
 - Create formulas to transform and present your data
 - Implement workflows to handle user interactions
-- Configure lifecycle actions to initialize your application state
+- Configure lifecycle actions to initialize your website's state
 - Set up proper communication between components using events and contexts

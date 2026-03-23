@@ -5,7 +5,7 @@ description: Implement responsive and state-dependent styling with pseudo classe
 
 # Conditional styles
 
-Conditional styles allows you to create specific variations of an element's appearance that only apply in certain circumstances. This approach enables dynamic interfaces that respond to user interactions, screen sizes, and application states.
+Conditional styles allows you to create specific variations of an element's appearance that only apply in certain circumstances. This approach enables dynamic interfaces that respond to user interactions, screen sizes, and website states.
 
 There are several methods to apply conditional styles in Nordcraft:
 
@@ -81,7 +81,7 @@ Classes in Nordcraft are scoped to the element where they're defined:
 - Classes are not automatically shared between elements
 - For reusable styles across multiple elements, create components instead
 
-This approach maintains clean separation and prevents unintended style conflicts in your application.
+This approach maintains clean separation and prevents unintended style conflicts on your website.
 
 ## CSS variables
 
@@ -99,7 +99,7 @@ Create CSS variables with dynamic values by binding them to formulas, attributes
 2. Use the [formula editor](/formulas/overview#the-formula-editor) to create conditional logic
 3. Reference the variable in your CSS properties
 
-This approach is particularly useful for complex conditional styling that depends on application state or dynamic data.
+This approach is particularly useful for complex conditional styling that depends on state or dynamic data.
 
 ## Cascade and precedence
 

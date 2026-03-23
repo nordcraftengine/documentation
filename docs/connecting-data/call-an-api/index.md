@@ -97,11 +97,11 @@ When the weather data is successfully updated, a confetti animation is triggered
 
 ## Cancelling API calls
 
-You can cancel ongoing API calls using the **Cancel API call** workflow action. This is useful in scenarios where you have long running API requests that your application or the user might want to cancel.
+You can cancel ongoing API calls using the **Cancel API call** workflow action. This is useful in scenarios where you have long running API requests that your website or the user might want to cancel.
 
 ## Accessing API data
 
-Once your API call completes, the resulting data is available for use in your application logic and UI.
+Once your API call completes, the resulting data is available for use in your logic and UI.
 
 ![The formula editor is visible at the bottom of the editor. The formula takes data from the weather API, indicated in the first formula node by a cloud icon. The formula takes the current temperature data from the weather API, rounds the value to 1 decimal place, and concatenates the degrees celcius symbol.|16/9](access-api-data.webp 'Access API data')
 

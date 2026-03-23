@@ -5,7 +5,7 @@ description: Navigate the project details page to manage settings, domains, bran
 
 # Project details
 
-The project details page provides information about your app or package. Here you can manage settings and branches, track changes, and invite collaborators.
+The project details page provides information about your website or package. Here you can manage settings and branches, track changes, and invite collaborators.
 
 ## Settings
 
@@ -18,8 +18,8 @@ The project settings section allows you to manage your project configuration.
 3. **Invite members**: Add members from your organization to collaborate on the project
 4. **Clone project**: Create a duplicate of the project in any of your organizations
 5. **Additional actions**:
-   - for **apps**:
-     - Change your app to **public**, where anyone can view it, or **private** with restricted access
+   - for **websites**:
+     - Change your website to **public**, where anyone can view it, or **private** with restricted access
      - Delete your app
    - for **packages**:
      - Delete your package (only possible before launch)
@@ -46,7 +46,7 @@ For detailed information on working with branches, see the [Branches and publish
 
 When selecting a project from your Nordcraft dashboard, you can view all active branches, with details about who created them and when.
 
-![The project details page is annotated with a rectangle around a branch in the list, showing an edit button and three dot context menu.|16/9](branch-actions.webp 'Branch actions')
+![The project details page is annotated with numbers that match the list items below. The additional actions menu is open.|16/9](branch-actions.webp 'Branch actions')
 
 The following actions are available for each branch:
 
@@ -55,6 +55,7 @@ The following actions are available for each branch:
    - **View changes**: See an overview of all modifications in the branch; if the branch is outdated, conflicts will be highlighted for resolution before syncing with the main branch
    - **Preview**: Opens the live version of the branch
    - **Delete branch**: Deletes selected branch
+   - **Download branch**: Download the branch code in JSON format
 
 ## Version history
 

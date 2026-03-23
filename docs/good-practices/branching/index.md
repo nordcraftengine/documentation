@@ -5,7 +5,7 @@ description: Apply effective branch management with small, focused changes, freq
 
 # Branching
 
-Effective branch management is essential for maintaining a stable application while developing new features. In Nordcraft, branches allow you to develop features in isolation without affecting your live application. Unlike traditional version control systems, Nordcraft's branching system is designed specifically for visual development, making it easier to track UI changes and collaborate with both technical and non-technical team members. Branching in Nordcraft helps you maintain development velocity while ensuring application stability.
+Effective branch management is essential for maintaining a stable project while developing new features. In Nordcraft, branches allow you to develop features in isolation without affecting your live website. Unlike traditional version control systems, Nordcraft's branching system is designed specifically for visual development, making it easier to track UI changes and collaborate with both technical and non-technical team members. Branching in Nordcraft helps you maintain development velocity while ensuring project stability.
 
 For more details on the mechanics of branching, see the [Branches and publishing](/get-started/branches-and-publishing) page.
 
@@ -74,4 +74,4 @@ For teams working in Nordcraft:
 - Branch naming conventions (like `feature/name` or `fix/issue`) can be helpful
 - Communicate about major changes that might affect other team members' work
 
-By adopting these branching practices, you will create a more efficient development workflow, improve collaboration, and maintain a stable application that delivers consistent value to your users.
+By adopting these branching practices, you will create a more efficient development workflow, improve collaboration, and maintain a stable project that delivers consistent value to your users.

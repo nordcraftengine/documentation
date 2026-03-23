@@ -32,7 +32,7 @@ Learn more about [HTTP response status codes on the MDN documentation](https://d
 
 ## Redirect rules
 
-Redirect rules allow your application to automatically navigate users to different pages based on API responses. This is useful in several scenarios:
+Redirect rules allow you to configure your website to automatically navigate users to different pages based on API responses. This is useful in several scenarios:
 
 - Redirecting unauthenticated users to a login page
 - Handling language or region-specific content availability

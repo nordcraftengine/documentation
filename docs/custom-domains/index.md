@@ -1,6 +1,6 @@
 ---
 title: Custom domains
-description: Learn how to add custom domains to your Nordcraft project to serve your application from different public-facing URLs.
+description: Learn how to add custom domains to your Nordcraft project to serve your website from different public-facing URLs.
 ---
 
 # Custom domains
@@ -44,9 +44,9 @@ Custom domains are only available on paid plans. Projects in organizations on th
 
 ## Wildcard domains
 
-Wildcard domains allow you to serve your Nordcraft application from any subdomain of a given domain.
+Wildcard domains allow you to serve your Nordcraft website from any subdomain of a given domain.
 
-For example, if you add the wildcard domain `*.example.com`, your Nordcraft application will be accessible from any subdomain of `example.com`, such as `app.example.com`, `blog.example.com`, or `shop.example.com`.
+For example, if you add the wildcard domain `*.example.com`, your Nordcraft website will be accessible from any subdomain of `example.com`, such as `app.example.com`, `blog.example.com`, or `shop.example.com`.
 
 To add a wildcard domain, follow the same steps as adding a non-wildcard domain, but use the wildcard format (e.g. `*.example.com`) when entering the domain name.
 
