@@ -66,7 +66,7 @@ While the AI Assistant in Build mode can propose changes for your project, it ca
 
 Additionally, the AI cannot currently:
 
-- **Create or read services created in Nordcraft**
+- **Create services in Nordcraft**
 - **Upload or read media files in Nordcraft**
 
 :::info
