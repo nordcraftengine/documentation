@@ -81,7 +81,7 @@ Classes in Nordcraft are scoped to the element where they're defined:
 - Classes are not automatically shared between elements
 - For reusable styles across multiple elements, create components instead
 
-This approach maintains clean separation and prevents unintended style conflicts in your website.
+This approach maintains clean separation and prevents unintended style conflicts on your website.
 
 ## CSS variables
 
