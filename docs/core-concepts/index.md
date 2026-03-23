@@ -67,7 +67,7 @@ Learn how to [create pages](/pages/create-a-page) and set up their configuration
 
 Nordcraft uses a reactive data model built on signals:
 
-- Store state within components and pages using [variables](/variables/overview) 
+- Store state within components and pages using [variables](/variables/overview)
 - Transform data using [formulas](/formulas/overview)
 - Use [events and workflows](/workflows/overview) to build interactivity
 - Use [contexts](/contexts/overview) to share data between components
