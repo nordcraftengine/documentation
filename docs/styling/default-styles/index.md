@@ -29,5 +29,5 @@ All elements in Nordcraft use `display: flex` by default, offering several advan
 Any custom styles you apply to elements will always override the reset styles. However, when working with external web components that include their own styles, you may need to opt out of Nordcraft’s default reset stylesheet for compatibility.
 
 ::: tip
-**Exclude elements from reset styles**: Add the attribute `data-unset-nordcraft-styles` to an element to ignore the reset stylesheet rules for that element.
+**Exclude elements from reset styles**: Add the attribute `data-unset-toddle-styles` to an element to ignore the reset stylesheet rules for that element.
 :::
