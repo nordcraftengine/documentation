@@ -7,6 +7,15 @@ description: description: Learn about Nordcraft's Git-like approach to version c
 
 Version control in software development enables teams to collaborate on parallel feature development and bug fixes without affecting the live site in production. Version control also records the history of any changes made, and allows you to revert to previous versions of files or versions of your project should you need to.
 
+::: tip
+For a primer on version control and branching, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@youtube
+videoId: ZmtjNYJ_M6k
+title: Version control and branching
+@@@
+
 ## Branches
 
 Branches in Nordcraft allow you to develop new features or fix issues without affecting the live version of your projects, providing a safe environment to make and test changes before making them available to users.
