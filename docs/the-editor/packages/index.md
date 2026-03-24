@@ -5,7 +5,7 @@ description: Learn about Nordcraft packages to add pre-built components and func
 
 # Nordcraft Packages
 
-Packages extend your project with reusable components and functionality created by the Nordcraft community. Packages save development time by providing pre-built solutions you can add to your apps.
+Packages provide a way to extend your project with reusable components and functionality created by the Nordcraft community. Packages can save development time by providing pre-built solutions you can add to your websites.
 
 ::: dev
 Packages in Nordcraft work similar to NPM packages. They can contain pure logic, visual elements or both.

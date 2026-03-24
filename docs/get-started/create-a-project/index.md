@@ -5,7 +5,7 @@ description: Create new websites and packages in Nordcraft with this step-by-ste
 
 # Create a new project in Nordcraft
 
-In Nordcraft, you can create a [website](/get-started/overview#apps) or a [package](/get-started/overview#packages). A website is a standalone website, while packages are used to bundle up smaller bits of reusable functionality to use in Nordcraft projects.
+In Nordcraft, you can create a [website](/get-started/overview#websites) or a [package](/get-started/overview#packages). A website is a standalone website, while packages are used to bundle up smaller bits of reusable functionality to use in Nordcraft projects.
 
 ## Create a project from the dashboard
 

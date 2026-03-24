@@ -5,7 +5,7 @@ description: Configure page settings, component attributes, variables, APIs, eve
 
 # Data panel
 
-The data panel is the central hub for managing all data aspects of your pages and components in Nordcraft. It allows you to define variables, connect to APIs, create formulas, and establish workflows that power your website's functionality.
+The data panel is for managing all data aspects of your pages and components in Nordcraft. It allows you to define variables, connect to APIs, create formulas, workflows, and configure on load and on attribute change events.
 
 ![The data panel is visible on the right with sections for page configuration, variables, APIs, Formulas, Workflows and Lifecycle.|16/9](data-panel-page.webp 'Data panel page'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800}
 
@@ -17,7 +17,7 @@ The data panel is only visible when no element is selected. Press [kbd]Escape[kb
 
 ## Structure
 
-Pages and components have several data sections that provide essential functionality.
+The data panel is split into several sections tailored to specific functionality.
 
 ### Page
 
@@ -37,7 +37,7 @@ Store and manage state within your page or component. Variables can be initializ
 
 ### APIs
 
-Connect your website to external services and data sources by defining endpoints, configuring request parameters and HTTP methods, and handling responses.
+Connect your website to external services and back-end data sources by defining endpoints, configuring request parameters and HTTP methods, and handling responses.
 
 ### Events
 
@@ -45,11 +45,11 @@ Enable components to communicate with parent elements through custom events that
 
 ### Formulas
 
-Create reusable calculations and data transformations using Nordcraft's formula syntax to access data from variables, formulas, contexts and API responses.
+Create reusable calculations and data transformations using the formula editor to access data from variables, formulas, contexts and API responses.
 
 ### Workflows
 
-Build multi-step processes to handle complex interactions by combining workflows and actions in sequence with conditional logic.
+Build multi-step processes to handle interactivity by combining workflows and actions in sequence with conditional logic.
 
 ### Contexts
 
@@ -64,14 +64,4 @@ Control what happens at specific moments in your component or page lifecycle:
 
 ### Dependents
 
-View all components that rely on the current component to track usage throughout your project and assess the impact of potential changes.
-
-## Using the data panel
-
-The data panel is fundamental to creating dynamic experiences in Nordcraft:
-
-- Define your data model using variables and APIs
-- Create formulas to transform and present your data
-- Implement workflows to handle user interactions
-- Configure lifecycle actions to initialize your website's state
-- Set up proper communication between components using events and contexts
+View all components that rely on the current component to track usage throughout your project.
