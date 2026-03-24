@@ -47,7 +47,7 @@ The AI assistant opens in a separate right panel, so you can continue to work wh
 For a guided tour of the Nordcraft editor, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
-@@@youtube
+@@@ youtube
 videoId: rMnUFOF1wJ0
 title: Get to know the Nordcraft editor
 @@@

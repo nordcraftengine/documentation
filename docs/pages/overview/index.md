@@ -34,7 +34,7 @@ A page in Nordcraft can have any of the following:
 To learn more about pages in Nordcraft, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
-@@@youtube
+@@@ youtube
 videoId: bFz4tk0YTDo
 title: Pages in Nordcraft
 @@@

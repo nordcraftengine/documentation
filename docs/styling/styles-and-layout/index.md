@@ -23,7 +23,7 @@ The style panel in Nordcraft helps you write CSS code for your website in a visu
 For a guided tour of the style panel, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
-@@@youtube
+@@@ youtube
 videoId: pD4gcqrqnlI
 title: Get to know the Nordcraft style panel
 @@@
@@ -62,7 +62,7 @@ By default, Nordcraft uses the flexbox system for layout. Flexbox is a layout sy
 Flexbox provides many useful layout features. To learn more, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
-@@@youtube
+@@@ youtube
 videoId: qOkPPLTi_Ns
 title: Layouts: the display property
 @@@

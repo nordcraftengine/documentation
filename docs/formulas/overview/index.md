@@ -50,7 +50,7 @@ Built on the same concepts as the web platform, Nordcraft offers many built-in f
 For a guided tour of the formula editor, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
-@@@youtube
+@@@ youtube
 videoId: K5aJNBH-yhY
 title: Get to know the Nordcraft formula editor
 @@@

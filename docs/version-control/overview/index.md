@@ -13,7 +13,7 @@ If you’re already familiar with Git version control, version control in Nordcr
 For a primer on version control and branching, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
-@@@youtube
+@@@ youtube
 videoId: ZmtjNYJ_M6k
 title: Version control and branching
 @@@

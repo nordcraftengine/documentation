@@ -13,7 +13,7 @@ Animations are rendered to the DOM as pure CSS animations, which means the resul
 For a guided tour of the Nordcraft animation editor, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
-@@@youtube
+@@@ youtube
 videoId: 5R6r_G2037Q
 title: Get to know the Nordcraft animation editor
 @@@
