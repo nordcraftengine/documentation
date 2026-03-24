@@ -11,7 +11,7 @@ Nordcraft is a website builder combined with a powerful AI agent giving you comp
 
 When launching Nordcraft, you'll land on the Nordcraft dashboard.
 
-![The Nordcraft Dashboard, showing two areas. Recent projects is at the top with a button to create a new project or view all projects. Below is a selection of videos from the Nordcraft Fundamentals beginner video course.|16/9](dashboard.webp 'Dashboard')
+![The Nordcraft Dashboard, showing two areas. Recent projects is at the top with a button to create a new project or view all projects. Below is a selection of videos from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals)  beginner video course.|16/9](dashboard.webp 'Dashboard')
 
 The dashboard includes two key sections:
 
@@ -44,7 +44,7 @@ Packages in Nordcraft work similar to NPM packages. They can contain pure logic,
 
 ## Learn Nordcraft through video tutorials
 
-If you're just getting started with web development in Nordcraft, try working through the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course where you'll get a complete overview of Nordcraft and how to use it through bite-sized videos. If you already have experience with web development and want to try building projects in Nordcraft, try the [Learn Nordcraft](https://nordcraft.com/learn/build-projects) video series. And if you're already an expert and want to get to grips with how HTML, CSS and JavaScript concepts translate to the Nordcraft editor, check out the short [Speed Run](https://nordcraft.com/learn/speed-run) videos.
+If you're just getting started with web development in Nordcraft, try working through the [[Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) ](https://nordcraft.com/learn/fundamentals) video course where you'll get a complete overview of Nordcraft and how to use it through bite-sized videos. If you already have experience with web development and want to try building projects in Nordcraft, try the [Learn Nordcraft](https://nordcraft.com/learn/build-projects) video series. And if you're already an expert and want to get to grips with how HTML, CSS and JavaScript concepts translate to the Nordcraft editor, check out the short [Speed Run](https://nordcraft.com/learn/speed-run) videos.
 
 ## Learn Nordcraft through challenges
 

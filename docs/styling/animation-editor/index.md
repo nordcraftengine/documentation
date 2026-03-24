@@ -10,7 +10,7 @@ Using the animation editor in Nordcraft, you can create and manage animations fo
 Animations are rendered to the DOM as pure CSS animations, which means the resulting code is lean and performant, and can be used in any web project without additional dependencies. Your animations created with the Nordcraft animation editor and will run smoothly across all modern browsers.
 
 ::: tip
-For a guided tour of the Nordcraft animation editor, check out the following lesson from the Nordcraft Fundamentals video course.
+For a guided tour of the Nordcraft animation editor, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
 @@@youtube

@@ -50,7 +50,7 @@ You can copy and paste CSS between elements:
 By default, Nordcraft uses the flexbox system for layout. Flexbox is a layout system that allows control over the layout of child elements, referred to as `flex items`. Using flexbox, space between and alignment of child elements can be automatically distributed, all without margins or media queries.
 
 ::: tip
-Flexbox provides many useful layout features. To learn more, check out the following lesson from the Nordcraft Fundamentals video course.
+Flexbox provides many useful layout features. To learn more, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
 
 @@@youtube
