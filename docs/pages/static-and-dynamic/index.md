@@ -7,18 +7,18 @@ description: Create fixed content pages or data-driven pages using URL parameter
 
 ## Static pages
 
-Static pages contain content added directly to the Nordcraft canvas that doesn't change unless you publish updates. They:
+Static pages contain content added directly to the Nordcraft canvas. The content of these pages will not change until you publish updates. Static pages:
 
 - Have fixed content created directly in the editor
 - Display the same information to all users
 - Use predetermined URLs without variable path segments
-- Don't require API calls to render content
+- Do not require API calls to render content
 
 Static pages are the default page type in Nordcraft, and are ideal for content that doesn't need to change based on user input or external data.
 
 ## Dynamic pages
 
-Dynamic pages display content based on data received from APIs or URL parameters. They use URL parameters to determine what content to display:
+Dynamic pages display content based on data received from APIs or URL parameters. Dynamic pages use URL parameters to determine what content to display:
 
 - **Path parameters**: Define variable segments in your URL path
 - **Query parameters**: Add optional parameters after the `?` in the URL
@@ -42,8 +42,8 @@ Nordcraft prioritizes **static** pages over **dynamic** pages when multiple page
 
 In addition to path parameters, you can define query parameters to pass additional information in the URL, which can be useful for optional settings or filters:
 
-- Query parameters appear after a `?` in the URL (e.g. `?category=shirts`)
-- Multiple parameters are separated by an `&` in the URL (e.g.`?category=shirtsue&color=blue`)
+- Query parameters appear after a `?` in the URL (e.g. `?size=US10`)
+- Multiple parameters are separated by an `&` in the URL (e.g.`?size=US10&color=blue&material=suede`)
 
 ### Working with URL parameters
 
@@ -52,25 +52,11 @@ When you create URL parameters, specific actions become available in the workflo
 - Update path parameters to change the URL without reloading the page
 - Update query parameters to modify the current state
 
-## When to use URL parameters
+### Uses of path and query parameters
 
-### Path vs. query parameters
+Using path and query parameters to build up a representation of the state of a page is a great way to improve the user experience and shareability of your website URLs. For example, on an e-commerce website, you can use the URL path to indicate which product category is currently visible, and which browsing filters have been applied. A URL using path and query paremeters in this way might look like this: `https://yoursite.norcraft.com/products/shoes?color=blue&material=suede`.
 
-- **Path parameters**: Use for essential page identification that affects navigation history
-- **Query parameters**: Use for optional filters or settings that don't represent distinct navigation states
+In summary:
 
-### URL parameters vs. variables
-
-- **URL parameters**: Use when data should persist through page reloads and be shareable via links, such as a filtered search on an ecommerce site
-- **Variables**: Use for temporary state or sensitive information not appropriate for URLs
-
-Examples of data appropriate for **URL parameters**:
-
-- Active tab selection
-- Selected item in a list
-- Visibility state of important UI elements
-
-Examples better suited for **variables**:
-
-- Form input values
-- Confirmation dialog states
+- **Path parameters**: Use for page URL identifiers that you want users to be able to navigate to consistently e.g. `/products/shoes`
+- **Query parameters**: Use for optional filters or settings e.g. `?color=blue&material=suede`

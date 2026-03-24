@@ -5,7 +5,7 @@ description: Set up page URLs, page metadata, and external resources to control 
 
 # Page configuration
 
-To configure a page, select it in the [project sidebar](/the-editor/project-sidebar) and click on it in the **Page** section of the [data panel](/the-editor/data-panel).
+To configure page settings and metadata, open the page from [project sidebar](/the-editor/project-sidebar) and click on the **Page** section at the top of the right [data panel](/the-editor/data-panel).
 
 ![The page configuration dialog is open to the right of the canvas, showing the full URL of the page including query parameters, meta data including title, language and description, and a custom head asset defined, which uses an HTML link element.|16/9](page-configuration.webp 'Page configuration'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&selection=route&rightpanel=style}
 
@@ -37,13 +37,13 @@ If you are not familiar with URL structure, check out the [blog post about URLs]
 
 ## Metadata
 
-Each page on your website should have unique metadata to improve user experience and search engine visibility:
+Each page on your website should have unique metadata for good search engine visibility:
 
 - **Title**: Appears in browser tabs and search results
 - **Language**: Specifies the language of your page content for accessibility purposes
 - **Description**: Appears in search engine results and social media shares
 
-You can bind any metadata value to formulas by clicking the formula button next to each field.
+You can bind any metadata value to formulas and variables by clicking the `fx` button next to each field.
 
 ::: info
 Custom `og:*` meta tags which power Open Graph social sharing information are available on paid Nordcraft plans only.
@@ -62,7 +62,7 @@ In the URL panel under **Additional head elements**, you can:
 5. Drag and drop to reorder elements if needed
 
 ::: warning
-Be cautious when adding external scripts. Only add scripts from trusted sources as they will have full access to your page data.
+Only add scripts from trusted sources as they will have full access to your page data.
 :::
 
 ::: tip

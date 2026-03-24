@@ -5,9 +5,9 @@ description: Learn how reusable components encapsulate structure, styling and be
 
 # Components
 
-Components in Nordcraft allow you to create reusable and customizable building blocks for your websites.
+Components in Nordcraft allow you to create reusable and customizable building blocks for your websites, helping you to keep your Nordcraft projects manageable and scaleable.
 
-![A card conponent is being edited. It comprises a number of HTML elements, and takes four attributes visible on the right panel: button label, ID, text and title.|16/9](component.webp 'Component'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?rightpanel=style&canvas-width=800&canvas-height=800}
+![A card component is being edited. It comprises a number of HTML elements, and takes four attributes visible on the right panel: button label, ID, text and title.|16/9](component.webp 'Component'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/card?rightpanel=style&canvas-width=800&canvas-height=800}
 
 Components in Nordcraft:
 
@@ -16,13 +16,6 @@ Components in Nordcraft:
 - Contain their own element tree, which can include any other element types, including other components
 - Provide consistency across your project, as updates to a component propagate to all instances
 - Help encapsulate logic and design, making your project more maintainable
-
-Components are fundamental to efficient development in Nordcraft. They should be used to:
-
-- Create reusable design patterns
-- Encapsulate complex functionality
-- Divide large interfaces into more manageable parts
-- Ensure consistency throughout your projects
 
 ::: info
 For more detailed information on creating and using components, see the [Components](/components/overview) pages of the documentation.
