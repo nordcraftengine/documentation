@@ -19,6 +19,15 @@ The style panel in Nordcraft helps you write CSS code for your website in a visu
   - You will be navigated to that property, ready to enter a value
 - You can add CSS properties and values not currently supported by the style panel in the **Advanced** section
 
+::: tip
+For a guided tour of the style panel, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@youtube
+videoId: pD4gcqrqnlI
+title: Get to know the Nordcraft style panel
+@@@
+
 ## Styling with the CSS editor
 
 If you prefer writing CSS code:
