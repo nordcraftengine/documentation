@@ -30,6 +30,15 @@ A page in Nordcraft can have any of the following:
 - [Workflows](/workflows/overview): Internal logic and behavior triggered by events
 - [Contexts](/contexts/overview): Communication channels to provide data to child components
 
+::: tip
+To learn more about pages in Nordcraft, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@youtube
+videoId: bFz4tk0YTDo
+title: Pages in Nordcraft
+@@@
+
 ## Custom 404 page
 
 If a user navigates to a URL that doesn't match any page in your project, Nordcraft shows a default 404 (page not found) page.
