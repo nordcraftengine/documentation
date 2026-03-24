@@ -56,7 +56,7 @@ The element catalog contains all HTML elements and any components available in y
 - Search for project components by name
 - View components from installed packages
 
-Click an element from the catalogye to add it to the HTML element tree. The element will be added as a child of the currently selected element or as the last child of the root element if no element is selected.
+Click an element from the catalogue to add it to the HTML element tree. The element will be added as a child of the currently selected element or as the last child of the root element if no element is selected.
 
 ::: tip
 If you need to change the tag name of an HTML element, edit its `Tag` in the `Attributes` panel on the right. This saves you having to delete and re-add elements.
