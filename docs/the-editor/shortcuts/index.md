@@ -5,7 +5,7 @@ description: Speed up your Nordcraft development with keyboard commands for navi
 
 # Keyboard Shortcuts
 
-Keyboard shortcuts in Nordcraft help you work faster and more efficiently by providing quick access to common actions and tools.
+Keyboard shortcuts in Nordcraft provide quick access to common actions and tools.
 
 ## Editor shortcuts
 
@@ -60,7 +60,3 @@ You can use keyboard shortcuts to quickly resize the visible canvas to a variety
 
 - [kbd]Cmd/Ctrl[kbd] + [kbd]Z[kbd] - Undo last action
 - [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]Z[kbd] - Redo last action
-
-::: tip
-Learning keyboard shortcuts can significantly improve your workflow efficiency when building websites in Nordcraft.
-:::

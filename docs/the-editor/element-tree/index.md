@@ -5,15 +5,15 @@ description: Understand the Nordcraft element tree for structural editing, eleme
 
 # Element tree
 
-The element tree provides a structural overview of your project, displaying all HTML elements and Nordcraft components in your page or component hierarchically.
+The element tree provides a structural overview of your project, displaying all HTML elements and Nordcraft components in your page or component.
 
 ![An expanded view of the HTML element tree, showing an array of HTML elements and Nordcraft components in a hierarchical structure.|16/9](element-tree.webp 'Element tree'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800}
 
 ## Navigation and selection
 
 - Elements are named according to their HTML tag or component name
-- Toggle visibility of child elements using the triangle icon to collapse sections
-- Select elements by clicking on them, just as in the canvas
+- Select elements by clicking on them
+- Toggle visibility of child elements using the triangle icon at the left of the element to collapse or expand sections
 - Drag elements to reorder them within the structure
 
 ::: info
@@ -32,7 +32,7 @@ Right-clicking an element opens a context menu with several actions.
 
 1. **Insert element**: Open the HTML element catalog to choose a new element to insert
 2. **Wrap in element**: Place the currently selected HTML element inside a new parent element and open the HTML catalog
-3. [Extract as component](/components/create-a-component#extract-existing-elements): Convert the HTML element into a reusable component
+3. [Extract as component](/components/create-a-component#extract-existing-elements): Convert the HTML element and all child elements into a reusable component
 4. [Show/hide](/formulas/show-hide-formula): Set a formula to control whether an element or component is visible or not
 5. [Repeat](/formulas/repeat-formula): Set a formula to create multiple instances of an element or component from an array
 6. **Standard operations**: Duplicate, cut, copy, paste and delete
@@ -56,7 +56,7 @@ The element catalog contains all HTML elements and any components available in y
 - Search for project components by name
 - View components from installed packages
 
-Click an element to add it to your project. The element will be added as a child of the currently selected element or as the first child of the root element if no element is selected.
+Click an element from the catalogue to add it to the HTML element tree. The element will be added as a child of the currently selected element or as the last child of the root element if no element is selected.
 
 ::: tip
 If you need to change the tag name of an HTML element, edit its `Tag` in the `Attributes` panel on the right. This saves you having to delete and re-add elements.

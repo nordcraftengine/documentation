@@ -1,11 +1,11 @@
 ---
 title: Project sidebar
-description: Manage files through the project sidebar to access pages, components, APIs, actions, media, themes and project-wide configuration settings.
+description: Use the project sidebar to access pages, components, APIs, project formulas, services, actions, media, themes and project-wide configuration settings.
 ---
 
 # Project sidebar
 
-The project sidebar provides an overview of your project, including any issues detected in your project, and changes made in the current branch you are working in.
+The project sidebar provides an overview of your project files and resources, any issues detected in your project, and any changes made in the current branch you are working in.
 
 ![The project sidebar is visible, showing three existing pages, and collapsed sections for components, services, actions, formulas, media, themes and settings. The image is annotated corresponding to the list items below.|16/9](project-sidebar.webp 'Project sidebar')
 
@@ -14,7 +14,7 @@ Use the icons at the left of the screen to access the following:
 1. **Files**: View all files, components, services, actions, formulas, media, themes and settings in your project
 2. **View and install packages**: Browse, search for, and install Nordcraft packages
 3. **Issues**: View issues found in your project and get advice on how to fix them (an orange dot is visible when issues are detected)
-4. **Version control**: View any changes made in the current branch of your project
+4. **Version control**: View any changes made in the current branch of your project, see the branch history, and switch between branches
 
 ::: tip
 Open the project files view using the keyboard shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]. Close the file view by pressing [kbd]Escape[kbd].
@@ -34,14 +34,15 @@ Displays files you have recently accessed for quick navigation between component
 
 Each section can be expanded or collapsed and includes a [kbd]+[kbd] button to create new items (except for themes and settings):
 
-- [Pages](/pages/overview): View and manage all pages in your project
-- [Components](/components/overview): Access all reusable components in your project
-- [Services](/connecting-data/services): Configure API connections to external services with an OpenAPI specification
-- [Actions](/actions/overview): Create and manage global actions that can be used throughout your entire project
-- [Formulas](/formulas/project-formulas): Define project formulas for calculations and logic that can be accessed from any page or component
-- [Media](/media/overview) Upload and manage image files for your project
-- [Themes](/styling/theme): Configure design tokens including colors, spacing, and typography
-- **Settings**: Manage project configurations like favicon, robots.txt, sitemap, app manifest and service worker
+- [Pages](/pages/overview): Pages in your project
+- [Components](/components/overview): Reusable components in your project
+- [Services](/connecting-data/services): API connections to external services with an OpenAPI specification
+- [Actions](/actions/overview): Global actions (custom JavaScript code) in your project
+- [Formulas](/formulas/project-formulas): Project formulas that can be accessed from any page or component in your project
+- [Media](/media/overview) Image files uploaded for use in your project
+- Fonts: All fonts currently installed in your project
+- [Themes](/styling/theme): Design tokens including colors, spacing, and typography
+- **Settings**: Project configurations including favicon, robots.txt, sitemap, app manifest and service worker
 
 ## Project settings
 
