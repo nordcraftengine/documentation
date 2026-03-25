@@ -167,3 +167,12 @@ When styling component instances, there are some limitations:
 - You cannot add classes directly to components in the attributes panel
 - Only classes that exist on the root element of the component can be styled from outside
 - You cannot style elements deeper in the component tree hierarchy
+
+::: tip
+For more information on style variants, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: jOoFcI1T6Eg
+title: Adding style variants
+@@@
