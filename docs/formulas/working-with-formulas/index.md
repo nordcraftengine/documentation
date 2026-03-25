@@ -39,7 +39,7 @@ In the formula editor, you can access various data sources within your component
 
 ## Reusable formulas
 
-To keep your formulas easy to worok with, you can define reusable formulas to use throughout your project. If you find yourself repeating the same formula logic in multiple places, follow these steps:
+To keep your formulas easy to work with, you can define reusable formulas to use throughout your project. If you find yourself repeating the same formula logic in multiple places, follow these steps:
 
 1. Create a component-level formula in the data panel
 2. Give it a descriptive name
