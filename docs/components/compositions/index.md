@@ -53,7 +53,7 @@ Benefits of nesting include:
 When nesting components, consider the following:
 
 - **Responsibility boundaries**: Each component should have a clear, focused responsibility
-- **Data flow**: Parent components pass data down to child components through [attributes](/components/interface-and-lifecycle#defining-attributes) or [contexts](/contexts/overview). Child components send data up to parents through [events](/components/interface-and-lifecycle#setting-up-events) or [contexts](/contexts/overview)
+- **Data flow**: Parent components pass data down to child components through [attributes](/components/interface-and-lifecycle#defining-attributes) or [contexts](/contexts/overview). Child components send data up to parents through [events](/components/interface-and-lifecycle#adding-events) or [contexts](/contexts/overview)
 - **Styling**: Parent components can [style the root element](/styling/conditional-styles#component-style-overrides) of nested components
 
 ::: tip

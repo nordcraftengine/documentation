@@ -10,7 +10,7 @@ Contexts in Nordcraft provide a way to share data and functionality between comp
 In traditional component architecture, data typically flows in two ways:
 
 - **Downward**: From parent to child via [attributes](/components/interface-and-lifecycle#defining-attributes)
-- **Upward**: From child to parent via [events](/components/interface-and-lifecycle#setting-up-events)
+- **Upward**: From child to parent via [events](/components/interface-and-lifecycle#adding-events)
 
 However, this approach can become unmanageable in complex component trees where data needs to flow through multiple levels. This can lead to "attribute drilling", which is where you pass data through intermediate components that don't need access to it, just to reach components deeper in the tree.
 

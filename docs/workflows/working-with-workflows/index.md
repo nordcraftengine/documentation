@@ -9,7 +9,7 @@ Learn how to create event-triggered and reusable workflows with parameters and s
 
 ## Create a workflow
 
-You can create a workflown on any event in Nordcraft. This can be a standard JavaScript event on an element, a custom [event on a component](/components/interface-and-lifecycle#setting-up-events) or lifecycle events like `On load` or `On attribute change`.
+You can create a workflown on any event in Nordcraft. This can be a standard JavaScript event on an element, a custom [event on a component](/components/interface-and-lifecycle#adding-events) or lifecycle events like `On load` or `On attribute change`.
 
 ![The events panel is visible on the right of the editor. An onClick event has been created, and its dialog window is open. The onClick event sets the wasClicked variable to true, and then runs a workflow named increaseCounter. The workflow is identified by an icon representing three square orange nodes connected together with branches.|16/9](create-workflow-on-event.webp 'Create a workflow'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-workflows?canvas-height=800&canvas-width=800&selection=nodes.root.events.onClick&rightpanel=events}
 
