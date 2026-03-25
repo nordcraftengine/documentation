@@ -5,15 +5,13 @@ description: Extend Nordcraft with custom JavaScript actions that provide global
 
 # Actions
 
-Actions in Nordcraft are reusable JavaScript functions that allow you to extend the platform's functionality. Actions are global and can be used anywhere in your project.
+Sometimes, you might need to do things in a browser that Nordcraft doesn’t natively support, such as accessing a user’s webcam or microphone, geolocation, or bluetooth functionalities. For all of these things, you can create custom actions using JavaScript code, that you can trigger via events. Actions are global and can be used anywhere in your project.
 
-Actions serve as a powerful extension mechanism in Nordcraft:
+Using actions, you can:
 
-- You can write actions in JavaScript to access browser APIs
-- In actions, you can import and use external libraries
-- In actions, you can perform asynchronous operations
-- Using actions, you can create custom functionality that is not available through built-in Nordcraft features
-- You can access actions globally throughout your project
+- access browser APIs via JavaScript
+- import and use external libraries
+- perform asynchronous operations
 
 ::: tip
 Most common tasks can be accomplished using Nordcraft's built-in formulas and workflows without writing code. Consider exploring these options before creating custom actions.
@@ -28,7 +26,7 @@ Understanding the differences between these three concepts helps you choose the 
 - **Formulas**: Pure functions without side effects that transform data and return consistent results for the same inputs
 
 ::: dev
-Actions in Nordcraft are essentially JavaScript modules with a specific entry point function, named to match the action name.
+Actions in Nordcraft are essentially JavaScript functions with a specific entry point function, named to match the action name.
 :::
 
 ## Key characteristics of actions
@@ -67,3 +65,12 @@ Actions can return a cleanup function that runs when a component unmounts:
 - This function is automatically called when the component that triggered the action is unmounted
 - This is useful for clearing timers, removing event listeners, or disposing of resources
 - Cleanup functions prevent memory leaks when components are removed from the page
+
+::: tip
+For a demo of how to create and use a custom action in Nordcraft, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: 2gafuoe8214
+title: Creating custom actions using JavaScript
+@@@
