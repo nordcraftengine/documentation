@@ -5,11 +5,11 @@ description: Learn about elements in Nordcraft projects, and how they are used t
 
 # Elements
 
-Elements are the basic building blocks that make up the interface of your page or component in Nordcraft. They create the structure, content, and interactive parts of your website that users see and interact with.
+Elements in Nordcraft can be HTML elements, text elements or components. Elements are the basic building blocks of your pages and components, creating the structure, content, and interactive parts of your website.
 
 ![A component is being edited, with the HTML element visible. The component consists of a number of semantic HTML elements and also includes a Nordcraft card-button components.|16/9](elements.webp 'Elements'){https://Nordcraft.dev/projects/docs_examples/branches/main/components/card?selection=nodes.root&rightpanel=attributes&canvas-width=800&canvas-height=800}
 
-In Nordcraft, like in HTML, elements exist in a hierarchical structure. Each element (except for the root element) has a parent element, and many elements can contain children elements. This parent-child relationship creates what we call an element tree, with ancestor elements containing descendant elements.
+Elements exist in a hierarchical structure. Each element, except for the root (top-level) element, has a parent element, and most elements can contain children elements. This parent-child relationship creates what we call an element tree, with ancestor elements containing descendant elements.
 
 ## Types of elements
 
@@ -27,20 +27,21 @@ HTML elements are identified by their names or `tags`, each with specific meanin
 
 - Some tags like `<video>`, `<audio>`, and `<img>` have built-in functionality for displaying media
 - Tags like `<button>`, `<input>`, and `<select>` provide default functionality for user input and interaction
-- Tags such as `<h1>`, `<header>`, and `<li>` have semantic meaning that communicates the purpose of the content
+- Tags such as `<h1>`, `<header>`, and `<li>` have semantic meaning that communicate the purpose of the content
+- Some HTML elements, such as `<img>`, `<input>` and `<br>`, are void (self-closing) and cannot contain child elements - see [void element on MDN](https://developer.mozilla.org/en-US/docs/Glossary/Void_element)
 
 ::: info
-Nordcraft deliberately uses standard HTML elements to ensure your website renders consistently across browsers, remains SEO-friendly and maintains accessibility standards. For comprehensive information about HTML elements, visit the [HTML Elements reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+Nordcraft uses standard HTML elements. If you already know HTML, you know how to work with HTML elements in Nordcraft. For comprehensive information about HTML elements, visit the [HTML Elements reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 :::
 
 ### HTML element attributes
 
-HTML elements can be configured using attributes. These provide additional information or modify the element's behavior:
+HTML elements can be configured using attributes. HTML attributes provide additional information to the browser about functionality and how you want the element to behave:
 
 - Common attributes like `id` and `class` can be applied to nearly all elements
 - Element-specific attributes like `src` for media elements or `type` for input elements define their unique properties
 
-You can modify an element's attributes in the [attributes panel](/the-editor/element-panel#attributes-panel) of the [element panel](/the-editor/element-panel).
+You can add, edit or remove attributes on an HTML element in the [attributes panel](/the-editor/element-panel#attributes-panel) of the [element panel](/the-editor/element-panel).
 
 :::tip
 For HTML element attributes that traditionally don't require a value to be specified (such as `open` for `<details>` and `<dialog>`, or `readonly` for `<textarea>`, add the relevant attribute to the element and set the value to `true`.
@@ -57,35 +58,26 @@ HTML elements can respond to user interactions through events. You can listen to
 Events are configured in the [events panel](/the-editor/element-panel#events-panel) of the [element panel](/the-editor/element-panel).
 
 ::: info
-For detailed information about all available events, see the [Events reference on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Event).
+If you're familiar with JavaScript event listeners, these are the same as events in Nordcraft. For detailed information about all available events, see the [Events reference on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Event).
 :::
 
 ### Text elements
 
 Text elements in Nordcraft are specialized elements designed specifically for displaying text content only.
 
-Key characteristics of text elements include:
+Text elements:
 
-- They can contain text only and cannot have child elements
-- They do not have attributes and cannot trigger events directly
-- They inherit text styling from their parent element and cannot be styled directly
-- When selected, their content can be edited directly in the element panel
-- Their content can be bound to variables or formulas for dynamic data display
-- They can be conditionally displayed using the show/hide formula
+- Can contain text only
+- Cannot have child elements
+- Do not have attributes
+- Cannot trigger events directly
+- Inherit text styling from their parent element
+- Cannot be styled directly
+- Can be bound to [variables](/variables/overview) or [formulas](/formulas/overview) for dynamic data display
+- Can be conditionally displayed using the [show/hide](/formulas/show-hide-formula) formula
 
 ### Components
 
-Components are reusable custom elements that encapsulate their own structure, styling and behavior. They can be configured through attributes, styled with CSS and CSS variables, and can emit events to communicate with parent elements.
+Components are reusable elements that have their own structure, styling and behavior. They can be configured through using component attributes, styled with CSS and CSS variables, and can emit events to communicate with parent elements and pages.
 
 For more information, see the [components description](/building-blocks/components) in building blocks and the [Components](/components/overview) pages of the documentation.
-
-## Element limitations
-
-There are several important limitations to be aware of when working with elements in Nordcraft:
-
-- Text elements cannot have children
-- Some HTML elements, such as `<img>`, `<input>` and `<br>`, are void (self-closing) and cannot contain child elements - see [void element on MDN](https://developer.mozilla.org/en-US/docs/Glossary/Void_element)
-
-::: info
-For detailed information about HTML element constraints and nesting elements, refer to the [HTML Elements reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-:::

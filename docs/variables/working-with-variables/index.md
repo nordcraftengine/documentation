@@ -5,7 +5,7 @@ description: Create, initialize, update and bind variables to elements to build 
 
 # Working with variables
 
-Variables enable you to manage state throughout your website, allowing you to create dynamic and interactive components.
+You can use variables to manage state throughout your website, allowing you to create dynamic and interactive experiences.
 
 ## Creating variables
 
@@ -25,11 +25,7 @@ When you create a variable, its default initial value is `null`. You can either 
 - **Static values**: You can directly enter text, numbers, booleans, arrays and JSON objects etc.
 - **Formula-based values**: Click the [kbd]fx[kbd] button to open the formula editor to create a dynamic initial value
 
-The initial value serves several purposes:
-
-- Provides a starting state for your component
-- Determines the implicit data type of the variable
-- Ensures the variable has a known value before any user interaction
+The initial value provides a starting state for your component, determines the data type of the variable, and ensure it has a known value before any updates are made.
 
 ::: tip
 The variable type is automatically inferred when you set the initial variable value (e.g. `Number`, `String`, `Array`, `Object` or `Boolean`).
@@ -45,7 +41,7 @@ Initialization examples:
 - `null` is the default and can be used when the actual value will be set later
 
 ::: info
-When using a formula to set the initial value, you can reference attributes but not API data. This is because API data won't be available when the variable initializes.
+When using a formula to set the initial value, you can reference attributes but not API data. This is because API data is not available when the variable initializes.
 :::
 
 ::: tip
@@ -56,8 +52,8 @@ For API-dependent variables, set an initial value like `null` and update the var
 
 You can update variables using workflows or events:
 
-1. In a workflow or event add a new action by clicking the [kbd]+[kbd] button
-2. Select in **Variables** the `Set: variable` action for desired variable
+1. In a workflow or event, add a new action by clicking the [kbd]+[kbd] button
+2. In the **Variables** group, select the `Set: variable` action
 3. Specify the new value (static value or via a formula)
 
 @@@ example
@@ -70,7 +66,7 @@ See how clicking the card updates the `isCardSelected` variable.
 
 ## Binding variables
 
-You can connect variables to element properties through binding to dynamically control the appearance and behavior of your components.
+You can **bind** variables to element properties to have the variable update automatically when any changes are made to that element.
 
 To bind a variable:
 
@@ -98,7 +94,7 @@ You can bind variables to various aspects of elements:
 
 ### Input field binding
 
-For `input` elements, Nordcraft provides a convenient shortcut to create two-way binding with variables:
+For `input` elements, Nordcraft provides a shortcut to create two-way binding with variables:
 
 1. Select an input element in the element tree
 2. In the attributes panel, find the `Bind to variable` dropdown

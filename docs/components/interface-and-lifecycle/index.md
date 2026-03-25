@@ -1,18 +1,18 @@
 ---
 title: Interface and lifecycle
-description: Define component interfaces with attributes and events, and control behavior at initialization, update and removal phases in the component lifecycle.
+description: Define component interfaces with attributes and events, and control behavior in the component lifecycle.
 ---
 
 # Interface and lifecycle
 
-Components in Nordcraft need clearly defined interfaces to interact with the rest of your website, and they follow a specific lifecycle as they are created, updated and removed from the page. Understanding component interfaces and lifecycle helps you create components that integrate seamlessly with the rest of your project and behave predictably as your website state changes.
+Components in Nordcraft have a data interface made up of attributes, events and contexts, and follow a specific lifecycle as they are created, updated and removed from the page.
 
 ## Component interface
 
-The interface of a component defines how it communicates with other parts of your website. There are three communication channels
+The interface of a component defines how it communicates with other parts of your website. There are three communication channels:
 
 - [Attributes](#defining-attributes): Data flow into the component (input)
-- [Events](#setting-up-events): Data flow out to parent components (output)
+- [Events](#adding-events): Data flow out to parent components (output)
 - [Contexts](#data-flow-with-contexts): Data flow between parent and any descendant components
 
 ::: tip
@@ -48,14 +48,14 @@ For example, a **tooltip** component might use attributes to control:
 - Whether the tooltip has a close button
 
 ::: info
-Attributes can be accessed inside any formula within the component.
+You can access any defined component attributes inside any formula within the component.
 :::
 
 ::: info
-The test value is only used while developing your component in the editor. It has no impact on how your component will behave when used in other components or pages.
+The test value for component attributes is only used while editing your component in the editor. This test value has no impact on how your component will behave when used in other components or pages, or on your live website in production.
 :::
 
-### Setting up events
+### Adding events
 
 ![An onClick event is defined in the events list in the right panel. The event dialog is open, showing a test value of an object representing a JavaScript event.|16/9](set-up-an-event.webp 'Set up an event'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=style&selection=events.0&canvas-height=800}
 
@@ -69,7 +69,7 @@ Events allow components to communicate upward to parent elements:
 Events enable child components to send messages and data up to their parent components.
 
 ::: info
-The test data is only used while developing your component. It helps when setting up workflows in parent components that will handle this event, but has no impact on your live website in preview or production.
+The test data is only used while editing your component. This test data has no impact on how your component will behave when used in other components or pages, or on your live website in production.
 :::
 
 ### Triggering events
@@ -87,11 +87,16 @@ Unlike HTML element events that trigger automatically on user interactions, comp
 
 1. Click the `+` button to add a new action
 2. In **Events**, select the `Trigger: event` action for desired component event to trigger
-3. Define the data payload to send with the event
+3. Define the data to send with the event
 
-::: info
-All events defined in a component appear under the **Events** section when setting up event handlers.
+::: tip
+For a demo of how to add and use component events, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
 :::
+
+@@@ youtube
+videoId: gttYD_Aftc8
+title: Using component events
+@@@
 
 ## Data flow with contexts
 
@@ -162,5 +167,5 @@ Components maintain their own internal state using [variables](/variables/overvi
 - Reset when the component is removed and added again
 
 ::: info
-When a component is unmounted, all its resources, including event listeners, workflows, and variable values, are automatically cleaned up. This helps prevent memory leaks in your website which may make it run more slowly or cause browser crashes.
+When a component is removed, all its resources, including event listeners, workflows, and variable values, are automatically cleaned up.
 :::

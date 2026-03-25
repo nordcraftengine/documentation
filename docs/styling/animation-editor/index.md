@@ -9,6 +9,15 @@ Using the animation editor in Nordcraft, you can create and manage animations fo
 
 Animations are rendered to the DOM as pure CSS animations, which means the resulting code is lean and performant, and can be used in any web project without additional dependencies. Your animations created with the Nordcraft animation editor and will run smoothly across all modern browsers.
 
+::: tip
+For a guided tour of the Nordcraft animation editor, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: 5R6r_G2037Q
+title: Get to know the Nordcraft animation editor
+@@@
+
 ## Creating animations
 
 To create an animation:
@@ -71,11 +80,4 @@ editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/com
 height: 23rem
 
 Click the heart to see different animations based on the component's state. The like animation composes two animations together on the large heart, and the unlike animation shows a single different animation.
-@@@
-
-Check out the video below to see how the like button was built.
-
-@@@ youtube
-videoId: oO_hNhzLOmM
-title: How to build The Best Like Button™️ on The Internet
 @@@

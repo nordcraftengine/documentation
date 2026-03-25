@@ -42,3 +42,12 @@ The right panel displays different content based on your selection:
 - [Element panel](/the-editor/element-panel): Appears when an element or component is selected, with tabs for styling, attributes and events
 
 The AI assistant opens in a separate right panel, so you can continue to work whilst interacting with the AI assistant.
+
+::: tip
+For a guided tour of the Nordcraft editor, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: rMnUFOF1wJ0
+title: Get to know the Nordcraft editor
+@@@

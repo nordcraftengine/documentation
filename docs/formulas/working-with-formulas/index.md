@@ -5,7 +5,7 @@ description: Build reusable formulas for data manipulation with practical exampl
 
 # Working with formulas
 
-Learn how to work with formulas to manipulate data and streamline logic in Nordcraft.
+Learn how to work with the formula editor to build logic for your websites.
 
 ## Create a formula
 
@@ -39,7 +39,7 @@ In the formula editor, you can access various data sources within your component
 
 ## Reusable formulas
 
-To keep your formulas efficient and maintainable, you can define reusable formulas to use throughout your project. If you find yourself repeating the same formula logic in multiple places, follow these steps:
+To keep your formulas easy to work with, you can define reusable formulas to use throughout your project. If you find yourself repeating the same formula logic in multiple places, follow these steps:
 
 1. Create a component-level formula in the data panel
 2. Give it a descriptive name
@@ -58,6 +58,15 @@ editorUrl: https://editor.nordcraft.com/projects/docs_examples/branches/main/com
 height: 26rem
 
 Discover how a reusable formula formats the box office value, ensuring consistent formatting throughout the component wherever it is used.
+@@@
+
+:::tip
+Learn more about creating reusable formulas in this lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: 6oALrzn_pVI
+title: Building reusable formulas
 @@@
 
 ### Nested formulas

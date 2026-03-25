@@ -5,9 +5,18 @@ description: Connect API endpoints in Nordcraft with custom methods, URLs, heade
 
 # Working with APIs
 
-APIs are the primary way to connect your Nordcraft websites to external data sources. They enable communication between your front-end website and back-end services, allowing you to fetch, send and manipulate data.
+APIs are the primary way to connect your Nordcraft websites to external data sources. APIs enable communication between your front-end website and back-end services, allowing you to fetch, send and manipulate data.
 
 Nordcraft supports any API and has a dedicated GraphQL explorer for working with GraphQL APIs.
+
+::: tip
+For a quick primer on APIs including REST and GraphQL APIs, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: RCsxr6EF2Oc
+title: Connect to any API
+@@@
 
 ## Connect a new API
 
@@ -15,19 +24,15 @@ Nordcraft supports any API and has a dedicated GraphQL explorer for working with
 
 To create a new API connection in Nordcraft:
 
-1. Select the component or page where you want to add the API
-2. With no element selected, go to the **APIs** section of the [data panel](/the-editor/data-panel) and click the [kbd]+[kbd] button
+1. Open the component or page where you want to add the API
+2. With no element selected, find the **APIs** section of the [data panel](/the-editor/data-panel) and click the [kbd]+[kbd] button
 3. You will see the **Connect new API** panel with several options:
    **(A)** Enter a URL directly to create a custom API
    **(B)** Choose from connected services to access predefined endpoints (see [Services](/connecting-data/services))
    **(C)** Select from available templates to set up common APIs
    **(D)** Choose a Demo API
 
-For beginners, the **Demo APIs** provide an excellent starting point to understand how APIs work in Nordcraft.
-
-::: tip
-Read our blog post on [REST APIs](https://blog.nordcraft.com/rest-apis-explained) if you're new to working with APIs.
-:::
+For beginners, Nordcraft comes with a collection of **Demo APIs** so you can explore the API panel and practise using API data in elements, components and the formula editor.
 
 ## Configure API requests
 
@@ -128,6 +133,15 @@ You can test your API directly in the editor:
 
 The response section will display the data returned from the API, including properly formatted JSON if that is the response format.
 
+::: tip
+For a detailed tutorial on using REST APIs and using API data in the Nordcraft editor, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: peAtZgLhqHc
+title: Getting data from a REST API
+@@@
+
 ## GraphQL explorer
 
 Nordcraft provides a GraphQL explorer for you to build GraphQL queries for GraphQL APIs. After connecting a GraphQL API, click on the `Add field` button to start building your query.
@@ -158,6 +172,15 @@ When you create a GraphQL query variable, you can view and edit the variable in 
 :::tip
 When you add a GraphQL query variable using `Create variable`, give it a descriptive name such as `author_id`.
 :::
+
+::: tip
+For a detailed tutorial on using GraphQL APIs including using GraphQL variables, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: Hm3u1Fg_uZc
+title: Getting data from a GraphQL API
+@@@
 
 ## Next steps
 

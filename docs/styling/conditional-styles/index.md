@@ -1,19 +1,15 @@
 ---
 title: Conditional styles
-description: Implement responsive and state-dependent styling with pseudo classes, CSS classes and CSS variables for dynamic user interfaces.
+description: Implement responsive and state-dependent styling with pseudo classes, CSS classes and CSS variables.
 ---
 
 # Conditional styles
 
-Conditional styles allows you to create specific variations of an element's appearance that only apply in certain circumstances. This approach enables dynamic interfaces that respond to user interactions, screen sizes, and website states.
-
-There are several methods to apply conditional styles in Nordcraft:
-
-- [Style variants](#style-variants) via pseudo-classes, pseudo-elements, and media-queries
-- Style variants via [classes](#class-based-styles)
-- [CSS variables](#style-variables)
+Using the style panel you can configure different styling for when elements are hovered, focussed, active, disabled and so on, create different styles for elements based on the browser viewport height and width, and control the appearance of a specific part of that element, such as the first letter, or first line. In Nordcraft, we call these style variants.
 
 ## Style variants
+
+If you’re familiar with CSS terminology, style variants allow you to configure pseudo classes, pseudo elements and media queries, and change styling based on [CSS classes](#class-based-styles) or [CSS variables](#style-variables).
 
 @@@ example
 componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-style-variants.js
@@ -23,7 +19,7 @@ height: 18rem
 Hover or tap the card to see the style change. This is achieved by setting the `:hover` pseudo-class.
 @@@
 
-In the **Style** section of the style panel, you can create additional style variants that apply only when specific conditions are met:
+In the **Style** section at the top of the style panel, you can create style variants that apply when specific conditions are met:
 
 - Pseudo-classes (`:hover`, `:active`, `:focus`, etc.)
 - [Classes](#class-based-styles) defined in the [attributes panel](/the-editor/element-panel#attributes-panel)
@@ -32,12 +28,12 @@ In the **Style** section of the style panel, you can create additional style var
 - Pseudo-elements (`::before`, `::after`, etc.)
 
 ::: info
-While editing in the canvas, conditional styles will always be visible on the selected element for preview purposes, even if the condition is not currently met.
+Conditional styles will always be visible on the selected element on the canvas, even if the condition is not currently met.
 :::
 
 ### Pseudo-classes
 
-The style system in Nordcraft supports standard CSS pseudo-classes. Pseudo-classes target elements in specific states, such as `:hover`, `:focus`, `:checked`, or `:disabled`.
+Nordcraft supports standard CSS pseudo-classes. Pseudo-classes target elements in specific states, such as `:hover`, `:focus`, `:checked`, `:visited` or `:disabled`.
 
 ::: info
 For a complete list of pseudo-classes, see the [MDN documentation on pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes).
@@ -70,7 +66,7 @@ Click to select and unselect the card.
 Classes can be conditionally applied using formulas, variables, or attributes. If the condition evaluates to a truthy value, the class and its associated styles will be applied.
 
 ::: info
-Class-based styling is available for HTML elements only, not for components.
+Class-based styling is available for HTML elements only, not components.
 :::
 
 ### Classes in Nordcraft
@@ -79,9 +75,6 @@ Classes in Nordcraft are scoped to the element where they're defined:
 
 - Styles added to a class only apply to the specific element where they're created
 - Classes are not automatically shared between elements
-- For reusable styles across multiple elements, create components instead
-
-This approach maintains clean separation and prevents unintended style conflicts on your website.
 
 ## CSS variables
 
@@ -99,8 +92,6 @@ Create CSS variables with dynamic values by binding them to formulas, attributes
 2. Use the [formula editor](/formulas/overview#the-formula-editor) to create conditional logic
 3. Reference the variable in your CSS properties
 
-This approach is particularly useful for complex conditional styling that depends on state or dynamic data.
-
 ## Cascade and precedence
 
 @@@ example
@@ -111,17 +102,17 @@ height: 19rem
 This example demonstrates how style order affects cascade behavior with multiple variants. In the first card, selected class overrides hover effect since selected comes later in the cascade. In the second card, hover effect remains visible when selected because hover comes after selected in the cascade.
 @@@
 
-Styles in Nordcraft follow CSS cascade rules, which determine which styles take precedence when multiple styles apply to the same element:
+Styles in Nordcraft follow the CSS cascade rules. In traditional text-based coding, multiple CSS rules can be defined in multiple places for any single HTML element in different ways, and the cascade is an algorithm that defines how browsers will combine those rules originating from different sources to decide on the final result. Cascade means to fall downwards. This refers to how, in traditional text-based coding, the last CSS rule for an element down at the bottom of a style sheet will take precedence in most cases, unless a CSS rule with more specificity, that is a rule targeting an element in a more specific way, has been found higher up in the cascade. The same applies for styling in Nordcraft.
 
 - When multiple style variants apply to an element, all their properties cascade together
 - The order of style variants in the style panel matters — **later styles override earlier ones**
-- Specificity also plays a role, with more specific selectors taking precedence
+- More specific selectors take precedence
 - For example, if both a `.selected` class and a `:hover` pseudo-class define `background-color`:
   - If `.selected` is defined after `:hover` in the style list, the `.selected` color will show even when hovering
   - If `:hover` is defined after `.selected`, the hover color will show when hovering over a selected element
 
 ::: tip
-When setting up conditional styles, pay careful attention to the order of your style variants. You can drag and reorder them in the style panel to achieve the desired cascade behavior.
+When adding conditional styles, pay careful attention to the order of your style variants. You can drag and reorder them in the style panel to achieve the desired cascade behavior.
 :::
 
 ## Responsive breakpoints
@@ -176,3 +167,12 @@ When styling component instances, there are some limitations:
 - You cannot add classes directly to components in the attributes panel
 - Only classes that exist on the root element of the component can be styled from outside
 - You cannot style elements deeper in the component tree hierarchy
+
+::: tip
+For more information on style variants, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: jOoFcI1T6Eg
+title: Adding style variants
+@@@

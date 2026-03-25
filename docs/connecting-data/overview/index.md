@@ -9,21 +9,10 @@ In Nordcraft, you can connect to any external data source through APIs. This all
 
 Modern websites are typically divided into two parts:
 
-1. **Front end (Nordcraft)**: The user interface running in the browser
+1. **Front end (Nordcraft)**: The website running in the browser
 2. **Back end**: Server-side systems handling data storage and business logic
 
-This separation allows each part to focus on specific responsibilities, creating more maintainable and scalable projects.
-
-## Why Nordcraft focuses on the front end
-
-Nordcraft focuses on visual front-end development. The front end and back end are fundamentally different parts of application architecture with distinct requirements, responsibilities, and security implications. Separating front-end and back-end concerns allows for more specialized tools in both areas.
-
-This front-end-focused approach offers several advantages for developers and teams:
-
-- **Specialized tooling**: Optimized tooling for visual development without back-end compromises
-- **Simplified development**: Clearer separation of concerns leads to more manageable projects
-- **Back-end flexibility**: Connect to any back-end system that meets your requirements
-- **Technical independence**: Teams can choose back-end technologies based on their expertise or requirements
+Nordcraft is for front-end development. The front end and back end are fundamentally different parts of application architecture with distinct requirements, responsibilities, and security implications. Separating front-end and back-end concerns allows for more specialized tools in both areas, clearer separation of concerns, and greater choice in different technologies to power different parts of your websites.
 
 ## API layer
 
@@ -35,7 +24,7 @@ The API layer acts as the communication bridge between your Nordcraft front end 
 - **Authentication**: Security mechanisms to protect data and verify users
 - **Error Handling**: How problems are communicated back to the front end
 
-Through Nordcraft's API capabilities, your website can perform tasks like retrieving data, saving state, authenticating users and connecting to services.
+Using APIs in Nordcraft, you can fetch data from any data source and connect to any external services.
 
 ## Working with data in Nordcraft
 
@@ -47,7 +36,3 @@ The following pages in this section cover the specific aspects of working with e
 - [Streaming](/connecting-data/streaming): Working with real-time data
 - [Advanced API features](/connecting-data/advanced-api-features): Additional configuration options
 - [Services](/connecting-data/services): Connecting to specialized back-end providers
-
-::: tip
-For more information about the philosophy behind this separation of concerns, check out the blog post [One Size Does Not Fit All](https://blog.nordcraft.com/one-size-does-not-fit-all).
-:::
