@@ -44,7 +44,7 @@ Packages in Nordcraft work similar to NPM packages. They can contain pure logic,
 
 ## Learn Nordcraft through video tutorials
 
-If you're just getting started with web development in Nordcraft, try working through the [[Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) ](https://nordcraft.com/learn/fundamentals) video course where you'll get a complete overview of Nordcraft and how to use it through bite-sized videos. If you already have experience with web development and want to try building projects in Nordcraft, try the [Learn Nordcraft](https://nordcraft.com/learn/build-projects) video series. And if you're already an expert and want to get to grips with how HTML, CSS and JavaScript concepts translate to the Nordcraft editor, check out the short [Speed Run](https://nordcraft.com/learn/speed-run) videos.
+If you're just getting started with web development in Nordcraft, try working through the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course where you'll get a complete overview of Nordcraft and how to use it through bite-sized videos. If you already have experience with web development and want to try building projects in Nordcraft, try the [Learn Nordcraft](https://nordcraft.com/learn/build-projects) video series. And if you're already an expert and want to get to grips with how HTML, CSS and JavaScript concepts translate to the Nordcraft editor, check out the short [Speed Run](https://nordcraft.com/learn/speed-run) videos.
 
 ## Learn Nordcraft through challenges
 
