@@ -1,11 +1,11 @@
 ---
 title: Component fundamentals
-description: Learn how components work in Nordcraft, and how using components can help you build maintanable, organized, and powerful websites.
+description: Learn how components work in Nordcraft, and how using components can help you build maintanable and organized websites.
 ---
 
 # Components in Nordcraft
 
-Components are the fundamental building blocks of websites in Nordcraft. Using components, you can create reusable parts of your website and break large projects down into smaller, more manageable pieces.
+You can use components in Nordcraft to break down large projects into smaller reusable building blocks for your websites in Nordcraft.
 
 Components in Nordcraft are self-contained, reusable elements that encapsulate structure, styles and behavior. Components can:
 
@@ -18,14 +18,14 @@ Components in Nordcraft are self-contained, reusable elements that encapsulate s
 - Implement functionality in isolation
 - Maintain their own internal state
 
-Each component has its own structure, data model, and behavior. This makes components neatly reusable across your project. The encapsulation of both UI and logic creates building blocks that can be combined to create increasingly sophisticated websites.
+Each component has its own structure, data model, and behavior.
 
 ::: info
 Components combine HTML structure, CSS styles, and interactive JavaScript behavior into reusable parts.
 :::
 
 ::: dev
-Nordcraft components work in very similar ways to other JavaScript frameworks like React, Vue, and Svelte.
+Nordcraft components work in very similar ways to how components work in other JavaScript frameworks like React, Vue, and Svelte.
 :::
 
 ## Benefits of using components
@@ -59,25 +59,11 @@ A component in Nordcraft can consist of:
 
 ### Data encapsulation
 
-Components in Nordcraft encapsulate their data, meaning that variables, APIs, and other internal aspects of one component are not accessible by other components. At first, this isolation may seem limiting, but it's an essential design principle that helps maintain order as your project grows in complexity.
-
-This encapsulation ensures that components:
+Components in Nordcraft encapsulate their data, meaning that variables, APIs, and other internal aspects of one component are not accessible by other components. This ensures that components:
 
 - Have clear boundaries and responsibilities
 - Can be modified internally without affecting other parts of the project
 - Are easier to understand, as their behavior depends only on their own code and inputs
-
-::: info
-Each component is like a `black box` that hides its implementation details while exposing a clear interface.
-:::
-
-### Component composition
-
-Components are composable, meaning they can be combined together to form more complex components. This composition model allows you to:
-
-- Create a hierarchy of increasingly complex UI elements
-- Build websites with reusable parts
-- Share functionality between different areas of your website
 
 Components can send data to other components and pages through:
 
@@ -87,6 +73,14 @@ Components can send data to other components and pages through:
 
 This communication pattern enables components to work together while maintaining their independence and encapsulation.
 
+### Component composition
+
+Components are composable, meaning they can be combined together to form more complex components. This allows you to:
+
+- Create a hierarchy of increasingly complex UI elements
+- Build large websites with reusable parts
+- Share functionality between different areas of your website
+
 ## Working with component instances
 
 When you add a component to a page or another component, you're creating an instance of that component. Each instance:
@@ -94,5 +88,3 @@ When you add a component to a page or another component, you're creating an inst
 - Has its own set of attribute values
 - Can be styled independently (affecting only the root element, see [component style overrides](/styling/conditional-styles#component-style-overrides))
 - Works independently of other instances of the same component
-
-Understanding how components work and how they fit into the overall structure of your project is the foundation for creating maintainable, scalable websites in Nordcraft.

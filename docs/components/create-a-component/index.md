@@ -40,3 +40,12 @@ This method automatically:
 ::: warning
 If the extracted elements depend on variables or formulas from the original component or page, these connections will break after extraction. You will need to rearrange these dependencies.
 :::
+
+::: tip
+For a video walkthrough of creating a component, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: JFKB1IbReyE
+title: Creating and using components
+@@@
