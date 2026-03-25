@@ -7,6 +7,15 @@ description: Define custom JavaScript actions with inputs, events and cleanup fu
 
 Learn how to define custom JavaScript actions with inputs, events, and cleanup functions to add specialized capabilities to your Nordcraft workflows.
 
+::: tip
+For a demo of how to create and use a custom action in Nordcraft, check out the following lesson from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals) video course.
+:::
+
+@@@ youtube
+videoId: 2gafuoe8214
+title: Creating custom actions using JavaScript
+@@@
+
 ## Create an action
 
 ![The project sidebar is visible on the left of the editor, showing an action named confetti in the actions list. To the right, the confetti action is visible, showing a number of inputs, a single defined event name, and the custom code further to the right in an IDE-like text editor. The image is annotated according to the list items below.|16/9](create-an-action.webp 'Create an action'){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
