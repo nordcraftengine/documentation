@@ -58,7 +58,7 @@ In the URL panel under **Additional head elements**, you can:
 1. Choose the resource type from the dropdown (script, meta, link, style or noscript)
 2. Provide content or reference external resources
 3. Set additional attributes for the resource
-4. Add multiple resources by clicking [kbd]Add element to <head>[kbd]
+4. Add multiple resources by clicking [kbd]Add element to `<head>`[kbd]
 5. Drag and drop to reorder elements if needed
 
 ::: warning
