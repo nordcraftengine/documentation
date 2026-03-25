@@ -54,7 +54,7 @@ When you create URL parameters, specific actions become available in the workflo
 
 ### Uses of path and query parameters
 
-Using path and query parameters to build up a representation of the state of a page is a great way to improve the user experience and shareability of your website URLs. For example, on an e-commerce website, you can use the URL path to indicate which product category is currently visible, and which browsing filters have been applied. A URL using path and query paremeters in this way might look like this: `https://yoursite.norcraft.com/products/shoes?color=blue&material=suede`.
+Using path and query parameters to build up a representation of the state of a page is a great way to improve the user experience and shareability of your website URLs. For example, on an e-commerce website, you can use the URL path to indicate which product category is currently visible, and which browsing filters have been applied. A URL using path and query paremeters in this way might look like this: `https://yoursite.norcraft.site/products/shoes?color=blue&material=suede`.
 
 In summary:
 
