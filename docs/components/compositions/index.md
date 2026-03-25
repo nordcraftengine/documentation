@@ -53,7 +53,7 @@ When nesting components, consider the following:
 - **Styling**: Parent components can [style the root element](/styling/conditional-styles#component-style-overrides) of nested components
 
 ::: tip
-As your project grows, you may develop deeper component hierarchies (e.g. components within comonents within components). While there's no strict limit to nesting depth, it's good practice to maintain clear boundaries of responsibility between components to ensure maintainability.
+As your project grows, you may develop deeper component hierarchies (e.g. components within components within components). While there's no strict limit to nesting depth, it's good practice to maintain clear boundaries of responsibility between components to ensure maintainability.
 :::
 
 ## Slots
@@ -83,7 +83,7 @@ You can add slots to components using the [element catalog](/the-editor/element-
 Slots have a naming system. To give a slot a name, select it in the element tree, and name the slot in the right panel in the editor.
 
 - **Default slot**: displays any child content of that component
-- **Named slot**: receives any child content specifically targeted to it.
+- **Named slot**: receives any child content specifically targeted to it
 
 ![A component is selected, making the attributes panel visible on the right. In the slot section of the panel, a dropdown shows that this particular selected component has been assigned to the content slot, which was defined as a named slot in the parent component.|16/9](assign-to-a-slot.webp 'Assign to a slot'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card?canvas-width=800&rightpanel=attributes&selection=nodes.47Ndqw5Wmw5WAwpiV13p8&canvas-height=800}
 
@@ -105,7 +105,7 @@ Slots can contain default content that appears when no content is provided. This
 
 ## Comparing composition approaches
 
-Both nested components and slot-based assembly involve nesting components within other components.
+Both nested components and slot-based composition involve nesting components within other components.
 
 **When to use fixed nested components:**
 
@@ -114,7 +114,7 @@ Both nested components and slot-based assembly involve nesting components within
 - You want to simplify usage by pre-assembling the structure
 - The component represents a complete, predefined UI element
 
-**When to use slot-based assembly:**
+**When to use slot-based composition:**
 
 - You need flexibility in what content appears inside of the parent component
 - Different instances of the component need different types of content

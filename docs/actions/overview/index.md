@@ -26,7 +26,7 @@ Understanding the differences between these three concepts helps you choose the 
 - **Formulas**: Pure functions without side effects that transform data and return consistent results for the same inputs
 
 ::: dev
-Actions in Nordcraft are essentially JavaScript functions with a specific entry point function, named to match the action name.
+Actions in Nordcraft are essentially JavaScript functions, named to match the action name.
 :::
 
 ## Key characteristics of actions

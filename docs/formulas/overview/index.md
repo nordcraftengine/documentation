@@ -7,12 +7,12 @@ description: Understand Nordcraft's formula editor to create data transformation
 
 The formula editor is where you build logic for your website in Nordcraft. It provides a powerful way to transform data, perform calculations, and implement conditional logic throughout your project.
 
-Formulas in Nordcraft:
+Use formulas in Nordcraft to:
 
-- Perform logical operations and data transformations
-- Execute mathematical calculations
-- Filter, search, and manipulate data
-- Return consistent results for the same inputs
+- Build logical operations
+- Transform data
+- Filter and search data
+- Carry out mathematical calculations
 
 ::: info
 Most formulas in Nordcraft are [pure functions](https://www.geeksforgeeks.org/pure-functions-in-javascript). A pure function always returns the same result for the same input values, and does not change anything outside of itself.
@@ -41,7 +41,7 @@ For larger formulas, Nordcraft provides a full-screen view of the formula editor
 
 ## Formula foundations
 
-Built on the same concepts as the web platform, Nordcraft offers many built-in formulas that align with similarly named JavaScript functions. Familiarity with these JavaScript concepts can help you create more effective formulas:
+Built on the same concepts as the web platform, Nordcraft offers many built-in formulas that align with similarly named JavaScript functions. It's recommended to learn about the following JavaScript concepts to get to grips with the formula editor in Nordcraft:
 
 - [Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#array_methods_and_empty_slots) (map, filter, reduce, etc.)
 - [Object methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) (keys, values, entries, etc.)

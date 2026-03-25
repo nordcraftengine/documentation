@@ -5,7 +5,7 @@ description: Set up page URLs, page metadata, and external resources to control 
 
 # Page configuration
 
-To configure page settings and metadata, open the page from [project sidebar](/the-editor/project-sidebar) and click on the **Page** section at the top of the right [data panel](/the-editor/data-panel).
+To configure page settings and metadata, open the page from the [project sidebar](/the-editor/project-sidebar) and click on the **Page** section at the top of the right [data panel](/the-editor/data-panel) in the editor.
 
 ![The page configuration dialog is open to the right of the canvas, showing the full URL of the page including query parameters, meta data including title, language and description, and a custom head asset defined, which uses an HTML link element.|16/9](page-configuration.webp 'Page configuration'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&selection=route&rightpanel=style}
 
@@ -62,7 +62,7 @@ In the URL panel under **Additional head elements**, you can:
 5. Drag and drop to reorder elements if needed
 
 ::: warning
-Only add scripts from trusted sources as they will have full access to your page data.
+Any scripts you add will have full access to your page data. Make sure you trust the source of the script before adding it to your website.
 :::
 
 ::: tip
