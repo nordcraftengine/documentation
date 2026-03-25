@@ -15,7 +15,7 @@ Formulas in Nordcraft:
 - Return consistent results for the same inputs
 
 ::: info
-Formulas in Nordcraft are [pure functions](https://www.geeksforgeeks.org/pure-functions-in-javascript). A pure function alwayss return the same result for the same input values, and does not change anything outside of itself.
+Most formulas in Nordcraft are [pure functions](https://www.geeksforgeeks.org/pure-functions-in-javascript). A pure function always returns the same result for the same input values, and does not change anything outside of itself.
 :::
 
 ## The formula editor
