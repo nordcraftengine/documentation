@@ -5,7 +5,7 @@ description: Learn how to implement state management in Nordcraft with variables
 
 # Variables
 
-Variables provide a way to store temporary data within components and pages. They enable interactive behavior and dynamic content by maintaining state during a user's session.
+There may be times when you need to keep track of changing information on a web page, and update the page when that information changes, or store temporary data within components and pages. This is known as managing state. In Nordcraft, you use variables to manage state.
 
 Variables in Nordcraft are containers for temporary data that:
 
@@ -13,7 +13,6 @@ Variables in Nordcraft are containers for temporary data that:
 - Persist only while the component or page is mounted
 - Reset to their initial values when the page reloads
 - Are scoped to the component or page where they're defined
-- Provide optimal performance for state management
 
 ## Using variables
 
@@ -27,20 +26,10 @@ Variables can be used throughout a component or page:
 This makes variables ideal for managing temporary states like:
 
 - UI state (expanded/collapsed menus, selected tabs)
-- Frequent state updates based on user interactions
 - Form input values
 - Temporary calculation results
 - User preferences for the current session
 
 ## Variable scope
 
-Variables in Nordcraft follow strict scoping rules to maintain component independence. They are only accessible within the component or page where they are defined. This means parent and child components cannot access each other's variables.
-
-This encapsulation provides significant benefits:
-
-- Prevents unexpected side effects
-- Makes component behavior more predictable
-- Simplifies debugging and maintenance
-- Enables component reuse without variable conflicts
-
-As your project grows, this scoping simplifies data flow management and ensures components function reliably in any context.
+Variables in Nordcraft are scoped to the pages and components on which they are defined, meaning parent and child components cannot access each other's variables. This prevents unexpected side effects, makes component behaviour more predicatable, and means it doesn't matter if you reuse variable names across different page and components.
