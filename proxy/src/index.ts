@@ -83,4 +83,40 @@ app.post('/feedback', handleFeedback)
 
 app.get('/video-thumbnail/:videoId', handleThumbnail)
 
+// Raw markdown route e.g. /raw/get-started/overview to "View as markdown" on docs
+// URLs like: http://localhost:9000/raw/get-started/overview
+app.get('/raw/:path{.*}?', async (ctx) => {
+  const path = ctx.req.param('path')
+
+  if (!path) {
+    return errorResponse('Path to a file is required', { status: 400 })
+  }
+
+  const owner = 'nordcraftengine'
+  const repository = 'documentation'
+  const branch = 'main'
+
+  try {
+    const rawUrl = `https://raw.githubusercontent.com/${owner}/${repository}/refs/heads/${branch}/docs/${path}index.md`
+
+    const res = await fetch(rawUrl)
+    if (!res.ok) {
+      return errorResponse('File not found', { status: res.status })
+    }
+    const text = await res.text()
+
+    return new Response(text, {
+      headers: {
+        'Content-Type': 'text/markdown; charset=utf-8',
+        'Cache-Control': `public, max-age=${60}`,
+        'X-Source': 'github-raw',
+      },
+    })
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.log(err)
+    return errorResponse('Could not fetch raw file', { status: 500 })
+  }
+})
+
 export default app
