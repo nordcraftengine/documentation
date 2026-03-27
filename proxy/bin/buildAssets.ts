@@ -28,6 +28,15 @@ const actionReferenceContent = fs.readFileSync(actionReferencePath, 'utf-8')
 const newActionContent = await includeActions(actionReferenceContent)
 fs.writeFileSync(actionReferencePath, newActionContent, 'utf-8')
 
+// Also copy over all markdown files + folders to /static
+fs.cpSync('../docs', './static', {
+  recursive: true,
+  filter: (src) => !src.endsWith('.webp') && !src.endsWith('.json'),
+})
+// and copy over the generated formula/action reference files
+fs.copyFileSync(formulaReferencePath, './static/references/formulas/index.md')
+fs.copyFileSync(actionReferencePath, './static/references/actions/index.md')
+
 const structure = getStructure()
 // Create menu items structure
 const menuItems = getMenuItemsFromRepoItems({
