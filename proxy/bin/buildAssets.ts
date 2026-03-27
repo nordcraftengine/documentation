@@ -35,7 +35,11 @@ if (fs.existsSync('./static')) {
 fs.mkdirSync('./static/raw', { recursive: true }) // Create new static/raw folder
 fs.cpSync('../docs', './static/raw', {
   recursive: true,
-  filter: (src) => !src.endsWith('.webp') && !src.endsWith('.json'),
+  filter: (src) =>
+    !src.endsWith('.webp') &&
+    !src.endsWith('.json') &&
+    !src.includes('references/formulas/index.md') &&
+    !src.includes('references/actions/index.md'),
 })
 // and copy over the generated formula/action reference files
 fs.copyFileSync(
