@@ -25,7 +25,7 @@ The show/hide formula controls whether an element is displayed or not:
 ::: dev
 The truthy concept in Nordcraft is similar to JavaScript but follows a more streamlined approach:
 
-- **Falsy values*: `false`, `null` and `undefined`
+- **Falsy values**: `false`, `null` and `undefined`
 - **Truthy values**: all other values including empty strings, zero and empty arrays
 
 :::
