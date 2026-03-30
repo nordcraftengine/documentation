@@ -60,7 +60,7 @@ See how you can generate multiple cards using the Range formula.
 
 ## Optimizing performance with the repeat key
 
-To ensure efficient updates and tracking of repeated elements, you can use a **repeat key**. You can use any unique identifier for an item's repeat key, such as a unique ID attached to the time if it is being fetched from a database. Alternatively, you can use the formula editor to build a formula that generates a unique identifier for each item, for example `list-item-{id}`.
+To ensure efficient updates and tracking of repeated elements, you can use a **repeat key**. You can use any unique identifier for an item's repeat key, such as a unique ID attached to the item if it is being fetched from a database. Alternatively, you can use the formula editor to build a formula that generates a unique identifier for each item, for example `list-item-{id}`.
 
 ::: tip
 Using the index as a key prevents Nordcraft from making optimizations. Use a unique identifier, like a database ID or content hash. Duplicate keys disable performance optimizations.
