@@ -52,7 +52,7 @@ To create a parameter:
 
 ## Nodes
 
-A node is an action an instruction or a piece of logic that is executed sequentially. There are several built-in nodes like `Set variable`, `Set session cookies` or `Switch`. You can also call custom [actions](/actions/overview) or reusable workflows. This way you can create nested workflows and individual pieces of logic that are composable.
+A node is an action, an instruction or a piece of logic that is executed sequentially. There are several built-in nodes like `Set variable`, `Set session cookies` or `Switch`. You can also call custom [actions](/actions/overview) or reusable workflows. This way you can create nested workflows and individual pieces of logic that are composable.
 
 ![The attributes panel is visible on the right of the editor, and a workflow named increaseCounter has been selected from the workflow list, meaning its dialog is open. The plus button has been clicked at the bottom of the workflow, displaying a dropdown menu of available nodes to add to the workflow. Tthere is the option to set variables defined in the component, the option to run the increaseCounter workflow, and to add a switch case. The dropdown list is scrollable so there are more options available which are not visible in the image.|16/9](create-workflow-node.webp 'Create nodes')
 
