@@ -42,7 +42,7 @@ To conditionally show or hide an element:
 
 ## How show/hide differs from CSS display
 
-Using Nordcraft's show/hide formula is different from setting CSS `display: none` or `visibility: hidden`. Using show/hide, elements or components are completed removed or added to the page when conditions change.
+Using Nordcraft's show/hide formula is different from setting CSS `display: none` or `visibility: hidden`. Using show/hide, elements or components are completely removed or added to the page when conditions change.
 
 - **Show/hide formula:**
   - Completely removes the element from the page when hidden
