@@ -147,7 +147,7 @@ All theme variables are available throughout your project:
 
 This approach ensures that changes to the theme automatically propagate throughout your project, maintaining design consistency with minimal effort.
 
-## Grouping variables
+## Grouping theme variables
 
 As your project grows, its often beneficial to group your variables by type such as color, spacing, and so on. This helps you browse long lists of variables more easily inside the theme editor. To group variables, add a double dash to the variable after the group name you wish to create.
 
