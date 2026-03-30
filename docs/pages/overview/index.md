@@ -9,7 +9,7 @@ Pages in Nordcraft are HTML documents. Each page on your website has a unique UR
 
 - your home page will be accessed at `https://your-site.nordcraft.com/`
 - your about page may be accessed at `https://your-site.nordcraft.com/about`
-- and your contact page may be accessed at `https://your-site.nordcraft.com/contact`.
+- and your contact page may be accessed at `https://your-site.nordcraft.com/contact`
 
 :::info
 When you create a new project in Nordcraft, a page named `HomePage` is created for you automatically. You can rename the page from the project sidebar if you need to.
