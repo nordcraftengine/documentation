@@ -5,7 +5,7 @@ description: Create design systems with Nordcraft's theme tools for managing col
 
 # Themes
 
-Themes in Nordcraft provide a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure styles are consistent across your project. All theme variables are available to use in the [style panel](/the-editor/element-panel#style-panel).
+Themes in Nordcraft provide a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure styles are consistent across your project. All theme variables are CSS variables, and are available to use in the [style panel](/the-editor/element-panel#style-panel).
 
 To access the theme editor, open the [project sidebar](/the-editor/project-sidebar#project-sidebar) and find the `Themes` section. You can also open the theme dialog from the [bottom bar](/the-editor/bottom-bar#bottom-bar) when editing a component. Here you can edit your theme with a live view of your changes in context.
 
@@ -146,6 +146,18 @@ All theme variables are available throughout your project:
 - Override theme variables in components using static values or dynamic formulas
 
 This approach ensures that changes to the theme automatically propagate throughout your project, maintaining design consistency with minimal effort.
+
+## Grouping variables
+
+As your project grows, its often beneficial to group your variables by type such as color, spacing, and so on. This helps you browse long lists of variables more easily inside the theme editor. To group variables, add a double dash to the variable after the group name you wish to create.
+
+![The Nordcraft theme editor showing the CTA to create grouped variables which reads No groups found. Group by adding a double dash (--) to variable names. E.g. --color--primary will create a "color" group.|16/9](group-variables.webp 'Variable groups')
+
+For example, `--color--primary` will create a group named `color` and a variable name inside that group of `primary`.
+
+When you group variables, you can access them by group name in the left panel of the theme editor.
+
+![The Nordcraft theme editor showing that a color group has been created, which contains two variables named primary and secondary.|16/9](group-created.webp 'Variable groups')
 
 :::tip
 Using Nordcraft's theme system to define your design tokens in combination with creating reusable [components](/components/overview) enables you to build out a robust design system for your project. With this approach, there is one source of truth for your design system. When a designer makes an update, the work doesn't need to be done twice.
