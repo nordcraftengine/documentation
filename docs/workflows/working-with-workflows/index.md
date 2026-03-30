@@ -1,15 +1,15 @@
 ---
 title: Working with workflows
-description: Create event-triggered and reusable workflows with parameters and sequential action nodes to implement interaction logic in your Nordcraft app.
+description: Create event-triggered and reusable workflows with parameters and sequential action nodes to implement interaction logic in your Nordcraft website.
 ---
 
 # Working with workflows
 
-Learn how to create event-triggered and reusable workflows with parameters and sequential action nodes to implement interaction logic in your Nordcraft app.
+Learn how to create event-triggered and reusable workflows with parameters and sequential action nodes to implement interaction logic in your Nordcraft project.
 
 ## Create a workflow
 
-You can create a workflown on any event in Nordcraft. This can be a standard JavaScript event on an element, a custom [event on a component](/components/interface-and-lifecycle#adding-events) or lifecycle events like `On load` or `On attribute change`.
+You can create a workflow on any event in Nordcraft. This can be a standard JavaScript event on an element, a custom [event on a component](/components/interface-and-lifecycle#adding-events) or lifecycle events like `On load` or `On attribute change`.
 
 ![The events panel is visible on the right of the editor. An onClick event has been created, and its dialog window is open. The onClick event sets the wasClicked variable to true, and then runs a workflow named increaseCounter. The workflow is identified by an icon representing three square orange nodes connected together with branches.|16/9](create-workflow-on-event.webp 'Create a workflow'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-workflows?canvas-height=800&canvas-width=800&selection=nodes.root.events.onClick&rightpanel=events}
 
@@ -31,12 +31,12 @@ To create a reusable workflow:
 3. Add [nodes](#nodes) to create your workflow logic
 
 ::: tip
-Create reusable workflows to keep your logic trees managable or if you need to use the same functionality multiple times.
+Create reusable workflows to keep your logic managable or if you need to use the same functionality multiple times.
 :::
 
 ## Parameters and events
 
-When a workflow is triggered by an event, you have access to the event's data within the formulas of the workflow, enabling you to react to the data of the event.
+When a workflow is triggered by an event, you have access to the event's data within the formulas of the workflow, so you can configure how to react to the data of the event.
 
 ![The formula editor has been opened from the set action in an onClick event. In the formula editor, event data from the click event is available to be selected, such as x and y coordinates, and whether the alt key was held down. The event list is scrollable, so there are many more data points available for this event.|16/9](workflow-event-data.webp 'Use event data')
 
@@ -52,7 +52,7 @@ To create a parameter:
 
 ## Nodes
 
-A node is an action or a piece of logic that is executed sequentially. Nodes are the visual language in Nordcraft that you use to compose the desired logic. There are several built-in nodes like `Set variable`, `Set session cookies` or `Switch`. You can also call custom [actions](/actions/overview) or reusable workflows. This way you can create nested workflows and individual pieces of logic that are composable.
+A node is an action, an instruction or a piece of logic that is executed sequentially. There are several built-in nodes like `Set variable`, `Set session cookies` or `Switch`. You can also call custom [actions](/actions/overview) or reusable workflows. This way you can create nested workflows and individual pieces of logic that are composable.
 
 ![The attributes panel is visible on the right of the editor, and a workflow named increaseCounter has been selected from the workflow list, meaning its dialog is open. The plus button has been clicked at the bottom of the workflow, displaying a dropdown menu of available nodes to add to the workflow. Tthere is the option to set variables defined in the component, the option to run the increaseCounter workflow, and to add a switch case. The dropdown list is scrollable so there are more options available which are not visible in the image.|16/9](create-workflow-node.webp 'Create nodes')
 
@@ -67,7 +67,7 @@ You can copy and paste nodes in a workflow or between workflows via the context 
 
 ### Sequential execution
 
-Workflows execute their nodes sequentially. However, this does not necessarily mean each step waits for the previous one to finish completely, which is what synchronous execution would require.
+Workflows execute their nodes sequentially. However, this does not necessarily mean each step waits for the previous one to finish completely.
 
 ### Sequential and asynchronous execution
 

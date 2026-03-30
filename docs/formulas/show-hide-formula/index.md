@@ -5,7 +5,7 @@ description: Control element visibility with conditional formulas that add or re
 
 # Show/hide formula
 
-The show/hide formula allows you to conditionally render elements based on specific conditions. This enables you to create dynamic interfaces that respond to user interactions, state and other factors.
+The show/hide formula allows you to conditionally render elements based on specific conditions.
 
 @@@ example
 componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-show-hide-formula.js
@@ -25,8 +25,8 @@ The show/hide formula controls whether an element is displayed or not:
 ::: dev
 The truthy concept in Nordcraft is similar to JavaScript but follows a more streamlined approach:
 
-- Only `false`, `null` and `undefined` are treated as **falsy**
-- All all other values (including empty strings, zero and empty arrays) are considered **truthy**
+- **Falsy values**: `false`, `null` and `undefined`
+- **Truthy values**: all other values including empty strings, zero and empty arrays
 
 :::
 
@@ -42,30 +42,30 @@ To conditionally show or hide an element:
 
 ## How show/hide differs from CSS display
 
-Using Nordcraft's show/hide formula is different from setting CSS `display: none` or `visibility: hidden`:
+Using Nordcraft's show/hide formula is different from setting CSS `display: none` or `visibility: hidden`. Using show/hide, elements or components are completely removed or added to the page when conditions change.
 
 - **Show/hide formula:**
-  - Completely removes and unmounts the element from the DOM when hidden
-  - Adds a new instance of the component or element to the DOM when shown and reinitializes state
+  - Completely removes the element from the page when hidden
+  - Adds a new instance of the component or element to the page and reinitializes the initial state when shown
   - No APIs, events or workflows run on hidden elements
 - **CSS display/visibility:**
-  - The element or component remains in the DOM but is not visible
+  - The element or component remains on the page but is not visible
   - APIs, events and workflows continue to run
   - No unmounting or remounting occurs when toggling visibility
 
 ## Performance considerations
 
-Given elements are unmounted and remounted when the show/hide condition changes, be aware of these performance implications:
+Given elements are removed (unmounted) and added (remounted) when the show/hide condition changes, be aware of these performance implications:
 
-- **Re-initialization**: When an element is added to the DOM when the show/hide formula evalutes to truthy, all initializations, API calls and `onLoad` events will run again
-- **DOM updates**: Hiding and showing elements forces the browser to remove and recreate DOM nodes, which can negatively affect page performance for complex components
+- **Re-initialization**: When an element is added to the page when the show/hide formula evalutes to truthy, all initializations, API calls and `onLoad` events will run again
+- **DOM updates**: Hiding and showing elements forces the browser to remove and recreate HTML, which can negatively affect page performance for complex components
 - **State loss**: Any internal state not stored in variables will reset when the element is hidden
 
-For most uses, this behavior is ideal. However, if you need to toggle visibility frequently while maintaining state, consider CSS alternatives:
+For most situations, this behavior is ideal. However, if you need to toggle visibility frequently while maintaining state, consider CSS alternatives:
 
 - Use `display: none` to hide the element but preserve its state
 - Use `visibility: hidden` to hide the element while maintaining its layout space
 
-::: warning
-Hiding and showing elements and components via CSS keep their markup in the DOM, so use this approach only when you need to preserve state during frequent visibility changes.
+::: tip
+Hiding and showing elements and components using CSS styles means any HTML for those elements remain on the page. Use this approach when you need to preserve state during frequent visibility changes.
 :::

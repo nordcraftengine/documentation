@@ -16,5 +16,5 @@ Click on the [kbd]Start[kbd] button to start the timer. It will count down to 0.
 @@@
 
 ::: warning
-Make sure you have a break condition, sleep timers or other measures in place so that the workflow does not call itself infinitely and cause an endless loop, which may cause a blue screen of death.
+Make sure you have a break condition, sleep timers or other measures in place so that the workflow does not call itself infinitely and cause an endless loop, which may cause the Nordcraft editor to crash.
 :::

@@ -5,11 +5,11 @@ description: Configure advanced API behaviors with custom error definitions, red
 
 # Advanced API features
 
-Nordcraft provides several advanced API features to give you fine-grained control over your API connections. You can configure the following features using the **Advanced** tab in the API configuration panel.
+Nordcraft provides several advanced API features to give you more control over your API connections. You can configure the following features using the **Advanced** tab in the API configuration panel.
 
 ## Error definition
 
-By default, Nordcraft treats API responses with status codes 400 and above as errors. However, some APIs communicate errors differently, such as [GraphQL APIs](https://graphql.org/learn/serving-over-http#response-format), which return errors in the response body with a 200 (Ok) status code.
+By default, Nordcraft treats API responses with status codes 400 and above as errors. However, some APIs communicate errors differently, such as [GraphQL APIs](https://graphql.org/learn/serving-over-http#response-format), which return errors in the response body with a `200 (Ok)` status code.
 
 ![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the is error dropdown, showing that the value for is error is currently blank, which falls back to the default. There is an fx button available next to the is error value, which is configurable via a formula.|16/9](configure-error-definition.webp 'Configure error definition')
 
@@ -108,7 +108,7 @@ The Nordcraft proxy only processes request and response metadata such as headers
 
 ## Response parsing
 
-By default, Nordcraft automatically determines how to parse API responses based on the `Content-Type` HTTP response header. In some cases, you may need to override this behavior.
+By default, Nordcraft automatically determines how to parse API responses based on the `Content-Type` HTTP response header. In some cases, you may need to override this behavior. This is particularly useful when working with APIs that return incorrect or missing `Content-Type` headers.
 
 ![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the response parsing, showing that the value for parse as is currently set to blank, which falls back to the default.|16/9](configure-response-parsing.webp 'Configure response parsing')
 
@@ -121,13 +121,11 @@ The **Parse as** dropdown allows you to select from several parsing options:
 - **JSON stream**: Parses as a stream of JSON objects (see the [NDJSON](https://github.com/ndjson/ndjson-spec) specification)
 - **Blob**: Handles the response as a blob (read more about blobs on the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/API/Blob))
 
-This is particularly useful when working with APIs that return incorrect or missing `Content-Type` headers.
-
 ## Performance settings
 
 ### Debounce
 
-Debouncing limits how frequently an API can be called, which is useful when API requests are triggered by rapid user actions like typing.
+Debouncing limits how frequently an API can be called, which is useful when API requests are triggered by rapid user actions like typing into a search field.
 
 ![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the debounce area, showing that the value for debounce is currently null, but can be configured using a formula using the fx button.|16/9](configure-debounce.webp 'Configure debouce')
 
@@ -147,7 +145,7 @@ Common use cases include:
 
 ### Timeout
 
-The timeout setting allows you to specify a maximum wait time for API responses.
+Using the timeout setting, you can specify a maximum wait time for API responses.
 
 ![The edit API dialog is open. The currently selected tab is Advanced. This image highlights the timeout area, showing that the value for timeout is currently null, but can be configured using a formula using the fx button.|16/9](configure-timeout.webp 'Configure timeout')
 

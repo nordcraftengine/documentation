@@ -5,7 +5,7 @@ description: Generate dynamic lists, grids and repeating elements from array dat
 
 # Repeat formula
 
-The repeat formula allows you to create multiple instances of an element based on a set of data. This enables dynamic lists, grids and other repeating UI structures.
+Using the repeat formula, you can create multiple instances of an element based on a set of data. This enables you to build dynamic lists, grids and other repeating UI structures without needing to copy and paste elements or components.
 
 @@@ example
 componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-repeat-formula.js
@@ -17,9 +17,9 @@ Learn how the repeat formula is used to display multiple cards.
 
 The repeat formula:
 
-- Creates a new instance of an element for each item in a data array
+- Creates a new element for each item in a data array
 - Makes the current item available as `Item` within the repeated element
-- Automatically updates when the data changes
+- Automatically updates when data changes
 - Can be applied to any element or component
 
 ## Using the repeat formula
@@ -39,12 +39,12 @@ The output of your repeat formula must be iterable (an `Array` of items).
 
 ### Accessing data in repeated elements
 
+Using the repeat item variables you can customize each item based on its data and position.
+
 Within repeated elements, you can access:
 
 - `Item`: The current item from the array
 - `Index`: The position of the current item (starting from 0)
-
-These repeat item variables allow you to customize each instance based on its data and position.
 
 ## Creating numeric ranges
 
@@ -60,9 +60,9 @@ See how you can generate multiple cards using the Range formula.
 
 ## Optimizing performance with the repeat key
 
-To ensure efficient updates and tracking of repeated elements, add a **repeat key** formula that generates a unique identifier for each item. This key helps Nordcraft track items efficiently, preventing re-renders and improving performance. Use a stable value like a database ID, unique property or composite key (e.g. `list-item-{id}`) for seamless updates when data changes.
+To ensure efficient updates and tracking of repeated elements, you can use a **repeat key**. You can use any unique identifier for an item's repeat key, such as a unique ID attached to the item if it is being fetched from a database. Alternatively, you can use the formula editor to build a formula that generates a unique identifier for each item, for example `list-item-{id}`.
 
-::: warning
+::: tip
 Using the index as a key prevents Nordcraft from making optimizations. Use a unique identifier, like a database ID or content hash. Duplicate keys disable performance optimizations.
 :::
 
@@ -71,7 +71,7 @@ Using the index as a key prevents Nordcraft from making optimizations. Use a uni
 The repeat key formula improves performance of your project in several ways:
 
 - Enables Nordcraft to track specific items across renders
-- Allows reuse of DOM elements instead of recreating them
+- Allows reuse of page elements instead of recreating them
 - Prevents unnecessary re-rendering of unchanged items
 - Maintains element state when items change position
 
