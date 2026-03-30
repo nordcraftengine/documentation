@@ -5,7 +5,7 @@ description: Create project-wide reusable functions with standard formulas or cu
 
 # Project formulas
 
-Project formulas provide a way to create reusable calculations and logic that can be accessed from any page or component in your project. Unlike component-level formulas that are only available within a specific component, project formulas can be used throughout your entire project.
+Using project formulas, you can create reusable calculations and logic that can be accessed from any page or component in your project. Unlike component-level formulas that are only available within a specific component, project formulas can be used throughout your entire project.
 
 ## When to use project formulas
 
@@ -14,10 +14,8 @@ Project formulas are ideal for:
 - Common calculations used across multiple components
 - Shared data transformations
 - Utility functions like date formatting or number parsing
-- Business logic that needs to be consistent throughout the project
+- Logic that needs to be consistent throughout the project
 - Complex operations that might be reused
-
-Using project formulas ensures consistency in your project and reduces duplication of code.
 
 ## Create a project formula
 
@@ -59,7 +57,7 @@ In the custom code editor, your formula must have an entry function with the sam
 When using custom code in project formulas, keep these important points in mind:
 
 - **Pure functions**: Custom formulas should be pure functions without side effects; given the same inputs, they should always return the same outputs without modifying external state
-- **Client-side only**: Custom code formulas execute in the browser only and not during server-side rendering; this can cause layout shifts during page load and may impact your page performance scores, and as a result, SEO
+- **Client-side only**: Custom code formulas run in the browser only and not during server-side rendering; this can cause layout shifts during page load and may impact your page performance scores, and as a result, SEO
 - **Synchronous execution**: Custom formulas must be synchronous; do not use `Promise`, `fetch` or other asynchronous JavaScript APIs in project formulas
 - **Shadow DOM compatibility**: When components are exported as web components, use `ctx.root` instead of `document` to access DOM elements; this ensures compatibility with Shadow DOM encapsulation
 
