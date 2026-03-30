@@ -5,7 +5,7 @@ description: Learn about workflows in Nordcraft as event-driven sequences that e
 
 # Workflows overview
 
-A workflow in Nordcraft is a series of actions that are executed on certain events. It can contain complex logic and trigger behaviors.
+A workflow in Nordcraft is a series of actions that are executed on certain events. Workflows can contain conditional logic and trigger behaviors.
 
 ::: dev
 The way workflows work in Nordcraft is very similar to functions in JavaScript.
