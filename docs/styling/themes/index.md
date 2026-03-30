@@ -157,7 +157,7 @@ For example, `--color--primary` will create a group named `color` and a variable
 
 When you group variables, you can access them by group name in the left panel of the theme editor.
 
-![The Nordcraft theme editor showing that a color group has been created, which contains two variables named primary and secondary.|16/9](group-created.webp 'Variable groups')
+![The Nordcraft theme editor showing that a color group has been created, which contains two variables named primary and secondary.|16/9](group-created.webp 'Color group example')
 
 :::tip
 Using Nordcraft's theme system to define your design tokens in combination with creating reusable [components](/components/overview) enables you to build out a robust design system for your project. With this approach, there is one source of truth for your design system. When a designer makes an update, the work doesn't need to be done twice.
