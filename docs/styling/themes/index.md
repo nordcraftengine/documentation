@@ -153,7 +153,7 @@ As your project grows, it's often beneficial to group your variables by type suc
 
 ![The Nordcraft theme editor showing the CTA to create grouped variables which reads No groups found. Group by adding a double dash (--) to variable names. E.g. --color--primary will create a "color" group.|16/9](group-variables.webp 'Variable groups')
 
-For example, `--color--primary` will create a group named `color` and a variable name inside that group of `primary`. You can also create subgroups with additional double dashes. For example, `--color--primary--background--default` will create a `primary` group, with a `background` group inside it, with a variable named `default` inside that.
+For example, `--color--primary` will create a group named `color` and a variable name inside that group of `primary`. You can also create subgroups using additional double dashes. For example, `--color--primary--background--default` will create a `primary` group, with a `background` group inside it, with a variable named `default` inside that.
 
 When you group variables, you can access them by group name in the left panel of the theme editor.
 
