@@ -149,11 +149,9 @@ This approach ensures that changes to the theme automatically propagate througho
 
 ## Grouping theme variables
 
-As your project grows, its often beneficial to group your variables by type such as color, spacing, and so on. This helps you browse long lists of variables more easily inside the theme editor. To group variables, add a double dash to the variable after the group name you wish to create.
+As your project grows, its often beneficial to group your variables by type such as color, spacing, and so on. This helps you browse long lists of variables more easily inside the theme editor. To group variables, add a double dash to the variable after the group name you wish to create. For example, `--color--primary` will create a group named `color` and a variable name inside that group of `primary`.
 
 ![The Nordcraft theme editor showing the CTA to create grouped variables which reads No groups found. Group by adding a double dash (--) to variable names. E.g. --color--primary will create a "color" group.|16/9](group-variables.webp 'Variable groups')
-
-For example, `--color--primary` will create a group named `color` and a variable name inside that group of `primary`.
 
 When you group variables, you can access them by group name in the left panel of the theme editor.
 
