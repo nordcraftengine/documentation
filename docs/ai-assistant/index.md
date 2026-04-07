@@ -68,7 +68,3 @@ Additionally, the AI cannot currently:
 
 - **Create services in Nordcraft**
 - **Upload or read media files in Nordcraft**
-
-:::info
-The Nordcraft AI is currently in Beta. New features will be added and current features are subject to change.
-:::
