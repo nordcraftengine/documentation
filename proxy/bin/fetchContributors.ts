@@ -3,15 +3,6 @@ import { promisify } from 'node:util'
 
 const execPromise = promisify(exec)
 
-const headers: Record<string, string> = {
-  Accept: 'application/vnd.github+json',
-  'User-Agent': 'CF',
-}
-
-if (process.env.COMMITS_KEY) {
-  headers.Authorization = `Bearer ${process.env.COMMITS_KEY}`
-}
-
 export const fetchContributors = async ({
   allContributors,
   path,
