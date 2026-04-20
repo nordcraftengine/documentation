@@ -54,7 +54,6 @@ The amount of credits used depends on the model you chose and the complexity of 
 | --------------- | ------ | -------------------------------------------------------------------------------------- |
 | Gemini 3 Flash  | 💰     | Most build tasks.                                                                      |
 | Gemini 3 Pro    | 💰💰   | Task analysis. Use this mode when Flash has problems finding and fixing annoying bugs. |
-| Claude Opus 4.6 | 💰💰💰 | UI design and well-styled components                                                   |
 
 :::tip
 In Build mode you can also attach an image to your request, such as a screenshot of a design. The AI will use this image when analyzing your request but cannot insert it directly into the design.
