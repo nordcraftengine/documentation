@@ -50,11 +50,10 @@ Build mode uses a credit system. You get a number of free credits each day, and 
 
 The amount of credits used depends on the model you chose and the complexity of the task. You can select between the following models:
 
-| Model           | Cost   | Best use case                                                                          |
-| --------------- | ------ | -------------------------------------------------------------------------------------- |
-| Gemini 3 Flash  | 💰     | Most build tasks.                                                                      |
-| Gemini 3 Pro    | 💰💰   | Task analysis. Use this mode when Flash has problems finding and fixing annoying bugs. |
-| Claude Opus 4.6 | 💰💰💰 | UI design and well-styled components                                                   |
+| Name       | Cost | Best use case                                                                         |
+| ---------- | ---- | ------------------------------------------------------------------------------------- |
+| Fast       | 💰   | Most build tasks.                                                                     |
+| Thoughtful | 💰💰 | Task analysis. Use this mode when Fast has problems finding and fixing annoying bugs. |
 
 :::tip
 In Build mode you can also attach an image to your request, such as a screenshot of a design. The AI will use this image when analyzing your request but cannot insert it directly into the design.
@@ -68,7 +67,3 @@ Additionally, the AI cannot currently:
 
 - **Create services in Nordcraft**
 - **Upload or read media files in Nordcraft**
-
-:::info
-The Nordcraft AI is currently in Beta. New features will be added and current features are subject to change.
-:::
