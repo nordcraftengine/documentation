@@ -11,11 +11,11 @@ On all pricing plans, your Nordcraft projects are billed according to how many r
 
 Requests to your Nordcraft projects can be one of three types:
 
-| Request type            | Description                                                                                                                                                                                                                |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Page requests           | A page request, [redirect](/pages/redirects), or [proxy](/pages/proxies).                                                                                                                                                  |
-| Proxied API requests    | An API request that is routed through Nordcraft's edge network. Find this setting in the advanced options in the API panel under fetching options > [proxy request](/connecting-data/advanced-api-features#proxy-request). |
-| Custom element requests | A request for a [custom element (web component)](/components/export-a-component) exported from a Nordcraft project.                                                                                                        |
+| Request type            | Description                                                                                                                                                                                                                                                                               |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Page requests           | A page request, [redirect](/pages/redirects), or [proxy](/pages/proxies).                                                                                                                                                                                                                 |
+| Proxied API requests    | An API request that is routed through Nordcraft's edge network from the client. Find this setting in the advanced options in the API panel under fetching options > [proxy request](/connecting-data/advanced-api-features#proxy-request). Proxied API requests made during SSR are free. |
+| Custom element requests | A request for a [custom element (web component)](/components/export-a-component) exported from a Nordcraft project.                                                                                                                                                                       |
 
 ## Organization analytics
 
