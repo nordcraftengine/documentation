@@ -37,7 +37,7 @@ Click on any package to view a detailed information page, which includes:
 - Details about available attributes, events, and configurations
 - Implementation examples and use cases
 
-You can like packages you find useful by clicking the heart icon next to the [kbd]install[kbd] button. Likes contribute to the package's ranking in the Popular tab.
+You can like packages you find useful by clicking the heart next to the [kbd]install[kbd] button at the top right of the page. Likes contribute to the package's ranking in the Popular tab.
 
 Additionally, you can clone any package by clicking the [kbd]clone[kbd] button, which creates a copy of the package in your account that you can modify.
 
@@ -56,10 +56,8 @@ You cannot make a package private at this time.
 
 ## Benefits of packages
 
-Break down your project into well-defined packages to:
+Break down your project into packages to:
 
-- Improve organization and code structure
-- Promote modularity and reusability
+- Share specific functionality and UI elements across projects
 - Make code easier to maintain
-- Share specific functionalities across projects
 - Contribute to the Nordcraft developer community and benefit from it
