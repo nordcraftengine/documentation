@@ -5,17 +5,17 @@ description: Learn about Nordcraft's package ecosystem to add pre-built componen
 
 # Packages
 
-Packages extend your Nordcraft projects with reusable components and functionality. They help you save development time and maintain consistency across projects.
+Packages allow you to build reusable components and functionality that you can use across different Nordcraft projects and share with the Nordcraft community.
 
 ::: dev
-Packages in Nordcraft work similar to NPM packages. They can contain pure logic, visual elements or both.
+If you're already familiar with the JavaScript ecosystem, Packages in Nordcraft work like NPM packages. They can contain pure logic, visual elements or both.
 :::
 
 ![The packages list is open to the left of the editor, showing information about the confetti back to the right. Visible is the package name, author, launch date and description, including a demo video and an interactive on-page demo. At the top right there are options to clone, star and install the package.|16/9](packages.webp 'Package overview')
 
 ## Browsing packages
 
-You can find the [kbd]packages[kbd] button in the [left sidebar](/the-editor/overview#left-panel). The packages panel organizes available packages into three tabs:
+To view a list of available packages, click on the [kbd]packages[kbd] button in the [left sidebar](/the-editor/overview#left-panel). The packages panel organizes available packages into three tabs:
 
 - **Popular**: Most frequently installed packages
 - **Newest**: Recently published packages
@@ -29,7 +29,7 @@ You can also browse and search the [full catalogue of native Nordcraft packages 
 
 ## Package details
 
-Click on any package to view its detailed information page, which includes:
+Click on any package to view a detailed information page, which includes:
 
 - Documentation explaining the purpose and functionality of the package
 - Live interactive examples
