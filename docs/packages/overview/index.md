@@ -5,10 +5,10 @@ description: Learn about Nordcraft's package ecosystem to add pre-built componen
 
 # Packages
 
-Packages allow you to build reusable components and functionality that you can use across different Nordcraft projects and share with the Nordcraft community.
+Packages in Nordcraft allow you to build reusable components and functionality that you can use across different Nordcraft projects and share with the Nordcraft community.
 
 ::: dev
-If you're already familiar with the JavaScript ecosystem, Packages in Nordcraft work like NPM packages. They can contain pure logic, visual elements or both.
+If you're already familiar with the JavaScript ecosystem, Packages in Nordcraft work like NPM packages. They can contain UI elements, custom actions, and other functionality.
 :::
 
 ![The packages list is open to the left of the editor, showing information about the confetti back to the right. Visible is the package name, author, launch date and description, including a demo video and an interactive on-page demo. At the top right there are options to clone, star and install the package.|16/9](packages.webp 'Package overview')
@@ -33,11 +33,11 @@ Click on any package to view a detailed information page, which includes:
 
 - Documentation explaining the purpose and functionality of the package
 - Live interactive examples
-- Instructions for using components, actions, and formulas
+- Instructions for using components, actions, and formulas contained within the package
 - Details about available attributes, events, and configurations
 - Implementation examples and use cases
 
-You can give a star to packages you find useful by clicking the star icon next to the [kbd]install[kbd] button. Stars contribute to the package's ranking in the Popular tab.
+You can like packages you find useful by clicking the heart icon next to the [kbd]install[kbd] button. Likes contribute to the package's ranking in the Popular tab.
 
 Additionally, you can clone any package by clicking the [kbd]clone[kbd] button, which creates a copy of the package in your account that you can modify.
 
