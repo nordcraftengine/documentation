@@ -41,18 +41,13 @@ You can like packages you find useful by clicking the heart next to the [kbd]ins
 
 Additionally, you can clone any package by clicking the [kbd]clone[kbd] button, which creates a copy of the package in your account that you can modify.
 
-## Package accessibility
+## Package visibility
 
-All packages in Nordcraft are public, meaning:
+Packages can be public or private. Public packages:
 
-- Everyone can browse and use any published package
-- Anyone can install packages into their projects
-- All packages can be cloned to learn from or modify
-- Any user can create and publish their own packages
-
-::: info
-You cannot make a package private at this time.
-:::
+- Are discoverable via the packages panel in the Nordcraft editor
+- Can be installed by any Nordcraft user
+- Can be cloned by any Nordcraft user
 
 ## Benefits of packages
 
