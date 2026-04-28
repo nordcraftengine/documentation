@@ -43,7 +43,7 @@ Additionally, you can clone any package by clicking the [kbd]clone[kbd] button, 
 
 ## Package visibility
 
-Packages can be public or private. 
+Packages can be public or private.
 
 Public packages:
 
