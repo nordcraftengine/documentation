@@ -51,6 +51,12 @@ Public packages:
 - Can be installed by any Nordcraft user
 - Can be cloned by any Nordcraft user
 
+Private packages:
+
+- Are tied to the Nordcraft organization that owns them
+- Are discoverable by organization members who have access to the package
+- Can be installed by organization members who have access to the package in any project
+
 ## Benefits of packages
 
 Break down your project into packages to:
