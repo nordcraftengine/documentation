@@ -43,7 +43,9 @@ Additionally, you can clone any package by clicking the [kbd]clone[kbd] button, 
 
 ## Package visibility
 
-Packages can be public or private. Public packages:
+Packages can be public or private. 
+
+Public packages:
 
 - Are discoverable via the packages panel in the Nordcraft editor
 - Can be installed by any Nordcraft user
