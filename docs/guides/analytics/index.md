@@ -23,11 +23,13 @@ To view your organization requests, navigate to an organization, and select `Ana
 
 ![The organization view in Nordcraft, showing the analytics item highlighted in the menu in the left sidebar.|16/9](analytics-in-menu.webp 'Analytics')
 
-You will see a graph showing requests to all of your projects over time.
+You will see a graph showing requests to all of your projects over time. Below, you'll see a table containing the the request data including the project, branch, HTTP request method, and number of requests.
 
-![Analytics for an organization showing requests for all projects. This is a stacked line graph showing page requests in blue, proxied API requests in purple, and custom element requests in green. There is a total of over 1 million requests for the selected time period of the last 7 days.|16/9](analytics-org.webp 'Organization analytics')
+![Analytics for an organization showing requests for all projects. This is a stacked line graph showing page requests in blue, proxied API requests in purple, and custom element requests in green. There is a total of over 3 million requests for the selected time period of the last month.|16/9](analytics-org.webp 'Organization analytics')
 
 You can use the filters at the top right of the graph to narrow down the request types you wish to view, or change the time period on the graph.
+
+Hover over the table rows to see all information in one card, including the full request URL (without any query parameters).
 
 ## Project analytics
 
