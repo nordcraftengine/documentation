@@ -292,10 +292,36 @@
       {
         "label": "Advanced API features",
         "path": "advanced-api-features"
+      }
+    ]
+  },
+  {
+    "path": "services",
+    "label": "Services",
+    "children": [
+      {
+        "label": "Overview",
+        "path": "overview"
       },
       {
-        "label": "Services",
-        "path": "services"
+        "label": "DatoCMS",
+        "path": "datocms"
+      },
+      {
+        "label": "Contentful",
+        "path": "contentful"
+      },
+      {
+        "label": "Supabase",
+        "path": "supabase"
+      },
+      {
+        "label": "Umbraco",
+        "path": "umbraco"
+      },
+      {
+        "label": "Xano",
+        "path": "xano"
       }
     ]
   },
@@ -369,10 +395,6 @@
       {
         "label": "Feature flags",
         "path": "feature-flags"
-      },
-      {
-        "label": "DatoCMS",
-        "path": "datocms"
       },
       {
         "label": "Contribution",
