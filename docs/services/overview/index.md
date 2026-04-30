@@ -13,7 +13,7 @@ Nordcraft supports service connections to a variety of back-end providers. Click
 name: DatoCMS
 dataType: CMS
 supportedApis: GraphQL
-description: A user-friendly and performance headless CMS.
+description: A user-friendly and performant headless CMS.
 slug: datocms
 logoUrl: datocms.png
 @@@
