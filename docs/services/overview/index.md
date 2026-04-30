@@ -15,7 +15,7 @@ dataType: CMS
 supportedApis: GraphQL
 description: A user-friendly and performant headless CMS.
 slug: datocms
-logoUrl: datocms.png
+logoUrl: https://github.com/datocms.png
 @@@
 
 @@@ service
@@ -24,16 +24,16 @@ dataType: CMS
 supportedApis: GraphQL
 description: A headless content platform with personalization and analytics.
 slug: contentful
-logoUrl: contentful.png
+logoUrl: https://github.com/contentful.png
 @@@
 
 @@@ service
 name: Supabase
 dataType: Database
 supportedApis: GraphQL, REST
-description: Open-source Postgres database with authentication and real-time capabilities
+description: Open-source Postgres database with authentication and real-time capabilities.
 slug: supabase
-logoUrl: supabase.png
+logoUrl: https://github.com/supabase.png
 @@@
 
 @@@ service
@@ -42,7 +42,7 @@ dataType: CMS
 supportedApis: GraphQL
 description: Flexible open-source .NET content management system.
 slug: umbraco
-logoUrl: umbraco.png
+logoUrl: https://github.com/umbraco.png
 @@@
 
 @@@ service
@@ -51,7 +51,7 @@ dataType: Database
 supportedApis: REST
 description: No-code database and API builder.
 slug: xano
-logoUrl: xano.png
+logoUrl: https://github.com/xano-inc.png
 @@@
 
 ## Add a service
