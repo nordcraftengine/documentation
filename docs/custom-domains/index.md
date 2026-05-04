@@ -44,7 +44,7 @@ Custom domains are only available on paid plans. Projects in organizations on th
 
 ## Wildcard domains
 
-Wildcard domains allow you to serve your Nordcraft website from any subdomain of a given domain.
+Wildcard domains allow you to serve your Nordcraft website from any subdomain of a given domain. This feature is available for all upgraded projects.
 
 For example, if you add the wildcard domain `*.example.com`, your Nordcraft website will be accessible from any subdomain of `example.com`, such as `app.example.com`, `blog.example.com`, or `shop.example.com`.
 
@@ -53,10 +53,10 @@ To add a wildcard domain, follow the same steps as adding a non-wildcard domain,
 ![The Domain Management page is shown with a new wildcard domain added that has a status of pending. The configuration instructions are provided with some relevant information about CNAME and A records. The CNAME record tab is highlighted, and the A record tab is disabled. Below there are CNAME records and the TXT record provided to add to your DNS provider.|16/9](create-wildcard-domain.webp 'Add a wildcard domain')
 
 - Under the domain you will see instructions on how to configure your DNS settings to point the domain to your Nordcraft project
-- You must add a wildcard domains using a **CNAME** record
+- You must add a wildcard domain using a **CNAME** record
 - In addition to the **CNAME** record for the wildcard domain, add an additional **CNAME** record that allows Nordcraft to automatically issue and renew SSL certificates for your wildcard domain
 - Finally, add the provided **TXT** record to your DNS provider to verify domain ownership
 
 ::: info
-Wildcard domains are only available on Scaleup plans.
+If you want to use a wildcard domain together with the apex domain for the wildcard domain, you must first add the wildcard domain, then add the apex domain. If you add the apex domain first, you will not be able to add the wildcard domain until you remove the apex domain.
 :::
