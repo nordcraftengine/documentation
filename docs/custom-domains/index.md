@@ -58,5 +58,5 @@ To add a wildcard domain, follow the same steps as adding a non-wildcard domain,
 - Finally, add the provided **TXT** record to your DNS provider to verify domain ownership
 
 ::: info
-If you want to use a wildcard domain together with the apex domain for the wildcard domain, you must first add the wildcard domain, then add the apex domain. If you add the apex domain first, you will not be able to add the wildcard domain until you remove the apex domain.
+If you want to use a wildcard domain together with the apex domain (e.g. `example.com`), you must first add the wildcard domain, then add the apex domain. If you add the apex domain first, you will not be able to add the wildcard domain until you remove the apex domain.
 :::
