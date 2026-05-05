@@ -5,7 +5,7 @@ description: Connect to back-end providers like Supabase, Xano or OpenAPI-compli
 
 # Services
 
-Services in Nordcraft simplify working with APIs by automatically retrieving endpoint details from back-end providers. When you create a service connection, Nordcraft pre-fills the necessary information for new APIs, reducing setup time and minimizing configuration errors.
+You can use services in Nordcraft to simplify working with APIs. When you add a service connection, Nordcraft automatically retrieves endpoint details from back-end providers, pre-filling the necessary information for new APIs, reducing setup time and minimizing configuration errors.
 
 Nordcraft supports service connections to a variety of back-end providers. Click on the cards below to view a detailed integration guide.
 
@@ -75,7 +75,7 @@ You can add services in Nordcraft in two ways.
 
 ### Configure a custom service (OpenAPI)
 
-For services not natively supported by Nordcraft, you can add a custom service using [OpenAPI Specification](https://swagger.io/resources/open-api):
+For services not natively supported by Nordcraft, you can add a custom service using the [OpenAPI Specification](https://swagger.io/resources/open-api):
 
 1. Enter a name for the service (defaults to "Custom")
 2. Configure the following:
@@ -92,14 +92,12 @@ Nordcraft currently supports [OpenAPI Specification](https://swagger.io/resource
 
 ## Use a service in an API
 
-Once your services are configured, you can coose pre-defined endpoints from your back end.
+Once your services are configured, you can coose pre-defined endpoints from your back-end provider.
 
 1. When creating a new API, you will see your connected services
 2. Choose the endpoint from the available options of your selected service
 3. Nordcraft automatically pre-fills all request details: `path`, `headers`, `parameters`, `body`
-4. Adjust specific values as needed for your implementation
-
-This approach streamlines API creation by leveraging the schema information already defined in your back-end service.
+4. Adjust specific values as needed
 
 ::: tip
 To reuse API and service configuration values throughout your project, click the [kbd]fx[kbd] button next to a field. This creates a [project formula](/formulas/project-formulas) that can be referenced anywhere else.
