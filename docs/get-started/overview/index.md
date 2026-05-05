@@ -11,7 +11,7 @@ Nordcraft is a website builder combined with a powerful AI agent giving you comp
 
 When launching Nordcraft, you'll land on the Nordcraft dashboard.
 
-![The Nordcraft Dashboard, showing two areas. Recent projects is at the top with a button to create a new project or view all projects. Below is a selection of videos from the [Nordcraft Fundamentals](https://nordcraft.com/learn/fundamentals)  beginner video course.|16/9](dashboard.webp 'Dashboard')
+![The Nordcraft Dashboard, showing two areas. Recent projects is at the top with a button to create a new project or view all projects. Below is a selection of videos from the Nordcraft Fundamentals beginner video course.|16/9](dashboard.webp 'Dashboard')
 
 The dashboard includes two key sections:
 
