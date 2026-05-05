@@ -34,7 +34,10 @@ export const serviceExtension: TokenizerAndRendererExtension = {
         name: nameMatch ? nameMatch[1].trim() : '',
         dataType: dataTypeMatch ? dataTypeMatch[1].trim() : '',
         supportedApis: supportedApisMatch
-          ? supportedApisMatch[1].split(',').map((value) => value.trim()).filter(Boolean)
+          ? supportedApisMatch[1]
+              .split(',')
+              .map((value) => value.trim())
+              .filter(Boolean)
           : [],
         description: descriptionMatch ? descriptionMatch[1].trim() : '',
         slug: slugMatch ? slugMatch[1].trim() : '',

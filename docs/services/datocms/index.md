@@ -9,7 +9,6 @@ description: Learn how to create a data model in DatoCMS and integrate it with N
 - use graphql explorer
 - ask to build with AI
 
-
 # DatoCMS integration guide
 
 [DatoCMS](https://www.datocms.com/) is a headless Content Management System (CMS) that lets you store and manage content, and retrieve that content via a GraphQL API for use on your websites. This guide outlines the process of creating a data model within DatoCMS and integrating it with Nordcraft.
