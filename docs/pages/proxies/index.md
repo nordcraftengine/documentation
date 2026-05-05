@@ -63,7 +63,3 @@ In order to verify that your proxy works as intended, click the "Preview page in
 :::tip
 If the proxy uses an HTTP method that is not a `GET` request, you may need to use a tool like Hoppscotch or Postman to test your new proxy.
 :::
-
-::: info
-Proxies are only available on paid plans.
-:::

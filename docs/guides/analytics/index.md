@@ -5,7 +5,7 @@ description: Understand how to view your project analytics covering page request
 
 # Analytics
 
-On all pricing plans, your Nordcraft projects are billed according to how many requests a project receives. You can monitor requests to your Nordcraft projects at an organization or project level.
+Upgraded projects in Nordcraft are billed according to how many requests a project receives. You can monitor requests to your Nordcraft projects at an organization or project level.
 
 ## Request types
 

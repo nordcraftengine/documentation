@@ -46,7 +46,7 @@ Each page on your website should have unique metadata for good search engine vis
 You can bind any metadata value to formulas and variables by clicking the `fx` button next to each field.
 
 ::: info
-Custom `og:*` meta tags which power Open Graph social sharing information are available on paid Nordcraft plans only.
+Custom `og:*` meta tags which power Open Graph social sharing information are available on upgraded Nordcraft projects only.
 :::
 
 ## Head elements

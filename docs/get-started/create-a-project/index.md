@@ -59,8 +59,3 @@ When creating a project you can choose between two visibility options:
 
 - **Public**: Your project will be visible and clonable via a URL, but others cannot edit it
 - **Private**: Your project is only visible within your organization, with customizable access and roles for different users
-
-::: info
-Private websites require a paid plan.
-It is currently not possible to create private packages.
-:::

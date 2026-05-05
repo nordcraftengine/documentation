@@ -39,7 +39,7 @@ After adding a new domain, you'll see the domain added to the list of domains wi
 - You can chose to add either an **A** or **CNAME** record depending on your DNS provider's capabilities; the record name and value you need to set in your DNS provider is provided for you by Nordcraft
 
 ::: info
-Custom domains are only available on paid plans. Projects in organizations on the free plan will be served on `{project-name}.nordcraft.site`.
+Custom domains are only available on upgraded projects. Projects that are not upgraded will be served on `{project-name}.nordcraft.site`.
 :::
 
 ## Wildcard domains
