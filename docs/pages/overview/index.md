@@ -50,5 +50,5 @@ To create a custom 404 page:
 3. Design the page as you want it to appear when users encounter invalid URLs
 
 ::: info
-Custom 404 pages are only available on paid plans. Projects in organizations on the free plan will display Nordcraft's standard 404 page.
+Custom 404 pages are only available on upgraded projects. Non-upgraded projects will display Nordcraft's standard 404 page.
 :::

@@ -55,10 +55,6 @@ Redirects can happen in two ways:
 - **Server-side**: occur **before** any content is sent to the browser, preventing page flashes
 - **Client-side**: happen **after** the page has loaded in the browser
 
-::: info
-Server-side redirects are only available on paid plans. Learn more on [our pricing page](https://nordcraft.com/pricing).
-:::
-
 You can use the `Is Server` formula to create conditional logic based on where the code is executing. This allows different redirect behavior on the server versus in the browser.
 
 ::: info
