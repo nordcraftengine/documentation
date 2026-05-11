@@ -48,6 +48,10 @@ When you ask the AI for changes in build mode, you will enter `Preview mode`.
 
 Build mode uses a credit system. You get a number of free credits each day, and if you need more credits, you can purchase them directly from inside the Nordcraft editor.
 
+:::info
+Daily free credits are assigned to each individual user of Nordcraft. Any credits purchased will be available to all members of an organization to use. If you are a member of more than one organization, the purchased credits will apply to the organization of the project you were editing when you completed the checkout process.
+:::
+
 The amount of credits used depends on the model you chose and the complexity of the task. You can select between the following models:
 
 | Name       | Cost | Best use case                                                                         |
