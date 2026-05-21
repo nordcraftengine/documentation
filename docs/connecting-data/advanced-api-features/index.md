@@ -50,7 +50,7 @@ To configure redirect rules:
 Rules are evaluated in the order they appear, and the first matching rule determines the redirect destination.
 
 ::: warning
-When using a custom HTTP status code for redirect rules, ensure that the status code is appropriate for the type of redirect you intend to perform (e.g. use `301` for permanent redirects and `302` for temporary redirects) to avoid unintended consequences for SEO and caching. `301` redirects tend to be cached for a long time by browsers.
+When using a custom HTTP status code for redirect rules, ensure that the status code is appropriate for the type of redirect. For example, use `301` for permanent redirects and `302` for temporary redirects. This helps to avoid unintended consequences for SEO and caching as `301` redirects tend to be cached for a long time by browsers.
 :::
 
 ### Server-side vs. client-side redirects
