@@ -22,18 +22,22 @@ Create a new branch by clicking the [kbd]+[kbd] button in the top right corner o
 
 The changes in your active branch are shown in the `Changes` tab.
 
-![Changes are shown as items with an icon and a name, and letter to the right describing the type of change. The image is annotated corresponding to the sections below.|16/9](version-control-changes.webp 'View changes')
+![The version control panel is open to the left of the editor. A number of changes are shown as items with an icon and a name, and letter to the right describing the type of change, either C for created or D for deleted.|16/9](version-control-changes.webp 'View changes')
 
 All files that have been modified in your active branch are listed in the `Changes` tab. Changes are calculated by comparing your active branch to the state of the main branch at the point of branch creation. Since the main branch may also change when other branches are published, the original main branch and current main branch may not be the same at the when the changes are calculated. The original state of the main branch at the point of a branch creation will be referred to as the `ancestor branch`.
 
-Each change is marked with an icon and name representing the change, as well as a letter describing the type of change (#1 in the image):
+Each change is marked with an icon and name representing the change, as well as a letter describing the type of change:
 
-- `C`: something has been created. The page, element, component, formula, or workflow etc. does not exist in the ancestor branch.
-- `D`: something has been deleted. It exists in the ancestor branch, but not in the current branch.
-- `E`: something has been edited. It exists in both branches, but in different states.
+- `C`: the value that has been created. This does not exist in the ancestor branch.
+- `D`: the value that has been deleted. It exists in the ancestor branch, but not in the current branch.
 
-If something has been edited, you can dive deeper into the changes by expanding the item. This will reveal a list of all of the changes made to that item (#2 in the image). As long as there are edited items in a list, it can be expanded to show those changes. Additionally, whenever you click to select a created or edited change in the `Changes` tab, the value will be shown in the editor (#3 in the image). For example, if you made changes to a formula, clicking on the affected item will open the formula editor.
-Deleted changes cannot be shown in the current branch since they no longer exist, but may be explored on the main branch via the context menu.
+You can dive deeper into the changes by expanding the item. This will reveal a list of all of the changes made to that item. Where you see both `C` and `D`, this means a value has been edited. Click on the `Created` value to see the new change, and click on the `Deleted` value to see the previous value.
+
+Additionally, whenever you click to select a created or deleted change in the `Changes` tab, the value will be shown in the editor. For example, if you made changes to a formula, clicking on the affected item will open the formula editor.
+
+Clicking on a deleted change puts the branch in preview mode so you can view the old value without affecting the current state of the branch.
+
+![A deleted change in the version control panel is selected. The change is shown in an initial variable value, and the formula editor is open showing the old change. There is a banner at the top of the editor stating that you are previewing a commit, with options to dismiss the dialog or to stop previewing.|16/9](version-control-deleted-change.webp 'View deleted changes')
 
 ## Main branch
 
