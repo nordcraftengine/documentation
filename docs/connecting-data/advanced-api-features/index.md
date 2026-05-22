@@ -45,8 +45,13 @@ To configure redirect rules:
 1. In the **Redirect rules** section, click the [kbd]+[kbd] button to add a new rule
 2. Name your rule descriptively
 3. Create a formula that evaluates to a URL or path when API response conditions are met; it should evaluate to `null` if the conditions are not met
+4. Use the default status code ([302](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/302)) or specify a different [redirect HTTP status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#redirection_messages) for the redirect rule, using a formula if needed. This will be used for server-side redirects.
 
 Rules are evaluated in the order they appear, and the first matching rule determines the redirect destination.
+
+::: warning
+When using a custom HTTP status code for redirect rules, ensure that the status code is appropriate for the type of redirect. For example, use `301` for permanent redirects and `302` for temporary redirects. This helps to avoid unintended consequences for SEO and caching as `301` redirects tend to be cached for a long time by browsers.
+:::
 
 ### Server-side vs. client-side redirects
 
