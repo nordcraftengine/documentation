@@ -29,7 +29,7 @@
     "@clickhouse/client-web": "1.11.1",
     "cheerio": "1.0.0",
     "hono": "4.8.2",
-    "marked": "15.0.11",
+    "marked": "17.0.1",
     "typesense": "2.0.3"
   }
 }
