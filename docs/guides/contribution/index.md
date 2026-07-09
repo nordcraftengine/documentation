@@ -180,6 +180,19 @@ Example requirements:
 - Set an appropriate `height` value in `rem` units
 - Add a description after the height (separated by a new line) that will be displayed within the example window
 
+### Service cards
+
+For service information cards, use the following format:
+
+@@@ service
+name: DatoCMS
+dataType: CMS
+supportedApis: REST, GraphQL
+description: A user-friendly and performance headless CMS.
+slug: slug-to-page-containing-integration-guide
+logoUrl: url-to-image-stored-in-guide-folder
+@@@
+
 ## YouTube videos
 
 To embed YouTube videos in the documentation, use the following format:
