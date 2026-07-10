@@ -44,11 +44,12 @@ You can add services in Nordcraft in two ways.
 To connect to Supabase:
 
 1. Enter a name for the service (defaults to "Supabase")
-2. Provide the following credentials:
-   - **Project URL**: The URL of your Supabase project
-   - **Anon public key**: The anonymous/public API key for your project
+2. Press "Connect Supabase" to authenticate with Supabase
+3. After returning to the Nordcraft editor, pick the project you want to connect to from the list of available Supabase projects
 
-You can find these credentials in your Supabase project settings. Once the Supabase service is added, Nordcraft will validate the connection to ensure it can access the API documentation.
+By default, Supabase doesn't expose its OpenAPI documentation. Therefore, it's necessary to authenticate through Nordcraft's Supabase OAuth App. This will store a cookie in your browser, allowing Nordcraft to access the OpenAPI documentation for your Supabase project.
+
+If you want to use GraphQl with Supabase, you must [enable the GraphQL extension](https://supabase.com/docs/guides/database/extensions/pg_graphql#enable-the-extension) and [allow introspection queries](https://github.com/orgs/supabase/discussions/46320).
 
 :::tip
 To get up and running quickly with Supabase, including auth, realtime, and file uploads, install the [Supabase Connect](https://supabase_connect.nordcraft.site/) package in your project, or create a new website using the [Nordbase](https://nordbase.nordcraft.site) template, which is a pre-configured template that demonstrates all functionality of the Supabase Connect package.
