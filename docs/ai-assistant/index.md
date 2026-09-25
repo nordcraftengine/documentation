@@ -63,6 +63,10 @@ The amount of credits used depends on the model you chose and the complexity of 
 In Build mode you can also attach an image to your request, such as a screenshot of a design. The AI will use this image when analyzing your request but cannot insert it directly into the design.
 :::
 
+## Connectors
+
+You can extend what the AI Assistant can do by adding [Connectors](/connectors). Connectors allow the AI to connect directly to external design tools like Figma and Miro, or fetch content and data models from platforms like Supabase, Contentful, and Sanity.
+
 ## What the AI can't do
 
 While the AI Assistant in Build mode can propose changes for your project, it cannot apply those changes directly. You must review and manually accept or reject each suggestion, ensuring you maintain full control over your project.

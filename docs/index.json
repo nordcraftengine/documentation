@@ -2,6 +2,8 @@
   { "path": "about", "label": "About" },
   { "path": "video-tutorials", "label": "Video tutorials" },
   { "path": "ai-assistant", "label": "AI Assistant" },
+  { "path": "connectors", "label": "Connectors" },
+  { "path": "mcp-server", "label": "MCP server" },
   { "path": "core-concepts", "label": "Core concepts" },
   { "path": "use-cases", "label": "Use cases" },
   { "path": "app-examples", "label": "Website examples" },
