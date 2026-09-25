@@ -1,28 +1,30 @@
 ---
 title: MCP server
-description: Connect popular IDEs and AI clients to the Nordcraft MCP server to securely find, inspect, and update your Nordcraft projects.
+description: Connect popular AI tools to Nordcraft so they can help you find projects, review changes, validate files, and make updates.
 ---
 
 # MCP server
 
-The Model Context Protocol (MCP) is an open standard that lets AI applications connect to external tools and data. With the Nordcraft MCP server, you can use an MCP-compatible AI client to find your projects, inspect branches and project files, validate changes, and edit Nordcraft projects.
+[Model Context Protocol (MCP)](https://modelcontextprotocol.io/) is an open standard that connects AI assistants and coding tools to other services. With the Nordcraft MCP server, you can ask your AI tool to find your projects, explore branches, review or change files, and check your work.
 
-The server is hosted by Nordcraft and uses the remote [Streamable HTTP transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports). It authenticates each user through an interactive OAuth 2.0 authorization-code flow with Proof Key for Code Exchange (PKCE).
+The connection is hosted by Nordcraft. When you set it up, you sign in to Nordcraft in your browser and choose which permissions to approve. You never need to copy your Nordcraft password or another secret into your AI tool.
 
-## Connect an MCP client
+## Connect your AI tool
 
-You need an MCP client that supports remote Streamable HTTP servers and interactive OAuth. You also need access to the Nordcraft projects and organizations that you want the client to use.
+You need an AI tool that supports MCP connections, such as one of the tools listed below. You also need access to the Nordcraft projects and organizations that you want to use.
 
-Use the following server URL in your MCP client:
+All of the setup instructions use the same Nordcraft server address:
 
 ```text
 https://api.nordcraft.com/mcp
 ```
 
-After you add the server configuration, start the connection or use the client's authentication action. A browser window opens so you can sign in to Nordcraft, review the requested permissions, and approve access. The client stores the returned access token for future requests.
+Many AI tools let you add a server from a settings screen. If yours does, paste the address there. The examples below are only needed when your tool asks you to edit a settings file.
+
+After you add the address, your AI tool will ask you to connect. A browser window opens so you can sign in to Nordcraft, review the requested permissions, and approve access. Once approved, your AI tool can use the connection for future requests.
 
 :::info
-You do not need to create or copy an access token. Never add an access token, client secret, or `Authorization` header to an MCP configuration or project file.
+You do not need an API key or a manually created access token. Never paste a password, access token, or other secret into your AI tool's settings or a Nordcraft project.
 :::
 
 ### Claude Code
@@ -42,17 +44,17 @@ Then authenticate the server:
 
 ### Claude Desktop
 
-Claude Desktop uses a custom connector for remote MCP servers. Do not add the Nordcraft server to `claude_desktop_config.json`.
+Claude Desktop uses a custom connector to connect to MCP servers. Do not add the Nordcraft server to `claude_desktop_config.json`.
 
 1. In Claude Desktop, go to **Customize > Connectors**.
 2. Select **+** and then **Add custom connector**.
-3. Enter `https://api.nordcraft.com/mcp` as the remote MCP server URL.
+3. Enter `https://api.nordcraft.com/mcp` as the server address.
 4. Add the connector, select **Connect**, and approve access in the browser.
 5. Enable the connector for the conversations where you want to use it.
 
 ### VS Code with GitHub Copilot
 
-Open the Command Palette and run **MCP: Open User Configuration**. You can also add the server to a workspace `.vscode/mcp.json` file. Add the following configuration:
+Open the Command Palette and run **MCP: Open User Configuration**. You can also add the server to a workspace `.vscode/mcp.json` file. Add the following settings:
 
 ```json
 {
@@ -65,11 +67,11 @@ Open the Command Palette and run **MCP: Open User Configuration**. You can also 
 }
 ```
 
-Start or refresh the Nordcraft server from VS Code. When prompted, trust the server and complete the Nordcraft sign-in in your browser.
+Start or refresh the Nordcraft server from VS Code. When prompted, trust the server and sign in to Nordcraft in your browser.
 
 ### Cursor
 
-Create a global `~/.cursor/mcp.json` file, or a project-specific `.cursor/mcp.json` file, and add the following configuration:
+Create a global `~/.cursor/mcp.json` file, or a project-specific `.cursor/mcp.json` file, and add the following settings:
 
 ```json
 {
@@ -81,7 +83,7 @@ Create a global `~/.cursor/mcp.json` file, or a project-specific `.cursor/mcp.js
 }
 ```
 
-Reload Cursor if necessary, enable the server from **Customize**, and complete the browser authentication when Cursor first connects to it.
+Reload Cursor if necessary, enable the server from **Customize**, and sign in to Nordcraft when Cursor asks you to connect.
 
 ### Windsurf
 
@@ -113,90 +115,108 @@ In Zed, go to **Settings > AI > MCP Servers**, select **Add Server**, and then s
 }
 ```
 
-Because the configuration does not include an `Authorization` header, Zed starts the standard MCP OAuth flow and prompts you to authenticate in your browser.
+Zed will automatically ask you to sign in to Nordcraft when the server first connects. You do not need to add your Nordcraft login details to the settings.
 
-## Use the server
+### OpenCode
+
+Run the following command to add Nordcraft to all of your OpenCode projects:
+
+```bash
+opencode mcp add nordcraft --global --url https://api.nordcraft.com/mcp
+```
+
+To connect only the current project, remove `--global` from the command. You can check the connection by running:
+
+```bash
+opencode mcp list
+```
+
+If OpenCode reports that Nordcraft needs authentication, open OpenCode, run `/mcps`, select `nordcraft`, and sign in to Nordcraft in the browser.
+
+## Get started
+
+Once the connection is ready, you can use the tools you already know. You do not need to enter a tool name or remember its settings.
 
 For the best results:
 
-1. Use `current_user` to confirm the authenticated Nordcraft account and its granted scopes.
-2. Use `projects_search` to find the project short ID and organization ID.
-3. Use `branches_search` to inspect existing branches.
-4. Create and work on a feature branch instead of editing the read-only `main` branch.
-5. Use the file tools to inspect, edit, and validate the branch, and then use `diff` to review its changes.
+1. Ask your AI tool which Nordcraft account it is connected to.
+2. Ask it to find your project.
+3. Ask it to list the branches or create a new feature branch.
+4. Ask it to inspect, update, and validate files on that branch.
+5. Ask it to show you the changes before you merge them.
 
-All project file tools require both a project short ID and a branch name. File paths are arrays of path segments, such as `["components", "Header"]`, rather than slash-separated strings.
+If your AI tool chooses the wrong project or branch, tell it the project's short ID and branch name. Both are included in the project and branch results.
 
-You can also ask your AI client directly, for example:
+File changes are saved to the branch you select. The `main` branch is read-only, so ask your AI tool to create or use a feature branch for changes.
 
-- “Use the Nordcraft MCP server to find my projects and list the branches in my website project.”
-- “Use Nordcraft to inspect the components on my latest feature branch and suggest accessibility improvements.”
-- “Update the header on my feature branch, validate the files, and show me the changes before I merge them.”
+You can also ask your AI tool directly, for example:
 
-If your client does not select the Nordcraft tools automatically, name the **Nordcraft** server or a specific tool in your prompt.
+- “Use Nordcraft to find my website projects and show their branches.”
+- “Look at the components on my latest feature branch and suggest accessibility improvements.”
+- “Update the header on my feature branch, check the files for issues, and show me the changes before I merge them.”
 
-## Supported tools
+## Available tools
 
-The MCP client discovers the available tools after you authenticate. The Nordcraft MCP server currently provides the following tools.
+After you sign in, the Nordcraft tools become available to your AI tool. You will usually use them by describing what you want in everyday language. The list below explains what each tool can do and what information it needs.
 
-### Account and projects
+### Your account and projects
 
-| Tool              | Purpose                                                                  | Inputs                                                                                                     |
-| ----------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| `current_user`    | Returns the authenticated user's ID, name, username, and granted scopes. | None                                                                                                       |
-| `projects_search` | Finds Nordcraft projects that you can access.                            | Optional: `shortId`, `name`, `organizationId`, `isPrivate`, and `type` (`app` or `package`)                |
-| `projects_create` | Creates a project from Nordcraft's default starter template.             | `name` (1–64 characters), `shortId` (1–40 lowercase letters or numbers), `organizationId`, and `isPrivate` |
+| Tool              | What it does                                                                     | Information needed                                                                   |
+| ----------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `current_user`    | Checks which Nordcraft account is connected and which permissions are available. | Nothing                                                                              |
+| `projects_search` | Finds projects that you can access.                                              | Optional filters for a project's short ID, name, organization, visibility, or type   |
+| `projects_create` | Creates a new project from Nordcraft's starter template.                         | A project name, short ID, organization, and whether the project is private or public |
 
-`projects_search` returns up to 100 accessible projects, with the most recently updated projects first. The `name` filter matches part of a project name without considering case. Other project tools use the project's `short_id` value as `projectShortId`.
+A project name can be up to 64 characters. A short ID can contain up to 40 lowercase letters or numbers.
+
+`projects_search` returns up to 100 projects, with the most recently updated projects first. You can search by all or part of a project name, and the search does not consider capitalization.
 
 ### Branches and changes
 
-| Tool              | Purpose                                                                | Inputs                            |
-| ----------------- | ---------------------------------------------------------------------- | --------------------------------- |
-| `branches_search` | Lists branches in a project, with the newest branches first.           | `projectShortId`                  |
-| `branches_create` | Creates a branch in a project.                                         | `projectShortId` and `name`       |
-| `diff`            | Returns changes on a branch compared with the project's `main` branch. | `projectShortId` and `branchName` |
+| Tool              | What it does                                                | Information needed                        |
+| ----------------- | ----------------------------------------------------------- | ----------------------------------------- |
+| `branches_search` | Lists a project's branches, with the newest branches first. | The project                               |
+| `branches_create` | Creates a new branch in a project.                          | The project and a name for the new branch |
+| `diff`            | Shows what has changed on a branch compared with `main`.    | The project and branch                    |
 
-A new branch name must start with a lowercase letter, can contain lowercase letters, numbers, and dashes, and can be at most 32 characters long.
+A branch name must start with a lowercase letter. It can contain lowercase letters, numbers, and dashes, and can be up to 32 characters long.
 
 ### Project files
 
-| Tool             | Purpose                                                                          | Inputs                                                                      |
-| ---------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| `files_glob`     | Lists full paths for files that match a glob pattern.                            | `projectShortId`, `branchName`, and optional `pattern` (defaults to `**/*`) |
-| `files_read`     | Reads a project file and returns it in Nordcraft's NC format when applicable.    | `projectShortId`, `branchName`, `path`, and optional `patterns`             |
-| `files_edit`     | Applies an NC Diff patch to one new or existing file and saves it to the branch. | `projectShortId`, `branchName`, and `patch`                                 |
-| `files_validate` | Runs validation rules against one or more project files.                         | `projectShortId`, `branchName`, and `paths`                                 |
+| Tool             | What it does                                                                       | Information needed                                |
+| ---------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------- |
+| `files_glob`     | Finds files by folder or name pattern.                                             | The project, branch, and an optional file pattern |
+| `files_read`     | Reads a project file and returns it in a format that is easy for AI to understand. | The project, branch, and file                     |
+| `files_edit`     | Makes a change to one new or existing file and saves it to the branch.             | The project, branch, and requested change         |
+| `files_validate` | Checks one or more project files for issues.                                       | The project, branch, and files to check           |
 
-Glob matching is case-sensitive. For `files_read`, `path` is an array of segments and `patterns` can filter returned sections. For `files_validate`, `paths` is an array of path arrays, such as `[["components", "Header"], ["formulas", "total"]]`, and each path must contain at least two segments.
+The AI tool handles the file locations and edit format for you. To point it to a specific file, you can describe the folder and name, such as `components/Header`. File searches are case-sensitive.
 
-The `files_edit` patch must contain a complete NC Diff body inside a type-specific semantic XML tag. The opening tag includes the file `path` and a one-line commit `message`.
+### Built-in Nordcraft guidance
 
-### Nordcraft skills
+These tools do not change your project. Instead, they give your AI tool additional guidance for working with Nordcraft correctly.
 
-These tools return reference instructions that help an AI client work correctly with Nordcraft. They do not directly change a project and do not take project inputs.
+| Tool                    | Guidance it provides                                                  |
+| ----------------------- | --------------------------------------------------------------------- |
+| `skill-action`          | Creating custom actions and workflow steps                            |
+| `skill-formula`         | Creating project formulas and calculations                            |
+| `skill-component`       | Building components and pages, including their workflows and settings |
+| `skill-theme`           | Working with themes, fonts, colors, and design variations             |
+| `skill-stdlib-formulas` | Using Nordcraft's built-in formulas                                   |
+| `skill-stdlib-actions`  | Using Nordcraft's built-in actions                                    |
 
-| Tool                    | Reference                                                                            |
-| ----------------------- | ------------------------------------------------------------------------------------ |
-| `skill-action`          | Custom action JavaScript handlers and workflow statements                            |
-| `skill-formula`         | Project formulas and JavaScript-based calculation handlers                           |
-| `skill-component`       | Components and pages, including nodes, workflows, APIs, lifecycles, and patch syntax |
-| `skill-theme`           | Theme files, including metadata, fonts, custom properties, and variants              |
-| `skill-stdlib-formulas` | Built-in `@toddle/*` formulas                                                        |
-| `skill-stdlib-actions`  | Built-in `@toddle/*` actions                                                         |
+## Keep your projects safe
 
-## Security and permissions
-
-The MCP server acts with the access of the Nordcraft user who approves the connection. Your Nordcraft account permissions still determine which existing projects and organizations you can use.
+The AI tool acts on your behalf and can make real changes to your Nordcraft account. Only connect tools that you trust, and review the permissions and actions they request.
 
 :::warning
-Some tools can create projects and branches or change project files. Work on a feature branch, review every tool call, validate edited files, and inspect the branch diff before merging changes.
+Work on a feature branch. Review every change, check edited files for issues, and inspect the branch changes before merging anything into your live project.
 :::
 
-Follow these guidelines when using the server:
+Keep the connection safe by following these guidelines:
 
-- Review the requested OAuth permissions and only approve the access you need.
-- Review write operations before allowing your AI client to run them automatically.
-- Do not commit access tokens, client secrets, or `Authorization` headers to source control.
-- Do not store credentials in Nordcraft project files.
-- Disconnect the server from your MCP client when you no longer need the access.
+- Review requested permissions and only approve the access you need.
+- Review changes before allowing an AI tool to make them automatically.
+- Do not commit passwords, access tokens, or other secrets to source control.
+- Do not store passwords, access tokens, or other secrets in Nordcraft project files.
+- Disconnect the server from your AI tool when you no longer need it.
