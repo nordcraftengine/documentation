@@ -5,6 +5,10 @@ description: Connect popular AI tools to Nordcraft so they can help you find pro
 
 # MCP server
 
+::: info
+Looking to connect external tools like Figma, Miro, or your CMS to Nordcraft's built-in AI Assistant? Learn how to set up [Connectors](/connectors) instead.
+:::
+
 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) is an open standard that connects AI assistants and coding tools to other services. With the Nordcraft MCP server, you can ask your AI tool to find your projects, explore branches, review or change files, and check your work.
 
 The connection is hosted by Nordcraft. When you set it up, you sign in to Nordcraft in your browser and choose which permissions to approve. You never need to copy your Nordcraft password or another secret into your AI tool.
