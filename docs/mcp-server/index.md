@@ -13,11 +13,10 @@ The connection is hosted by Nordcraft. When you set it up, you sign in to Nordcr
 
 You need an AI tool that supports MCP connections, such as one of the tools listed below. You also need access to the Nordcraft projects and organizations that you want to use.
 
+:::info
 All of the setup instructions use the same Nordcraft server address:
-
-```text
 https://api.nordcraft.com/mcp
-```
+:::
 
 Many AI tools let you add a server from a settings screen. If yours does, paste the address there. The examples below are only needed when your tool asks you to edit a settings file.
 
