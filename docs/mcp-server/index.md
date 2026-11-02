@@ -15,7 +15,7 @@ You need an AI tool that supports MCP connections, such as one of the tools list
 
 :::info
 All of the setup instructions use the same Nordcraft server address:
-https://api.nordcraft.com/mcp
+https://mcp.nordcraft.com
 :::
 
 Many AI tools let you add a server from a settings screen. If yours does, paste the address there. The examples below are only needed when your tool asks you to edit a settings file.
@@ -31,7 +31,7 @@ You do not need an API key or a manually created access token. Never paste a pas
 Run the following command in your terminal:
 
 ```bash
-claude mcp add --transport http nordcraft https://api.nordcraft.com/mcp
+claude mcp add --transport http nordcraft https://mcp.nordcraft.com
 ```
 
 Then authenticate the server:
@@ -47,7 +47,7 @@ Claude Desktop uses a custom connector to connect to MCP servers. Do not add the
 
 1. In Claude Desktop, go to **Customize > Connectors**.
 2. Select **+** and then **Add custom connector**.
-3. Enter `https://api.nordcraft.com/mcp` as the server address.
+3. Enter `https://mcp.nordcraft.com` as the server address.
 4. Add the connector, select **Connect**, and approve access in the browser.
 5. Enable the connector for the conversations where you want to use it.
 
@@ -60,7 +60,7 @@ Open the Command Palette and run **MCP: Open User Configuration**. You can also 
   "servers": {
     "nordcraft": {
       "type": "http",
-      "url": "https://api.nordcraft.com/mcp"
+      "url": "https://mcp.nordcraft.com"
     }
   }
 }
@@ -76,7 +76,7 @@ Create a global `~/.cursor/mcp.json` file, or a project-specific `.cursor/mcp.js
 {
   "mcpServers": {
     "nordcraft": {
-      "url": "https://api.nordcraft.com/mcp"
+      "url": "https://mcp.nordcraft.com"
     }
   }
 }
@@ -92,7 +92,7 @@ Add the server to Windsurf's `mcp_config.json` file, normally located at `~/.cod
 {
   "mcpServers": {
     "nordcraft": {
-      "serverUrl": "https://api.nordcraft.com/mcp"
+      "serverUrl": "https://mcp.nordcraft.com"
     }
   }
 }
@@ -108,7 +108,7 @@ In Zed, go to **Settings > AI > MCP Servers**, select **Add Server**, and then s
 {
   "context_servers": {
     "nordcraft": {
-      "url": "https://api.nordcraft.com/mcp"
+      "url": "https://mcp.nordcraft.com"
     }
   }
 }
@@ -121,7 +121,7 @@ Zed will automatically ask you to sign in to Nordcraft when the server first con
 Run the following command to add Nordcraft to all of your OpenCode projects:
 
 ```bash
-opencode mcp add nordcraft --global --url https://api.nordcraft.com/mcp
+opencode mcp add nordcraft --global --url https://mcp.nordcraft.com
 ```
 
 To connect only the current project, remove `--global` from the command. You can check the connection by running:
