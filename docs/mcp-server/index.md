@@ -172,11 +172,13 @@ A project name can be up to 64 characters. A short ID can contain up to 40 lower
 
 ### Branches and changes
 
-| Tool              | What it does                                                | Information needed                        |
-| ----------------- | ----------------------------------------------------------- | ----------------------------------------- |
-| `branches_search` | Lists a project's branches, with the newest branches first. | The project                               |
-| `branches_create` | Creates a new branch in a project.                          | The project and a name for the new branch |
-| `diff`            | Shows what has changed on a branch compared with `main`.    | The project and branch                    |
+| Tool              | What it does                                                                   | Information needed                                   |
+| ----------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| `branches_search` | Lists a project's branches, with the newest branches first.                    | The project                                          |
+| `branches_create` | Creates a new branch in a project.                                             | The project and a name for the new branch            |
+| `diff`            | Shows what has changed on a branch compared with `main`.                       | The project and branch                               |
+| `preview_sync`    | Previews merging changes from `main` into a branch and checks for conflicts.   | The project, branch, and optional conflict decisions |
+| `sync_from_main`  | Merges changes from `main` into a branch and commits the result to the branch. | The project, branch, and conflict decisions          |
 
 A branch name must start with a lowercase letter. It can contain lowercase letters, numbers, and dashes, and can be up to 32 characters long.
 
@@ -185,8 +187,11 @@ A branch name must start with a lowercase letter. It can contain lowercase lette
 | Tool             | What it does                                                                       | Information needed                                |
 | ---------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------- |
 | `files_glob`     | Finds files by folder or name pattern.                                             | The project, branch, and an optional file pattern |
+| `files_search`   | Searches project files for matching text or regular expressions.                   | The project, branch, and search pattern           |
 | `files_read`     | Reads a project file and returns it in a format that is easy for AI to understand. | The project, branch, and file                     |
 | `files_edit`     | Makes a change to one new or existing file and saves it to the branch.             | The project, branch, and requested change         |
+| `files_rename`   | Renames a component, page, formula, or action within its folder.                   | The project, branch, file, and new name           |
+| `files_delete`   | Removes a component, page, formula, or action from a project.                      | The project, branch, and file to delete           |
 | `files_validate` | Checks one or more project files for issues.                                       | The project, branch, and files to check           |
 
 The AI tool handles the file locations and edit format for you. To point it to a specific file, you can describe the folder and name, such as `components/Header`. File searches are case-sensitive.
@@ -203,6 +208,7 @@ These tools do not change your project. Instead, they give your AI tool addition
 | `skill-theme`           | Working with themes, fonts, colors, and design variations             |
 | `skill-stdlib-formulas` | Using Nordcraft's built-in formulas                                   |
 | `skill-stdlib-actions`  | Using Nordcraft's built-in actions                                    |
+| `skill-sync`            | Resolving conflicts and syncing branches with `main`                  |
 
 ## Keep your projects safe
 
