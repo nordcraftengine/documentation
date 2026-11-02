@@ -5,7 +5,7 @@ description: Understand the four main sections of Nordcraft's editor interface -
 
 # The Nordcraft editor
 
-The Nordcraft editor is your workspace for building websites and packages. It provides an AI-native, visual, and code-grade environment designed around three distinct modes: **Play**, **Design**, and **Ship**.
+The Nordcraft editor is your workspace for building websites and packages. It provides an AI-native, visual environment designed around three distinct modes: **Play**, **Design**, and **Ship**.
 
 ![The Nordcraft editor, showing a full HTML element tree of HTML elements and components, and a card component on the canvas. The image is annotated with numbers that relate to the lists items below.|16/9](editor-overview.webp 'Editor overview'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events}
 
