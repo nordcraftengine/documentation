@@ -48,6 +48,10 @@
         "path": "project-sidebar"
       },
       {
+        "label": "Command palette",
+        "path": "command-palette"
+      },
+      {
         "label": "Packages",
         "path": "packages"
       },

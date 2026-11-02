@@ -22,7 +22,16 @@ title: Creating custom actions using JavaScript
 
 To create an action:
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
+### Using the command palette (recommended)
+
+1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
+2. Select **Create action** (or type "Create action" and press [kbd]↵[kbd])
+3. Enter a name and short description for your action
+4. Write your JavaScript code in the code editor
+
+### Using the project sidebar
+
+1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon in the left toolbar
 2. Locate the **Actions** section, click the [kbd]+[kbd] button and enter a name
 3. Add a short description for your action
 4. Write your JavaScript code in the code editor

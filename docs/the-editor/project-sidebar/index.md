@@ -17,7 +17,7 @@ Use the icons at the left of the screen to access the following:
 4. **Version control**: View any changes made in the current branch of your project, see the branch history, and switch between branches
 
 ::: tip
-Open the project files view using the keyboard shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]. Close the file view by pressing [kbd]Escape[kbd].
+You can also open files and run actions without the sidebar using the [command palette](/the-editor/command-palette). Press [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd] to search files, or [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] to search actions.
 :::
 
 ## Structure

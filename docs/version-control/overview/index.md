@@ -81,6 +81,10 @@ You can preview your branch to test changes before publishing.
 - You can share this preview link with others for feedback
 - All changes made on a branch are automatically synced to the preview link
 
+### Ship and publish a branch
+
+When work on a branch is complete, switch to [Ship mode](/version-control/managing-changes#accessing-ship-mode) ([kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]) in the editor. Ship mode provides a dedicated review view of all changed files, resolves any conflicts with `main`, and lets you publish your changes directly to the live site.
+
 ### Delete branch
 
 You can delete a branch by selecting `Delete` in the branch menu. This will remove the branch along with all of the changes made on it.

@@ -25,7 +25,15 @@ Project formulas appear in the formula selection dropdown throughout your projec
 
 To create a project formula:
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
+### Using the command palette (recommended)
+
+1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
+2. Select **Create formula** (or type "Create formula" and press [kbd]↵[kbd])
+3. Enter a name for your formula in the dialog
+
+### Using the project sidebar
+
+1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon in the left toolbar
 2. Find the **Formulas** section, click the [kbd]+[kbd] button and enter a name for your formula in the dialog
 3. Add input parameters with test values (optional)
 4. Add a description to your formula (optional)
