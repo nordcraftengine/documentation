@@ -5,7 +5,7 @@ description: Manage and create branches, manage changes in your active branch, a
 
 # Managing changes
 
-In Nordcraft, you can view, inspect, and publish changes in your active branch using **Ship mode** or the version control sidebar panel. In case of conflicts between your active branch and the main branch, you can resolve them before publishing.
+In Nordcraft, you can view, inspect, and publish changes in your active branch using **Ship mode**. In case of conflicts between your active branch and the main branch, you can resolve them before publishing.
 
 ## Accessing Ship mode
 
