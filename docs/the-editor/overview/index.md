@@ -11,7 +11,7 @@ The Nordcraft editor is your workspace for building websites and packages. It pr
 
 ## The three editor modes
 
-In Nordcraft 3.0, the editor is built around three core modes available in the [bottom bar](/the-editor/bottom-bar):
+The Nordcraft editor is built around three core modes available in the [bottom bar](/the-editor/bottom-bar):
 
 1. **Play mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd]): Explore, interact with your site, and build features through conversational and visual AI prompts. Play mode is the default mode when opening projects.
 2. **Design mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]D[kbd]): Visually design and manipulate elements, configure styles, set up HTML attributes, and build component logic.
