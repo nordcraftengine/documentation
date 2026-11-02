@@ -28,7 +28,7 @@ export const TARGETS: ScreenshotTarget[] = [
     description: 'Command palette open in action mode',
     setup: async (page: Page) => {
       await page.waitForTimeout(4000)
-      await page.keyboard.press('Meta+k')
+      await page.keyboard.press('Meta+Shift+k')
       await page.waitForSelector('#quick-actions-input', { timeout: 5000 })
       await page.waitForTimeout(800)
     },

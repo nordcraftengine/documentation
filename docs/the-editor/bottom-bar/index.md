@@ -13,7 +13,7 @@ The bottom bar is the primary control center in the Nordcraft editor. It houses 
 
 On the right side of the bottom bar is the mode switcher, allowing you to transition between the three core phases of building in Nordcraft:
 
-1. **Play mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd]): Explore, prompt, and iterate with the AI assistant.
+1. **Play mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd]): Explore, prompt, and iterate with the AI assistant.
 2. **Design mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]D[kbd]): Fine-tune layouts, styles, HTML attributes, and workflows.
 3. **Ship mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]): Review file diffs, resolve conflicts, and publish changes to the live site.
 
@@ -51,5 +51,5 @@ When switching to Ship mode, the bottom bar expands into a publishing dock:
 - **Publish on Discord**: An optional toggle for projects integrated with Discord notification webhooks.
 
 ::: tip
-You can also toggle full screen Test mode at any time with [kbd]Option/Alt[kbd] + [kbd]T[kbd] to preview your application without any editor chrome.
+You can also toggle full-screen Interactive mode at any time with [kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd] to preview and test your application without any editor chrome.
 :::

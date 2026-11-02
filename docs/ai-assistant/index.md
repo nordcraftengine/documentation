@@ -9,9 +9,9 @@ In Nordcraft you get access to your very own AI Assistant that understands the c
 
 ## Open the AI Assistant and Play mode
 
-In Nordcraft 3.0, the AI Assistant is integrated directly with **Play mode**. You can access it by clicking the Play mode button on the [bottom bar](/the-editor/bottom-bar) or using the shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd].
+The AI Assistant is integrated directly with **Play mode**. You can access it by clicking the Play mode button on the [bottom bar](/the-editor/bottom-bar) or using the shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd].
 
-If you are already in Play mode, pressing [kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd] automatically focuses the prompt input field so you can immediately begin typing.
+If you are already in Play mode, pressing [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd] automatically focuses the prompt input field so you can immediately begin typing.
 
 ![The Nordcraft editor, showing the AI Assistant window open on the right, with an input field at the bottom of it that says start typing. The Ask AI button on the bottom bar is hovered over, which shows it having a lighter grey background than the grey background of the bottom bar.|16/9](ai-assistant.webp 'AI Assistant')
 

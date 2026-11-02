@@ -7,7 +7,7 @@ description: Learn to navigate, select elements, and resize the canvas workspace
 
 The canvas is your central workspace in the Nordcraft editor where you visually build and interact with your website.
 
-![The Nordcraft canvas viewed in test mode, with no left or right panels visible, showing a card component with an image, headline, subtitle and button.|16/9](canvas.webp 'Canvas'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=events&canvas-width=1077.6&canvas-height=800&mode=test}
+![The Nordcraft canvas viewed in Interactive mode, with no left or right panels visible, showing a card component with an image, headline, subtitle and button.|16/9](canvas.webp 'Canvas'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=events&canvas-width=1077.6&canvas-height=800&mode=test}
 
 ## Interacting with elements
 
@@ -16,8 +16,8 @@ The way you interact with elements on the canvas depends on your active [editor 
 - **Selection**: With the **Select tool** ([kbd]V[kbd]) active, click an element to select it. This highlights it in both the canvas and the element tree, opening its properties in the right panel.
 - **Deselection**: Press [kbd]Escape[kbd] or click on the background outside the canvas to deselect.
 - **Quick Interaction**: Press [kbd]C[kbd] or click the hand/cursor icon on the bottom bar to switch to the **Interact tool**. This lets you click buttons, test hover states, and input forms directly without leaving your current mode.
-- **Test Mode**: Press [kbd]Option/Alt[kbd] + [kbd]T[kbd] to toggle full-screen test mode, hiding all sidebars and toolbars.
-- **AI Reference**: In Play mode, press [kbd]I[kbd] to tag elements as references in your AI prompt.
+- **Interactive Mode**: Press [kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd] to toggle full-screen Interactive mode (formerly known as test mode, previously [kbd]T[kbd] or [kbd]Option/Alt[kbd] + [kbd]T[kbd]), hiding all sidebars and toolbars to preview and test your application.
+- **AI Reference**: In Play mode, click elements to tag them as references in your AI prompt.
 - **Visual Annotations**: In Play mode, press [kbd]T[kbd] (or [kbd]P[kbd], [kbd]R[kbd], [kbd]O[kbd], [kbd]L[kbd]) to draw markup directly onto the canvas to visually guide the AI assistant.
 - **Direct Canvas Editing**: In Design mode, use the **Frame tool** ([kbd]F[kbd]) to draw container divs, the **Text tool** ([kbd]T[kbd]) to create text elements, and the **Transform tool** ([kbd]W[kbd]) to adjust dimensions and positioning directly on the canvas.
 - **Hidden elements**: Selecting a hidden element from the element tree makes it visible on the canvas, including any hidden parent elements.

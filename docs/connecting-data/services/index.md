@@ -29,16 +29,16 @@ You can add services in Nordcraft in two ways.
 
 ### From the command palette (recommended)
 
-1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
+1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
 2. Select **Create service** (or type "Create service" and press [kbd]↵[kbd])
 3. Select your desired service from the available options
 
-### From the project sidebar
+### From the sidebar
 
-![The project sidebar is visible to the left of the editor, showing the plus button next to the services list. The plus button has been clicked, which shows a new dialog listing three available pre-configured services available to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-project-sidebar.webp 'Add a service from project sidebar')
+![The services list is visible to the left of the editor. Clicking the plus button opens a dialog listing available pre-configured services to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-project-sidebar.webp 'Add a service from sidebar')
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon in the left toolbar
-2. Navigate to the **Services** section and click the [kbd]+[kbd] button to add a new service
+1. Click the [kbd]Services[kbd] button in the left sidebar to open the list of services
+2. Click the [kbd]+[kbd] button to add a new service
 3. Select your desired service
 
 ## Configure specific services

@@ -9,19 +9,19 @@ Keyboard shortcuts in Nordcraft provide quick access to modes, navigation, editi
 
 ## Editor modes
 
-Nordcraft 3.0 introduces three dedicated modes to support your entire workflow:
+The Nordcraft editor has dedicated modes to support your entire workflow:
 
-- [kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd] - Switch to **Play mode** (or focus the AI prompt input)
+- [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd] - Switch to **Play mode** (or focus the AI prompt input)
 - [kbd]Cmd/Ctrl[kbd] + [kbd]D[kbd] - Switch to **Design mode**
 - [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd] - Switch to **Ship mode**
-- [kbd]Option/Alt[kbd] + [kbd]T[kbd] - Toggle test mode
+- [kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd] - Toggle **Interactive mode** (formerly test mode, previously [kbd]T[kbd] or [kbd]Option/Alt[kbd] + [kbd]T[kbd])
 
 ## Navigation and tabs
 
 Quickly navigate between files, commands, and open editor tabs:
 
-- [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd] - Open [command palette](/the-editor/command-palette) in file search mode
-- [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] or [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]P[kbd] - Open [command palette](/the-editor/command-palette) in action mode
+- [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] - Open [command palette](/the-editor/command-palette) in file search mode
+- [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] - Open [command palette](/the-editor/command-palette) in action mode (quick actions)
 - [kbd]Option/Alt[kbd] + [kbd]→[kbd] - Next tab
 - [kbd]Option/Alt[kbd] + [kbd]←[kbd] - Previous tab
 - [kbd]Option/Alt[kbd] + [kbd]1-9[kbd] - Switch to tab by index (1 to 9)

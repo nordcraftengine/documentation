@@ -5,48 +5,40 @@ description: Use the project sidebar to access pages, components, APIs, project 
 
 # Project sidebar
 
-The project sidebar provides an overview of your project files and resources, any issues detected in your project, and any changes made in the current branch you are working in.
+The project sidebar provides an overview of your project files and resources, any issues detected in your project.
 
 ![The project sidebar is visible, showing three existing pages, and collapsed sections for components, services, actions, formulas, media, themes and settings. The image is annotated corresponding to the list items below.|16/9](project-sidebar.webp 'Project sidebar')
 
-Use the icons at the left of the screen to access the following:
+The left sidebar provides direct access to all of the following:
 
-1. **Files**: View all files, components, services, actions, formulas, media, themes and settings in your project
-2. **View and install packages**: Browse, search for, and install Nordcraft packages
-3. **Issues**: View issues found in your project and get advice on how to fix them (an orange dot is visible when issues are detected)
-4. **Version control**: View any changes made in the current branch of your project, see the branch history, and switch between branches
+- **Pages**: View, search, and create application [pages](/pages/overview) and routes (including redirects and proxies)
+- **Components**: Access and manage all reusable [components](/components/overview) in your project
+- **Services**: Configure API connections to external [services](/connecting-data/services)
+- **Media**: Browse and upload image files in your [media](/media/overview) library
+- **Formulas**: Create and manage project-wide [formulas](/formulas/project-formulas)
+- **Actions**: Write and edit custom JavaScript [actions](/actions/overview)
+- **Themes**: Open the [theme](/styling/themes) editor to manage design tokens, colors, and typography
+- **Fonts**: Install and manage web fonts across your project
+- **Config**: Configure project settings including favicon, robots.txt, sitemap, app manifest, and service worker
+- **Packages**: Browse, search for, and install [packages](/packages/overview)
+- **Issues**: View project diagnostics and get guidance on fixing errors or warnings (badged with an alert dot when issues exist)
+- **History**: Inspect branch commit history
 
 ::: tip
-You can also open files and run actions without the sidebar using the [command palette](/the-editor/command-palette). Press [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd] to search files, or [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] to search actions.
+You can also open files and run actions without using the sidebar by opening the [command palette](/the-editor/command-palette). Press [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] to search files, or [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] to run quick actions.
 :::
 
-## Structure
+## Navigating the sidebar
 
-### Search
+Clicking any file category button (such as **Pages**, **Components**, or **Actions**) opens a dedicated drawer:
 
-With the files icon selected, search files by typing in the search field at the top of the sidebar.
-
-### Recent
-
-Displays files you have recently accessed for quick navigation between components, pages and other files.
-
-### Content sections
-
-Each section can be expanded or collapsed and includes a [kbd]+[kbd] button to create new items (except for themes and settings):
-
-- [Pages](/pages/overview): Pages in your project
-- [Components](/components/overview): Reusable components in your project
-- [Services](/connecting-data/services): API connections to external services with an OpenAPI specification
-- [Actions](/actions/overview): Global actions (custom JavaScript code) in your project
-- [Formulas](/formulas/project-formulas): Project formulas that can be accessed from any page or component in your project
-- [Media](/media/overview) Image files uploaded for use in your project
-- Fonts: All fonts currently installed in your project
-- [Themes](/styling/theme): Design tokens including colors, spacing, and typography
-- **Settings**: Project configurations including favicon, robots.txt, sitemap, app manifest and service worker
+- **Search**: Filter items in the active list using the search input at the top of the panel.
+- **Create new items**: Click the [kbd]+[kbd] button at the top of the list to create a new page, component, service, formula, or action.
+- **Context menu**: Right-click any item in the list to access file actions such as rename, duplicate, copy, or delete.
 
 ## Project settings
 
-At the bottom of the files view of the project sidebar, you can configure the following settings for your project:
+Click the [kbd]Config[kbd] button in the left sidebar to configure the following settings for your project:
 
 - **Favicon**: Upload a [favicon](https://developer.mozilla.org/en-US/docs/Glossary/Favicon) for your project - available at `/favicon.ico`
 - **Robots.txt**: Target a custom [robots.txt](https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt) document (with a URL) - available at `/robots.txt`

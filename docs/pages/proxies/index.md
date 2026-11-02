@@ -9,9 +9,9 @@ You can use proxies to map one URL to another URL. Using a proxy hides the path 
 
 You may want to use proxies to serve content from domains that are no longer in use, but where the content is still relevant. You may also want to use proxies to serve utility content like sitemap.xml files, robot.txt files, and ads.txt files. A proxy could also be used to send content to a different service, but on your own origin, for instance to a GraphQL service.
 
-Proxies are listed in the [project sidebar](/the-editor/project-sidebar) in the **Pages** section.
+Proxies are listed in the left sidebar under the [kbd]Pages[kbd] button (pages and routes).
 
-Create a proxy by clicking the [kbd]+[kbd] button in the **Pages** section header, and select the **Proxy** tab. You will then see configuration options divided into two main sections:
+Create a proxy by clicking the [kbd]Pages[kbd] button in the left sidebar, clicking the [kbd]+[kbd] button at the top of the list, and selecting the **Proxy** tab. You will then see configuration options divided into two main sections:
 
 ## Source
 

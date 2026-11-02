@@ -7,7 +7,7 @@ description: Create design systems with Nordcraft's theme tools for managing col
 
 Themes in Nordcraft provide a centralized way to manage design tokens across your entire project. By defining colors, spacing, typography and other visual elements in one place, you can ensure styles are consistent across your project. All theme variables are CSS variables, and are available to use in the [style panel](/the-editor/element-panel#style-panel).
 
-To access the theme editor, open the [project sidebar](/the-editor/project-sidebar#project-sidebar) and find the `Themes` section. You can also open the theme dialog from the [bottom bar](/the-editor/bottom-bar#bottom-bar). Here you can edit your theme with a live view of your changes in context.
+To access the theme editor, click the [kbd]Themes[kbd] button in the left sidebar. You can also open the theme dialog from the [bottom bar](/the-editor/bottom-bar#bottom-bar). Here you can edit your theme with a live view of your changes in context.
 
 ![The Nordcraft theme editor. On the left is the CSS variable grouping. On the central canvas, a table of theme variables are displayed with their type inputs.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default}
 
@@ -101,7 +101,7 @@ For each theme variable you add, you can define different values for that variab
 
 To create and manage multiple themes:
 
-1. Open the theme editor from the [project sidebar](/the-editor/project-sidebar#project-sidebar)
+1. Open the theme editor by clicking the [kbd]Themes[kbd] button in the left sidebar
 2. Click the `+` button next to your themes row to add a new theme, or duplicate an existing theme using the context menu of an existing theme
 3. Define different values for your theme variables in each theme
 

@@ -7,18 +7,20 @@ description: Quickly search and open project files, create new pages or componen
 
 The command palette is the fastest way to navigate your project, jump between files, and perform actions directly from your keyboard without using the sidebar.
 
+![The Nordcraft command palette open with action commands visible.|16/9](command-palette.webp 'Command palette'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800}
+
 ## Open the command palette
 
 The command palette operates in two modes:
 
-- **File search (Quick open)**: Press [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd] to search and open any file in your project.
-- **Action search**: Press [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] or [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]P[kbd] to open the palette pre-filled with the action prefix (`>`) and execute editor actions.
+- **File search (Quick open)**: Press [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] to search and open any file in your project.
+- **Action search**: Press [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] to open the palette pre-filled with the action prefix (`>`) and execute editor actions.
 
 You can also switch between file search and action search simply by typing or deleting the `>` character at the start of the input.
 
 ## File search
 
-When opened with [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd], the command palette displays your recently opened files and lets you search across all project resources:
+When opened with [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd], the command palette displays your recently opened files and lets you search across all project resources:
 
 - **Components**: Reusable UI components
 - **Pages**: Top-level application pages and routes
@@ -31,7 +33,7 @@ Start typing any part of a file name to fuzzy-filter the list. Use the [kbd]↑[
 
 ## Action search
 
-When opened with [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] (or by typing `>` in the search input), the command palette lets you execute common editor commands:
+When opened with [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] (or by typing `>` in the search input), the command palette lets you execute common editor commands:
 
 ### Creating new project files
 

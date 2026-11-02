@@ -1,6 +1,6 @@
 ---
 title: Create a page
-description: Learn how to create and manage new pages in your Nordcraft project by using the project sidebar and some handy keyboard shortcuts.
+description: Learn how to create and manage new pages in your Nordcraft project using the sidebar and command palette.
 ---
 
 # Create a page
@@ -11,15 +11,14 @@ There are two ways to create a new page in Nordcraft:
 
 ## Using the command palette (recommended)
 
-1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
+1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
 2. Select **Create page** (or type "Create page" and press [kbd]↵[kbd])
 3. Enter a name for your page and confirm
 
-## Using the project sidebar
+## Using the sidebar
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon in the left toolbar
-2. **(A)** Find the "Pages" section and click the [kbd]+[kbd] button next to it or
-   **(B)** Click the [kbd]+[kbd] button next to the branch name at the top of the [project sidebar](/the-editor/project-sidebar) and choose `New page`
+1. Click the [kbd]Pages[kbd] button in the left sidebar to open the list of pages and routes
+2. Click the [kbd]+[kbd] button at the top of the list and choose `New page`
 3. Enter a name for your page and click [kbd]Create page[kbd]
 
 :::tip
