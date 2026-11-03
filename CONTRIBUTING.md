@@ -8,7 +8,18 @@ This guide contains all the information you need about:
 
 - formatting requirements
 - content standards
+- screenshot generation and processing tools
 - the contribution workflow process
+
+## Screenshots
+
+We provide built-in scripts to automate screenshot generation and keep images consistent with documentation guidelines:
+
+- `bun run screenshots [target]`: Automatically capture documentation screenshots using Playwright.
+- `bun run screenshots:record [target]`: Open an interactive browser with session mocks to record user clicks for new screenshots.
+- `bun run screenshots:process <input.png> <target>`: Convert and resize external PNG/JPEG captures into standard (`800x450`) and large (`3200x1800`) WebP files with annotations.
+
+See the [Contribution Guide](/docs/guides/contribution/index.md#screenshot-tooling) for full details.
 
 ## List of Contributors
 

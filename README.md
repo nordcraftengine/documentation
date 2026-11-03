@@ -30,7 +30,7 @@ The order in which sections and pages appear is defined in the [docs/index.json]
 
 ## Contributing
 
-We welcome contributions from our community! If you'd like to contribute to the documentation, please read our [Contribution Guide](/docs/guides/contribution-guide/index.md) for details on our code of conduct, the process for submitting pull requests and an explanation of our documentation structure.
+We welcome contributions from our community! If you'd like to contribute to the documentation, please read our [Contribution Guide](/docs/guides/contribution/index.md) for details on our code of conduct, the process for submitting pull requests, screenshot tooling, and an explanation of our documentation structure.
 
 For quick fixes, you can click the "Edit" button on any documentation page, which will take you directly to the corresponding file in this repository.
 
