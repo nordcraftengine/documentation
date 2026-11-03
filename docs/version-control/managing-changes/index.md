@@ -14,11 +14,11 @@ You can enter Ship mode at any time using:
 - The keyboard shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]
 - The **Ship** button on the [bottom bar mode switcher](/the-editor/bottom-bar)
 
-![Open the version control history using the history button in the left sidebar activity bar.|16/9](version-control-icon.webp 'Version control')
-
 ## Ship mode workspace
 
 When you switch to Ship mode, the editor adapts into a dedicated diff and release workspace:
+
+![The Ship mode changes view, displaying the list of modified files on the branch, conflict status, and the publishing dock.|16/9](version-control-changes.webp 'Ship mode changes'){https://editor.nordcraft.com/projects/docs_examples/branches/main/ship/changes}
 
 1. **Changes sidebar**: Displays all files modified on your branch as well as recent updates to the `main` branch.
 2. **Diff and inspection view**: Selecting any modified file in the sidebar opens a structured side-by-side comparison of its nodes, styles, attributes, and formulas.
