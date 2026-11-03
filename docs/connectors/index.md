@@ -36,54 +36,51 @@ Connectors turn the AI Assistant from a general helper into a tailored collabora
 
 - **FLORA**: Connect your FLORA account so the AI can generate images, videos, and creative assets with 50+ AI models directly for your Nordcraft pages and components.
 
-### Build storefronts and e-commerce
-
-- **Shopify**: Connect your Shopify store to let the AI read your products, collections, and catalog data to build custom storefronts, product grids, and shopping experiences.
-
 ### Sync project context and tasks
 
-- **Issue trackers, repositories, and tools (Linear, GitHub, Lovable)**: Give the AI access to task descriptions, user stories, code repositories, or Lovable projects so it understands your project requirements and structure as you build.
+- **Issue trackers and repositories (Linear, GitHub)**: Give the AI access to task descriptions, user stories, or code repositories so it understands your project requirements and structure as you build.
 
 ## Standard vs. custom connectors
 
-Nordcraft supports two types of connectors depending on how the external service handles authentication:
-
-| Connector type | Authentication method                             | When to use                                                                                                     |
-| -------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Standard**   | One-click OAuth login                             | Services that support direct browser login. You do not need to generate or paste any access tokens.             |
-| **Custom**     | Pre-generated token / Personal Access Token (PAT) | Services that require personal tokens, extra configuration (like team IDs), or private self-hosted MCP servers. |
+In Nordcraft, connectors are divided into **standard connectors** (services pre-configured and listed in Nordcraft) and **custom connectors** (connecting to any external MCP server not on the list).
 
 ### Standard connectors
 
-Standard connectors provide a seamless setup. You simply select the provider, click [kbd]Connect[kbd], and log in through your browser to approve access. Nordcraft handles the connection securely behind the scenes.
+Standard connectors are pre-configured integrations built directly into Nordcraft. Depending on the service, authentication is handled in one of four ways:
+
+- **OAuth with a known server URL**: Simply click [kbd]Connect[kbd] and sign in to your account in your browser. Nordcraft manages the server endpoint and connection securely (e.g., Contentful, DatoCMS, FLORA, Linear, Miro, Notion, Sanity, Supabase, Webflow).
+- **OAuth with a custom server URL**: The service uses browser login (OAuth), but you provide your specific instance or server URL before connecting (e.g., Umbraco).
+- **Token with a known server URL**: Nordcraft connects to the known service endpoint, but you provide an access token from your account, along with any required details (e.g., Figma, GitHub, Excalidraw).
+- **Token with a custom server URL**: You provide both your workspace/instance URL and your personal API token (e.g., Xano).
 
 Supported standard connectors include:
 
 - **Contentful**: Access content models and entries.
 - **DatoCMS**: Explore your DatoCMS schema and records.
-- **Flora**: Generate images, videos, and creative assets with 50+ AI models.
-- **Linear**: Read issues, cycles, and project tasks.
-- **Lovable**: Sync features and structure from Lovable projects.
-- **Miro**: Read boards, shapes, and sticky notes.
-- **Notion**: Read pages and databases from your Notion workspace.
-- **Sanity**: Inspect datasets, document types, and fields.
-- **Shopify**: Read products, collections, and store data.
-- **Supabase**: Interact with your Supabase database and project structure.
-- **Webflow**: Access Webflow CMS items and site structure.
-
-### Custom connectors
-
-Custom connectors are used when a service requires a Personal Access Token (PAT) or extra configuration, or when you want to connect your own self-hosted MCP server:
-
-- **Figma**: Requires a Personal Access Token (access token) created in your Figma account (**Settings > Security**) and your **Figma Team ID**.
+- **Excalidraw**: Read drawings, wireframes, and whiteboard sketches using an access token.
+- **Figma**: Inspect frames, components, typography, colors, and layout structures from your Figma files. Requires a Personal Access Token (access token) created in your Figma account (**Settings > Security**) and your **Figma Team ID**.
   ::: warning
   The Figma connector has very limited functionality if you are not on a paid Figma plan, as Figma limits access to team files and inspection APIs on free plans.
   :::
-- **GitHub**: Requires a Personal Access Token created in your [GitHub settings](https://github.com/settings/personal-access-tokens) to let the AI explore your repositories.
-- **Xano**: Connect your Xano workspace using your Xano server URL and API token.
-- **Excalidraw**: Connect to the Excalidraw MCP service using an access token.
+- **FLORA**: Generate images, videos, and creative assets with 50+ AI models.
+- **GitHub**: Read code, issues, and repository structure using a Personal Access Token from your [GitHub settings](https://github.com/settings/personal-access-tokens).
+- **Linear**: Read issues, cycles, and project tasks.
+- **Miro**: Read boards, shapes, user flows, and sticky notes.
+- **Notion**: Read pages and databases from your Notion workspace.
+- **Sanity**: Inspect datasets, document types, and fields.
+- **Supabase**: Interact with your Supabase database and project structure.
 - **Umbraco**: Connect your Umbraco CMS using your Umbraco MCP server URL and an access token.
-- **Custom MCP server**: Connect any MCP-compliant server by providing the server's URL and authentication details (token, or optional OAuth URLs and client ID).
+- **Webflow**: Access Webflow CMS items and site structure.
+- **Xano**: Connect your Xano workspace using your Xano server URL and API token.
+
+### Custom connectors
+
+If you want to connect a service that is not in Nordcraft's list of standard connectors, you can add a **Custom connector**. This allows you to connect any external, self-hosted, or third-party MCP-compliant server.
+
+When adding a custom connector, provide the **Server URL**:
+
+- **OAuth authentication**: If your custom MCP server supports OAuth, simply enter the **Server URL** and leave the token field empty. When you click [kbd]Connect[kbd], Nordcraft will open a browser window for you to sign in.
+- **Token authentication**: If the server requires an access token, enter the **Server URL** and paste your pre-generated token. You can also supply optional OAuth endpoints (Auth URL, Token URL, Client ID) if your server requires custom client parameters.
 
 ## Add a connector
 
@@ -92,10 +89,11 @@ To add a connector to your project:
 1. Open the AI Assistant in the Nordcraft editor by clicking [kbd]Ask AI[kbd] in the bottom bar, or by pressing [kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd].
 2. Click the menu button ([kbd]☰[kbd]) in the top left of the AI Assistant header to open the AI panel menu.
 3. In the **Connectors** section at the top, click the [kbd]+[kbd] (Add connector) button.
-4. Select the desired service from the list or search for it.
-5. Configure the connector depending on the service type:
-   - **For Standard connectors**: Enter a name for the connector (or keep the default name) and click [kbd]Connect[kbd]. A browser window will open asking you to sign in and authorize Nordcraft.
-   - **For Custom connectors**: Enter a name, verify or enter the **Server URL** (if required), paste your **Token** (Personal Access Token), and fill in any required extra fields (such as the **Figma Team ID** for Figma). Then click [kbd]Connect[kbd].
+4. Select a service from the list of standard connectors, or select **Custom** to connect an unlisted MCP server.
+5. Configure the connector:
+   - **For standard OAuth connectors**: Enter a name (or keep the default name) and click [kbd]Connect[kbd]. A browser window will open asking you to sign in and authorize access. If prompted (such as for Umbraco), enter your server URL first.
+   - **For standard token-based connectors**: Enter a name, paste your access token, and fill in any required extra fields (such as your **Figma Team ID** for Figma, or your workspace URL for Xano). Then click [kbd]Connect[kbd].
+   - **For custom connectors**: Enter a name and your **Server URL**. If your server uses OAuth, leave the token field empty and click [kbd]Connect[kbd]. If it requires a token, enter your token (and optional OAuth client settings if needed) and click [kbd]Connect[kbd].
 6. Once connected, your new connector will appear in the Connectors list with a green status indicator.
 
 ::: info
@@ -118,7 +116,7 @@ You can manage all connectors in your project from the AI panel menu:
 
 Once a connector is added to your project, you do not need to do any extra setup. The AI Assistant automatically discovers the available tools and data from all connected services.
 
-When chatting in either **Ask mode** or **Build mode**, you can prompt the AI to use your connected tools:
+When chatting in **Ask**, **Plan**, or **Build** mode, you can prompt the AI to use your connected tools:
 
 - _"Inspect my Figma file and create a hero section component that matches the design."_
 - _"Look at my Supabase schema and show me how to structure an API to load products."_
