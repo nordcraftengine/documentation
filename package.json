@@ -3,6 +3,8 @@
   "scripts": {
     "lint": "eslint --quiet --report-unused-disable-directives .",
     "screenshots": "bun ./scripts/capture-screenshots.ts",
+    "screenshots:record": "bun ./scripts/record.ts",
+    "screenshots:process": "bun ./scripts/process-screenshot.ts",
     "prettier:write": "prettier --write  './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'",
     "prettier": "prettier --check './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'"
   },

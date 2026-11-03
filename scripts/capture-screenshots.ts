@@ -35,7 +35,7 @@ export interface ScreenshotTarget {
   annotations?: Annotation[]
 }
 
-function buildSvgOverlay(
+export function buildSvgOverlay(
   annotations: Annotation[],
   width: number,
   height: number,
@@ -81,6 +81,7 @@ const DEFAULT_BASE_URL =
   process.env.EDITOR_BASE_URL || 'https://screenshots-3-0-toddle.nordcraft.site'
 
 export const TARGETS: ScreenshotTarget[] = [
+  // 1. Command Palette
   {
     id: 'command-palette',
     name: 'command-palette',
@@ -88,7 +89,7 @@ export const TARGETS: ScreenshotTarget[] = [
     path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800',
     description: 'Command palette open in action mode',
     setup: async (page: Page) => {
-      await page.waitForTimeout(4000)
+      await page.waitForTimeout(500)
       await page.keyboard.press('Escape')
       await page.waitForTimeout(500)
       await page.keyboard.press('Meta+Shift+k')
@@ -96,6 +97,8 @@ export const TARGETS: ScreenshotTarget[] = [
       await page.waitForTimeout(800)
     },
   },
+
+  // 2. Editor Overview
   {
     id: 'editor-overview',
     name: 'editor-overview',
@@ -103,15 +106,17 @@ export const TARGETS: ScreenshotTarget[] = [
     path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events',
     description: 'Editor overview showing canvas, panels, and 3.0 bottom bar',
     setup: async (page: Page) => {
-      await page.waitForTimeout(4000)
+      await page.waitForTimeout(500)
     },
     annotations: [
       { type: 'badge', x: 550, y: 35, text: '1' },
       { type: 'badge', x: 450, y: 395, text: '2' },
-      { type: 'badge', x: 195, y: 55, text: '3' },
+      { type: 'badge', x: 30, y: 55, text: '3' },
       { type: 'badge', x: 625, y: 165, text: '4' },
     ],
   },
+
+  // 3. Bottom Bar
   {
     id: 'bottom-bar',
     name: 'bottom-bar',
@@ -119,13 +124,15 @@ export const TARGETS: ScreenshotTarget[] = [
     path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800',
     description: 'Bottom bar showing mode switcher and tools',
     setup: async (page: Page) => {
-      await page.waitForTimeout(4000)
+      await page.waitForTimeout(500)
     },
     annotations: [
       { type: 'badge', x: 375, y: 395, text: '1' },
       { type: 'badge', x: 430, y: 395, text: '2' },
     ],
   },
+
+  // 4. Canvas
   {
     id: 'canvas',
     name: 'canvas',
@@ -133,9 +140,26 @@ export const TARGETS: ScreenshotTarget[] = [
     path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?rightpanel=events&canvas-width=1077.6&canvas-height=800',
     description: 'Canvas workspace with responsive tools and controls',
     setup: async (page: Page) => {
-      await page.waitForTimeout(4000)
+      await page.waitForTimeout(500)
+      await page.keyboard.press('Meta+I') // Switch to Interactive mode
+      await page.waitForTimeout(500)
     },
   },
+
+  // 5. Project Sidebar
+  {
+    id: 'project-sidebar',
+    name: 'project-sidebar',
+    outputDir: 'docs/the-editor/project-sidebar',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=pages',
+    description:
+      'Project sidebar showing 3.0 activity bar with file categories',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 6. AI Assistant
   {
     id: 'ai-assistant',
     name: 'ai-assistant',
@@ -143,9 +167,56 @@ export const TARGETS: ScreenshotTarget[] = [
     path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&ai=open',
     description: 'AI assistant panel open in Play mode',
     setup: async (page: Page) => {
-      await page.waitForTimeout(4000)
+      await page.waitForTimeout(500)
     },
   },
+
+  // 7. AI Mode Select
+  {
+    id: 'ai-mode-select',
+    name: 'ai-mode-select',
+    outputDir: 'docs/ai-assistant',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&ai=open',
+    description: 'AI assistant mode select dropdown',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+      await page.locator('#nc-assistant-mode-picker').click()
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 8. AI Build Mode
+  {
+    id: 'ai-build-mode',
+    name: 'ai-build-mode',
+    outputDir: 'docs/ai-assistant',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&ai=open',
+    description: 'AI assistant build prompt',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+      await page
+        .fill(
+          '#ai-prompt-input, textarea',
+          'Build me a landing page for a design agency focussing on simplicity, creativity, and curiosity.',
+        )
+        .catch(() => {})
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 9. Version Control Icon
+  {
+    id: 'version-control-icon',
+    name: 'version-control-icon',
+    outputDir: 'docs/version-control/managing-changes',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800',
+    description: 'Version control button in sidebar activity bar',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 10. Version Control Changes (Ship Mode)
   {
     id: 'version-control-changes',
     name: 'version-control-changes',
@@ -153,25 +224,318 @@ export const TARGETS: ScreenshotTarget[] = [
     path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800',
     description: 'Ship mode / version control changes dock',
     setup: async (page: Page) => {
-      await page.waitForTimeout(4000)
-      // Switch to Ship mode
+      await page.waitForTimeout(500)
       await page.keyboard.press('Meta+Shift+S')
       await page.waitForTimeout(1000)
     },
   },
+
+  // 11. Create from scratch (Components)
+  {
+    id: 'create-from-scratch',
+    name: 'create-from-scratch',
+    outputDir: 'docs/components/create-a-component',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=components',
+    description: 'Create component dialog open from components drawer',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+      await page.evaluate(() => {
+        const btn = document.querySelector(
+          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
+        ) as HTMLElement
+        btn?.click()
+      })
+      await page.waitForTimeout(800)
+    },
+  },
+
+  // 12. Extract as component
+  {
+    id: 'extract-as-component',
+    name: 'extract-as-component',
+    outputDir: 'docs/components/create-a-component',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-height=800&canvas-width=800&selection=nodes.m6MApQ1ZZSiZ5iH6kAUWE&rightpanel=style',
+    description: 'Extract element as component',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 13. Create a page
+  {
+    id: 'create-a-page',
+    name: 'create-a-page',
+    outputDir: 'docs/pages/create-a-page',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=pages',
+    description: 'Create page dialog open from pages drawer',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+      await page.evaluate(() => {
+        const btn = document.querySelector(
+          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
+        ) as HTMLElement
+        btn?.click()
+      })
+      await page.waitForTimeout(800)
+    },
+  },
+
+  // 14. Page Configuration
+  {
+    id: 'page-configuration',
+    name: 'page-configuration',
+    outputDir: 'docs/pages/page-configuration',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&selection=route&rightpanel=style',
+    description: 'Page configuration panel',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 15. Add service from sidebar
+  {
+    id: 'add-a-service-from-project-sidebar',
+    name: 'add-a-service-from-project-sidebar',
+    outputDir: 'docs/connecting-data/services',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=services',
+    description: 'Add service dialog open from services drawer',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+      await page.evaluate(() => {
+        const btn = document.querySelector(
+          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
+        ) as HTMLElement
+        btn?.click()
+      })
+      await page.waitForTimeout(800)
+    },
+  },
+
+  // 16. Add service from API panel
+  {
+    id: 'add-a-service-from-api-panel',
+    name: 'add-a-service-from-api-panel',
+    outputDir: 'docs/connecting-data/services',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&selection=apis',
+    description: 'Connect service from API panel',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 17. Configure Supabase service
+  {
+    id: 'configure-supabase-service',
+    name: 'configure-supabase-service',
+    outputDir: 'docs/connecting-data/services',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=services',
+    description: 'Configure Supabase service dialog',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+      await page.evaluate(() => {
+        const btn = document.querySelector(
+          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
+        ) as HTMLElement
+        btn?.click()
+      })
+      await page.waitForTimeout(800)
+      await page.click('button:has-text("Supabase")').catch(() => {})
+      await page.waitForTimeout(800)
+    },
+  },
+
+  // 18. Configure Xano service
+  {
+    id: 'configure-xano-service',
+    name: 'configure-xano-service',
+    outputDir: 'docs/connecting-data/services',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=services',
+    description: 'Configure Xano service dialog',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+      await page.evaluate(() => {
+        const btn = document.querySelector(
+          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
+        ) as HTMLElement
+        btn?.click()
+      })
+      await page.waitForTimeout(800)
+      await page.click('button:has-text("Xano")').catch(() => {})
+      await page.waitForTimeout(800)
+    },
+  },
+
+  // 19. Configure custom service
+  {
+    id: 'configure-custom-service',
+    name: 'configure-custom-service',
+    outputDir: 'docs/connecting-data/services',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=services',
+    description: 'Configure OpenAPI / custom service dialog',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+      await page.evaluate(() => {
+        const btn = document.querySelector(
+          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
+        ) as HTMLElement
+        btn?.click()
+      })
+      await page.waitForTimeout(800)
+      await page
+        .click('button:has-text("OpenAPI"), button:has-text("Custom")')
+        .catch(() => {})
+      await page.waitForTimeout(800)
+    },
+  },
+
+  // 20. Detach service
+  {
+    id: 'detach-service',
+    name: 'detach-service',
+    outputDir: 'docs/connecting-data/services',
+    path: '/projects/docs_examples/branches/screenshots/services/Contentful?canvas-width=800&canvas-height=800',
+    description: 'Service editor menu with detach service',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 21. Create an action
+  {
+    id: 'create-an-action',
+    name: 'create-an-action',
+    outputDir: 'docs/actions/working-with-actions',
+    path: '/projects/docs_examples/branches/screenshots/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800&leftpanel=actions',
+    description: 'Custom action editor showing inputs and code',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 22. Configure arguments
+  {
+    id: 'configure-arguments',
+    name: 'configure-arguments',
+    outputDir: 'docs/actions/working-with-actions',
+    path: '/projects/docs_examples/branches/screenshots/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800',
+    description: 'Configure action arguments',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+    annotations: [
+      { type: 'badge', x: 128, y: 20, text: '1' },
+      { type: 'badge', x: 88, y: 40, text: '2' },
+      { type: 'badge', x: 63, y: 58, text: '3' },
+    ],
+  },
+
+  // 23. Set up events
+  {
+    id: 'set-up-events',
+    name: 'set-up-events',
+    outputDir: 'docs/actions/working-with-actions',
+    path: '/projects/docs_examples/branches/screenshots/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800',
+    description: 'Set up action events',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+    annotations: [
+      { type: 'badge', x: 135, y: 275, text: '1' },
+      { type: 'badge', x: 105, y: 292, text: '2' },
+      { type: 'badge', x: 72, y: 311, text: '3' },
+    ],
+  },
+
+  // 24. Create project formula
+  {
+    id: 'create-a-project-formula',
+    name: 'create-a-project-formula',
+    outputDir: 'docs/formulas/project-formulas',
+    path: '/projects/docs_examples/branches/screenshots/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes',
+    description: 'Project formula editor view',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 25. Global custom code formula
+  {
+    id: 'global-custom-code-formula',
+    name: 'global-custom-code-formula',
+    outputDir: 'docs/formulas/project-formulas',
+    path: '/projects/docs_examples/branches/screenshots/formulas/hasValue?canvas-height=800&canvas-width=800&rightpanel=attributes',
+    description: 'Custom JavaScript code formula editor',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 26. Theme editor
+  {
+    id: 'theme',
+    name: 'theme',
+    outputDir: 'docs/styling/themes',
+    path: '/projects/docs_examples/branches/screenshots/themes/Default',
+    description: 'Theme editor showing token groupings and variables',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 27. Emulate theme
+  {
+    id: 'emulate-theme',
+    name: 'emulate-theme',
+    outputDir: 'docs/styling/themes',
+    path: '/projects/docs_examples/branches/screenshots/themes/Default',
+    description: 'Theme context menu showing emulate theme',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 28. Group variables
+  {
+    id: 'group-variables',
+    name: 'group-variables',
+    outputDir: 'docs/styling/themes',
+    path: '/projects/docs_examples/branches/screenshots/themes/Default',
+    description: 'Theme variable grouping CTA',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 29. Group created
+  {
+    id: 'group-created',
+    name: 'group-created',
+    outputDir: 'docs/styling/themes',
+    path: '/projects/docs_examples/branches/screenshots/themes/Default',
+    description: 'Theme editor with created color variable group',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // 30. Media details
+  {
+    id: 'media-details',
+    name: 'media-details',
+    outputDir: 'docs/media/overview',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=media',
+    description: 'Media library drawer',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
 ]
 
-async function captureTarget(
-  browser: Browser,
-  target: ScreenshotTarget,
-  baseUrl: string,
-) {
-  console.log(`\n📸 Capturing [${target.id}]: ${target.description}`)
-  const page = await browser.newPage({
-    viewport: { width: 1920, height: 1080 },
-    deviceScaleFactor: 2,
-  })
-
+/**
+ * Sets up all in-memory state and network mocks for the Nordcraft editor
+ * to ensure an authenticated user session, no warning banners, and no "learn-about" dialogs.
+ */
+export async function setupPageMocks(page: Page) {
   // Mock authenticated session in __toddle.pageState.Apis and WebSocket canWrite before page scripts execute
   await page.addInitScript(() => {
     let toddleState: any = undefined
@@ -222,6 +586,7 @@ async function captureTarget(
               if (typeof event.data === 'string') {
                 try {
                   const parsed = JSON.parse(event.data)
+                  // Suppress backend permission ERROR message that triggers "Connection issues" dialog
                   if (parsed.type === 'ERROR') {
                     return
                   }
@@ -340,11 +705,27 @@ async function captureTarget(
       ]),
     })
   })
+}
+
+async function captureTarget(
+  browser: Browser,
+  target: ScreenshotTarget,
+  baseUrl: string,
+) {
+  console.log(`\n📸 Capturing [${target.id}]: ${target.description}`)
+  const page = await browser.newPage({
+    viewport: { width: 1920, height: 1080 },
+    deviceScaleFactor: 2,
+  })
+
+  await setupPageMocks(page)
 
   try {
     const fullUrl = `${baseUrl}${target.path}`
     console.log(`   Navigating to: ${fullUrl}`)
     await page.goto(fullUrl, { waitUntil: 'domcontentloaded' })
+    await page.waitForSelector('#editor', { timeout: 10000 }).catch(() => {})
+    await page.waitForTimeout(1500)
 
     if (target.setup) {
       console.log(`   Executing setup steps...`)
@@ -391,15 +772,30 @@ async function captureTarget(
 async function main() {
   const args = process.argv.slice(2)
   const targetArg = args.find((a) => a.startsWith('--target='))
-  const targetId = targetArg ? targetArg.split('=')[1] : null
+  const positionalArg = args.find(
+    (a) => !a.startsWith('--') && !a.startsWith('-'),
+  )
+  const targetQuery = targetArg
+    ? targetArg.split('=')[1]
+    : positionalArg || null
 
-  const targetsToRun = targetId
-    ? TARGETS.filter((t) => t.id === targetId)
+  const targetsToRun = targetQuery
+    ? TARGETS.filter(
+        (t) =>
+          t.id === targetQuery ||
+          t.name === targetQuery ||
+          t.id.includes(targetQuery) ||
+          t.name.includes(targetQuery),
+      )
     : TARGETS
 
   if (targetsToRun.length === 0) {
-    console.error(`Error: Target '${targetId}' not found. Available targets:`)
-    TARGETS.forEach((t) => console.log(`  - ${t.id}`))
+    console.error(
+      `Error: Target '${targetQuery}' not found. Available targets:`,
+    )
+    TARGETS.forEach((t) =>
+      console.log(`  - ${t.id} (${t.outputDir}/${t.name}.webp)`),
+    )
     process.exit(1)
   }
 
@@ -422,4 +818,6 @@ async function main() {
   }
 }
 
-main()
+if (import.meta.main || process.argv[1]?.endsWith('capture-screenshots.ts')) {
+  main()
+}
