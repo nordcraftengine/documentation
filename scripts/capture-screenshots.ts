@@ -202,12 +202,10 @@ export const TARGETS: ScreenshotTarget[] = [
     id: 'version-control-changes',
     name: 'version-control-changes',
     outputDir: 'docs/version-control/managing-changes',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800',
+    path: '/projects/docs_examples/branches/screenshots/ship/changes?canvas-width=800&canvas-height=800',
     description: 'Ship mode / version control changes dock',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
-      await page.keyboard.press('Meta+Shift+S')
-      await page.waitForTimeout(1000)
     },
   },
 
