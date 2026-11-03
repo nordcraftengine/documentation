@@ -21,12 +21,20 @@ Project formulas are ideal for:
 
 Project formulas appear in the formula selection dropdown throughout your project, making them easily accessible from any component or page.
 
-![The project sidebar is visible in the editor, showing a list of formulas in the formula section. Formulas are named, for example, getCssVariable, getDefaultTrue, getTradition. On the left, the getDefautTrue formula editor is visible, showing a snapshot of the formula notes that make up this formula. The formula takes an input of name value, and checks to see if it equals false. Further logic is calculated in an if formula node. If it equals false, if returns false, else it returns true. Tne image is also annotated with numbers that correspond to the list items below.|16/9](create-a-project-formula.webp 'Create a project formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
+![The formulas drawer is open in the left sidebar showing project formulas. On the right, the formula editor is open.|16/9](create-a-project-formula.webp 'Create a project formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
 
 To create a project formula:
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
-2. Find the **Formulas** section, click the [kbd]+[kbd] button and enter a name for your formula in the dialog
+### Using the command palette (recommended)
+
+1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
+2. Select **Create formula** (or type "Create formula" and press [kbd]↵[kbd])
+3. Enter a name for your formula in the dialog
+
+### Using the sidebar
+
+1. Click the [kbd]Formulas[kbd] button in the left sidebar to open the list of formulas
+2. Click the [kbd]+[kbd] button at the top of the list and enter a name for your formula in the dialog
 3. Add input parameters with test values (optional)
 4. Add a description to your formula (optional)
 5. Define your formula logic using either

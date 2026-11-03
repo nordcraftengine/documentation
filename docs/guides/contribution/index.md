@@ -135,6 +135,41 @@ Image requirements:
 - The image title will be used to overlay a title on the image in the UI
 - The image alt text will be added to the `<img>` tag in the resulting markup
 
+### Screenshot tooling
+
+This repository includes automated tools to capture, record, and format screenshots to meet the requirements above:
+
+#### Generating screenshots
+
+Run the screenshot automation script to generate the dual WebP files (standard `800×450` and large `3200×1800`):
+
+```bash
+bun run screenshots                  # Capture all documentation screenshots
+bun run screenshots editor-overview  # Capture only a specific target
+```
+
+#### Recording interactions for new screenshots
+
+To record clicks, dropdown openings, or panel navigation for a new screenshot state, run the interactive recorder:
+
+```bash
+bun run screenshots:record
+bun run screenshots:record create-a-page
+```
+
+This launches a headed Chromium browser with authenticated session mocks pre-applied and opens the **Playwright Inspector** GUI. Click the red **Record** button in the inspector, interact with the editor, and copy the recorded actions into `TARGETS` in `scripts/capture-screenshots.ts`.
+
+#### Processing manual screenshots
+
+If you capture a screenshot manually (for example via Chrome DevTools in 16:9 ratio at DPR 2.0), convert and resize it into the required standard and large WebP versions:
+
+```bash
+bun run screenshots:process path/to/input.png editor-overview
+bun run screenshots:process path/to/input.png docs/the-editor/command-palette/command-palette
+```
+
+If the target specifies annotations (such as numbered badges in `editor-overview`), they are automatically composited onto both output images.
+
 ::: info
 You may see `@@@ image-static` in places. This tag is for Nordcraft brand images that do not expand into the large view. You should only add static images if you need to display images that don't serve as example images that should not be expandable, and do not have an outgoing link.
 

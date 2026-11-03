@@ -9,7 +9,7 @@ You can upload images to your Nordcraft projects for use on your websites. Uploa
 
 ## Upload images
 
-To upload an image, find the **Media** section in the [project sidebar](/the-editor/project-sidebar) and click the upload icon to select an image file from your computer.
+To upload an image, click the [kbd]Media[kbd] button in the left sidebar to open the media library, then click the upload icon to select an image file from your computer.
 
 Supported image types include:
 
@@ -31,9 +31,9 @@ You can access each image you upload to Nordcraft via a unique URL. The format o
 
 `/cdn-cgi/imagedelivery/{image_id}/{project_name}:{image_name}.{image_type_extension}/{size}`
 
-To generate a URL for a differently sized image, click the image in the **Media** section of the project sidebar, which opens the **Media details** view.
+To generate a URL for a differently sized image, click the image in the **Media** library in the left sidebar, which opens the **Media details** view.
 
-![The media details dialog, showing a grid list of size options at the bottom of the dialog with a copy to clipboard icon, and a preview of the generated image above.|16/9](media-details.webp 'Media details')
+![The media details dialog, showing image previews and generated URL size options.|16/9](media-details.webp 'Media details')
 
 Click the button for the size of the image you would like to generate to copy the unique URL to the clipboard. For example, if you click [kbd]128px[kbd], the following URL will be copied to your clipboard:
 
@@ -63,7 +63,7 @@ Images cannot be upscaled to be larger than the original file uploaded. For exam
 
 ## Delete images
 
-To delete an image, right click the image in the **Media** section of the project sidebar and select delete.
+To delete an image, right click the image in the **Media** library in the left sidebar and select delete.
 
 :::danger
 If you delete your project, all images will also be deleted, even if you previously cloned the project.

@@ -9,9 +9,9 @@ You can use redirects to redirect or forward one URL to another. When a URL that
 
 Redirects can be permanent or temporary. You may want to use permanent redirects to handle typos or synonyms in URLS, or to protect against broken links when moving to a new domain. You may want to use temporary redirects to keep links operational and discoverable during site maintenance.
 
-Redirects are listed in the [project sidebar](/the-editor/project-sidebar) in the **Pages** section.
+Redirects are listed in the left sidebar under the [kbd]Pages[kbd] button (pages and routes).
 
-Create a redirect by clicking the [kbd]+[kbd] button in the **Pages** section header, and select the **Redirect** tab. You will then see configuration options divided into two main sections:
+Create a redirect by clicking the [kbd]Pages[kbd] button in the left sidebar, clicking the [kbd]+[kbd] button at the top of the list, and selecting the **Redirect** tab. You will then see configuration options divided into two main sections:
 
 ## Source
 

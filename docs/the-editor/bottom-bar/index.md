@@ -1,23 +1,58 @@
 ---
 title: Bottom bar
-description: Use Nordcraft's bottom bar for AI assistance, history control, zoom functions, testing mode, preview and web component export.
+description: Use Nordcraft's bottom bar to switch between Play, Design, and Ship modes, access context-sensitive canvas tools, and publish changes.
 ---
 
 # Bottom bar
 
-The bottom bar provides quick access to frequently used actions and tools in the Nordcraft editor.
+The bottom bar is the primary control center in the Nordcraft editor. It houses the mode switcher (Play, Design, and Ship) and displays context-sensitive toolbars for each mode.
 
-![An annotated image focussing on the bar visible at the bottom of the canvas. Annotations correspond to the list items below.|16/9](bottom-bar.webp 'Bottom bar')
+![The Nordcraft bottom bar showing the mode switcher and toolbars. The image is annotated with numbers that relate to the sections below.|16/9](bottom-bar.webp 'Bottom bar')
 
-1. **Ask AI**: Get help from the Nordcraft AI Assistant
-2. **Current collaborators**: All team members currently working in the same branch of the project
-3. **Undo/Redo**: Undo and redo changes in the editor
-4. **Zoom controls**: View the current zoom level (adjusted by pressing [kbd]Cmd/Ctrl[kbd] + [kbd]scroll[kbd]), and use the magnifying glass to reset the zoom level to 100%
-5. **Test mode**: Toggle between editing and testing your website
-6. [Export as web component](/components/export-a-component): Export the current component as a web component for use in other web projects (only visible when editing a component)
-7. **Preview**: Open the current page in a new browser tab
-8. **Insert element**: Open the element catalog to insert a new HTML element
+1. **Canvas tools**: Access context-sensitive tools for the active mode (such as selection, interaction, and AI annotation in Play mode, or transform, frames, and text in Design mode).
+2. **Mode switcher**: Transition between the three core phases of building in Nordcraft: Play ([kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd]), Design ([kbd]Cmd/Ctrl[kbd] + [kbd]D[kbd]), and Ship ([kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]).
+
+## Mode switcher
+
+On the right side of the bottom bar is the mode switcher, allowing you to transition between the three core phases of building in Nordcraft:
+
+1. **Play mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd]): Explore, prompt, and iterate with the AI assistant.
+2. **Design mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]D[kbd]): Fine-tune layouts, styles, HTML attributes, and workflows.
+3. **Ship mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]): Review file diffs, resolve conflicts, and publish changes to the live site.
+
+## Play mode tools
+
+When in Play mode, the bottom bar provides tools designed for conversational and visual AI prompting:
+
+- **Select tool** ([kbd]V[kbd]): Select elements on the canvas.
+- **Interact tool** ([kbd]C[kbd]): Click buttons, fill forms, and test interactions directly on the canvas without leaving Play mode.
+- **Pan tool** (Hold [kbd]Space[kbd] or click the hand icon): Move around the canvas workspace.
+- **AI Reference tool** ([kbd]I[kbd]): Click any element on the canvas to reference it in your AI prompt, allowing the AI to know exactly which element you want to modify.
+- **Annotation tool** ([kbd]T[kbd]): Open the annotation toolbar to draw on the canvas using freehand pens ([kbd]P[kbd]), rectangles ([kbd]R[kbd]), ellipses ([kbd]O[kbd]), lines ([kbd]L[kbd]), and text notes ([kbd]T[kbd]). The AI analyzes these visual annotations alongside your written prompt.
+
+## Design mode tools
+
+When in Design mode, the bottom bar switches to direct manipulation and layout creation tools:
+
+- **Select tool** ([kbd]V[kbd]): Select elements to inspect their properties in the element tree and right-hand panels.
+- **Interact tool** ([kbd]C[kbd]): Temporarily interact with elements without leaving Design mode.
+- **Pan tool** (Hold [kbd]Space[kbd] or click the hand icon): Pan across the canvas.
+- **Transform tool** ([kbd]W[kbd]): Activates the visual transform toolbar to resize, reposition, and transform the selected element.
+- **Frame tool** ([kbd]F[kbd]): Draw container `div` frames directly onto the canvas.
+- **Text tool** ([kbd]T[kbd]): Click on the canvas to place and edit text elements directly.
+- **Insert element** ([kbd]I[kbd]): Open the [element catalog](/the-editor/element-tree#element-catalog) to insert HTML elements and reusable components.
+
+## Ship mode dock
+
+When switching to Ship mode, the bottom bar expands into a publishing dock:
+
+- **Changes count**: Displays the total count of files modified on the active branch.
+- **Commit description**: A multiline text field where you enter a summary of your changes (_"What did you change?"_). Press [kbd]Cmd/Ctrl[kbd] + [kbd]↵[kbd] to publish immediately.
+- **Publish button**: Merges your changes into the `main` branch and publishes them to your production site.
+- **Sync with main**: When another collaborator has published changes to `main`, this button appears to pull and merge the latest changes into your working branch.
+- **Conflict indicator**: Displays the number of conflicting files when incoming changes overlap with your branch. Conflicts must be resolved in Ship mode before syncing and publishing.
+- **Publish on Discord**: An optional toggle for projects integrated with Discord notification webhooks.
 
 ::: tip
-When testing interactive features, use preview mode (opens in a new browser tab) for a more accurate representation of how your website will behave.
+You can also toggle full-screen Interactive mode at any time with [kbd]Cmd/Ctrl[kbd] + [kbd]I[kbd] to preview and test your application without any editor chrome.
 :::

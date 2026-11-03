@@ -7,17 +7,40 @@ description: In Nordcraft you get your very own AI assistant that understands th
 
 In Nordcraft you get access to your very own AI Assistant that understands the context of your projects and knows how to build for the web. The AI Assistant is also trained on the Nordcraft documentation and videos.
 
-## Open the AI Assistant
+## Open the AI Assistant and Play mode
 
-You can access the AI Assistant by clicking the "Ask AI" button on the bottom bar, or by using the keyboard shortcut [kbd]Cmd/Ctrl[kbd]+[kbd]I[kbd]. The AI Assistant opens to the right of the editor, allowing you to continue to work alongside it.
+The AI Assistant is integrated directly with **Play mode**. You can access it by clicking the Play mode button on the [bottom bar](/the-editor/bottom-bar) or using the shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd].
 
-![The Nordcraft editor, showing the AI Assistant window open on the right, with an input field at the bottom of it that says start typing. The Ask AI button on the bottom bar is hovered over, which shows it having a lighter grey background than the grey background of the bottom bar.|16/9](ai-assistant.webp 'AI Assistant')
+If you are already in Play mode, pressing [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd] automatically focuses the prompt input field so you can immediately begin typing.
+
+![The Nordcraft editor in Play mode, showing the AI Assistant window open on the right with the prompt bar at the bottom.|16/9](ai-assistant.webp 'AI Assistant')
+
+## Enhancing prompts with Play mode tools
+
+When in Play mode, the bottom bar provides specialized tools to enrich your prompts with exact context:
+
+### Referencing canvas elements
+
+Press [kbd]I[kbd] or click the crosshair icon on the bottom bar to activate the **AI Reference tool**. Click on any component or element on the canvas to attach it as a reference chip inside your prompt. This informs the AI precisely which element you want to modify, style, or query without needing to describe its location manually.
+
+### Visual canvas annotations
+
+Press [kbd]T[kbd] or select the annotation button on the bottom bar to open the **Annotation toolbar**. You can draw visual markups directly over your canvas to guide the AI:
+
+- [kbd]P[kbd] - **Pen**: Freehand draw or circle areas that need changes
+- [kbd]R[kbd] - **Rectangle**: Highlight blocks, containers, or layout regions
+- [kbd]O[kbd] - **Ellipse**: Circle specific buttons or icons
+- [kbd]L[kbd] - **Line**: Draw arrows indicating movement, direction, or relationships
+- [kbd]T[kbd] - **Text**: Add floating text instructions directly onto the canvas
+- [kbd]Escape[kbd] - Clear active annotations or exit the tool
+
+The AI processes these visual markings alongside your text prompt, making design feedback and layout adjustments fast and intuitive.
 
 ## What can the AI do?
 
-The AI can perform a number of tasks to help you understand and build projects in Nordcraft. You can choose between 2 modes:
+The AI can perform a number of tasks to help you understand and build projects in Nordcraft. You can choose between 3 modes:
 
-![The AI assistant mode window, showing two modes available: ask and build.|16/9](ai-mode-select.webp 'Choose your AI mode')
+![The AI assistant mode window, showing three modes available: ask, plan, and build.|16/9](ai-mode-select.webp 'Choose your AI mode')
 
 ### Ask mode
 
@@ -31,6 +54,14 @@ When in Ask mode the AI can perform the following tasks:
 :::info
 Using Ask mode is free of charge.
 :::
+
+### Plan mode
+
+When in Plan mode the AI can perform the following tasks:
+
+- **Generate project plans**: it can create a step-by-step plan for building features, components, or pages in your project.
+- **Provide implementation guidance**: it can give you advice on how to implement features, including which components, workflows, and formulas to use.
+- **Suggest improvements**: it can analyze your project and suggest improvements to your code, structure, or design.
 
 ### Build mode
 

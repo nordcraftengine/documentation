@@ -22,17 +22,23 @@ You can add services in Nordcraft in two ways.
 
 ### From the API creation flow
 
-![The add new API dialog is open. In the services section, the connect now button is highlighted. To the left of this, another part of the Nordcraft editor has been spliced onto the image, showing three available pre-configured services available to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-api-panel.webp 'Add a service from API panel')
+![The add new API dialog is open. In the services section, the connect now button is highlighted. To the left of this, another part of the Nordcraft editor has been spliced onto the image, showing six available pre-configured services available to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-api-panel.webp 'Add a service from API panel')
 
 1. When creating a new API, click the [kbd]Connect new[kbd] button
 2. Select the service you want to connect to from the available options
 
-### From the project sidebar
+### From the command palette (recommended)
 
-![The project sidebar is visible to the left of the editor, showing the plus button next to the services list. The plus button has been clicked, which shows a new dialog listing three available pre-configured services available to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-project-sidebar.webp 'Add a service from project sidebar')
+1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
+2. Select **Create service** (or type "Create service" and press [kbd]↵[kbd])
+3. Select your desired service from the available options
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
-2. Navigate to the **Services** section and click the [kbd]+[kbd] button to add a new service
+### From the sidebar
+
+![The services drawer is open on the left. Clicking the plus button opens a dialog listing pre-configured services to add: Supabase, Xano and OpenAPI.|16/9](add-a-service-from-project-sidebar.webp 'Add a service from sidebar')
+
+1. Click the [kbd]Services[kbd] button in the left sidebar to open the list of services
+2. Click the [kbd]+[kbd] button to add a new service
 3. Select your desired service
 
 ## Configure specific services
@@ -132,4 +138,4 @@ When you create a new API via a service connection, Nordcraft automatically pre-
 
 Currently, is not possible to edit the URL path of an API linked to a service to point to a different service endpoint. However, to save you creating a brand new API, you can choose to detach the API from the service, which allows you to edit any part of the API connection. Click on the three dot menu to the top right of the API panel and click `Detach service`.
 
-![The API panel is open. A DatoCMS service is connected. The three dot menu at the top right of the API panel has been clicked, revealing a menu with one option to click: detach service.|16/9](detach-service.webp 'Detach service')
+![The API panel is open. A Contentful service is connected. The three dot menu at the top right of the API panel has been clicked, revealing a menu with one option to click: detach service.|16/9](detach-service.webp 'Detach service')

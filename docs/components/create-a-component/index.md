@@ -12,14 +12,25 @@ There are two ways to create components in Nordcraft:
 
 ## Create from scratch
 
-![The create component dialog is open where you can choose a name for your component. The image is annotated corresponding to the list items below, showing the context menu that appears when click the plus button at the top of the project sidebar.|16/9](create-from-scratch.webp 'Create from scratch'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=style&leftpanel=Files}
+![The create component dialog is open where you can choose a name for your component. The components list is visible on the left after clicking the Components button in the activity bar.|16/9](create-from-scratch.webp 'Create from scratch'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=style&leftpanel=components}
 
-To create a new component:
+To create a new component from scratch, you can use the command palette or the sidebar:
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
-2. **(A)** Find the "Components" section and click the [kbd]+[kbd] button next to it or
-   **(B)** Click the [kbd]+[kbd] button next to the branch name at the top of the project sidebar and choose [kbd]New component[kbd]
+### Using the command palette (recommended)
+
+1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
+2. Select **Create component** (or type "Create component" and press [kbd]↵[kbd])
 3. Enter a name for your component and confirm with [kbd]Create[kbd]
+
+### Using the sidebar
+
+1. Click the [kbd]Components[kbd] button in the left sidebar to open the list of components
+2. Click the [kbd]+[kbd] button at the top of the list
+3. Enter a name for your component and confirm with [kbd]Create[kbd]
+
+::: tip
+If a component's name includes dashes (-), the component will be grouped in the components list. For example, a component named `onboarding-component` will be grouped under `onboarding` in the list. This is useful when you have multiple components that are part of the same feature.
+:::
 
 ## Extract existing elements
 

@@ -2,6 +2,9 @@
   "name": "documentation",
   "scripts": {
     "lint": "eslint --quiet --report-unused-disable-directives .",
+    "screenshots": "bun ./scripts/capture-screenshots.ts",
+    "screenshots:record": "bun ./scripts/record.ts",
+    "screenshots:process": "bun ./scripts/process-screenshot.ts",
     "prettier:write": "prettier --write  './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'",
     "prettier": "prettier --check './docs/**/*.md' 'proxy/**/*.ts' 'proxy/**/*.md'"
   },
@@ -10,10 +13,12 @@
     "@eslint/markdown": "7.5.1",
     "@typescript-eslint/eslint-plugin": "8.49.0",
     "@typescript-eslint/parser": "8.49.0",
-    "eslint-plugin-inclusive-language": "2.2.1",
     "eslint": "9.39.2",
+    "eslint-plugin-inclusive-language": "2.2.1",
+    "playwright": "1.64.1",
+    "prettier": "3.6.2",
     "prettier-plugin-organize-imports": "4.3.0",
-    "prettier": "3.6.2"
+    "sharp": "0.35.5"
   },
   "workspaces": [
     "proxy"

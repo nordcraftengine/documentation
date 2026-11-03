@@ -18,12 +18,21 @@ title: Creating custom actions using JavaScript
 
 ## Create an action
 
-![The project sidebar is visible on the left of the editor, showing an action named confetti in the actions list. To the right, the confetti action is visible, showing a number of inputs, a single defined event name, and the custom code further to the right in an IDE-like text editor. The image is annotated according to the list items below.|16/9](create-an-action.webp 'Create an action'){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
+![The actions list is open in the left sidebar, showing custom actions. The confetti action is open in the editor with custom code on the right.|16/9](create-an-action.webp 'Create an action'){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
 
 To create an action:
 
-1. Open the [project sidebar](/the-editor/project-sidebar) by clicking the folder icon or using [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd]
-2. Locate the **Actions** section, click the [kbd]+[kbd] button and enter a name
+### Using the command palette (recommended)
+
+1. Press [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]K[kbd] to open the [command palette](/the-editor/command-palette) in action mode
+2. Select **Create action** (or type "Create action" and press [kbd]↵[kbd])
+3. Enter a name and short description for your action
+4. Write your JavaScript code in the code editor
+
+### Using the sidebar
+
+1. Click the [kbd]Actions[kbd] button in the left sidebar to open the list of actions
+2. Click the [kbd]+[kbd] button at the top of the list and enter a name
 3. Add a short description for your action
 4. Write your JavaScript code in the code editor
 
