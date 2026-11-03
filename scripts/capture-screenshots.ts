@@ -318,19 +318,12 @@ export const TARGETS: ScreenshotTarget[] = [
     id: 'configure-supabase-service',
     name: 'configure-supabase-service',
     outputDir: 'docs/connecting-data/services',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=services',
+    path: '/projects/docs_examples/branches/screenshots/services/connect-service?mode=design&leftpanel=services&canvas-tool=select&canvas-width=800&rightpanel=style',
     description: 'Configure Supabase service dialog',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
-      await page.evaluate(() => {
-        const btn = document.querySelector(
-          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
-        ) as HTMLElement
-        btn?.click()
-      })
-      await page.waitForTimeout(800)
-      await page.click('button:has-text("Supabase")').catch(() => {})
-      await page.waitForTimeout(800)
+      await page.locator('[data-test="create-service-item-supabase"]').click()
+      await page.waitForTimeout(300)
     },
   },
 
@@ -339,19 +332,12 @@ export const TARGETS: ScreenshotTarget[] = [
     id: 'configure-xano-service',
     name: 'configure-xano-service',
     outputDir: 'docs/connecting-data/services',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=services',
+    path: '/projects/docs_examples/branches/screenshots/services/connect-service?mode=design&leftpanel=services&canvas-tool=select&canvas-width=800&rightpanel=style',
     description: 'Configure Xano service dialog',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
-      await page.evaluate(() => {
-        const btn = document.querySelector(
-          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
-        ) as HTMLElement
-        btn?.click()
-      })
-      await page.waitForTimeout(800)
-      await page.click('button:has-text("Xano")').catch(() => {})
-      await page.waitForTimeout(800)
+      await page.locator('[data-test="create-service-item-xano"]').click()
+      await page.waitForTimeout(1000)
     },
   },
 
