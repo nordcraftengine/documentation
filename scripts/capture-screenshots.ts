@@ -284,17 +284,13 @@ export const TARGETS: ScreenshotTarget[] = [
     id: 'add-a-service-from-project-sidebar',
     name: 'add-a-service-from-project-sidebar',
     outputDir: 'docs/connecting-data/services',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=services',
+    path: '/projects/docs_examples/branches/screenshots/components/card?mode=design&canvas-tool=select&canvas-width=800&rightpanel=style',
     description: 'Add service dialog open from services drawer',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
-      await page.evaluate(() => {
-        const btn = document.querySelector(
-          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
-        ) as HTMLElement
-        btn?.click()
-      })
-      await page.waitForTimeout(800)
+      await page.getByRole('button', { name: 'Services' }).click()
+      await page.locator('#sidebar-files-create-services').click()
+      await page.waitForTimeout(500)
     },
   },
 
@@ -303,11 +299,18 @@ export const TARGETS: ScreenshotTarget[] = [
     id: 'add-a-service-from-api-panel',
     name: 'add-a-service-from-api-panel',
     outputDir: 'docs/connecting-data/services',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&selection=apis',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?mode=design&canvas-tool=select&canvas-width=800&rightpanel=style',
     description: 'Connect service from API panel',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
+      await page.getByRole('button', { name: 'Connect API' }).click()
+      await page.getByRole('button', { name: 'Connect new service' }).click()
+      await page.waitForTimeout(300)
     },
+    annotations: [
+      { type: 'badge', x: 643, y: 82, text: '1' },
+      { type: 'badge', x: 194, y: 17, text: '2' },
+    ],
   },
 
   // Configure Supabase service
@@ -357,22 +360,15 @@ export const TARGETS: ScreenshotTarget[] = [
     id: 'configure-custom-service',
     name: 'configure-custom-service',
     outputDir: 'docs/connecting-data/services',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=services',
+    path: '/projects/docs_examples/branches/screenshots/services/Custom?mode=design&canvas-tool=select&canvas-width=800&leftpanel=services&rightpanel=style',
     description: 'Configure OpenAPI / custom service dialog',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
-      await page.evaluate(() => {
-        const btn = document.querySelector(
-          '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
-        ) as HTMLElement
-        btn?.click()
-      })
-      await page.waitForTimeout(800)
-      await page
-        .click('button:has-text("OpenAPI"), button:has-text("Custom")')
-        .catch(() => {})
-      await page.waitForTimeout(800)
     },
+    annotations: [
+      { type: 'badge', x: 600, y: 276, text: '1' },
+      { type: 'badge', x: 475, y: 300, text: '2' },
+    ],
   },
 
   // Detach service
