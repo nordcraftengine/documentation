@@ -81,7 +81,7 @@ const DEFAULT_BASE_URL =
   process.env.EDITOR_BASE_URL || 'https://screenshots-3-0-toddle.nordcraft.site'
 
 export const TARGETS: ScreenshotTarget[] = [
-  // 1. Command Palette
+  // Command Palette
   {
     id: 'command-palette',
     name: 'command-palette',
@@ -98,7 +98,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 2. Editor Overview
+  // Editor Overview
   {
     id: 'editor-overview',
     name: 'editor-overview',
@@ -116,7 +116,7 @@ export const TARGETS: ScreenshotTarget[] = [
     ],
   },
 
-  // 3. Bottom Bar
+  // Bottom Bar
   {
     id: 'bottom-bar',
     name: 'bottom-bar',
@@ -132,7 +132,7 @@ export const TARGETS: ScreenshotTarget[] = [
     ],
   },
 
-  // 4. Canvas
+  // Canvas
   {
     id: 'canvas',
     name: 'canvas',
@@ -146,7 +146,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 5. Project Sidebar
+  // Project Sidebar
   {
     id: 'project-sidebar',
     name: 'project-sidebar',
@@ -159,7 +159,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 6. AI Assistant
+  // AI Assistant
   {
     id: 'ai-assistant',
     name: 'ai-assistant',
@@ -171,7 +171,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 7. AI Mode Select
+  // AI Mode Select
   {
     id: 'ai-mode-select',
     name: 'ai-mode-select',
@@ -185,26 +185,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 8. AI Build Mode
-  {
-    id: 'ai-build-mode',
-    name: 'ai-build-mode',
-    outputDir: 'docs/ai-assistant',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&ai=open',
-    description: 'AI assistant build prompt',
-    setup: async (page: Page) => {
-      await page.waitForTimeout(500)
-      await page
-        .fill(
-          '#ai-prompt-input, textarea',
-          'Build me a landing page for a design agency focussing on simplicity, creativity, and curiosity.',
-        )
-        .catch(() => {})
-      await page.waitForTimeout(500)
-    },
-  },
-
-  // 9. Version Control Icon
+  // Version Control Icon
   {
     id: 'version-control-icon',
     name: 'version-control-icon',
@@ -216,7 +197,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 10. Version Control Changes (Ship Mode)
+  // Version Control Changes (Ship Mode)
   {
     id: 'version-control-changes',
     name: 'version-control-changes',
@@ -230,7 +211,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 11. Create from scratch (Components)
+  // Create from scratch (Components)
   {
     id: 'create-from-scratch',
     name: 'create-from-scratch',
@@ -249,19 +230,25 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 12. Extract as component
+  // Extract as component
   {
     id: 'extract-as-component',
     name: 'extract-as-component',
     outputDir: 'docs/components/create-a-component',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-height=800&canvas-width=800&selection=nodes.m6MApQ1ZZSiZ5iH6kAUWE&rightpanel=style',
+    path: '/projects/docs_examples/branches/screenshots/components/card?mode=design&canvas-tool=select&canvas-width=800&selection=nodes.tf08THxvDvD2p9w3y5zhh&rightpanel=style',
     description: 'Extract element as component',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
+      await page
+        .getByRole('button', { name: 'Expand or collapse node div' })
+        .click({
+          button: 'right',
+        })
+      await page.getByText('Extract as component').click()
     },
   },
 
-  // 13. Create a page
+  // Create a page
   {
     id: 'create-a-page',
     name: 'create-a-page',
@@ -280,7 +267,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 14. Page Configuration
+  // Page Configuration
   {
     id: 'page-configuration',
     name: 'page-configuration',
@@ -292,7 +279,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 15. Add service from sidebar
+  // Add service from sidebar
   {
     id: 'add-a-service-from-project-sidebar',
     name: 'add-a-service-from-project-sidebar',
@@ -311,7 +298,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 16. Add service from API panel
+  // Add service from API panel
   {
     id: 'add-a-service-from-api-panel',
     name: 'add-a-service-from-api-panel',
@@ -323,7 +310,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 17. Configure Supabase service
+  // Configure Supabase service
   {
     id: 'configure-supabase-service',
     name: 'configure-supabase-service',
@@ -344,7 +331,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 18. Configure Xano service
+  // Configure Xano service
   {
     id: 'configure-xano-service',
     name: 'configure-xano-service',
@@ -365,7 +352,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 19. Configure custom service
+  // Configure custom service
   {
     id: 'configure-custom-service',
     name: 'configure-custom-service',
@@ -388,7 +375,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 20. Detach service
+  // Detach service
   {
     id: 'detach-service',
     name: 'detach-service',
@@ -400,7 +387,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 21. Create an action
+  // Create an action
   {
     id: 'create-an-action',
     name: 'create-an-action',
@@ -412,7 +399,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 22. Configure arguments
+  // Configure arguments
   {
     id: 'configure-arguments',
     name: 'configure-arguments',
@@ -429,7 +416,7 @@ export const TARGETS: ScreenshotTarget[] = [
     ],
   },
 
-  // 23. Set up events
+  // Set up events
   {
     id: 'set-up-events',
     name: 'set-up-events',
@@ -446,7 +433,7 @@ export const TARGETS: ScreenshotTarget[] = [
     ],
   },
 
-  // 24. Create project formula
+  // Create project formula
   {
     id: 'create-a-project-formula',
     name: 'create-a-project-formula',
@@ -458,7 +445,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 25. Global custom code formula
+  // Global custom code formula
   {
     id: 'global-custom-code-formula',
     name: 'global-custom-code-formula',
@@ -470,7 +457,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 26. Theme editor
+  // Theme editor
   {
     id: 'theme',
     name: 'theme',
@@ -482,7 +469,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 27. Emulate theme
+  // Emulate theme
   {
     id: 'emulate-theme',
     name: 'emulate-theme',
@@ -494,7 +481,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 28. Group variables
+  // Group variables
   {
     id: 'group-variables',
     name: 'group-variables',
@@ -506,7 +493,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 29. Group created
+  // Group created
   {
     id: 'group-created',
     name: 'group-created',
@@ -518,7 +505,7 @@ export const TARGETS: ScreenshotTarget[] = [
     },
   },
 
-  // 30. Media details
+  // Media details
   {
     id: 'media-details',
     name: 'media-details',
@@ -790,9 +777,7 @@ async function main() {
     : TARGETS
 
   if (targetsToRun.length === 0) {
-    console.error(
-      `Error: Target '${targetQuery}' not found. Available targets:`,
-    )
+    console.error(`Error:${targetQuery}' not found. Available targets:`)
     TARGETS.forEach((t) =>
       console.log(`  - ${t.id} (${t.outputDir}/${t.name}.webp)`),
     )
