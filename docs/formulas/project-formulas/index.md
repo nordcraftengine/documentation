@@ -21,7 +21,7 @@ Project formulas are ideal for:
 
 Project formulas appear in the formula selection dropdown throughout your project, making them easily accessible from any component or page.
 
-![The project sidebar is visible in the editor, showing a list of formulas in the formula section. Formulas are named, for example, getCssVariable, getDefaultTrue, getTradition. On the left, the getDefautTrue formula editor is visible, showing a snapshot of the formula notes that make up this formula. The formula takes an input of name value, and checks to see if it equals false. Further logic is calculated in an if formula node. If it equals false, if returns false, else it returns true. Tne image is also annotated with numbers that correspond to the list items below.|16/9](create-a-project-formula.webp 'Create a project formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
+![The formulas drawer is open in the left sidebar showing project formulas. On the right, the formula editor is open.|16/9](create-a-project-formula.webp 'Create a project formula'){https://editor.nordcraft.com/projects/docs_examples/branches/main/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes}
 
 To create a project formula:
 

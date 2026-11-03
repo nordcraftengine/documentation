@@ -28,6 +28,7 @@ When opened with [kbd]Cmd/Ctrl[kbd] + [kbd]K[kbd], the command palette displays 
 - **Actions**: Global custom JavaScript action files
 - **Services**: API integrations and external services
 - **Routes**: Configured application routes and redirects
+- **Fonts**: Installed web fonts
 
 Start typing any part of a file name to fuzzy-filter the list. Use the [kbd]↑[kbd] and [kbd]↓[kbd] arrow keys to navigate the results and press [kbd]↵[kbd] to open the selected file into an editor tab.
 
@@ -59,4 +60,5 @@ When you have a file open in the editor, the command palette provides contextual
 
 - [kbd]↑[kbd] / [kbd]↓[kbd] - Move through search results
 - [kbd]↵[kbd] - Open selected file or run selected action
+- [kbd]Cmd/Ctrl[kbd] + [kbd]↵[kbd] - Open certain actions in a new tab (e.g. "Switch branch")
 - [kbd]Escape[kbd] - Close the command palette

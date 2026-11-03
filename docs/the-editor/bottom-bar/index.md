@@ -7,7 +7,10 @@ description: Use Nordcraft's bottom bar to switch between Play, Design, and Ship
 
 The bottom bar is the primary control center in the Nordcraft editor. It houses the mode switcher (Play, Design, and Ship) and displays context-sensitive toolbars for each mode.
 
-![The Nordcraft bottom bar showing the mode switcher and toolbars.|16/9](bottom-bar.webp 'Bottom bar')
+![The Nordcraft bottom bar showing the mode switcher and toolbars. The image is annotated with numbers that relate to the sections below.|16/9](bottom-bar.webp 'Bottom bar')
+
+1. **Canvas tools**: Access context-sensitive tools for the active mode (such as selection, interaction, and AI annotation in Play mode, or transform, frames, and text in Design mode).
+2. **Mode switcher**: Transition between the three core phases of building in Nordcraft: Play ([kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd]), Design ([kbd]Cmd/Ctrl[kbd] + [kbd]D[kbd]), and Ship ([kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]).
 
 ## Mode switcher
 

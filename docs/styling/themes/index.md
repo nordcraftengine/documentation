@@ -9,7 +9,7 @@ Themes in Nordcraft provide a centralized way to manage design tokens across you
 
 To access the theme editor, click the [kbd]Themes[kbd] button in the left sidebar. You can also open the theme dialog from the [bottom bar](/the-editor/bottom-bar#bottom-bar). Here you can edit your theme with a live view of your changes in context.
 
-![The Nordcraft theme editor. On the left is the CSS variable grouping. On the central canvas, a table of theme variables are displayed with their type inputs.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default}
+![The Nordcraft theme editor. CSS variable groupings are displayed with their token inputs.|16/9](theme.webp 'Theme'){https://editor.nordcraft.com/projects/docs_examples/branches/main/themes/Default}
 
 ## Theme variables
 

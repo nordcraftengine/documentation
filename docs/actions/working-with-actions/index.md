@@ -18,7 +18,7 @@ title: Creating custom actions using JavaScript
 
 ## Create an action
 
-![The project sidebar is visible on the left of the editor, showing an action named confetti in the actions list. To the right, the confetti action is visible, showing a number of inputs, a single defined event name, and the custom code further to the right in an IDE-like text editor. The image is annotated according to the list items below.|16/9](create-an-action.webp 'Create an action'){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
+![The actions list is open in the left sidebar, showing custom actions. The confetti action is open in the editor with custom code on the right.|16/9](create-an-action.webp 'Create an action'){https://editor.nordcraft.com/projects/docs_examples/branches/main/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800}
 
 To create an action:
 

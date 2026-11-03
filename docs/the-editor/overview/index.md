@@ -9,14 +9,6 @@ The Nordcraft editor is your workspace for building websites and packages. It pr
 
 ![The Nordcraft editor, showing a full HTML element tree of HTML elements and components, and a card component on the canvas. The image is annotated with numbers that relate to the lists items below.|16/9](editor-overview.webp 'Editor overview'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events}
 
-## The three editor modes
-
-The Nordcraft editor is built around three core modes available in the [bottom bar](/the-editor/bottom-bar):
-
-1. **Play mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd]): Explore, interact with your site, and build features through conversational and visual AI prompts. Play mode is the default mode when opening projects.
-2. **Design mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]D[kbd]): Visually design and manipulate elements, configure styles, set up HTML attributes, and build component logic.
-3. **Ship mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]): Inspect file diffs, resolve merge conflicts, and publish changes to your production website.
-
 ## Workspace layout
 
 The editor workspace consists of four main areas:
@@ -30,6 +22,14 @@ The editor workspace consists of four main areas:
    - [Data panel](/the-editor/data-panel): Variables, formulas, APIs, and workflows
    - [Element panel](/the-editor/element-panel): CSS styles, attributes, and event handlers for selected elements
    - [AI Assistant](/ai-assistant): AI chat panel with prompt history and generation controls
+
+## The three editor modes
+
+The Nordcraft editor is built around three core modes available in the [bottom bar](/the-editor/bottom-bar):
+
+1. **Play mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd]): Explore, interact with your site, and build features through conversational and visual AI prompts. Play mode is the default mode when opening projects.
+2. **Design mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]D[kbd]): Visually design and manipulate elements, configure styles, set up HTML attributes, and build component logic.
+3. **Ship mode** ([kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]): Inspect file diffs, resolve merge conflicts, and publish changes to your production website.
 
 ## Left panel
 

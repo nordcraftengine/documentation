@@ -13,7 +13,7 @@ The AI Assistant is integrated directly with **Play mode**. You can access it by
 
 If you are already in Play mode, pressing [kbd]Cmd/Ctrl[kbd] + [kbd]P[kbd] automatically focuses the prompt input field so you can immediately begin typing.
 
-![The Nordcraft editor, showing the AI Assistant window open on the right, with an input field at the bottom of it that says start typing. The Ask AI button on the bottom bar is hovered over, which shows it having a lighter grey background than the grey background of the bottom bar.|16/9](ai-assistant.webp 'AI Assistant')
+![The Nordcraft editor in Play mode, showing the AI Assistant window open on the right with the prompt bar at the bottom.|16/9](ai-assistant.webp 'AI Assistant')
 
 ## Enhancing prompts with Play mode tools
 
@@ -38,9 +38,9 @@ The AI processes these visual markings alongside your text prompt, making design
 
 ## What can the AI do?
 
-The AI can perform a number of tasks to help you understand and build projects in Nordcraft. You can choose between 2 modes:
+The AI can perform a number of tasks to help you understand and build projects in Nordcraft. You can choose between 3 modes:
 
-![The AI assistant mode window, showing two modes available: ask and build.|16/9](ai-mode-select.webp 'Choose your AI mode')
+![The AI assistant mode window, showing three modes available: ask, plan, and build.|16/9](ai-mode-select.webp 'Choose your AI mode')
 
 ### Ask mode
 
@@ -54,6 +54,14 @@ When in Ask mode the AI can perform the following tasks:
 :::info
 Using Ask mode is free of charge.
 :::
+
+### Plan mode
+
+When in Plan mode the AI can perform the following tasks:
+
+- **Generate project plans**: it can create a step-by-step plan for building features, components, or pages in your project.
+- **Provide implementation guidance**: it can give you advice on how to implement features, including which components, workflows, and formulas to use.
+- **Suggest improvements**: it can analyze your project and suggest improvements to your code, structure, or design.
 
 ### Build mode
 

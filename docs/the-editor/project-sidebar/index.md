@@ -7,7 +7,7 @@ description: Use the project sidebar to access pages, components, APIs, project 
 
 The project sidebar provides an overview of your project files and resources, any issues detected in your project.
 
-![The project sidebar is visible, showing three existing pages, and collapsed sections for components, services, actions, formulas, media, themes and settings. The image is annotated corresponding to the list items below.|16/9](project-sidebar.webp 'Project sidebar')
+![The project sidebar showing the activity bar with buttons for Pages, Components, Services, Media, Formulas, Actions, Themes, Fonts, Config, Packages, Issues, and History.|16/9](project-sidebar.webp 'Project sidebar')
 
 The left sidebar provides direct access to all of the following:
 

@@ -13,9 +13,8 @@ You can enter Ship mode at any time using:
 
 - The keyboard shortcut [kbd]Cmd/Ctrl[kbd] + [kbd]Shift[kbd] + [kbd]S[kbd]
 - The **Ship** button on the [bottom bar mode switcher](/the-editor/bottom-bar)
-- The version control icon in the left-hand sidebar
 
-![Open the version control panel using the version control icon in the left sidebar.|16/9](version-control-icon.webp 'Version control')
+![Open the version control history using the history button in the left sidebar activity bar.|16/9](version-control-icon.webp 'Version control')
 
 ## Ship mode workspace
 
@@ -31,9 +30,8 @@ All files that have been modified in your active branch are listed in the branch
 
 Each change is marked with an icon and name representing the change, as well as a label describing the change type:
 
-- `Created`: A file or value created on your branch that does not exist in the ancestor branch.
-- `Deleted`: A file or value deleted from your branch that exists in the ancestor branch.
-- `Edited`: A value that has been modified, showing both old and new values.
+- `C`: A file or value created on your branch that does not exist in the ancestor branch.
+- `D`: A file or value deleted from your branch that exists in the ancestor branch.
 
 Clicking on any file or change displays the exact difference in the central diff viewer.
 
