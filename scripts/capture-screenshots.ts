@@ -14,16 +14,7 @@ export interface AnnotationBadge {
   text: string
 }
 
-export interface AnnotationOutline {
-  type: 'outline'
-  x: number
-  y: number
-  width: number
-  height: number
-  radius?: number
-}
-
-export type Annotation = AnnotationBadge | AnnotationOutline
+export type Annotation = AnnotationBadge
 
 export interface ScreenshotTarget {
   id: string
@@ -46,24 +37,15 @@ export function buildSvgOverlay(
       if (ann.type === 'badge') {
         const bx = ann.x * scale
         const by = ann.y * scale
-        const bw = 20 * scale
+        const bw = (ann.text.length > 1 ? 24 : 20) * scale
         const bh = 20 * scale
         const rx = 4 * scale
-        const fontSize = 11 * scale
+        const fontSize = (ann.text.length > 1 ? 9.5 : 11) * scale
         const tx = bx + bw / 2
         const ty = by + bh / 2 + 0.5 * scale
         return `
         <rect x="${bx}" y="${by}" width="${bw}" height="${bh}" rx="${rx}" ry="${rx}" fill="#ffffff" stroke="#1a1a1a" stroke-width="${1 * scale}" />
         <text x="${tx}" y="${ty}" font-family="-apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif" font-size="${fontSize}" font-weight="bold" fill="#000000" text-anchor="middle" dominant-baseline="central">${ann.text}</text>
-      `
-      } else if (ann.type === 'outline') {
-        const ox = ann.x * scale
-        const oy = ann.y * scale
-        const ow = ann.width * scale
-        const oh = ann.height * scale
-        const or = (ann.radius ?? 4) * scale
-        return `
-        <rect x="${ox}" y="${oy}" width="${ow}" height="${oh}" rx="${or}" ry="${or}" fill="none" stroke="#ffffff" stroke-width="${2 * scale}" />
       `
       }
       return ''
@@ -290,6 +272,11 @@ export const TARGETS: ScreenshotTarget[] = [
       await page.locator('#sidebar-files-create-services').click()
       await page.waitForTimeout(500)
     },
+    annotations: [
+      { type: 'badge', x: 16, y: 58, text: '1' },
+      { type: 'badge', x: 135, y: 24, text: '2' },
+      { type: 'badge', x: 350, y: 141, text: '3' },
+    ],
   },
 
   // Add service from API panel
@@ -337,6 +324,10 @@ export const TARGETS: ScreenshotTarget[] = [
       await page.locator('[data-test="create-service-item-xano"]').click()
       await page.waitForTimeout(1000)
     },
+    annotations: [
+      { type: 'badge', x: 605, y: 248, text: '1' },
+      { type: 'badge', x: 605, y: 292, text: '2' },
+    ],
   },
 
   // Configure custom service
