@@ -362,10 +362,11 @@ export const TARGETS: ScreenshotTarget[] = [
     id: 'detach-service',
     name: 'detach-service',
     outputDir: 'docs/connecting-data/services',
-    path: '/projects/docs_examples/branches/screenshots/services/Contentful?canvas-width=800&canvas-height=800',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-api?mode=design&canvas-tool=select&canvas-width=800&selection=apis.Contentful&rightpanel=style',
     description: 'Service editor menu with detach service',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
+      await page.locator('#api-editor-action-menu').click()
     },
   },
 
@@ -492,7 +493,7 @@ export const TARGETS: ScreenshotTarget[] = [
     id: 'media-details',
     name: 'media-details',
     outputDir: 'docs/media/overview',
-    path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=media',
+    path: '/projects/docs_examples/branches/screenshots/media/e102cdfb-5bca-4b15-8a5c-cd05ec2d5b7c?mode=design&canvas-tool=select&canvas-width=800&rightpanel=style',
     description: 'Media library drawer',
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
