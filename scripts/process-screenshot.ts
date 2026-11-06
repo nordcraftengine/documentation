@@ -81,7 +81,10 @@ async function main() {
   let baseName: string
   let annotations = matchedTarget?.annotations
 
-  if (matchedTarget && (!destination.includes('/') || destination === matchedTarget.id)) {
+  if (
+    matchedTarget &&
+    (!destination.includes('/') || destination === matchedTarget.id)
+  ) {
     outputDir = path.resolve(process.cwd(), matchedTarget.outputDir)
     baseName = matchedTarget.name
   } else {
@@ -118,7 +121,9 @@ async function main() {
   console.log(`   Generating 3200x1800 (large) WebP...`)
   let largeSharp = sharp(inputBuffer).resize(3200, 1800, { fit: 'cover' })
   if (annotations && annotations.length > 0) {
-    console.log(`   Compositing ${annotations.length} annotations onto large image...`)
+    console.log(
+      `   Compositing ${annotations.length} annotations onto large image...`,
+    )
     const svgLarge = buildSvgOverlay(annotations, 3200, 1800)
     largeSharp = largeSharp.composite([{ input: svgLarge, top: 0, left: 0 }])
   }
@@ -128,7 +133,9 @@ async function main() {
   console.log(`   Generating 800x450 (standard) WebP...`)
   let standardSharp = sharp(inputBuffer).resize(800, 450, { fit: 'cover' })
   if (annotations && annotations.length > 0) {
-    console.log(`   Compositing ${annotations.length} annotations onto standard image...`)
+    console.log(
+      `   Compositing ${annotations.length} annotations onto standard image...`,
+    )
     const svgStandard = buildSvgOverlay(annotations, 800, 450)
     standardSharp = standardSharp.composite([
       { input: svgStandard, top: 0, left: 0 },

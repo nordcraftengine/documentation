@@ -15,7 +15,8 @@ fs.mkdirSync('./dist/docs')
 // Copy over all markdown files + folders
 fs.cpSync('../docs', './dist/docs', {
   recursive: true,
-  filter: (src) => !src.endsWith('.webp') && !src.endsWith('.json'),
+  filter: (src) =>
+    !src.endsWith('.webp') && !src.endsWith('.json') && !src.endsWith('.ts'),
 })
 // Inject formulas into the formula reference file
 const formulaReferencePath = './dist/docs/references/formulas/index.md'
@@ -38,6 +39,7 @@ fs.cpSync('../docs', './static/raw', {
   filter: (src) =>
     !src.endsWith('.webp') &&
     !src.endsWith('.json') &&
+    !src.endsWith('.ts') &&
     !src.includes('references/formulas/index.md') &&
     !src.includes('references/actions/index.md'),
 })
