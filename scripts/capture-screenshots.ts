@@ -13,7 +13,7 @@ export interface ScreenshotConfig {
   id?: string
   name?: string
   outputDir?: string
-  path: string
+  path: `/${string}`
   description: string
   setup?: (page: Page) => Promise<void>
   annotations?: Annotation[]
@@ -40,6 +40,13 @@ export async function captureTarget(
   target: ScreenshotTarget,
   baseUrl: string = DEFAULT_BASE_URL,
 ) {
+  if (!target.path || target.path.startsWith('TODO')) {
+    console.log(
+      `\n⚠️  Skipping [${target.id}]: path not configured yet (${target.description})`,
+    )
+    return
+  }
+
   console.log(`\n📸 Capturing [${target.id}]: ${target.description}`)
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
@@ -98,6 +105,16 @@ export async function captureTarget(
 }
 
 async function runDirectTarget(target: ScreenshotTarget) {
+  if (!target.path || target.path.startsWith('TODO')) {
+    console.warn(
+      `\n⚠️  Cannot capture [${target.id}]: path is not configured yet.`,
+    )
+    console.warn(
+      `   Please update 'path' in ${target.outputDir}/${target.name}.screenshot.ts`,
+    )
+    return
+  }
+
   console.log(`🚀 Starting direct screenshot capture`)
   console.log(`   Target: ${target.id} (${target.name})`)
   console.log(`   Destination: ${target.outputDir}`)
