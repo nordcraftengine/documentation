@@ -653,8 +653,10 @@ export const TARGETS: ScreenshotTarget[] = [
       await page.waitForTimeout(300)
     },
     annotations: [
-      { type: 'badge', x: 60, y: 20, text: '1' },
-      { type: 'badge', x: 60, y: 24, text: '2' },
+      { type: 'badge', x: 187, y: 2, text: '1' },
+      { type: 'badge', x: 666, y: 18, text: '2' },
+      { type: 'badge', x: 128, y: 204, text: '3' },
+      { type: 'badge', x: 128, y: 272, text: '4' },
     ],
   },
 ]
