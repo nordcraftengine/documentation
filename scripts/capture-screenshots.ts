@@ -60,7 +60,7 @@ export function buildSvgOverlay(
 }
 
 const DEFAULT_BASE_URL =
-  process.env.EDITOR_BASE_URL || 'https://screenshots-3-0-toddle.nordcraft.site'
+  process.env.EDITOR_BASE_URL || 'https://editor.nordcraft.com'
 
 export const TARGETS: ScreenshotTarget[] = [
   // Command Palette
@@ -487,6 +487,62 @@ export const TARGETS: ScreenshotTarget[] = [
     setup: async (page: Page) => {
       await page.waitForTimeout(500)
     },
+  },
+
+  // Single component
+  {
+    id: 'component',
+    name: 'component',
+    outputDir: 'docs/building-blocks/components',
+    path: '/projects/docs_examples/branches/screenshots/components/card?mode=design&canvas-tool=select&rightpanel=style',
+    description: 'Single component view',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // Single element
+  {
+    id: 'elements',
+    name: 'elements',
+    outputDir: 'docs/building-blocks/elements',
+    path: '/projects/docs_examples/branches/screenshots/components/card?mode=design&canvas-tool=select&selection=nodes.root&rightpanel=style',
+    description: 'Elements view',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+  },
+
+  // Add a slot element
+  {
+    id: 'add-a-slot-element',
+    name: 'add-a-slot-element',
+    outputDir: 'docs/components/compositions',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-card-container?mode=design&canvas-tool=select&selection=nodes.Iry7BeAO7AjcLcJEL-sPT&rightpanel=style',
+    description: 'Slot element view',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+    annotations: [
+      { type: 'badge', x: 600, y: 200, text: '1' },
+      { type: 'badge', x: 600, y: 240, text: '2' },
+    ],
+  },
+
+  // Assign to a slot
+  {
+    id: 'assign-to-a-slot',
+    name: 'assign-to-a-slot',
+    outputDir: 'docs/components/compositions',
+    path: '/projects/docs_examples/branches/screenshots/components/screenshot-card?mode=design&canvas-tool=select&selection=nodes.47Ndqw5Wmw5WAwpiV13p8&rightpanel=attributes',
+    description: 'Slot element view',
+    setup: async (page: Page) => {
+      await page.waitForTimeout(500)
+    },
+    annotations: [
+      { type: 'badge', x: 60, y: 20, text: '1' },
+      { type: 'badge', x: 60, y: 24, text: '2' },
+    ],
   },
 ]
 
