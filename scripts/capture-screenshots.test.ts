@@ -1,8 +1,5 @@
 import { describe, expect, it } from 'bun:test'
-import {
-  type Annotation,
-  buildSvgOverlay,
-} from './capture-screenshots'
+import { type Annotation, buildSvgOverlay } from './capture-screenshots'
 
 describe('buildSvgOverlay', () => {
   it('should render badge annotations', () => {

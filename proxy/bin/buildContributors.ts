@@ -19,7 +19,7 @@ fs.mkdirSync('./dist/contributors')
 // Copy over all markdown files + folders
 fs.cpSync('../docs', './dist/contributors', {
   recursive: true,
-  filter: (src) => !src.endsWith('.webp'),
+  filter: (src) => !src.endsWith('.webp') && !src.endsWith('.ts'),
 })
 // Read all files
 const files = (
