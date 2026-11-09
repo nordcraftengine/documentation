@@ -17,6 +17,7 @@ We provide built-in scripts to automate screenshot generation and keep images co
 
 - `bun <path/to/screenshot.ts>`: Run an individual co-located screenshot script directly.
 - `bun run screenshots [target]`: Automatically capture all or matching documentation screenshots using Playwright.
+- `bun run screenshots:annotate [target]`: Open the visual Annotation Studio to place and edit badges, boxes, and labels with a live canvas.
 - `bun run screenshots:record [target]`: Open an interactive browser with session mocks to record user clicks for new screenshots.
 - `bun run screenshots:process <input.png> <target>`: Convert and resize external PNG/JPEG captures into standard (`800x450`) and large (`3200x1800`) WebP files with annotations.
 

@@ -182,6 +182,22 @@ bun run screenshots editor-overview
 bun run screenshots the-editor
 ```
 
+#### Visual annotation studio
+
+To visually place or tweak badges, boxes, and labels without manually measuring coordinates:
+
+```bash
+bun run screenshots:annotate                  # Open studio
+bun run screenshots:annotate editor-overview  # Open studio directly to a target
+```
+
+The Annotation Studio opens in your browser (`http://localhost:3333`) and provides:
+
+- **Point-and-click placement**: Drop numbered badges, drag to draw highlight/selection boxes, or place text labels.
+- **Interactive manipulation**: Drag elements to reposition, resize boxes with handles, and nudge with arrow keys (1px precision).
+- **Instant preview**: Uses the exact SVG rendering pipeline so the preview is pixel-identical to the final WebP.
+- **Direct file sync**: Press [kbd]Cmd+S[kbd] or click **Save** to write the updated annotations array into the `*.screenshot.ts` file and immediately re-generate `<name>.webp` and `<name>-large.webp`.
+
 #### Recording interactions for new screenshots
 
 To record clicks, dropdown openings, or panel navigation for a new screenshot state, run the interactive recorder:
