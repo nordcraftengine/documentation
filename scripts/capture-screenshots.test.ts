@@ -28,4 +28,11 @@ describe('scripts/capture-screenshots.ts', () => {
   it('should export TARGETS array', () => {
     expect(Array.isArray(TARGETS)).toBe(true)
   })
+
+  it('should match targets only by exact full id', () => {
+    const pageTargets = TARGETS.filter((t) => t.id === 'page')
+    expect(pageTargets.length).toBe(1)
+    expect(pageTargets[0].id).toBe('page')
+    expect(pageTargets[0].outputDir).toBe('docs/building-blocks/pages')
+  })
 })

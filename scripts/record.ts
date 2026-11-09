@@ -16,13 +16,7 @@ async function main() {
     : positionalArg || null
 
   const target = targetQuery
-    ? TARGETS.find(
-        (t) =>
-          t.id === targetQuery ||
-          t.name === targetQuery ||
-          t.id.includes(targetQuery) ||
-          t.name.includes(targetQuery),
-      )
+    ? TARGETS.find((t) => t.id === targetQuery)
     : null
 
   const urlPath = target

@@ -227,14 +227,7 @@ async function main() {
     : positionalArg || null
 
   const targetsToRun = targetQuery
-    ? TARGETS.filter(
-        (t) =>
-          t.id === targetQuery ||
-          t.name === targetQuery ||
-          t.outputDir.includes(targetQuery) ||
-          t.id.includes(targetQuery) ||
-          t.name.includes(targetQuery),
-      )
+    ? TARGETS.filter((t) => t.id === targetQuery)
     : TARGETS
 
   if (targetsToRun.length === 0) {

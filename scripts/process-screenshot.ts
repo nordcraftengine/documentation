@@ -71,10 +71,7 @@ async function main() {
 
   // Check if destination matches a known target in TARGETS
   const matchedTarget = TARGETS.find(
-    (t) =>
-      t.id === destination ||
-      t.name === destination ||
-      destination.includes(t.name),
+    (t) => t.id === destination || t.name === destination,
   )
 
   let outputDir: string
