@@ -4,6 +4,7 @@
   "scripts": {
     "build": "bunx esbuild --bundle --outdir=dist --format=esm src/index.ts",
     "buildContributors": "bun bin/buildContributors.ts",
+    "cf:types": "wrangler types",
     "checkContributors": "bun bin/checkContributors.ts",
     "combineDocs": "bun bin/combineContent.ts",
     "buildDocs": "bun bin/buildAssets.ts && bun bin/buildSitemap.ts",
@@ -23,7 +24,7 @@
     "@cloudflare/workers-types": "4.20250922.0",
     "@types/bun": "1.3.3",
     "@typescript/native-preview": "7.0.0-dev.20250619.1",
-    "wrangler": "4.77.0"
+    "wrangler": "4.158.0"
   },
   "dependencies": {
     "@clickhouse/client-web": "1.11.1",

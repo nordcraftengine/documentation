@@ -17,7 +17,14 @@ export const fetchMenu = async ({
       throw new Error('Could not fetch menu items.')
     }
 
-    return json({ menu })
+    return json(
+      { menu },
+      {
+        headers: {
+          'Cache-Control': `public, max-age=${10 * 60}`,
+        },
+      },
+    )
   } catch (err) {
     // eslint-disable-next-line no-console
     console.log(err)

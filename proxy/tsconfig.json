@@ -14,7 +14,7 @@
     /* Specify how TypeScript looks up a file from a given module specifier. */
     "moduleResolution": "Bundler",
     /* Specify type package names to be included without being referenced in a source file. */
-    "types": ["@cloudflare/workers-types/2023-07-01", "bun-types"],
+    "types": ["bun-types"],
     /* Enable importing .json files */
     "resolveJsonModule": true,
 
@@ -40,5 +40,5 @@
     "skipLibCheck": true,
     "verbatimModuleSyntax": true
   },
-  "include": ["src/**/*.ts", "bin/**/*.ts"]
+  "include": ["src/**/*.ts", "bin/**/*.ts", "worker-configuration.d.ts"]
 }
