@@ -25,6 +25,7 @@ export default [
       'examples/**/*',
       'packages/lib/actions.ts',
       'packages/lib/formulas.ts',
+      'worker-configuration.d.ts',
     ],
   },
   ...compat.extends(

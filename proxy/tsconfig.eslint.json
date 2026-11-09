@@ -4,5 +4,5 @@
     "strict": true,
     "allowJs": false
   },
-  "include": ["src", "bin"]
+  "include": ["src", "bin", "worker-configuration.d.ts"]
 }
