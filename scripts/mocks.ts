@@ -171,6 +171,7 @@ export async function setupPageMocks(page: Page) {
         { key: 'learn-about-media', value: 'Done' },
         { key: 'learn-about-workflows', value: 'Done' },
         { key: 'learn-about-branches', value: 'Done' },
+        { key: 'learn-about-formula-editor', value: 'Done' },
       ]),
     })
   })
