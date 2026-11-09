@@ -7,8 +7,11 @@
   "name": "docs-proxy",
   "account_id": "f6203e7ed21fb722943385aaa3daa65a",
   "main": "dist/index.js",
-  "compatibility_date": "2025-09-22",
+  "compatibility_date": "2026-11-09",
   "observability": {
+    "enabled": true,
+  },
+  "cache": {
     "enabled": true,
   },
   "assets": {
@@ -28,11 +31,13 @@
       "fallthrough": true,
     },
   ],
-  "vars": {
-    // The worker needs these secrets:
-    // "TYPESENSE_ADMIN_TOKEN": "<secret>"
-    // "TYPESENSE_SEARCH_TOKEN": "<secret>"
-    // "TYPESENSE_HOST": "<secret>"
-    // "SEARCH_INDEX_AUTH_TOKEN": "<secret>"
+  "vars": {},
+  "secrets": {
+    "required": [
+      "TYPESENSE_ADMIN_TOKEN",
+      "TYPESENSE_SEARCH_TOKEN",
+      "TYPESENSE_HOST",
+      "SEARCH_INDEX_AUTH_TOKEN",
+    ],
   },
 }
