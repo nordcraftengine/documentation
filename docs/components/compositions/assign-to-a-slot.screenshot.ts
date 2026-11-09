@@ -8,7 +8,17 @@ export default defineScreenshot({
     await page.waitForTimeout(500)
   },
   annotations: [
-    { type: 'badge', x: 60, y: 20, text: '1' },
-    { type: 'badge', x: 60, y: 24, text: '2' },
+    {
+      type: 'badge',
+      x: 136,
+      y: 49,
+      text: '1',
+    },
+    {
+      type: 'badge',
+      x: 665,
+      y: 56,
+      text: '2',
+    },
   ],
 })
