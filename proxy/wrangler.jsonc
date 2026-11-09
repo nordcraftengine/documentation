@@ -34,10 +34,11 @@
   "vars": {},
   "secrets": {
     "required": [
-      "TYPESENSE_ADMIN_TOKEN",
-      "TYPESENSE_SEARCH_TOKEN",
+      "CLICKHOUSE_HOST",
+      "CLICKHOUSE_PASSWORD",
+      "CLICKHOUSE_USER",
       "TYPESENSE_HOST",
-      "SEARCH_INDEX_AUTH_TOKEN",
+      "TYPESENSE_SEARCH_TOKEN",
     ],
   },
 }
