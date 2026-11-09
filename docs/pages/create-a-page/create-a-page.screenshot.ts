@@ -6,12 +6,7 @@ export default defineScreenshot({
   description: 'Create page dialog open from pages drawer',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
-    await page.evaluate(() => {
-      const btn = document.querySelector(
-        '[class*="sidebar-files:vz7XXhB7lnqyN7Z0ei9qX"]',
-      ) as HTMLElement
-      btn?.click()
-    })
-    await page.waitForTimeout(800)
+    await page.locator('#sidebar-files-create-pages').click()
+    await page.waitForTimeout(200)
   },
 })
