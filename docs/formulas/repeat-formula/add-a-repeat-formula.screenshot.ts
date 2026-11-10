@@ -6,7 +6,7 @@ export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/example-repeat-formula?mode=design&canvas-tool=select&canvas-width=800&selection=nodes.nQgi8KJ7OPxn9l5H0mML-.repeat&rightpanel=attributes',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
-    await page.locator('#formula-editor').click()
+    await page.locator('#formula-editor').click({ position: { x: 50, y: 50 } })
     await page.waitForTimeout(500)
   },
   annotations: [
