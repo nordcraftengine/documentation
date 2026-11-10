@@ -254,27 +254,38 @@ const HTML_APP = `<!DOCTYPE html>
     /* CANVAS AREA */
     .canvas-viewport {
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      display: block;
       background: radial-gradient(circle, #1a1e2a 1px, transparent 1px);
       background-size: 20px 20px;
       background-color: var(--bg-dark);
-      overflow: auto;
+      overflow: hidden;
       position: relative;
-      padding: 24px;
     }
     .canvas-stage {
       width: 800px;
       height: 450px;
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 0;
       background: #000;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 0 1px var(--border);
       border-radius: 4px;
       overflow: hidden;
-      transform-origin: center center;
-      transition: transform 0.15s ease-out;
+      transform-origin: 0 0;
+    }
+    .canvas-hint {
+      position: absolute;
+      bottom: 12px;
+      left: 16px;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: rgba(15, 17, 23, 0.85);
+      backdrop-filter: blur(4px);
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      pointer-events: none;
+      z-index: 10;
     }
     #screenshotImg {
       width: 100%;
@@ -427,12 +438,22 @@ const HTML_APP = `<!DOCTYPE html>
     </div>
 
     <div class="header-right">
-      <select id="zoomSelect">
-        <option value="1">100%</option>
-        <option value="1.25">125%</option>
-        <option value="1.5">150%</option>
-        <option value="2">200%</option>
-      </select>
+      <div style="display: flex; align-items: center; gap: 4px;">
+        <button id="btnZoomOut" class="btn" style="padding: 6px 10px;" title="Zoom Out (Cmd -)">−</button>
+        <select id="zoomSelect">
+          <option value="0.5">50%</option>
+          <option value="0.75">75%</option>
+          <option value="1" selected>100%</option>
+          <option value="1.25">125%</option>
+          <option value="1.5">150%</option>
+          <option value="2">200%</option>
+          <option value="3">300%</option>
+          <option value="4">400%</option>
+          <option value="fit">Fit</option>
+        </select>
+        <button id="btnZoomIn" class="btn" style="padding: 6px 10px;" title="Zoom In (Cmd +)">+</button>
+        <button id="btnZoomReset" class="btn" title="Reset Zoom to 100% (Cmd 0)">100%</button>
+      </div>
       <button id="btnSave" class="btn btn-primary" title="Save annotations to .screenshot.ts and re-render WebPs (Cmd+S)">💾 Save</button>
     </div>
   </header>
@@ -443,6 +464,7 @@ const HTML_APP = `<!DOCTYPE html>
         <img id="screenshotImg" alt="Target Screenshot" />
         <svg id="svgOverlay" viewBox="0 0 800 450"></svg>
       </div>
+      <div class="canvas-hint">Hold Space + Drag to pan • Scroll or Pinch to zoom • Click/drag to annotate</div>
     </div>
 
     <aside>
@@ -542,13 +564,63 @@ const HTML_APP = `<!DOCTYPE html>
 
     const svg = document.getElementById('svgOverlay');
     const stage = document.getElementById('stage');
+    const viewport = document.getElementById('viewport');
     const screenshotImg = document.getElementById('screenshotImg');
     const targetSelect = document.getElementById('targetSelect');
+    const zoomSelect = document.getElementById('zoomSelect');
     const coordsDisplay = document.getElementById('coordsDisplay');
     const annList = document.getElementById('annList');
     const annCount = document.getElementById('annCount');
     const codeOutput = document.getElementById('codeOutput');
     const toast = document.getElementById('toast');
+
+    let zoom = 1;
+    let pan = { x: 0, y: 0 };
+    let isSpaceDown = false;
+    let isPanning = false;
+    let panStart = { x: 0, y: 0 };
+
+    function applyTransform() {
+      stage.style.transform = \`translate(\${pan.x}px, \${pan.y}px) scale(\${zoom})\`;
+      updateZoomSelect();
+    }
+
+    function updateZoomSelect() {
+      const pct = Math.round(zoom * 100);
+      const match = Array.from(zoomSelect.options).find(opt => opt.value !== 'fit' && Math.abs(parseFloat(opt.value) * 100 - pct) < 4);
+      if (match) {
+        zoomSelect.value = match.value;
+      }
+    }
+
+    function zoomAt(clientX, clientY, newZoom) {
+      newZoom = Math.min(5.0, Math.max(0.4, newZoom));
+      const rect = viewport.getBoundingClientRect();
+      const vx = clientX - rect.left;
+      const vy = clientY - rect.top;
+
+      const factor = newZoom / zoom;
+      pan.x = vx - (vx - pan.x) * factor;
+      pan.y = vy - (vy - pan.y) * factor;
+      zoom = newZoom;
+      applyTransform();
+    }
+
+    function centerStage(newZoom = zoom) {
+      zoom = newZoom;
+      const rect = viewport.getBoundingClientRect();
+      pan.x = Math.round((rect.width - 800 * zoom) / 2);
+      pan.y = Math.round((rect.height - 450 * zoom) / 2);
+      applyTransform();
+    }
+
+    function fitStage() {
+      const rect = viewport.getBoundingClientRect();
+      const scaleX = (rect.width - 48) / 800;
+      const scaleY = (rect.height - 48) / 450;
+      const fitZoom = Math.min(2.0, Math.max(0.4, Math.min(scaleX, scaleY)));
+      centerStage(fitZoom);
+    }
 
     function showToast(msg) {
       toast.innerText = msg;
@@ -591,12 +663,59 @@ const HTML_APP = `<!DOCTYPE html>
       renderOverlay();
       updateInspector();
       updateCodeOutput();
+      centerStage(1);
     }
 
-    // ZOOM CONTROL
-    document.getElementById('zoomSelect').addEventListener('change', (e) => {
-      stage.style.transform = \`scale(\${e.target.value})\`;
+    // ZOOM CONTROLS
+    document.getElementById('btnZoomIn').addEventListener('click', () => {
+      const rect = viewport.getBoundingClientRect();
+      zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, zoom * 1.25);
     });
+
+    document.getElementById('btnZoomOut').addEventListener('click', () => {
+      const rect = viewport.getBoundingClientRect();
+      zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, zoom / 1.25);
+    });
+
+    document.getElementById('btnZoomReset').addEventListener('click', () => {
+      centerStage(1);
+    });
+
+    zoomSelect.addEventListener('change', (e) => {
+      if (e.target.value === 'fit') {
+        fitStage();
+      } else {
+        centerStage(parseFloat(e.target.value));
+      }
+    });
+
+    // PAN & ZOOM EVENT LISTENERS
+    viewport.addEventListener('mousedown', (e) => {
+      if (isSpaceDown || e.button === 1) {
+        isPanning = true;
+        panStart = { x: e.clientX, y: e.clientY };
+        viewport.style.cursor = 'grabbing';
+        e.preventDefault();
+      }
+    });
+
+    viewport.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      if (e.ctrlKey || e.metaKey) {
+        // Pinch-to-zoom or Cmd/Ctrl + wheel
+        const zoomFactor = e.deltaY < 0 ? 1.12 : 0.88;
+        zoomAt(e.clientX, e.clientY, zoom * zoomFactor);
+      } else {
+        // Trackpad 2-finger scroll or wheel pan
+        if (e.shiftKey) {
+          pan.x -= e.deltaY;
+        } else {
+          pan.x -= e.deltaX;
+          pan.y -= e.deltaY;
+        }
+        applyTransform();
+      }
+    }, { passive: false });
 
     // TOOL BUTTONS
     document.querySelectorAll('.tool-btn').forEach(btn => {
@@ -611,6 +730,30 @@ const HTML_APP = `<!DOCTYPE html>
     // KEYBOARD SHORTCUTS
     window.addEventListener('keydown', (e) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA') return;
+
+      if (e.code === 'Space' && !isSpaceDown) {
+        isSpaceDown = true;
+        viewport.style.cursor = 'grab';
+        e.preventDefault();
+        return;
+      }
+      if ((e.metaKey || e.ctrlKey) && (e.key === '=' || e.key === '+')) {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, zoom * 1.25);
+        return;
+      }
+      if ((e.metaKey || e.ctrlKey) && (e.key === '-' || e.key === '_')) {
+        e.preventDefault();
+        const rect = viewport.getBoundingClientRect();
+        zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, zoom / 1.25);
+        return;
+      }
+      if ((e.metaKey || e.ctrlKey) && e.key === '0') {
+        e.preventDefault();
+        centerStage(1);
+        return;
+      }
 
       if ((e.metaKey || e.ctrlKey) && e.key === 's') {
         e.preventDefault();
@@ -640,6 +783,15 @@ const HTML_APP = `<!DOCTYPE html>
       }
     });
 
+    window.addEventListener('keyup', (e) => {
+      if (e.code === 'Space') {
+        isSpaceDown = false;
+        if (!isPanning) {
+          viewport.style.cursor = 'default';
+        }
+      }
+    });
+
     function setTool(tool) {
       activeTool = tool;
       document.querySelectorAll('.tool-btn').forEach(b => {
@@ -650,6 +802,7 @@ const HTML_APP = `<!DOCTYPE html>
 
     function getCoords(e) {
       const rect = svg.getBoundingClientRect();
+      if (!rect || rect.width === 0 || rect.height === 0) return { x: 0, y: 0 };
       const scaleX = 800 / rect.width;
       const scaleY = 450 / rect.height;
       return {
@@ -658,9 +811,19 @@ const HTML_APP = `<!DOCTYPE html>
       };
     }
 
-    svg.addEventListener('mousemove', (e) => {
+    window.addEventListener('mousemove', (e) => {
+      if (isPanning) {
+        pan.x += e.clientX - panStart.x;
+        pan.y += e.clientY - panStart.y;
+        panStart = { x: e.clientX, y: e.clientY };
+        applyTransform();
+        return;
+      }
+
       const { x, y } = getCoords(e);
-      coordsDisplay.innerText = \`X: \${x} | Y: \${y}\`;
+      if (e.target === svg || svg.contains(e.target)) {
+        coordsDisplay.innerText = \`X: \${x} | Y: \${y}\`;
+      }
 
       if (isDrawing && activeTool === 'box') {
         const x1 = Math.min(drawStart.x, x);
@@ -694,6 +857,7 @@ const HTML_APP = `<!DOCTYPE html>
     });
 
     svg.addEventListener('mousedown', (e) => {
+      if (isSpaceDown || isPanning || e.button === 1) return;
       const { x, y } = getCoords(e);
 
       if (activeTool === 'badge') {
@@ -746,6 +910,11 @@ const HTML_APP = `<!DOCTYPE html>
     });
 
     window.addEventListener('mouseup', (e) => {
+      if (isPanning) {
+        isPanning = false;
+        viewport.style.cursor = isSpaceDown ? 'grab' : 'default';
+      }
+
       if (isDrawing && activeTool === 'box') {
         isDrawing = false;
         const { x, y } = getCoords(e);
