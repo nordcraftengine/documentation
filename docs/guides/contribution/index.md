@@ -151,7 +151,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events',
-  description: 'Editor overview showing canvas, panels, and bottom bar',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/screenshot-card?mode=design&canvas-tool=select&selection=nodes.47Ndqw5Wmw5WAwpiV13p8&rightpanel=attributes',
-  description: 'Slot element view',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

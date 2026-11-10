@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/card?mode=design&canvas-tool=select&canvas-width=800&rightpanel=style',
-  description: 'Add service dialog open from services drawer',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
     await page.getByRole('button', { name: 'Services' }).click()

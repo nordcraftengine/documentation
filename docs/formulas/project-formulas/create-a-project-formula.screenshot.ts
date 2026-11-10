@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/formulas/getDefaultTrue?canvas-height=800&canvas-width=800&rightpanel=attributes',
-  description: 'Project formula editor view',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

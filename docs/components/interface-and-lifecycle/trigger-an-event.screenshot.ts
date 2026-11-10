@@ -5,7 +5,6 @@ import type { Page } from 'playwright'
 // TODO: Review path, setup, and annotations to regenerate
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/screenshot-card-container?mode=design&canvas-tool=select&canvas-width=800&selection=nodes.root.events.click.actions.0&rightpanel=events',
-  description: 'Trigger an event',
   setup: async (page: Page) => {
     await page.waitForTimeout(300)
   },

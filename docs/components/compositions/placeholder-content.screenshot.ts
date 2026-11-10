@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/screenshot-card-container?mode=design&canvas-tool=select&selection=nodes.Iry7BeAO7AjcLcJEL-sPT&rightpanel=attributes',
-  description: 'Placeholder content in slot',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

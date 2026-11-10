@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/services/Custom?mode=design&canvas-tool=select&canvas-width=800&leftpanel=services&rightpanel=style',
-  description: 'Configure OpenAPI / custom service dialog',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

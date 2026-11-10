@@ -4,7 +4,6 @@ import type { Page } from 'playwright'
 // Placeholder script for add-logic-on-attribute-change.webp
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/screenshot-card-container?mode=design&canvas-tool=select&canvas-width=800&selection=onAttributeChange&rightpanel=style',
-  description: 'Add logic on attribute change',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

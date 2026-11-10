@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800',
-  description: 'Set up action events',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

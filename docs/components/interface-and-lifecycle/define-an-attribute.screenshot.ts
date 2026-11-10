@@ -4,7 +4,6 @@ import type { Page } from 'playwright'
 // Placeholder script for define-an-attribute.webp
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/screenshot-card-container?mode=design&canvas-tool=select&canvas-width=800&selection=attributes.image-alt&rightpanel=style',
-  description: 'Define an attribute',
   setup: async (page: Page) => {
     await page.waitForTimeout(200)
     await page.getByRole('button', { name: 'image-alt' }).click()

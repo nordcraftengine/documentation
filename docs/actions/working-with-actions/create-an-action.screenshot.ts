@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/actions/confetti?rightpanel=style&canvas-width=800&canvas-height=800&leftpanel=actions',
-  description: 'Custom action editor showing inputs and code',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

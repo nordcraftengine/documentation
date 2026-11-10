@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/screenshot-card-container?mode=design&canvas-tool=select&selection=onLoad&rightpanel=attributes',
-  description: 'Add initialization logic to a component',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },

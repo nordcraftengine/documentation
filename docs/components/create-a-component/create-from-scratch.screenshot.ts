@@ -3,7 +3,6 @@ import type { Page } from 'playwright'
 
 export default defineScreenshot({
   path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&leftpanel=components',
-  description: 'Create component dialog open from components drawer',
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
     await page.evaluate(() => {
