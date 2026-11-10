@@ -1259,17 +1259,6 @@ async function main() {
           })
         }
 
-        const standardPath = path.resolve(
-          process.cwd(),
-          target.outputDir,
-          `${target.name}.webp`,
-        )
-        if (fs.existsSync(standardPath)) {
-          return new Response(Bun.file(standardPath), {
-            headers: { 'Content-Type': 'image/webp' },
-          })
-        }
-
         const largePath = path.resolve(
           process.cwd(),
           target.outputDir,
@@ -1277,6 +1266,17 @@ async function main() {
         )
         if (fs.existsSync(largePath)) {
           return new Response(Bun.file(largePath), {
+            headers: { 'Content-Type': 'image/webp' },
+          })
+        }
+
+        const standardPath = path.resolve(
+          process.cwd(),
+          target.outputDir,
+          `${target.name}.webp`,
+        )
+        if (fs.existsSync(standardPath)) {
+          return new Response(Bun.file(standardPath), {
             headers: { 'Content-Type': 'image/webp' },
           })
         }
