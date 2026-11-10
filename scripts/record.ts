@@ -15,9 +15,7 @@ async function main() {
     ? targetArg.split('=')[1]
     : positionalArg || null
 
-  const target = targetQuery
-    ? TARGETS.find((t) => t.id === targetQuery)
-    : null
+  const target = targetQuery ? TARGETS.find((t) => t.id === targetQuery) : null
 
   const urlPath = target
     ? target.path

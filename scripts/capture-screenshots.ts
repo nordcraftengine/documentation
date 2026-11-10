@@ -14,7 +14,6 @@ export interface ScreenshotConfig {
   name?: string
   outputDir?: string
   path: `/${string}`
-  description: string
   setup?: (page: Page) => Promise<void>
   annotations?: Annotation[]
 }
@@ -24,7 +23,6 @@ export interface ScreenshotTarget {
   name: string
   outputDir: string
   path: string
-  description: string
   setup?: (page: Page) => Promise<void>
   annotations?: Annotation[]
 }
@@ -41,13 +39,11 @@ export async function captureTarget(
   baseUrl: string = DEFAULT_BASE_URL,
 ) {
   if (!target.path || target.path.startsWith('TODO')) {
-    console.log(
-      `\n⚠️  Skipping [${target.id}]: path not configured yet (${target.description})`,
-    )
+    console.log(`\n⚠️  Skipping [${target.id}]: path not configured yet`)
     return
   }
 
-  console.log(`\n📸 Capturing [${target.id}]: ${target.description}`)
+  console.log(`\n📸 Capturing [${target.id}]`)
   const page = await browser.newPage({
     viewport: { width: 1920, height: 1080 },
     deviceScaleFactor: 2,
@@ -169,7 +165,6 @@ export function defineScreenshot(config: ScreenshotConfig): ScreenshotConfig {
         name: config.name || inferredName,
         outputDir: config.outputDir || inferredDir,
         path: config.path,
-        description: config.description,
         setup: config.setup,
         annotations: config.annotations,
       }
@@ -199,7 +194,6 @@ export async function loadScreenshotTargets(): Promise<ScreenshotTarget[]> {
         name: def.name || name,
         outputDir: def.outputDir || parsed.dir,
         path: def.path,
-        description: def.description,
         setup: def.setup,
         annotations: def.annotations,
       })

@@ -9,10 +9,8 @@ describe('scripts/capture-screenshots.ts', () => {
   it('should define a screenshot configuration', () => {
     const config = defineScreenshot({
       path: '/test/path',
-      description: 'Test target',
     })
     expect(config.path).toBe('/test/path')
-    expect(config.description).toBe('Test target')
   })
 
   it('should load screenshot targets from docs/', async () => {

@@ -1,8 +1,5 @@
 import { describe, expect, it } from 'bun:test'
-import {
-  type Annotation,
-  buildSvgOverlay,
-} from './annotations'
+import { type Annotation, buildSvgOverlay } from './annotations'
 
 describe('scripts/annotations.ts', () => {
   it('should render an empty SVG when annotations array is empty', () => {

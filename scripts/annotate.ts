@@ -655,7 +655,7 @@ const HTML_APP = `<!DOCTYPE html>
       if (!currentTarget) return;
 
       document.getElementById('infoName').innerText = currentTarget.id;
-      document.getElementById('infoDesc').innerText = currentTarget.description || 'No description';
+      document.getElementById('infoDesc').innerText = currentTarget.outputDir;
       screenshotImg.src = \`/api/image?id=\${currentTarget.id}&t=\${Date.now()}\`;
 
       annotations = JSON.parse(JSON.stringify(currentTarget.annotations || []));
@@ -1242,7 +1242,6 @@ async function main() {
           name: t.name,
           outputDir: t.outputDir,
           path: t.path,
-          description: t.description,
           annotations: t.annotations || [],
         }))
         return Response.json(list)

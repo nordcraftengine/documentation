@@ -83,8 +83,7 @@ export function buildSvgOverlay(
         const bw =
           ann.width !== undefined
             ? ann.width * scale
-            : ann.text.length * (fontSize / scale) * 0.55 * scale +
-              paddingX * 2
+            : ann.text.length * (fontSize / scale) * 0.55 * scale + paddingX * 2
         const bh = (ann.height ?? 20) * scale
         const rx = (ann.rx ?? 2) * scale
         const tx = bx + bw / 2
