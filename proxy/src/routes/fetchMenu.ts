@@ -22,6 +22,9 @@ export const fetchMenu = async ({
       {
         headers: {
           'Cache-Control': `public, max-age=${10 * 60}`,
+          ...(preferLocalMenu
+            ? { 'CDN-Cache-Control': `public, max-age=${24 * 60 * 60}` }
+            : {}),
         },
       },
     )

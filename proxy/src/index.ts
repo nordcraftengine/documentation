@@ -67,6 +67,7 @@ app.get('/contributors/:path{.*}?', async (ctx) => {
     return ctx.json(jsonFile, {
       headers: {
         'Cache-Control': `public, max-age=${5 * 60}`,
+        'CDN-Cache-Control': `public, max-age=${24 * 60 * 60}`,
       },
     })
   }

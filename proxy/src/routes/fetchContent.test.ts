@@ -1,13 +1,58 @@
 import { afterEach, describe, expect, spyOn, test } from 'bun:test'
 import type { Context } from 'hono'
 import type { Env } from '../types'
+import * as jsonLoader from '../utils/jsonLoader'
+import * as markdownLoader from '../utils/markdownLoader'
 import { fetchContent } from './fetchContent'
 
 describe('fetchContent', () => {
   let fetchSpy: ReturnType<typeof spyOn> | undefined
+  let jsonLoaderSpy: ReturnType<typeof spyOn> | undefined
+  let markdownLoaderSpy: ReturnType<typeof spyOn> | undefined
 
   afterEach(() => {
     fetchSpy?.mockRestore()
+    jsonLoaderSpy?.mockRestore()
+    markdownLoaderSpy?.mockRestore()
+  })
+
+  test('should return page content with CDN-Cache-Control header when fetched locally', async () => {
+    jsonLoaderSpy = spyOn(jsonLoader, 'loadJsonFile').mockResolvedValue([
+      {
+        id: 'test-item',
+        name: 'Test Item',
+        path: '01-test/index.md',
+        localPath: './docs/01-test/index.md',
+        contributorsPath: './contributors/01-test/index.json',
+        type: 'file',
+      },
+    ])
+    markdownLoaderSpy = spyOn(
+      markdownLoader,
+      'loadMarkdownFile',
+    ).mockResolvedValue(`---
+title: Local Test
+description: Local Description
+---
+
+# Local Content`)
+
+    const response = await fetchContent({
+      params: {
+        owner: 'nordcraftengine',
+        repository: 'documentation',
+        branch: 'main',
+        path: 'test-item',
+      },
+      ctx: {} as Context<{ Bindings: Env }>,
+    })
+
+    expect(response.status).toBe(200)
+    expect(response.headers.get('Cache-Control')).toBe('public, max-age=300')
+    expect(response.headers.get('CDN-Cache-Control')).toBe(
+      'public, max-age=86400',
+    )
+    expect(response.headers.get('X-Lookup-Method')).toBe('local')
   })
 
   test('should return page content with Cache-Control header when fetched from remote', async () => {
@@ -57,6 +102,7 @@ This is remote content.`
 
     expect(response.status).toBe(200)
     expect(response.headers.get('Cache-Control')).toBe('public, max-age=600')
+    expect(response.headers.get('CDN-Cache-Control')).toBeNull()
     const body = (await response.json()) as {
       seo: { title?: string }
       meta: { title?: string }
