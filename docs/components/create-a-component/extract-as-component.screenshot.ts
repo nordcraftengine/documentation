@@ -10,6 +10,27 @@ export default defineScreenshot({
       .click({
         button: 'right',
       })
-    await page.getByText('Extract as component').click()
   },
+  annotations: [
+    {
+      type: 'badge',
+      x: 1,
+      y: 51,
+      text: '1'
+    },
+    {
+      type: 'badge',
+      x: 167,
+      y: 93,
+      text: '2'
+    },
+    {
+      type: 'box',
+      x: 77,
+      y: 94,
+      width: 86,
+      height: 15,
+      rx: 4
+    }
+  ],
 })
