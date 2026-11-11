@@ -18,6 +18,7 @@ export const handleThumbnail = async (ctx: Context) => {
   headers.set('Content-Type', contentType ?? 'image/jpeg')
   headers.set('Content-Length', contentLength ?? '0')
   headers.set('Cache-Control', 'public, max-age=3600')
+  headers.set('CDN-Cache-Control', `public, max-age=${24 * 60 * 60}`)
   return new Response(response.body, {
     status: response.status,
     headers,
