@@ -10,4 +10,14 @@ export default defineScreenshot({
     await page.locator('[id="api-Weather API-debounce"]').click()
     await page.waitForTimeout(200)
   },
+  annotations: [
+    {
+      type: 'box',
+      x: 429,
+      y: 338,
+      width: 253,
+      height: 17,
+      rx: 4
+    }
+  ],
 })
