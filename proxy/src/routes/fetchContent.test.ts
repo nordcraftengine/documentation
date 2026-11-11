@@ -27,10 +27,8 @@ describe('fetchContent', () => {
         type: 'file',
       },
     ])
-    markdownLoaderSpy = spyOn(
-      markdownLoader,
-      'loadMarkdownFile',
-    ).mockResolvedValue(`---
+    markdownLoaderSpy = spyOn(markdownLoader, 'loadMarkdownFile')
+      .mockResolvedValue(`---
 title: Local Test
 description: Local Description
 ---
