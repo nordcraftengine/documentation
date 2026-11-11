@@ -177,10 +177,13 @@ export function defineScreenshot(config: ScreenshotConfig): ScreenshotConfig {
 
 /**
  * Scan docs/ for all co-located *.screenshot.ts files.
+ * Verifies that all screenshot image names and IDs are unique, throwing an error if duplicates are found.
  */
 export async function loadScreenshotTargets(): Promise<ScreenshotTarget[]> {
   const glob = new Bun.Glob('docs/**/*.screenshot.ts')
   const targets: ScreenshotTarget[] = []
+  const seenNames = new Map<string, string>()
+  const seenIds = new Map<string, string>()
 
   for await (const file of glob.scan({ cwd: process.cwd() })) {
     const fullPath = path.resolve(process.cwd(), file)
@@ -189,9 +192,28 @@ export async function loadScreenshotTargets(): Promise<ScreenshotTarget[]> {
     if (def) {
       const parsed = path.parse(file)
       const name = parsed.name.replace(/\.screenshot$/, '')
+      const targetName = def.name || name
+      const targetId = def.id || targetName
+
+      const existingFileName = seenNames.get(targetName)
+      if (existingFileName) {
+        throw new Error(
+          `Duplicate screenshot image name "${targetName}" found:\n  - ${existingFileName}\n  - ${file}\nAll screenshot image names must be unique.`,
+        )
+      }
+      seenNames.set(targetName, file)
+
+      const existingFileId = seenIds.get(targetId)
+      if (existingFileId) {
+        throw new Error(
+          `Duplicate screenshot ID "${targetId}" found:\n  - ${existingFileId}\n  - ${file}\nAll screenshot IDs must be unique.`,
+        )
+      }
+      seenIds.set(targetId, file)
+
       targets.push({
-        id: def.id || name,
-        name: def.name || name,
+        id: targetId,
+        name: targetName,
         outputDir: def.outputDir || parsed.dir,
         path: def.path,
         setup: def.setup,

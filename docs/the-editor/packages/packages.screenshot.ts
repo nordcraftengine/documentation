@@ -7,4 +7,14 @@ export default defineScreenshot({
   setup: async (page: Page) => {
     await page.waitForTimeout(500)
   },
+  annotations: [
+    {
+      type: 'box',
+      x: 1,
+      y: 398,
+      width: 18,
+      height: 17,
+      rx: 4,
+    },
+  ],
 })

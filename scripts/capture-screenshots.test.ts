@@ -33,4 +33,15 @@ describe('scripts/capture-screenshots.ts', () => {
     expect(pageTargets[0].id).toBe('page')
     expect(pageTargets[0].outputDir).toBe('docs/building-blocks/pages')
   })
+
+  it('should verify that all target names and ids are unique', () => {
+    const names = new Set<string>()
+    const ids = new Set<string>()
+    for (const t of TARGETS) {
+      expect(names.has(t.name)).toBe(false)
+      expect(ids.has(t.id)).toBe(false)
+      names.add(t.name)
+      ids.add(t.id)
+    }
+  })
 })

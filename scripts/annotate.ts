@@ -1225,6 +1225,17 @@ async function main() {
 
   const targets = await loadScreenshotTargets()
 
+  // Verify unique target names
+  const seenNames = new Set<string>()
+  for (const t of targets) {
+    if (seenNames.has(t.name)) {
+      throw new Error(
+        `Duplicate screenshot name "${t.name}" detected in Annotation Studio. All image names must be unique.`,
+      )
+    }
+    seenNames.add(t.name)
+  }
+
   const server = Bun.serve({
     port,
     async fetch(req) {

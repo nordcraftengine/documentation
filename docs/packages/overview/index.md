@@ -11,7 +11,7 @@ Packages in Nordcraft allow you to build reusable components and functionality t
 If you're already familiar with the JavaScript ecosystem, Packages in Nordcraft work like NPM packages. They can contain UI elements, custom actions, and other functionality.
 :::
 
-![The packages list is open to the left of the editor, showing information about the confetti back to the right. Visible is the package name, author, launch date and description, including a demo video and an interactive on-page demo. At the top right there are options to clone, star and install the package.|16/9](packages.webp 'Package overview')
+![The packages list is open to the left of the editor, showing information about the confetti back to the right. Visible is the package name, author, launch date and description, including a demo video and an interactive on-page demo. At the top right there are options to clone, star and install the package.|16/9](packages-overview.webp 'Package overview')
 
 ## Browsing packages
 
