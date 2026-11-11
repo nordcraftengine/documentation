@@ -11,7 +11,7 @@ In Nordcraft, changes are automatically committed to a branch when changes are m
 
 ## Preview changes
 
-Every commit in the branch history can be previewed. When previewing a commit, the editor will update to give a snapshot of how your project looked at the time of that commit. You can look through all of the project, but you cannot make any changes to the commit. You can preview a commit either by opening the dropdown menu on a commit in the list (#1 in the image) and selecting `Preview commit`, or expanding the commit and clicking one of the changes. If the change is a deletion, the editor will preview the commit before, so that you can view the value that was deleted. In order to close the preview, click the `Stop previewing` button in the top right corner of the viewport.
+Every commit in the branch history can be previewed. When previewing a commit, the editor will update to give a snapshot of how your project looked at the time of that commit. You can look through all of the project, but you cannot make any changes to the commit. You can preview a commit by clicking the commit in the history panel. If the change is a deletion, the editor will preview the commit before, so that you can view the value that was deleted. In order to close the preview, click the `Stop previewing` button in the top right corner of the viewport.
 
 ## Roll back changes
 
