@@ -139,14 +139,63 @@ Image requirements:
 
 This repository includes automated tools to capture, record, and format screenshots to meet the requirements above:
 
+#### Co-located screenshot scripts
+
+Every screenshot has a dedicated `*.screenshot.ts` file placed alongside its `.webp` images in the same folder (for example, `docs/the-editor/overview/editor-overview.screenshot.ts` next to `editor-overview.webp` and `editor-overview-large.webp`).
+
+Each script exports a screenshot target using `defineScreenshot`:
+
+```typescript
+import { defineScreenshot } from '@/scripts/capture-screenshots'
+import type { Page } from 'playwright'
+
+export default defineScreenshot({
+  path: '/projects/docs_examples/branches/screenshots/components/screenshot-page?canvas-width=800&canvas-height=800&rightpanel=events',
+  setup: async (page: Page) => {
+    await page.waitForTimeout(500)
+  },
+  annotations: [
+    { type: 'badge', x: 550, y: 35, text: '1' },
+    { type: 'badge', x: 450, y: 395, text: '2' },
+  ],
+})
+```
+
+- **Output directory and target name**: Inferred automatically from the script's folder location and filename.
+- **Path alias**: Imports use the `@/scripts/...` alias from `tsconfig.json` so files can be moved between folders without breaking relative imports.
+- **Annotations**: Badges, boxes, highlights, and labels can be added to the `annotations` array using 800×450 reference coordinates. They are automatically scaled and composited onto both the standard and large images.
+
 #### Generating screenshots
 
-Run the screenshot automation script to generate the dual WebP files (standard `800×450` and large `3200×1800`):
+You can run individual screenshot scripts directly, or run all of them via the batch runner:
 
 ```bash
-bun run screenshots                  # Capture all documentation screenshots
-bun run screenshots editor-overview  # Capture only a specific target
+# Run a single screenshot directly:
+bun docs/the-editor/overview/editor-overview.screenshot.ts
+
+# Capture all configured documentation screenshots:
+bun run screenshots
+
+# Capture matching targets by name or section directory:
+bun run screenshots editor-overview
+bun run screenshots the-editor
 ```
+
+#### Visual annotation studio
+
+To visually place or tweak badges, boxes, and labels without manually measuring coordinates:
+
+```bash
+bun run screenshots:annotate                  # Open studio
+bun run screenshots:annotate editor-overview  # Open studio directly to a target
+```
+
+The Annotation Studio opens in your browser (`http://localhost:3333`) and provides:
+
+- **Point-and-click placement**: Drop numbered badges, drag to draw highlight/selection boxes, or place text labels.
+- **Interactive manipulation**: Drag elements to reposition, resize boxes with handles, and nudge with arrow keys (1px precision).
+- **Instant preview**: Uses the exact SVG rendering pipeline so the preview is pixel-identical to the final WebP.
+- **Direct file sync**: Press [kbd]Cmd+S[kbd] or click **Save** to write the updated annotations array into the `*.screenshot.ts` file and immediately re-generate `<name>.webp` and `<name>-large.webp`.
 
 #### Recording interactions for new screenshots
 
@@ -157,7 +206,7 @@ bun run screenshots:record
 bun run screenshots:record create-a-page
 ```
 
-This launches a headed Chromium browser with authenticated session mocks pre-applied and opens the **Playwright Inspector** GUI. Click the red **Record** button in the inspector, interact with the editor, and copy the recorded actions into `TARGETS` in `scripts/capture-screenshots.ts`.
+This launches a headed Chromium browser with authenticated session mocks pre-applied and opens the **Playwright Inspector** GUI. Click the red **Record** button in the inspector, interact with the editor, and copy the recorded actions into the `setup` function of your co-located `*.screenshot.ts` file.
 
 #### Processing manual screenshots
 

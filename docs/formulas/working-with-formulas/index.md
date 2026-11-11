@@ -18,8 +18,7 @@ To create a new formula in Nordcraft:
 3. Enter a name for your formula
 4. (Optional) Add inputs with test values to use while building the formula
 5. (Optional) Expose the formula in context to make it available to child components
-6. (Optional) Delete the formula when it is no longer needed
-7. Define the formula logic using the formula editor
+6. Define the formula logic using the formula editor
 
 ::: tip
 Test values for formula inputs are useful during development as they allow you to verify your formula works correctly without needing to set up actual data flows.

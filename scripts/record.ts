@@ -3,7 +3,7 @@ import { chromium } from 'playwright'
 import { setupPageMocks, TARGETS } from './capture-screenshots'
 
 const DEFAULT_BASE_URL =
-  process.env.EDITOR_BASE_URL || 'https://screenshots-3-0-toddle.nordcraft.site'
+  process.env.EDITOR_BASE_URL || 'https://editor.nordcraft.com'
 
 async function main() {
   const args = process.argv.slice(2)
@@ -15,15 +15,7 @@ async function main() {
     ? targetArg.split('=')[1]
     : positionalArg || null
 
-  const target = targetQuery
-    ? TARGETS.find(
-        (t) =>
-          t.id === targetQuery ||
-          t.name === targetQuery ||
-          t.id.includes(targetQuery) ||
-          t.name.includes(targetQuery),
-      )
-    : null
+  const target = targetQuery ? TARGETS.find((t) => t.id === targetQuery) : null
 
   const urlPath = target
     ? target.path

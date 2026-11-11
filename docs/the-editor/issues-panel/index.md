@@ -7,7 +7,7 @@ description: Nordcraft’s issues panel helps you detect and fix issues quickly,
 
 The issues panel provides an overview of all issues found in your project, helping you identify and resolve any problems which may cause accessibility, performance or maintainability issues.
 
-![The issues panel is expanded, showing a warning for an unused component which says component is never used by any page or component, consider removing it.|16/9](issues-panel.webp 'Issues panel'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800&leftpanel=Problems}
+![The issues panel is expanded, showing a warning for an unused global formula which says the global formula. is never used by any formula, consider removing it.|16/9](issues-panel.webp 'Issues panel'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-page?rightpanel=style&canvas-width=800&canvas-height=800&leftpanel=Problems}
 
 ## Accessing the issues panel
 
