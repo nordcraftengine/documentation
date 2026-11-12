@@ -59,9 +59,6 @@ Supported standard connectors include:
 - **DatoCMS**: Explore your DatoCMS schema and records.
 - **Excalidraw**: Read drawings, wireframes, and whiteboard sketches using an access token.
 - **Figma**: Inspect frames, components, typography, colors, and layout structures from your Figma files. Requires a Personal Access Token (access token) created in your Figma account (**Settings > Security**) and your **Figma Team ID**.
-  ::: warning
-  The Figma connector has very limited functionality if you are not on a paid Figma plan, as Figma limits access to team files and inspection APIs on free plans.
-  :::
 - **FLORA**: Generate images, videos, and creative assets with 50+ AI models.
 - **GitHub**: Read code, issues, and repository structure using a Personal Access Token from your [GitHub settings](https://github.com/settings/personal-access-tokens).
 - **Linear**: Read issues, cycles, and project tasks.
@@ -72,6 +69,10 @@ Supported standard connectors include:
 - **Umbraco**: Connect your Umbraco CMS using your Umbraco MCP server URL and an access token.
 - **Webflow**: Access Webflow CMS items and site structure.
 - **Xano**: Connect your Xano workspace using your Xano server URL and API token.
+
+::: warning
+The Figma connector has very limited functionality if you are not on a paid Figma plan, as Figma limits access to team files and inspection APIs on free plans.
+:::
 
 ### Custom connectors
 
