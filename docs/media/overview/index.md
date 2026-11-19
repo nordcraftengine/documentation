@@ -18,6 +18,7 @@ Supported image types include:
 1. WebP
 1. GIF
 1. SVG
+1. AVIF
 
 :::tip
 Upload the highest image quality possible. You can customize the size of the images served in your front end in the next step.
