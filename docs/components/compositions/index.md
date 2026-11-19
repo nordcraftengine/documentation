@@ -70,10 +70,10 @@ When [exporting a component](/components/export-a-component) as a web component,
 
 ### Adding slots to components
 
-You can add slots to components using the [element catalog](/the-editor/element-tree#adding-elements):
+You can add slots to components using the [element catalog](/the-editor/element-tree#element-catalog):
 
 1. Select where you want to add the slot in your component in the element tree
-2. Add a slot element from the [element catalog](/the-editor/element-tree#adding-elements)
+2. Add a slot element from the [element catalog](/the-editor/element-tree#element-catalog)
 3. Optional: add a name attribute (without a name, the slot is named `default`)
 
 ![A component is being edited, a slot element is highlighted in the HTML element tree. In the right panel the name for the slot is defined as content.|16/9](add-a-slot-element.webp 'Add a slot element'){https://editor.nordcraft.com/projects/docs_examples/branches/main/components/screenshot-card-container?canvas-width=800&rightpanel=attributes&selection=nodes.Iry7BeAO7AjcLcJEL-sPT&canvas-height=800}

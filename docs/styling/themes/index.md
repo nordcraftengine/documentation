@@ -89,7 +89,7 @@ Defined font-family variables are available in the font dropdown menu in the [st
 
 #### Custom fonts
 
-For fonts not available natively in Nordcraft, you can add them in your [page configuration](/pages/page-configuration). Navigate to the [head assets](/pages/page-configuration#head-assets) section to set up custom fonts.
+For fonts not available natively in Nordcraft, you can add them in your [page configuration](/pages/page-configuration). Navigate to the [head assets](/pages/page-configuration#head-elements) section to set up custom fonts.
 
 ::: info
 Fonts added via page configuration will only be available on the specific pages to which you add them. To use custom fonts across your entire project, add them to each page that requires them.

@@ -38,10 +38,10 @@ Publishing a package is permanent. You cannot unpublish a **package** after it h
 
 Branches allow you to work on new features or fixes without affecting the main version of your project. If you're familiar with git version control, Nordcraft branches work in the same way.
 
-Every project has a `main` branch that represents the current live version. The `main` branch is `read-only` and you cannot edit this branch directly. To make changes to your project, [create new branches](/get-started/branches-and-publishing#create-a-new-branch).
+Every project has a `main` branch that represents the current live version. The `main` branch is `read-only` and you cannot edit this branch directly. To make changes to your project, [create new branches](/version-control/overview#create-a-new-branch).
 
 ::: info
-For detailed information on working with branches, see the [Branches and publishing](/get-started/branches-and-publishing) page.
+For detailed information on working with branches, see the [Version control](/version-control/overview) page.
 :::
 
 When selecting a project from your Nordcraft dashboard, you can view all active branches, with details about who created them and when.

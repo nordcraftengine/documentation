@@ -26,7 +26,7 @@ A project in Nordcraft can be either a **website** or a **package**.
 
 Websites in Nordcraft are composed of pages and components. Nordcraft is built on standard HTML, CSS and JavaScript. Anything you can build for the web, you can build with Nordcraft.
 
-Learn more about [creating a website](/get-started/create-a-project#create-an-app) in Nordcraft.
+Learn more about [creating a website](/get-started/create-a-project#create-a-website) in Nordcraft.
 
 ## Packages
 

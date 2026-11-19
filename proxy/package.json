@@ -6,6 +6,7 @@
     "buildContributors": "bun bin/buildContributors.ts",
     "cf:types": "wrangler types",
     "checkContributors": "bun bin/checkContributors.ts",
+    "checkLinks": "bun bin/checkLinks.ts",
     "combineDocs": "bun bin/combineContent.ts",
     "buildDocs": "bun bin/buildAssets.ts && bun bin/buildSitemap.ts",
     "predeploy": "bun buildDocs && bun buildContributors && bun run build",

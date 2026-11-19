@@ -36,7 +36,7 @@ The style panel provides a visual interface to edit the CSS of elements and comp
 - Set up CSS variables in the formula editor to create dynamic, conditional styles
 - Define the type, name and set a unit if needed (e.g. `px`)
 - All CSS variables are available for use in CSS properties in the style panel
-- CSS variables must be defined in your theme with the correct [syntax type](/styling/theme#theme-variables) to be animated correctly.
+- CSS variables must be defined in your theme with the correct [syntax type](/styling/themes#theme-variables) to be animated correctly.
 
 ### Style
 
