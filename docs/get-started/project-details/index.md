@@ -55,7 +55,7 @@ The following actions are available for each branch:
    - **View changes**: See an overview of all modifications in the branch; if the branch is outdated, conflicts will be highlighted for resolution before syncing with the main branch
    - **Preview**: Opens the live version of the branch
    - **Delete branch**: Deletes selected branch
-   - **Download branch**: Download the branch code in JSON format
+   - **Download branch**: Download the branch code in JSON format (for backups or [self-hosting](/self-hosting))
 
 ## Version history
 
