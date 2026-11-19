@@ -19,6 +19,11 @@ jobs:
           bun-version: 1.3.3
       - name: Install worker dependencies
         run: bun install --frozen-lockfile
+      - name: Check internal links
+        run: |
+          cd proxy
+          bun run buildDocs
+          bun run checkLinks --dist
       - name: Deploy
         run: |
           cd proxy

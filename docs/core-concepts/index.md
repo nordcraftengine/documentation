@@ -43,12 +43,12 @@ You can create and publish [packages](/packages/overview) to share across projec
 
 ## Branches and version control
 
-Nordcraft includes a Git-like [version control system](/get-started/branches-and-publishing):
+Nordcraft includes a Git-like [version control system](/version-control/overview):
 
 - The `main` branch represents the live version of your project
 - Create new branches for developing new features or fixes
-- [Preview changes](/get-started/branches-and-publishing#preview-a-branch) on a live URL before publishing
-- [Publish branches to the main branch](/get-started/branches-and-publishing#publish-changes) when work is complete
+- [Preview changes](/version-control/overview#preview-a-branch) on a live URL before publishing
+- [Publish branches to the main branch](/version-control/managing-changes#publishing-changes) when work is complete
 
 This workflow enables flexible collaboration and helps maintain the stability of your live websites. For best practices, check out our guide on [effective branching](/good-practices/branching) strategies.
 

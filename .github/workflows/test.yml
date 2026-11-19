@@ -73,6 +73,10 @@ jobs:
         run: |
           cd proxy
           bun run predeploy
+      - name: Check internal links
+        run: |
+          cd proxy
+          bun run checkLinks --dist
   test_contributors:
     runs-on: ubuntu-latest
     steps:

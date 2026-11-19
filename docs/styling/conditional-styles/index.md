@@ -9,7 +9,7 @@ Using the style panel you can configure different styling for when elements are 
 
 ## Style variants
 
-If you’re familiar with CSS terminology, style variants allow you to configure pseudo classes, pseudo elements and media queries, and change styling based on [CSS classes](#class-based-styles) or [CSS variables](#style-variables).
+If you’re familiar with CSS terminology, style variants allow you to configure pseudo classes, pseudo elements and media queries, and change styling based on [CSS classes](#class-based-styles) or [CSS variables](#css-variables).
 
 @@@ example
 componentUrl: https://docs_examples.nordcraft.site/.toddle/custom-element/example-style-variants.js

@@ -2,6 +2,7 @@
   "name": "documentation",
   "scripts": {
     "lint": "eslint --quiet --report-unused-disable-directives .",
+    "check:links": "bun ./proxy/bin/checkLinks.ts",
     "screenshots": "bun ./scripts/capture-screenshots.ts",
     "screenshots:annotate": "bun ./scripts/annotate.ts",
     "screenshots:record": "bun ./scripts/record.ts",

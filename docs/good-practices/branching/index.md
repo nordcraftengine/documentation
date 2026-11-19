@@ -7,7 +7,7 @@ description: Apply effective branch management with small, focused changes, freq
 
 Effective branch management is essential for maintaining a stable project while developing new features. In Nordcraft, branches allow you to develop features in isolation without affecting your live website. Unlike traditional version control systems, Nordcraft's branching system is designed specifically for visual development, making it easier to track UI changes and collaborate with both technical and non-technical team members. Branching in Nordcraft helps you maintain development velocity while ensuring project stability.
 
-For more details on the mechanics of branching, see the [Branches and publishing](/get-started/branches-and-publishing) page.
+For more details on the mechanics of branching, see the [Version control](/version-control/overview) page.
 
 ::: info
 In Nordcraft, all new branches are automatically created from the current state of `main`. This prevents complex branching structures and helps avoid severe merge conflicts, especially in larger projects and teams.
@@ -16,10 +16,10 @@ In Nordcraft, all new branches are automatically created from the current state 
 ## Key takeaways
 
 - Create small, focused branches for specific features or fixes
-- [Publish changes](/get-started/branches-and-publishing#publish-changes) frequently to minimize conflicts and gather feedback early
-- Test your changes with the [preview feature](/get-started/branches-and-publishing#preview-a-branch) before publishing
+- [Publish changes](/version-control/managing-changes#publishing-changes) frequently to minimize conflicts and gather feedback early
+- Test your changes with the [preview feature](/version-control/overview#preview-a-branch) before publishing
 - Use clear branch names and descriptive comments for better collaboration
-- [Sync with main](/get-started/branches-and-publishing#sync-with-main) regularly to stay up-to-date with changes from other team members
+- [Sync with main](/version-control/resolving-conflicts#sync-with-main) regularly to stay up-to-date with changes from other team members
 
 ## Scope branches effectively
 
@@ -62,7 +62,7 @@ When conflicts occur during syncing with `main`:
 
 - Address them promptly rather than postponing
 - Carefully review each conflict and choose the appropriate resolution
-  - see also [resolve merge conflicts](/get-started/branches-and-publishing#resolve-merge-conflicts)
+  - see also [resolve merge conflicts](/version-control/resolving-conflicts#managing-conflicts-with-main)
 - Test thoroughly after resolving conflicts, but before publishing
 - If conflicts are complex, consider creating a new branch from `main` and reapplying your changes
 
