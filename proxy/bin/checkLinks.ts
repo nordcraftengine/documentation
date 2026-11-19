@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import type { MenuItemsStructure } from '../src/types'
-import { parseRawContent } from '../src/utils'
+import { isDefined, parseRawContent } from '../src/utils'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -28,67 +28,71 @@ interface ParsedDoc {
   links: ExtractedLink[]
 }
 
-const isRecord = (value: unknown): value is Record<string, unknown> =>
-  typeof value === 'object' && value !== null
+interface MarkdownNode {
+  type?: string
+  id?: string
+  href?: string
+  text?: string
+  title?: string
+  linkUrl?: string | null
+  imageUrl?: string
+  tokens?: MarkdownNode[]
+  items?: MarkdownNode[]
+  header?: MarkdownNode[]
+  rows?: MarkdownNode[][]
+}
 
 const collectSectionsAndLinks = (
-  nodes: unknown[],
+  nodes: MarkdownNode[],
   sectionIds: Set<string>,
   links: ExtractedLink[],
 ) => {
   for (const node of nodes) {
-    if (!isRecord(node)) {
-      continue
-    }
-
-    const type = typeof node.type === 'string' ? node.type : ''
+    const type = node.type ?? ''
 
     if (type === 'code' || type === 'codespan') {
       continue
     }
 
-    if (type === 'section' && typeof node.id === 'string' && node.id) {
+    if (type === 'section' && node.id) {
       sectionIds.add(node.id)
     }
 
-    if (type === 'link' && typeof node.href === 'string') {
+    if (type === 'link' && isDefined(node.href)) {
       links.push({
         href: node.href,
-        text: typeof node.text === 'string' ? node.text : '',
+        text: node.text ?? '',
         kind: 'link',
       })
     }
 
-    if (
-      (type === 'image' || type === 'image-static') &&
-      typeof node.href === 'string'
-    ) {
+    if ((type === 'image' || type === 'image-static') && isDefined(node.href)) {
       links.push({
         href: node.href,
-        text: typeof node.text === 'string' ? node.text : '',
+        text: node.text ?? '',
         kind: 'image',
       })
-      if (typeof node.linkUrl === 'string' && node.linkUrl) {
+      if (node.linkUrl) {
         links.push({
           href: node.linkUrl,
-          text: typeof node.text === 'string' ? node.text : '',
+          text: node.text ?? '',
           kind: 'link',
         })
       }
     }
 
     if (type === 'project-example') {
-      if (typeof node.imageUrl === 'string' && node.imageUrl) {
+      if (node.imageUrl) {
         links.push({
           href: node.imageUrl,
-          text: typeof node.title === 'string' ? node.title : '',
+          text: node.title ?? '',
           kind: 'image',
         })
       }
-      if (typeof node.linkUrl === 'string' && node.linkUrl) {
+      if (node.linkUrl) {
         links.push({
           href: node.linkUrl,
-          text: typeof node.title === 'string' ? node.title : '',
+          text: node.title ?? '',
           kind: 'link',
         })
       }
@@ -139,14 +143,13 @@ export const getRouteMap = (structure: MenuItemsStructure) => {
   const routeMap = new Map<string, string>()
 
   for (const item of structure) {
-    if (item.children && item.children.length > 0) {
-      for (const child of item.children) {
-        const route = `/${item.path}/${child.path}`
-        routeMap.set(route, `${item.path}/${child.path}/index.md`)
-      }
-    } else {
-      const route = `/${item.path}`
-      routeMap.set(route, `${item.path}/index.md`)
+    const routes =
+      item.children && item.children.length > 0
+        ? item.children.map((child) => `/${item.path}/${child.path}`)
+        : [`/${item.path}`]
+
+    for (const route of routes) {
+      routeMap.set(route, `${route.slice(1)}/index.md`)
     }
   }
 
@@ -329,7 +332,7 @@ export const checkDocsLinks = ({
         continue
       }
 
-      if (fragment !== undefined) {
+      if (isDefined(fragment)) {
         if (!fragment || fragment.startsWith('#')) {
           issues.push({
             file: doc.file,

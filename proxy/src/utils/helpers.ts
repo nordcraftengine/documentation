@@ -31,6 +31,9 @@ export const preferLocalData = ({
 export const kebabCase = (str: string) =>
   str.replaceAll(/[^a-zA-Z0-9]+/g, '-').toLowerCase()
 
+export const isDefined = <T>(value: T | undefined | null): value is T =>
+  value !== undefined && value !== null
+
 export const chunk = <T>(array: T[], size: number): T[][] => {
   const chunkedArr: T[][] = []
   let index = 0
