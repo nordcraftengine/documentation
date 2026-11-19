@@ -29,7 +29,7 @@ In Nordcraft, both developers and designers can collaborate. When building in No
 - [Asset management for uploading, storing and resizing media](/media/overview)
 - [SEO and meta tag configuration tools](/pages/page-configuration#metadata)
 - Pre-built templates to get you started quickly
-- Deploy directly to Nordcraft's infrastructure or self-host your projects
+- Deploy directly to Nordcraft's infrastructure or [self-host your projects](/self-hosting)
 
 ## The Nordcraft community
 

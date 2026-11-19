@@ -328,6 +328,7 @@
     ]
   },
   { "path": "custom-domains", "label": "Custom domains" },
+  { "path": "self-hosting", "label": "Self-hosting" },
   {
     "path": "packages",
     "label": "Packages",
