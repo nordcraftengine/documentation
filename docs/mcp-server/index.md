@@ -200,6 +200,23 @@ A branch name must start with a lowercase letter. It can contain lowercase lette
 
 The AI tool handles the file locations and edit format for you. To point it to a specific file, you can describe the folder and name, such as `components/Header`. File searches are case-sensitive.
 
+### Media
+
+| Tool           | What it does                                                                               | Information needed                               |
+| -------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------ |
+| `media_list`   | Lists the images in the project's media library, with the newest images first.             | The project, branch, and an optional search term |
+| `media_view`   | Shows images from the media library, along with their exact width, height, type, and size. | The project, branch, and up to 20 images         |
+| `media_add`    | Adds an image from the web to the media library.                                           | The project, branch, image URL, and a file name  |
+| `media_upload` | Uploads an image from your computer to the media library.                                  | The project, branch, and a file name             |
+
+`media_list` returns 50 images at a time. You can search by all or part of an image's file name or description, and the search does not consider capitalization.
+
+`media_upload` accepts PNG, JPEG, GIF, WebP, and SVG files up to 10 MB. Your AI tool needs to be able to run commands on your computer to upload a file, because the upload itself happens from your computer rather than through the AI tool.
+
+:::info
+Only add images that you have the rights to use. If your AI tool chooses an image from the web for you, ask it where the image came from and check its license before you publish.
+:::
+
 ### Built-in Nordcraft guidance
 
 These tools do not change your project. Instead, they give your AI tool additional guidance for working with Nordcraft correctly.
@@ -213,6 +230,9 @@ These tools do not change your project. Instead, they give your AI tool addition
 | `skill-stdlib-formulas` | Using Nordcraft's built-in formulas                                   |
 | `skill-stdlib-actions`  | Using Nordcraft's built-in actions                                    |
 | `skill-sync`            | Resolving conflicts and syncing branches with `main`                  |
+| `skill-auth`            | Adding sign-up, sign-in, sign-out, and protected pages with Supabase  |
+| `skill-routes`          | Setting up redirects and proxies with routes                          |
+| `skill-media`           | Using images from the media library, including alt text and sizes     |
 
 ## Keep your projects safe
 
