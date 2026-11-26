@@ -38,71 +38,89 @@ The AI processes these visual markings alongside your text prompt, making design
 
 ## What can the AI do?
 
-The AI can perform a number of tasks to help you understand and build projects in Nordcraft. You can choose between 3 modes:
+The AI Assistant can answer questions, plan features, and build your project, all in the same conversation. Describe what you want, and the AI works out whether to explain something, make a plan, or change your project.
 
-![The AI assistant mode window, showing three modes available: ask, plan, and build.|16/9](ai-mode-select.webp 'Choose your AI mode')
-
-### Ask mode
-
-When in Ask mode the AI can perform the following tasks:
+The AI can:
 
 - **Answer Nordcraft questions**: it can explain features, concepts, and best practices when building in Nordcraft
 - **Search documentation**: it can find specific information from Nordcraft's official documentation
 - **Analyze your project structure**: it can examine your current components, pages, workflows and other elements, and give you information on their functionality and advise about next steps
-- **Provide implementation tips**: it can explain approaches and direct you to the right tools for building features
+- **Plan features**: it can create a step-by-step plan for building features, components, or pages in your project, including which components, workflows, and formulas to use
+- **Suggest improvements**: it can analyze your project and suggest improvements to your code, structure, or design
+- **Build your project**: it can build and update pages, components, workflows, formulas, and styling
+- **Work with media**: it can read and upload media files in your project
 
-:::info
-Using Ask mode is free of charge.
+:::tip
+If you want to agree on an approach before anything changes, ask the AI to make a plan first. You can then refine the plan in the conversation and ask the AI to build it when you are ready.
 :::
 
-### Plan mode
+:::tip
+You can also attach an image to your request, such as a screenshot of a design. The AI will use this image when analyzing your request but cannot insert it directly into the design.
+:::
 
-When in Plan mode the AI can perform the following tasks:
+### Follow the AI as it works
 
-- **Generate project plans**: it can create a step-by-step plan for building features, components, or pages in your project.
-- **Provide implementation guidance**: it can give you advice on how to implement features, including which components, workflows, and formulas to use.
-- **Suggest improvements**: it can analyze your project and suggest improvements to your code, structure, or design.
+The **Follow** toggle at the top of the AI panel lets you watch the AI while it builds. Follow is on by default. When it is on, the editor automatically navigates to the file the AI is editing, so you can sit back and follow its work as it moves between pages and components.
 
-### Build mode
+If you start interacting with the editor while the AI works, Follow turns off automatically so the AI doesn't interrupt you. Turn it back on at any time to continue following along.
 
-When in Build mode the AI can also help you build your project. This includes building and updating pages, components, workflows, formulas, and styling.
+### Changes and rolling back
 
-#### Using build mode
+The AI makes its changes directly to the branch you are working on, so you can see the result on the canvas as soon as it is done.
 
-When you ask the AI for changes in build mode, you will enter `Preview mode`.
+![The Nordcraft editor with a landing page for a design studio built by the AI on the canvas. The AI panel on the right shows the AI confirming its plan, the steps it took, and the components and page it created, followed by an All changes list above the prompt input with a Reset option for each file.|16/9](ai-build-mode.webp 'The AI building a page')
 
-![The AI panel in build mode, showing the user has entered the following prompt: Build me a landing page for a design agency focussing on simplicity, creativity, and curiosity. The colour palette should be monochrome, with bold display fonts. The overall feel should be calm and professional. This image is annotated relating to the list items below.|16/9](ai-build-mode.webp 'AI Build mode')
+At the bottom of the AI panel, above the prompt input, the **All changes** list shows every file the AI has created or edited. If you are not happy with the result, you can roll back the latest changes from here:
 
-1. See a list of created or edited files above the input field in the AI panel.
-2. Navigate through the changes proposed by the AI using the top bar.
-3. Choose to accept or reject the proposed changes currently visible.
+- **Undo**: roll back all of the latest changes
+- **Reset**: roll back the changes to a single file
 
-Build mode uses a credit system. You get a number of free credits each day, and if you need more credits, you can purchase them directly from inside the Nordcraft editor.
+:::info
+Changes made by the AI stay on your branch. Your live website is not affected until you [publish your changes](/version-control/managing-changes#publishing-changes) in Ship mode.
+:::
+
+### Credits, models, and effort
+
+The AI Assistant uses a credit system. You get a number of free credits each day, and if you need more credits, you can purchase them directly from inside the Nordcraft editor.
 
 :::info
 Daily free credits are assigned to each individual user of Nordcraft. Any credits purchased will be available to all members of an organization to use. If you are a member of more than one organization, the purchased credits will apply to the organization of the project you were editing when you completed the checkout process.
 :::
 
-The amount of credits used depends on the model you chose and the complexity of the task. You can select between the following models:
+The amount of credits used depends on the model you choose, the effort level, and the complexity of the task.
 
-| Name       | Cost | Best use case                                                                         |
-| ---------- | ---- | ------------------------------------------------------------------------------------- |
-| Fast       | 💰   | Most build tasks.                                                                     |
-| Thoughtful | 💰💰 | Task analysis. Use this mode when Fast has problems finding and fixing annoying bugs. |
+#### Models
 
-:::tip
-In Build mode you can also attach an image to your request, such as a screenshot of a design. The AI will use this image when analyzing your request but cannot insert it directly into the design.
+You can pick a model from the model picker at the bottom of the AI panel, where each model is marked with a cost level:
+
+| Cost level | Best use case                                                                                              |
+| ---------- | ---------------------------------------------------------------------------------------------------------- |
+| $          | Quick everyday tasks, like small edits, styling tweaks, and simple questions.                              |
+| $$         | Most build tasks, like creating components and pages.                                                      |
+| $$$        | The most capable models. Use these for large or complex tasks, or when other models struggle to fix a bug. |
+
+More capable models usually cost more credits, so it is worth starting with a cheaper model and switching to a more capable one if the result is not what you need.
+
+#### Effort
+
+Next to the model picker, you can set the **effort** level. The effort level controls how much time the AI spends thinking about your request before and while it works. The available levels, such as **Low**, **Medium**, or **High**, depend on the model you have chosen, as different models support different levels.
+
+- **Lower effort** is faster and uses fewer credits. It works well for simple, well-defined tasks.
+- **Higher effort** lets the AI reason more carefully, which can give better results on complex tasks, but it takes longer and uses more credits.
+
+### Ask mode
+
+The AI Assistant switches to **Ask mode** when it cannot make changes to your project. This happens when:
+
+- **You are on the `main` branch**: the `main` branch [cannot be edited directly](/version-control/overview), so the AI cannot build there. Switch to another branch, or create a new one, to build with the AI.
+- **You are out of credits**: you can keep chatting in Ask mode until your daily free credits are renewed, or you can purchase more credits from inside the Nordcraft editor.
+
+In Ask mode the AI can still answer Nordcraft questions, search the documentation, analyze your project structure, and give you implementation tips, but it cannot make changes to your project.
+
+:::info
+Using Ask mode is free of charge.
 :::
 
 ## Connectors
 
 You can extend what the AI Assistant can do by adding [Connectors](/connectors). Connectors allow the AI to connect directly to external design tools like Figma and Miro, or fetch content and data models from platforms like Supabase, Contentful, and Sanity.
-
-## What the AI can't do
-
-While the AI Assistant in Build mode can propose changes for your project, it cannot apply those changes directly. You must review and manually accept or reject each suggestion, ensuring you maintain full control over your project.
-
-Additionally, the AI cannot currently:
-
-- **Create services in Nordcraft**
-- **Upload or read media files in Nordcraft**
