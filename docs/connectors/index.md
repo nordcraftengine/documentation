@@ -117,7 +117,7 @@ You can manage all connectors in your project from the AI panel menu:
 
 Once a connector is added to your project, you do not need to do any extra setup. The AI Assistant automatically discovers the available tools and data from all connected services.
 
-When chatting in **Ask**, **Plan**, or **Build** mode, you can prompt the AI to use your connected tools:
+When chatting with the AI, you can prompt the AI to use your connected tools:
 
 - _"Inspect my Figma file and create a hero section component that matches the design."_
 - _"Look at my Supabase schema and show me how to structure an API to load products."_
