@@ -38,6 +38,10 @@
         "path": "canvas"
       },
       {
+        "label": "Canvas styles",
+        "path": "canvas-styles"
+      },
+      {
         "label": "Bottom bar",
         "path": "bottom-bar"
       },
