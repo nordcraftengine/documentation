@@ -19,7 +19,7 @@ The left sidebar provides direct access to all of the following:
 - **Actions**: Write and edit custom JavaScript [actions](/actions/overview)
 - **Themes**: Open the [theme](/styling/themes) editor to manage design tokens, colors, and typography
 - **Fonts**: Install and manage web fonts across your project
-- **Config**: Configure project settings including favicon, robots.txt, sitemap, app manifest, and service worker
+- **Config**: Configure project settings including favicon, robots.txt, sitemap, app manifest, service worker, and default canvas styles
 - **Packages**: Browse, search for, and install [packages](/packages/overview)
 - **Issues**: View project diagnostics and get guidance on fixing errors or warnings (badged with an alert dot when issues exist)
 - **History**: Inspect branch commit history
@@ -49,3 +49,7 @@ Click the [kbd]Config[kbd] button in the left sidebar to configure the following
 ::: info
 Project settings are only available on upgraded projects.
 :::
+
+## Default canvas styles
+
+The **Default canvas styles** section of the project config sets the CSS variables, typography and background of the canvas for every component and page in your project. These styles only apply to the canvas in the editor and do not change how your website looks. See [canvas styles](/the-editor/canvas-styles) for details.

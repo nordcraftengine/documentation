@@ -53,3 +53,7 @@ Press numbers [kbd]1[kbd] through [kbd]5[kbd] to quickly test responsive viewpor
 ::: info
 All HTML anchor tag links (`<a>`) in the canvas open in a new tab. To test links as they'll work in your final website, use the preview functionality.
 :::
+
+## Canvas styles
+
+You can change the layout, background and typography of the canvas to preview components in the context they are used in, without changing the components themselves. Set canvas styles for a single component or page in the right panel, or set defaults for your whole project in the project config. See [canvas styles](/the-editor/canvas-styles) for details.

@@ -15,6 +15,10 @@ The data panel is for managing all data aspects of your pages and components in 
 The data panel is only visible when no element is selected. Press [kbd]Escape[kbd] or click on the background outside the canvas to deselect.
 :::
 
+::: tip
+Next to the [kbd]Data[kbd] tab, the [kbd]Canvas style[kbd] tab lets you set the layout, background and typography of the canvas behind the current page or component. See [canvas styles](/the-editor/canvas-styles) for details.
+:::
+
 ## Structure
 
 The data panel is split into several sections tailored to specific functionality.
